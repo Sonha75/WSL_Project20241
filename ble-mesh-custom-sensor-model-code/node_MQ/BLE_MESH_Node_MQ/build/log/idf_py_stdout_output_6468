@@ -1,0 +1,996 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jul  8 2024 23:04:50[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v1.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 otadata          OTA data         01 00 0000f000 00002000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00020000 00220000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) boot: Defaulting to factory image[0m
+[0;32mI (101) esp_image: segment 0: paddr=00020020 vaddr=3f400020 size=2e8bch (190652) map[0m
+[0;32mI (178) esp_image: segment 1: paddr=0004e8e4 vaddr=3ffbdb60 size=01734h (  5940) load[0m
+[0;32mI (181) esp_image: segment 2: paddr=00050020 vaddr=400d0020 size=aa338h (697144) map[0m
+[0;32mI (435) esp_image: segment 3: paddr=000fa360 vaddr=3ffbf294 size=03bf8h ( 15352) load[0m
+[0;32mI (442) esp_image: segment 4: paddr=000fdf60 vaddr=40080000 size=189c8h (100808) load[0m
+[0;32mI (496) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (496) boot: Disabling RNG early entropy source...[0m
+[0;32mI (508) cpu_start: Multicore app[0m
+[0;32mI (508) cpu_start: Pro cpu up.[0m
+[0;32mI (509) cpu_start: Starting app cpu, entry point is 0x40081394[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (526) cpu_start: Pro cpu start user code[0m
+[0;32mI (526) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (526) cpu_start: Application information:[0m
+[0;32mI (531) cpu_start: Project name:     BLE_MESH_Node-MQ[0m
+[0;32mI (537) cpu_start: App version:      aa62094-dirty[0m
+[0;32mI (542) cpu_start: Compile time:     Jul  8 2024 23:04:27[0m
+[0;32mI (548) cpu_start: ELF file SHA256:  fed329573734a50b...[0m
+[0;32mI (554) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (560) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (564) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (569) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (574) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (581) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (587) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (593) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (599) heap_init: At 3FFCA698 len 00015968 (86 KiB): DRAM[0m
+[0;32mI (606) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (612) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (618) heap_init: At 400989C8 len 00007638 (29 KiB): IRAM[0m
+[0;32mI (626) spi_flash: detected chip: generic[0m
+[0;32mI (629) spi_flash: flash io: dio[0m
+[0;33mW (634) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (642) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (647) app_start: Starting scheduler on CPU0[0m
+[0;32[0;32mI (652) app_start: Starting scheduler on CPU1[0m
+mI (652) main_task: Started on CPU0[0m
+[0;32mI (662) main_task: Calling app_main()[0m
+[0;32mI (662) MESH-SERVER-MAIN: Initializing...[0m
+use esp timer !!!
+[0;31mE (662) esp_timer: Task is already initialized[0m
+[0;32mI (672) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (692) BTDM_INIT: BT controller compile version [ec4ac65][0m
+[0;32mI (702) BTDM_INIT: Bluetooth MAC: c8:f0:9e:9a:37:0a[0m
+[0;32mI (702) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+[0;33mW (702) phy_init: failed to load RF calibration data (0x1102), falling back to full calibration[0m
+[0;32mI (1202) MESH_SERVER: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;32mI (1202) MESH_SERVER: ESP_BLE_MESH_NODE_SET_UNPROV_DEV_NAME_COMP_EVT, Name: BLE Mesh, err_code 0[0m
+[0;32mI (1212) MESH_SERVER: BLE Mesh Node initialized![0m
+[0;32mI (1212) main_task: Returned from app_main()[0m
+[0;32mI (1222) MESH_SERVER: ESP_BLE_MESH_NODE_PROV_ENABLE_COMP_EVT, err_code 0[0m
+[0;31mE (6222) MESH-SERVER-MAIN: 2348.000000[0m
+[0;31mE (6222) BLE_MESH: Invalid NetKeyIndex 0x0000[0m
+[0;31mE (6222) MESH_SERVER: Failed to send message 0xc202e5[0m
+[0;31mE (11222) MESH-SERVER-MAIN: 2356.000000[0m
+[0;31mE (11222) BLE_MESH: Invalid NetKeyIndex 0x0000[0m
+[0;31mE (11222) MESH_SERVER: Failed to send message 0xc202e5[0m
+[0;31mE (16222) MESH-SERVER-MAIN: 2358.000000[0m
+[0;31mE (16222) BLE_MESH: Invalid NetKeyIndex 0x0000[0m
+[0;31mE (16222) MESH_SERVER: Failed to send message 0xc202e5[0m
+[0;31mE (21222) MESH-SERVER-MAIN: 2389.000000[0m
+[0;31mE (21222) BLE_MESH: Invalid NetKeyIndex 0x0000[0m
+[0;31mE (21222) MESH_SERVER: Failed to send message 0xc202e5[0m
+[0;32mI (22342) MESH_SERVER: ESP_BLE_MESH_NODE_PROV_LINK_OPEN_EVT, bearer PB-GATT[0m
+[0;31mE (26222) MESH-SERVER-MAIN: 2370.000000[0m
+[0;31mE (26222) BLE_MESH: Invalid NetKeyIndex 0x0000[0m
+[0;31mE (26222) MESH_SERVER: Failed to send message 0xc202e5[0m
+[0;33mW (30392) BLE_MESH: No Health Server context provided[0m
+[0;31mE (31222) MESH-SERVER-MAIN: 2370.000000[0m
+[0;31mE (31222) BLE_MESH: Invalid NetKeyIndex 0x0000[0m
+[0;31mE (31222) MESH_SERVER: Failed to send message 0xc202e5[0m
+[0;31mE (36222) MESH-SERVER-MAIN: 2366.000000[0m
+[0;31mE (36222) BLE_MESH: Invalid NetKeyIndex 0x0000[0m
+[0;31mE (36222) MESH_SERVER: Failed to send message 0xc202e5[0m
+[0;33mW (37282) BLE_MESH: No Health Server context provided[0m
+[0;32mI (37312) MESH_SERVER: ESP_BLE_MESH_NODE_PROV_LINK_CLOSE_EVT, bearer PB-GATT[0m
+[0;32mI (37312) MESH_SERVER: ESP_BLE_MESH_NODE_PROV_COMPLETE_EVT[0m
+[0;32mI (37322) MESH_SERVER: net_idx: 0x0000, addr: 0x0034[0m
+[0;32mI (37322) MESH_SERVER: Device provisioned[0m
+[0;33mW (38402) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;31mE (41222) MESH-SERVER-MAIN: 2367.000000[0m
+[0;31mE (41222) BLE_MESH: Model not bound to AppKey 0x0000[0m
+[0;31mE (41222) MESH_SERVER: Failed to send message 0xc202e5[0m
+[0;33mW (43992) BLE_MESH: No matching TX context for ack[0m
+[0;31mE (46222) MESH-SERVER-MAIN: 2373.000000[0m
+[0;31mE (46222) BLE_MESH: Model not bound to AppKey 0x0000[0m
+[0;31mE (46222) MESH_SERVER: Failed to send message 0xc202e5[0m
+[0;32mI (47492) MESH_SERVER: ESP_BLE_MESH_MODEL_OP_APP_KEY_ADD[0m
+[0;32mI (47492) MESH_SERVER: net_idx 0x0000, app_idx 0x0000[0m
+[0;32mI (47492) AppKey: 7b 49 db 58 24 3d 1f 0e 48 d1 02 c5 cc c5 53 4c [0m
+[0;31mE (51222) MESH-SERVER-MAIN: 2369.000000[0m
+[0;31mE (51222) BLE_MESH: Model not bound to AppKey 0x0000[0m
+[0;31mE (51222) MESH_SERVER: Failed to send message 0xc202e5[0m
+[0;31mE (56222) MESH-SERVER-MAIN: 2377.000000[0m
+[0;31mE (56222) BLE_MESH: Model not bound to AppKey 0x0000[0m
+[0;31mE (56222) MESH_SERVER: Failed to send message 0xc202e5[0m
+[0;32mI (60612) MESH_SERVER: ESP_BLE_MESH_MODEL_OP_MODEL_APP_BIND[0m
+[0;32mI (60612) MESH_SERVER: elem_addr 0x0034, app_idx 0x0000, cid 0x02e5, mod_id 0x001414[0m
+[0;32mI (60622) MESH_SERVER: Application key bound to model 0x001414[0m
+[0;31mE (61222) MESH-SERVER-MAIN: 2510.000000[0m
+[0;32mI (61292) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (61292) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (61292) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (61302) PARSED_DATA: Temperature = 0.000000[0m
+[0;33mW (61302) PARSED_DATA: Humidity    = 0.000000[0m
+[0;33mW (61312) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;32mI (61312) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (66222) MESH-SERVER-MAIN: 2400.000000[0m
+[0;32mI (66292) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (66302) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (66302) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (66302) PARSED_DATA: Temperature = 0.000000[0m
+[0;33mW (66302) PARSED_DATA: Humidity    = 0.000000[0m
+[0;33mW (66312) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;32mI (66322) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (71222) MESH-SERVER-MAIN: 2392.000000[0m
+[0;32mI (71292) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (71292) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (71292) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (71302) PARSED_DATA: Temperature = 0.000000[0m
+[0;33mW (71302) PARSED_DATA: Humidity    = 0.000000[0m
+[0;33mW (71312) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;32mI (71312) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (76222) MESH-SERVER-MAIN: 2380.000000[0m
+[0;32mI (76302) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (76302) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (76302) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (76302) PARSED_DATA: Temperature = 0.000000[0m
+[0;33mW (76312) PARSED_DATA: Humidity    = 0.000000[0m
+[0;33mW (76312) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;32mI (76322) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (81222) MESH-SERVER-MAIN: 2383.000000[0m
+[0;32mI (81302) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (81302) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (81302) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (81302) PARSED_DATA: Temperature = 0.000000[0m
+[0;33mW (81312) PARSED_DATA: Humidity    = 0.000000[0m
+[0;33mW (81312) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;32mI (81322) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (86222) MESH-SERVER-MAIN: 2383.000000[0m
+[0;32mI (86292) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (86302) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (86302) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (86302) PARSED_DATA: Temperature = 0.000000[0m
+[0;33mW (86312) PARSED_DATA: Humidity    = 0.000000[0m
+[0;33mW (86312) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;32mI (86322) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (91222) MESH-SERVER-MAIN: 2390.000000[0m
+[0;32mI (91292) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (91292) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (91292) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (91302) PARSED_DATA: Temperature = 0.000000[0m
+[0;33mW (91302) PARSED_DATA: Humidity    = 0.000000[0m
+[0;33mW (91312) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;32mI (91312) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (96222) MESH-SERVER-MAIN: 2388.000000[0m
+[0;32mI (96292) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (96292) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (96292) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (96302) PARSED_DATA: Temperature = 0.000000[0m
+[0;33mW (96302) PARSED_DATA: Humidity    = 0.000000[0m
+[0;33mW (96312) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;32mI (96312) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (101222) MESH-SERVER-MAIN: 2398.000000[0m
+[0;32mI (101292) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (101292) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (101292) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (101302) PARSED_DATA: Temperature = 0.000000[0m
+[0;33mW (101302) PARSED_DATA: Humidity    = 0.000000[0m
+[0;33mW (101312) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;32mI (101312) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;33mW (102342) BLE_MESH: Duplicate SDU from src 0x0033[0m
+[0;32mI (102682) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (102682) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (102682) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (102682) PARSED_DATA: Temperature = 27.000000[0m
+[0;33mW (102692) PARSED_DATA: Humidity    = 72.000000[0m
+[0;33mW (102692) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;31mE (106222) MESH-SERVER-MAIN: 2404.000000[0m
+[0;32mI (106292) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (106292) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (106292) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (106302) PARSED_DATA: Temperature = 0.000000[0m
+[0;33mW (106302) PARSED_DATA: Humidity    = 0.000000[0m
+[0;33mW (106312) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;32mI (106312) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;32mI (109562) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (109562) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (109572) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (109572) PARSED_DATA: Temperature = 54.000000[0m
+[0;33mW (109572) PARSED_DATA: Humidity    = 144.000000[0m
+[0;33mW (109582) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;31mE (111222) MESH-SERVER-MAIN: 2387.000000[0m
+[0;32mI (111322) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (111322) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (111322) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (111322) PARSED_DATA: Temperature = 0.000000[0m
+[0;33mW (111332) PARSED_DATA: Humidity    = 0.000000[0m
+[0;33mW (111332) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;32mI (111342) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (116222) MESH-SERVER-MAIN: 2402.000000[0m
+[0;32mI (116292) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (116292) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (116292) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (116302) PARSED_DATA: Temperature = 0.000000[0m
+[0;33mW (116302) PARSED_DATA: Humidity    = 0.000000[0m
+[0;33mW (116312) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;32mI (116312) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;32mI (116642) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (116652) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (116652) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (116652) PARSED_DATA: Temperature = 27.000000[0m
+[0;33mW (116662) PARSED_DATA: Humidity    = 72.000000[0m
+[0;33mW (116662) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;31mE (121222) MESH-SERVER-MAIN: 2399.000000[0m
+[0;32mI (121302) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (121302) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (121302) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (121302) PARSED_DATA: Temperature = 0.000000[0m
+[0;33mW (121312) PARSED_DATA: Humidity    = 0.000000[0m
+[0;33mW (121312) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;32mI (121322) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;32mI (123642) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (123642) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (123642) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (123642) PARSED_DATA: Temperature = 27.000000[0m
+[0;33mW (123652) PARSED_DATA: Humidity    = 72.000000[0m
+[0;33mW (123652) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;31mE (126222) MESH-SERVER-MAIN: 2410.000000[0m
+[0;32mI (126302) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (126302) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (126302) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (126302) PARSED_DATA: Temperature = 0.000000[0m
+[0;33mW (126312) PARSED_DATA: Humidity    = 0.000000[0m
+[0;33mW (126312) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;32mI (126322) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (131222) MESH-SERVER-MAIN: 2570.000000[0m
+[0;32mI (131292) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (131302) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (131302) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (131302) PARSED_DATA: Temperature = 0.000000[0m
+[0;33mW (131312) PARSED_DATA: Humidity    = 0.000000[0m
+[0;33mW (131312) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;32mI (131322) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;32mI (134642) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (134642) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (134642) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (134642) PARSED_DATA: Temperature = 27.000000[0m
+[0;33mW (134652) PARSED_DATA: Humidity    = 72.000000[0m
+[0;33mW (134652) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;31mE (136222) MESH-SERVER-MAIN: 2404.000000[0m
+[0;32mI (136302) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (136312) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (136312) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (136312) PARSED_DATA: Temperature = 0.000000[0m
+[0;33mW (136322) PARSED_DATA: Humidity    = 0.000000[0m
+[0;33mW (136322) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;32mI (136332) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (141222) MESH-SERVER-MAIN: 2408.000000[0m
+[0;32mI (141292) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (141292) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (141292) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (141302) PARSED_DATA: Temperature = 0.000000[0m
+[0;33mW (141302) PARSED_DATA: Humidity    = 0.000000[0m
+[0;33mW (141312) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;32mI (141312) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;33mW (141472) BLE_MESH: Duplicate SDU from src 0x0033[0m
+[0;32mI (141752) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (141752) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (141752) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (141752) PARSED_DATA: Temperature = 27.000000[0m
+[0;33mW (141762) PARSED_DATA: Humidity    = 72.000000[0m
+[0;33mW (141762) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;31mE (146222) MESH-SERVER-MAIN: 2404.000000[0m
+[0;32mI (146422) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (146422) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (146422) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (146422) PARSED_DATA: Temperature = 0.000000[0m
+[0;33mW (146432) PARSED_DATA: Humidity    = 0.000000[0m
+[0;33mW (146432) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;32mI (146442) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;32mI (148722) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (148722) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (148722) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (148722) PARSED_DATA: Temperature = 27.000000[0m
+[0;33mW (148732) PARSED_DATA: Humidity    = 72.000000[0m
+[0;33mW (148732) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;31mE (151222) MESH-SERVER-MAIN: 2422.000000[0m
+[0;32mI (151302) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (151302) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (151302) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (151312) PARSED_DATA: Temperature = 0.000000[0m
+[0;33mW (151312) PARSED_DATA: Humidity    = 0.000000[0m
+[0;33mW (151322) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;32mI (151322) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;32mI (155762) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (155762) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (155762) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (155762) PARSED_DATA: Temperature = 27.000000[0m
+[0;33mW (155772) PARSED_DATA: Humidity    = 72.000000[0m
+[0;33mW (155772) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;31mE (156222) MESH-SERVER-MAIN: 2415.000000[0m
+[0;32mI (156312) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (156312) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (156312) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (156322) PARSED_DATA: Temperature = 0.000000[0m
+[0;33mW (156322) PARSED_DATA: Humidity    = 0.000000[0m
+[0;33mW (156332) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;32mI (156332) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;32mI (156642) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (156642) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (156642) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (156642) PARSED_DATA: Temperature = 27.000000[0m
+[0;33mW (156652) PARSED_DATA: Humidity    = 72.000000[0m
+[0;33mW (156652) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;31mE (161222) MESH-SERVER-MAIN: 2412.000000[0m
+[0;32mI (161362) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (161362) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (161362) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (161362) PARSED_DATA: Temperature = 0.000000[0m
+[0;33mW (161372) PARSED_DATA: Humidity    = 0.000000[0m
+[0;33mW (161372) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;32mI (161382) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;32mI (162842) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (162842) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (162842) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (162842) PARSED_DATA: Temperature = 27.000000[0m
+[0;33mW (162852) PARSED_DATA: Humidity    = 72.000000[0m
+[0;33mW (162852) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;31mE (166222) MESH-SERVER-MAIN: 2415.000000[0m
+[0;32mI (166302) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (166302) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (166302) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (166312) PARSED_DATA: Temperature = 0.000000[0m
+[0;33mW (166312) PARSED_DATA: Humidity    = 0.000000[0m
+[0;33mW (166322) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;32mI (166322) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;32mI (169812) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (169812) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (169812) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (169812) PARSED_DATA: Temperature = 27.000000[0m
+[0;33mW (169822) PARSED_DATA: Humidity    = 72.000000[0m
+[0;33mW (169822) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;31mE (171222) MESH-SERVER-MAIN: 2416.000000[0m
+[0;32mI (171282) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (171282) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (171282) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (171292) PARSED_DATA: Temperature = 0.000000[0m
+[0;33mW (171292) PARSED_DATA: Humidity    = 0.000000[0m
+[0;33mW (171302) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;32mI (171302) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (176222) MESH-SERVER-MAIN: 2427.000000[0m
+[0;32mI (176302) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (176302) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (176302) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (176302) PARSED_DATA: Temperature = 0.000000[0m
+[0;33mW (176312) PARSED_DATA: Humidity    = 0.000000[0m
+[0;33mW (176312) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;32mI (176322) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;33mW (176582) BLE_MESH: Duplicate SDU from src 0x0033[0m
+[0;32mI (177002) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (177002) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (177002) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (177002) PARSED_DATA: Temperature = 27.000000[0m
+[0;33mW (177012) PARSED_DATA: Humidity    = 72.000000[0m
+[0;33mW (177012) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;31mE (181222) MESH-SERVER-MAIN: 2413.000000[0m
+[0;32mI (181292) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (181292) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (181292) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (181302) PARSED_DATA: Temperature = 0.000000[0m
+[0;33mW (181302) PARSED_DATA: Humidity    = 0.000000[0m
+[0;33mW (181312) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;32mI (181312) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;32mI (183882) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (183882) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (183882) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (183882) PARSED_DATA: Temperature = 27.000000[0m
+[0;33mW (183892) PARSED_DATA: Humidity    = 72.000000[0m
+[0;33mW (183902) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;31mE (186222) MESH-SERVER-MAIN: 2425.000000[0m
+[0;32mI (186402) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (186402) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (186402) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (186412) PARSED_DATA: Temperature = 0.000000[0m
+[0;33mW (186412) PARSED_DATA: Humidity    = 0.000000[0m
+[0;33mW (186422) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;32mI (186422) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;32mI (190902) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (190902) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (190902) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (190902) PARSED_DATA: Temperature = 27.000000[0m
+[0;33mW (190912) PARSED_DATA: Humidity    = 73.000000[0m
+[0;33mW (190912) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;31mE (191222) MESH-SERVER-MAIN: 2429.000000[0m
+[0;32mI (191302) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (191302) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (191302) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (191312) PARSED_DATA: Temperature = 0.000000[0m
+[0;33mW (191312) PARSED_DATA: Humidity    = 0.000000[0m
+[0;33mW (191322) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;32mI (191322) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;32mI (191702) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (191702) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (191702) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (191702) PARSED_DATA: Temperature = 27.000000[0m
+[0;33mW (191712) PARSED_DATA: Humidity    = 73.000000[0m
+[0;33mW (191712) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;31mE (196222) MESH-SERVER-MAIN: 2433.000000[0m
+[0;32mI (196292) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (196292) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (196292) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (196302) PARSED_DATA: Temperature = 0.000000[0m
+[0;33mW (196302) PARSED_DATA: Humidity    = 0.000000[0m
+[0;33mW (196312) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;32mI (196312) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;32mI (198162) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (198162) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (198162) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (198162) PARSED_DATA: Temperature = 27.000000[0m
+[0;33mW (198172) PARSED_DATA: Humidity    = 73.000000[0m
+[0;33mW (198172) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;31mE (201222) MESH-SERVER-MAIN: 2422.000000[0m
+[0;32mI (201452) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (201452) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (201452) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (201462) PARSED_DATA: Temperature = 0.000000[0m
+[0;33mW (201462) PARSED_DATA: Humidity    = 0.000000[0m
+[0;33mW (201472) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;32mI (201472) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;32mI (204962) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (204972) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (204972) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (204972) PARSED_DATA: Temperature = 27.000000[0m
+[0;33mW (204982) PARSED_DATA: Humidity    = 73.000000[0m
+[0;33mW (204982) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;31mE (206222) MESH-SERVER-MAIN: 2431.000000[0m
+[0;32mI (206292) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (206302) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (206302) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (206302) PARSED_DATA: Temperature = 0.000000[0m
+[0;33mW (206312) PARSED_DATA: Humidity    = 0.000000[0m
+[0;33mW (206312) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;32mI (206322) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;32mI (206762) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (206762) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (206762) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (206762) PARSED_DATA: Temperature = 27.000000[0m
+[0;33mW (206772) PARSED_DATA: Humidity    = 73.000000[0m
+[0;33mW (206772) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;31mE (211222) MESH-SERVER-MAIN: 2421.000000[0m
+[0;32mI (211302) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (211302) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (211302) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (211312) PARSED_DATA: Temperature = 0.000000[0m
+[0;33mW (211312) PARSED_DATA: Humidity    = 0.000000[0m
+[0;33mW (211322) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;32mI (211322) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;32mI (212402) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (212412) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (212412) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (212412) PARSED_DATA: Temperature = 27.000000[0m
+[0;33mW (212422) PARSED_DATA: Humidity    = 73.000000[0m
+[0;33mW (212422) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;31mE (216222) MESH-SERVER-MAIN: 2419.000000[0m
+[0;32mI (216302) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (216302) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (216302) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (216302) PARSED_DATA: Temperature = 0.000000[0m
+[0;33mW (216312) PARSED_DATA: Humidity    = 0.000000[0m
+[0;33mW (216312) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;32mI (216322) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;32mI (219042) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (219042) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (219042) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (219042) PARSED_DATA: Temperature = 27.000000[0m
+[0;33mW (219052) PARSED_DATA: Humidity    = 73.000000[0m
+[0;33mW (219052) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;31mE (221222) MESH-SERVER-MAIN: 2429.000000[0m
+[0;32mI (221292) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (221302) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (221302) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (221302) PARSED_DATA: Temperature = 0.000000[0m
+[0;33mW (221312) PARSED_DATA: Humidity    = 0.000000[0m
+[0;33mW (221312) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;32mI (221322) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;32mI (226062) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (226062) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (226062) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (226062) PARSED_DATA: Temperature = 27.000000[0m
+[0;33mW (226072) PARSED_DATA: Humidity    = 73.000000[0m
+[0;33mW (226072) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;31mE (226222) MESH-SERVER-MAIN: 2419.000000[0m
+[0;32mI (226302) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (226302) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (226302) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (226312) PARSED_DATA: Temperature = 0.000000[0m
+[0;33mW (226312) PARSED_DATA: Humidity    = 0.000000[0m
+[0;33mW (226322) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;32mI (226332) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;32mI (226802) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (226802) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (226802) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (226802) PARSED_DATA: Temperature = 27.000000[0m
+[0;33mW (226812) PARSED_DATA: Humidity    = 73.000000[0m
+[0;33mW (226822) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;31mE (231222) MESH-SERVER-MAIN: 2434.000000[0m
+[0;32mI (231292) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (231292) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (231292) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (231302) PARSED_DATA: Temperature = 0.000000[0m
+[0;33mW (231302) PARSED_DATA: Humidity    = 0.000000[0m
+[0;33mW (231312) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;32mI (231312) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;33mW (233272) BLE_MESH: Received already received fragment[0m
+[0;32mI (233382) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (233392) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (233392) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (233392) PARSED_DATA: Temperature = 27.000000[0m
+[0;33mW (233402) PARSED_DATA: Humidity    = 73.000000[0m
+[0;33mW (233402) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;31mE (236222) MESH-SERVER-MAIN: 2437.000000[0m
+[0;32mI (236372) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (236372) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (236372) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (236372) PARSED_DATA: Temperature = 0.000000[0m
+[0;33mW (236382) PARSED_DATA: Humidity    = 0.000000[0m
+[0;33mW (236382) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;32mI (236392) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (241222) MESH-SERVER-MAIN: 2437.000000[0m
+[0;32mI (241292) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (241292) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (241292) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (241302) PARSED_DATA: Temperature = 0.000000[0m
+[0;33mW (241302) PARSED_DATA: Humidity    = 0.000000[0m
+[0;33mW (241312) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;32mI (241312) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;32mI (242322) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (242322) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (242322) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (242322) PARSED_DATA: Temperature = 27.000000[0m
+[0;33mW (242332) PARSED_DATA: Humidity    = 73.000000[0m
+[0;33mW (242332) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;31mE (246222) MESH-SERVER-MAIN: 2426.000000[0m
+[0;32mI (246312) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (246312) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (246312) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (246312) PARSED_DATA: Temperature = 0.000000[0m
+[0;33mW (246322) PARSED_DATA: Humidity    = 0.000000[0m
+[0;33mW (246322) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;32mI (246332) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;32mI (251182) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (251182) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (251182) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (251192) PARSED_DATA: Temperature = 27.000000[0m
+[0;33mW (251192) PARSED_DATA: Humidity    = 73.000000[0m
+[0;33mW (251202) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;31mE (251222) MESH-SERVER-MAIN: 2430.000000[0m
+[0;32mI (251312) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (251312) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (251312) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (251322) PARSED_DATA: Temperature = 0.000000[0m
+[0;33mW (251322) PARSED_DATA: Humidity    = 0.000000[0m
+[0;33mW (251332) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;32mI (251332) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;32mI (251902) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (251902) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (251902) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (251912) PARSED_DATA: Temperature = 27.000000[0m
+[0;33mW (251912) PARSED_DATA: Humidity    = 73.000000[0m
+[0;33mW (251922) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;31mE (256222) MESH-SERVER-MAIN: 2431.000000[0m
+[0;32mI (256302) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (256302) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (256302) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (256302) PARSED_DATA: Temperature = 0.000000[0m
+[0;33mW (256312) PARSED_DATA: Humidity    = 0.000000[0m
+[0;33mW (256312) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;32mI (256322) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;32mI (258322) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (258322) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (258322) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (258322) PARSED_DATA: Temperature = 27.000000[0m
+[0;33mW (258332) PARSED_DATA: Humidity    = 73.000000[0m
+[0;33mW (258332) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;31mE (261222) MESH-SERVER-MAIN: 2445.000000[0m
+[0;32mI (261302) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (261302) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (261302) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (261312) PARSED_DATA: Temperature = 0.000000[0m
+[0;33mW (261312) PARSED_DATA: Humidity    = 0.000000[0m
+[0;33mW (261322) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;32mI (261322) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (266222) MESH-SERVER-MAIN: 2445.000000[0m
+[0;32mI (266352) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (266352) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (266352) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (266362) PARSED_DATA: Temperature = 0.000000[0m
+[0;33mW (266362) PARSED_DATA: Humidity    = 0.000000[0m
+[0;33mW (266372) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;32mI (266382) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;32mI (267342) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (267342) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (267342) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (267342) PARSED_DATA: Temperature = 27.000000[0m
+[0;33mW (267352) PARSED_DATA: Humidity    = 73.000000[0m
+[0;33mW (267352) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;31mE (271222) MESH-SERVER-MAIN: 2433.000000[0m
+[0;32mI (271292) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (271302) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (271302) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (271302) PARSED_DATA: Temperature = 0.000000[0m
+[0;33mW (271302) PARSED_DATA: Humidity    = 0.000000[0m
+[0;33mW (271312) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;32mI (271322) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (276222) MESH-SERVER-MAIN: 2444.000000[0m
+[0;32mI (276312) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (276312) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (276312) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (276312) PARSED_DATA: Temperature = 27.000000[0m
+[0;33mW (276322) PARSED_DATA: Humidity    = 73.000000[0m
+[0;33mW (276322) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;32mI (276332) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (276342) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (276342) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (276342) PARSED_DATA: Temperature = 0.000000[0m
+[0;33mW (276352) PARSED_DATA: Humidity    = 0.000000[0m
+[0;33mW (276352) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;32mI (276362) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;32mI (276602) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (276612) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (276612) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (276612) PARSED_DATA: Temperature = 27.000000[0m
+[0;33mW (276622) PARSED_DATA: Humidity    = 73.000000[0m
+[0;33mW (276622) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;31mE (281222) MESH-SERVER-MAIN: 2452.000000[0m
+[0;32mI (281292) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (281292) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (281292) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (281302) PARSED_DATA: Temperature = 0.000000[0m
+[0;33mW (281302) PARSED_DATA: Humidity    = 0.000000[0m
+[0;33mW (281312) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;32mI (281322) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;32mI (283352) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (283362) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (283362) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (283362) PARSED_DATA: Temperature = 27.000000[0m
+[0;33mW (283372) PARSED_DATA: Humidity    = 73.000000[0m
+[0;33mW (283372) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;31mE (286222) MESH-SERVER-MAIN: 2436.000000[0m
+[0;32mI (286302) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (286302) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (286302) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (286302) PARSED_DATA: Temperature = 0.000000[0m
+[0;33mW (286312) PARSED_DATA: Humidity    = 0.000000[0m
+[0;33mW (286312) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;32mI (286322) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;32mI (290322) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (290322) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (290322) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (290322) PARSED_DATA: Temperature = 27.000000[0m
+[0;33mW (290332) PARSED_DATA: Humidity    = 73.000000[0m
+[0;33mW (290332) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;31mE (291222) MESH-SERVER-MAIN: 2433.000000[0m
+[0;32mI (291302) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (291302) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (291302) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (291312) PARSED_DATA: Temperature = 0.000000[0m
+[0;33mW (291312) PARSED_DATA: Humidity    = 0.000000[0m
+[0;33mW (291322) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;32mI (291322) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;32mI (291552) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (291552) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (291552) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (291552) PARSED_DATA: Temperature = 27.000000[0m
+[0;33mW (291562) PARSED_DATA: Humidity    = 73.000000[0m
+[0;33mW (291562) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;31mE (296222) MESH-SERVER-MAIN: 2456.000000[0m
+[0;32mI (296292) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (296302) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (296302) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (296302) PARSED_DATA: Temperature = 0.000000[0m
+[0;33mW (296312) PARSED_DATA: Humidity    = 0.000000[0m
+[0;33mW (296312) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;32mI (296322) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;32mI (297342) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (297352) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (297352) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (297352) PARSED_DATA: Temperature = 27.000000[0m
+[0;33mW (297362) PARSED_DATA: Humidity    = 73.000000[0m
+[0;33mW (297362) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;31mE (301222) MESH-SERVER-MAIN: 2449.000000[0m
+[0;32mI (301292) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (301292) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (301302) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (301302) PARSED_DATA: Temperature = 0.000000[0m
+[0;33mW (301302) PARSED_DATA: Humidity    = 0.000000[0m
+[0;33mW (301312) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;32mI (301312) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;33mW (304532) BLE_MESH: Received already received fragment[0m
+[0;33mW (304542) BLE_MESH: Received already received fragment[0m
+[0;32mI (304682) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (304682) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (304682) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (304682) PARSED_DATA: Temperature = 27.000000[0m
+[0;33mW (304692) PARSED_DATA: Humidity    = 73.000000[0m
+[0;33mW (304692) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;31mE (306222) MESH-SERVER-MAIN: 2396.000000[0m
+[0;32mI (306292) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (306292) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (306292) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (306302) PARSED_DATA: Temperature = 0.000000[0m
+[0;33mW (306302) PARSED_DATA: Humidity    = 0.000000[0m
+[0;33mW (306312) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;32mI (306322) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (311222) MESH-SERVER-MAIN: 2452.000000[0m
+[0;32mI (311282) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (311282) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (311282) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (311292) PARSED_DATA: Temperature = 0.000000[0m
+[0;33mW (311292) PARSED_DATA: Humidity    = 0.000000[0m
+[0;33mW (311302) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;32mI (311302) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;32mI (311402) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (311402) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (311402) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (311412) PARSED_DATA: Temperature = 27.000000[0m
+[0;33mW (311412) PARSED_DATA: Humidity    = 73.000000[0m
+[0;33mW (311422) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;31mE (316222) MESH-SERVER-MAIN: 2445.000000[0m
+[0;32mI (316302) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (316302) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (316302) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (316302) PARSED_DATA: Temperature = 0.000000[0m
+[0;33mW (316312) PARSED_DATA: Humidity    = 0.000000[0m
+[0;33mW (316312) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;32mI (316322) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;32mI (318622) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (318632) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (318632) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (318632) PARSED_DATA: Temperature = 27.000000[0m
+[0;33mW (318642) PARSED_DATA: Humidity    = 73.000000[0m
+[0;33mW (318642) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;31mE (321222) MESH-SERVER-MAIN: 2451.000000[0m
+[0;32mI (321422) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (321422) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (321422) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (321422) PARSED_DATA: Temperature = 0.000000[0m
+[0;33mW (321432) PARSED_DATA: Humidity    = 0.000000[0m
+[0;33mW (321432) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;32mI (321442) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (326222) MESH-SERVER-MAIN: 2450.000000[0m
+[0;32mI (326302) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (326302) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (326302) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (326312) PARSED_DATA: Temperature = 0.000000[0m
+[0;33mW (326312) PARSED_DATA: Humidity    = 0.000000[0m
+[0;33mW (326322) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;32mI (326322) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;32mI (327762) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (327772) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (327772) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (327772) PARSED_DATA: Temperature = 27.000000[0m
+[0;33mW (327782) PARSED_DATA: Humidity    = 72.000000[0m
+[0;33mW (327782) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;31mE (331222) MESH-SERVER-MAIN: 2472.000000[0m
+[0;32mI (331292) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (331292) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (331292) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (331302) PARSED_DATA: Temperature = 0.000000[0m
+[0;33mW (331302) PARSED_DATA: Humidity    = 0.000000[0m
+[0;33mW (331312) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;32mI (331312) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (336222) MESH-SERVER-MAIN: 2463.000000[0m
+[0;32mI (336282) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (336282) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (336282) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (336292) PARSED_DATA: Temperature = 0.000000[0m
+[0;33mW (336292) PARSED_DATA: Humidity    = 0.000000[0m
+[0;33mW (336302) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;32mI (336302) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;32mI (336512) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (336512) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (336512) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (336512) PARSED_DATA: Temperature = 27.000000[0m
+[0;33mW (336522) PARSED_DATA: Humidity    = 72.000000[0m
+[0;33mW (336522) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;31mE (341222) MESH-SERVER-MAIN: 2467.000000[0m
+[0;32mI (341292) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (341292) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (341292) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (341302) PARSED_DATA: Temperature = 0.000000[0m
+[0;33mW (341302) PARSED_DATA: Humidity    = 0.000000[0m
+[0;33mW (341312) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;32mI (341312) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;32mI (343672) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (343672) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (343672) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (343682) PARSED_DATA: Temperature = 27.000000[0m
+[0;33mW (343682) PARSED_DATA: Humidity    = 73.000000[0m
+[0;33mW (343692) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;31mE (346222) MESH-SERVER-MAIN: 2454.000000[0m
+[0;32mI (346292) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (346292) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (346292) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (346302) PARSED_DATA: Temperature = 0.000000[0m
+[0;33mW (346302) PARSED_DATA: Humidity    = 0.000000[0m
+[0;33mW (346312) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;32mI (346312) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (351222) MESH-SERVER-MAIN: 2449.000000[0m
+[0;32mI (351292) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (351292) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (351292) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (351302) PARSED_DATA: Temperature = 0.000000[0m
+[0;33mW (351302) PARSED_DATA: Humidity    = 0.000000[0m
+[0;33mW (351312) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;32mI (351322) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;32mI (352682) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (352682) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (352682) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (352682) PARSED_DATA: Temperature = 27.000000[0m
+[0;33mW (352692) PARSED_DATA: Humidity    = 72.000000[0m
+[0;33mW (352692) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;31mE (356222) MESH-SERVER-MAIN: 2457.000000[0m
+[0;32mI (356302) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (356302) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (356302) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (356302) PARSED_DATA: Temperature = 0.000000[0m
+[0;33mW (356312) PARSED_DATA: Humidity    = 0.000000[0m
+[0;33mW (356312) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;32mI (356322) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (361222) MESH-SERVER-MAIN: 2462.000000[0m
+[0;32mI (361302) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (361302) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (361302) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (361302) PARSED_DATA: Temperature = 0.000000[0m
+[0;33mW (361312) PARSED_DATA: Humidity    = 0.000000[0m
+[0;33mW (361312) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;32mI (361322) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;32mI (363622) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (363622) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (363622) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (363622) PARSED_DATA: Temperature = 27.000000[0m
+[0;33mW (363632) PARSED_DATA: Humidity    = 72.000000[0m
+[0;33mW (363632) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;31mE (366222) MESH-SERVER-MAIN: 2384.000000[0m
+[0;32mI (366292) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (366292) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (366292) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (366302) PARSED_DATA: Temperature = 0.000000[0m
+[0;33mW (366302) PARSED_DATA: Humidity    = 0.000000[0m
+[0;33mW (366312) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;32mI (366312) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;32mI (370582) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (370592) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (370592) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (370592) PARSED_DATA: Temperature = 27.000000[0m
+[0;33mW (370602) PARSED_DATA: Humidity    = 72.000000[0m
+[0;33mW (370602) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;31mE (371222) MESH-SERVER-MAIN: 2458.000000[0m
+[0;32mI (371282) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (371282) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (371282) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (371292) PARSED_DATA: Temperature = 0.000000[0m
+[0;33mW (371292) PARSED_DATA: Humidity    = 0.000000[0m
+[0;33mW (371302) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;32mI (371302) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;32mI (371912) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (371912) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (371912) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (371912) PARSED_DATA: Temperature = 27.000000[0m
+[0;33mW (371942) PARSED_DATA: Humidity    = 72.000000[0m
+[0;33mW (371942) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;31mE (376222) MESH-SERVER-MAIN: 2472.000000[0m
+[0;32mI (376292) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (376292) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (376292) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (376302) PARSED_DATA: Temperature = 0.000000[0m
+[0;33mW (376302) PARSED_DATA: Humidity    = 0.000000[0m
+[0;33mW (376312) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;32mI (376312) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;32mI (377762) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (377762) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (377762) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (377762) PARSED_DATA: Temperature = 27.000000[0m
+[0;33mW (377772) PARSED_DATA: Humidity    = 72.000000[0m
+[0;33mW (377772) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;31mE (381222) MESH-SERVER-MAIN: 2466.000000[0m
+[0;32mI (381292) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (381292) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (381292) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (381302) PARSED_DATA: Temperature = 0.000000[0m
+[0;33mW (381302) PARSED_DATA: Humidity    = 0.000000[0m
+[0;33mW (381312) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;32mI (381312) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (386222) MESH-SERVER-MAIN: 2447.000000[0m
+[0;32mI (386292) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (386302) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (386302) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (386302) PARSED_DATA: Temperature = 0.000000[0m
+[0;33mW (386312) PARSED_DATA: Humidity    = 0.000000[0m
+[0;33mW (386312) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;32mI (386322) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;33mW (387072) BLE_MESH: Received already received fragment[0m
+[0;33mW (387142) BLE_MESH: Received already received fragment[0m
+[0;32mI (387222) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (387222) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (387222) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (387222) PARSED_DATA: Temperature = 27.000000[0m
+[0;33mW (387232) PARSED_DATA: Humidity    = 72.000000[0m
+[0;33mW (387232) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;31mE (391222) MESH-SERVER-MAIN: 2462.000000[0m
+[0;32mI (391292) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (391292) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (391292) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (391302) PARSED_DATA: Temperature = 0.000000[0m
+[0;33mW (391302) PARSED_DATA: Humidity    = 0.000000[0m
+[0;33mW (391312) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;32mI (391312) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (396222) MESH-SERVER-MAIN: 2472.000000[0m
+[0;32mI (396412) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (396412) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (396412) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (396412) PARSED_DATA: Temperature = 0.000000[0m
+[0;33mW (396422) PARSED_DATA: Humidity    = 0.000000[0m
+[0;33mW (396422) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;32mI (396442) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;32mI (397802) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (397802) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (397802) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (397802) PARSED_DATA: Temperature = 27.000000[0m
+[0;33mW (397812) PARSED_DATA: Humidity    = 72.000000[0m
+[0;33mW (397812) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;31mE (401222) MESH-SERVER-MAIN: 2464.000000[0m
+[0;32mI (401292) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (401292) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (401292) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (401302) PARSED_DATA: Temperature = 0.000000[0m
+[0;33mW (401302) PARSED_DATA: Humidity    = 0.000000[0m
+[0;33mW (401312) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;32mI (401312) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;32mI (404682) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (404692) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (404692) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (404692) PARSED_DATA: Temperature = 27.000000[0m
+[0;33mW (404702) PARSED_DATA: Humidity    = 72.000000[0m
+[0;33mW (404702) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;31mE (406222) MESH-SERVER-MAIN: 2466.000000[0m
+[0;32mI (406302) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (406302) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (406302) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (406302) PARSED_DATA: Temperature = 0.000000[0m
+[0;33mW (406312) PARSED_DATA: Humidity    = 0.000000[0m
+[0;33mW (406312) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;32mI (406322) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (411222) MESH-SERVER-MAIN: 2466.000000[0m
+[0;32mI (411362) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (411362) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (411362) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (411372) PARSED_DATA: Temperature = 0.000000[0m
+[0;33mW (411372) PARSED_DATA: Humidity    = 0.000000[0m
+[0;33mW (411382) PARSED_DATA: temp_ADC        = 0.000000[0m
+[0;32mI (411382) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;32mI (411832) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (411832) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (411832) PARSED_DATA: Device Name = esp_3[0m
+[0;33mW (411832) PARSED_DATA: Temperature = 27.000000[0m
+[0;33mW (411842) PARSED_DATA: Humidity    = 72.000000[0m
+[0;33mW (411842) PARSED_DATA: temp_ADC        = 0.000000[0m

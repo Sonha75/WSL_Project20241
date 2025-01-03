@@ -1,0 +1,200 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D "D:\ESP_IDF\Ble mesh\esp32_btmesh\ble-mesh-custom-sensor-model-code\node_BH\BLE_MESH_Node_BH\build\bootloader\esp-idf\esptool_py" && D:\ESP_IDF\Espressif\python_env\idf5.1_py3.11_env\Scripts\python.exe D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 "D:/ESP_IDF/Ble mesh/esp32_btmesh/ble-mesh-custom-sensor-model-code/node_BH/BLE_MESH_Node_BH/build/bootloader/bootloader.bin""
+Bootloader binary size 0x6810 bytes. 0x7f0 bytes (7%) free.
+[2/8] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+D:/ESP_IDF/Ble mesh/esp32_btmesh/ble-mesh-custom-sensor-model-code/node_BH/BLE_MESH_Node_BH/main/main.c: In function 'oled_task':
+D:/ESP_IDF/Ble mesh/esp32_btmesh/ble-mesh-custom-sensor-model-code/node_BH/BLE_MESH_Node_BH/main/main.c:71:30: warning: format '%lld' expects argument of type 'long long int', but argument 3 has type 'int' [-Wformat=]
+   71 |             sprintf(str, "%lld", level_BH1750);
+      |                           ~~~^   ~~~~~~~~~~~~
+      |                              |   |
+      |                              |   int
+      |                              long long int
+      |                           %d
+In file included from D:/ESP_IDF/Ble mesh/esp32_btmesh/ble-mesh-custom-sensor-model-code/node_BH/BLE_MESH_Node_BH/main/main.c:4:
+D:/ESP_IDF/Ble mesh/esp32_btmesh/ble-mesh-custom-sensor-model-code/node_BH/BLE_MESH_Node_BH/main/main.c: In function 'init_BH1750':
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/log/include/esp_log.h:265:27: warning: format '%lld' expects argument of type 'long long int', but argument 6 has type 'int' [-Wformat=]
+  265 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/log/include/esp_log.h:268:27: note: in expansion of macro 'LOG_COLOR'
+  268 | #define LOG_COLOR_E       LOG_COLOR(LOG_COLOR_RED)
+      |                           ^~~~~~~~~
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/log/include/esp_log.h:282:37: note: in expansion of macro 'LOG_COLOR_E'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/log/include/esp_log.h:410:86: note: in expansion of macro 'LOG_FORMAT'
+  410 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/log/include/esp_log.h:342:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  342 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/ESP_IDF/Ble mesh/esp32_btmesh/ble-mesh-custom-sensor-model-code/node_BH/BLE_MESH_Node_BH/main/main.c:149:9: note: in expansion of macro 'ESP_LOGI'
+  149 |         ESP_LOGI(TAG, "PRINT: %lld", level_BH1750);
+      |         ^~~~~~~~
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/log/include/esp_log.h:265:27: warning: format '%lld' expects argument of type 'long long int', but argument 6 has type 'int' [-Wformat=]
+  265 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/log/include/esp_log.h:269:27: note: in expansion of macro 'LOG_COLOR'
+  269 | #define LOG_COLOR_W       LOG_COLOR(LOG_COLOR_BROWN)
+      |                           ^~~~~~~~~
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/log/include/esp_log.h:282:37: note: in expansion of macro 'LOG_COLOR_W'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/log/include/esp_log.h:411:86: note: in expansion of macro 'LOG_FORMAT'
+  411 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/log/include/esp_log.h:342:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  342 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/ESP_IDF/Ble mesh/esp32_btmesh/ble-mesh-custom-sensor-model-code/node_BH/BLE_MESH_Node_BH/main/main.c:149:9: note: in expansion of macro 'ESP_LOGI'
+  149 |         ESP_LOGI(TAG, "PRINT: %lld", level_BH1750);
+      |         ^~~~~~~~
+D:/ESP_IDF/Ble mesh/esp32_btmesh/ble-mesh-custom-sensor-model-code/node_BH/BLE_MESH_Node_BH/main/main.c:149:1: warning: format '%lld' expects argument of type 'long long int', but argument 6 has type 'int' [-Wformat=]
+  149 |         ESP_LOGI(TAG, "PRINT: %lld", level_BH1750);
+      | ^       ~~~
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/log/include/esp_log.h:282:59: note: in definition of macro 'LOG_FORMAT'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                           ^~~~~~
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/log/include/esp_log.h:342:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  342 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/ESP_IDF/Ble mesh/esp32_btmesh/ble-mesh-custom-sensor-model-code/node_BH/BLE_MESH_Node_BH/main/main.c:149:9: note: in expansion of macro 'ESP_LOGI'
+  149 |         ESP_LOGI(TAG, "PRINT: %lld", level_BH1750);
+      |         ^~~~~~~~
+D:/ESP_IDF/Ble mesh/esp32_btmesh/ble-mesh-custom-sensor-model-code/node_BH/BLE_MESH_Node_BH/main/main.c:149:1: warning: format '%lld' expects argument of type 'long long int', but argument 6 has type 'int' [-Wformat=]
+  149 |         ESP_LOGI(TAG, "PRINT: %lld", level_BH1750);
+      | ^       ~~~
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/log/include/esp_log.h:282:59: note: in definition of macro 'LOG_FORMAT'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                           ^~~~~~
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/log/include/esp_log.h:342:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  342 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/ESP_IDF/Ble mesh/esp32_btmesh/ble-mesh-custom-sensor-model-code/node_BH/BLE_MESH_Node_BH/main/main.c:149:9: note: in expansion of macro 'ESP_LOGI'
+  149 |         ESP_LOGI(TAG, "PRINT: %lld", level_BH1750);
+      |         ^~~~~~~~
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/log/include/esp_log.h:265:27: warning: format '%lld' expects argument of type 'long long int', but argument 6 has type 'int' [-Wformat=]
+  265 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/log/include/esp_log.h:270:27: note: in expansion of macro 'LOG_COLOR'
+  270 | #define LOG_COLOR_I       LOG_COLOR(LOG_COLOR_GREEN)
+      |                           ^~~~~~~~~
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/log/include/esp_log.h:282:37: note: in expansion of macro 'LOG_COLOR_I'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/log/include/esp_log.h:414:86: note: in expansion of macro 'LOG_FORMAT'
+  414 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/log/include/esp_log.h:342:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  342 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/ESP_IDF/Ble mesh/esp32_btmesh/ble-mesh-custom-sensor-model-code/node_BH/BLE_MESH_Node_BH/main/main.c:149:9: note: in expansion of macro 'ESP_LOGI'
+  149 |         ESP_LOGI(TAG, "PRINT: %lld", level_BH1750);
+      |         ^~~~~~~~
+D:/ESP_IDF/Ble mesh/esp32_btmesh/ble-mesh-custom-sensor-model-code/node_BH/BLE_MESH_Node_BH/main/main.c: At top level:
+D:/ESP_IDF/Ble mesh/esp32_btmesh/ble-mesh-custom-sensor-model-code/node_BH/BLE_MESH_Node_BH/main/main.c:32:16: warning: 'ticks' defined but not used [-Wunused-variable]
+   32 | static uint8_t ticks = 0;
+      |                ^~~~~
+D:/ESP_IDF/Ble mesh/esp32_btmesh/ble-mesh-custom-sensor-model-code/node_BH/BLE_MESH_Node_BH/main/main.c:31:22: warning: 'bh1750_handle' defined but not used [-Wunused-variable]
+   31 | static ESP32_BH1750 *bh1750_handle;
+      |                      ^~~~~~~~~~~~~
+[3/8] Linking C static library esp-idf\main\libmain.a
+[4/8] Generating ld/sections.ld
+[5/8] Linking CXX executable BLE_MESH_Node_BH.elf
+[6/8] Generating binary image from built executable
+esptool.py v4.7.dev3
+Creating esp32 image...
+Merged 27 ELF sections
+Successfully created esp32 image.
+Generated D:/ESP_IDF/Ble mesh/esp32_btmesh/ble-mesh-custom-sensor-model-code/node_BH/BLE_MESH_Node_BH/build/BLE_MESH_Node_BH.bin
+[7/8] cmd.exe /C "cd /D "D:\ESP_IDF\Ble mesh\esp32_btmesh\ble-mesh-custom-sensor-model-code\node_BH\BLE_MESH_Node_BH\build\esp-idf\esptool_py" && D:\ESP_IDF\Espressif\python_env\idf5.1_py3.11_env\Scripts\python.exe D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/partition_table/check_sizes.py --offset 0x8000 partition --type app "D:/ESP_IDF/Ble mesh/esp32_btmesh/ble-mesh-custom-sensor-model-code/node_BH/BLE_MESH_Node_BH/build/partition_table/partition-table.bin" "D:/ESP_IDF/Ble mesh/esp32_btmesh/ble-mesh-custom-sensor-model-code/node_BH/BLE_MESH_Node_BH/build/BLE_MESH_Node_BH.bin""
+BLE_MESH_Node_BH.bin binary size 0xff920 bytes. Smallest app partition is 0x220000 bytes. 0x1206e0 bytes (53%) free.
+[7/8] cmd.exe /C "cd /D D:\ESP_IDF\Espressif\frameworks\esp-idf-v5.1.2\components\esptool_py && D:\ESP_IDF\Espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2 -D SERIAL_TOOL=D:/ESP_IDF/Espressif/python_env/idf5.1_py3.11_env/Scripts/python.exe;;D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D "WORKING_DIRECTORY=D:/ESP_IDF/Ble mesh/esp32_btmesh/ble-mesh-custom-sensor-model-code/node_BH/BLE_MESH_Node_BH/build" -P D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/esptool_py/run_serial_tool.cmake"
+esptool.py --chip esp32 -p COM11 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 4MB 0x1000 bootloader/bootloader.bin 0x20000 BLE_MESH_Node_BH.bin 0x8000 partition_table/partition-table.bin 0xf000 ota_data_initial.bin
+esptool.py v4.7.dev3
+Serial port COM11
+Connecting....
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: 10:06:1c:b5:ae:e0
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00020000 to 0x0011ffff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Flash will be erased from 0x0000f000 to 0x00010fff...
+Compressed 26640 bytes to 16691...
+Writing at 0x00001000... (50 %)
+Writing at 0x0000768d... (100 %)
+Wrote 26640 bytes (16691 compressed) at 0x00001000 in 0.6 seconds (effective 334.7 kbit/s)...
+Hash of data verified.
+Compressed 1046816 bytes to 599460...
+Writing at 0x00020000... (2 %)
+Writing at 0x0002a762... (5 %)
+Writing at 0x0003ba7e... (8 %)
+Writing at 0x00049f15... (10 %)
+Writing at 0x00058665... (13 %)
+Writing at 0x0005e42a... (16 %)
+Writing at 0x000642ca... (18 %)
+Writing at 0x00069b31... (21 %)
+Writing at 0x0006f3c4... (24 %)
+Writing at 0x00074b08... (27 %)
+Writing at 0x0007ad2d... (29 %)
+Writing at 0x0008106a... (32 %)
+Writing at 0x00086b96... (35 %)
+Writing at 0x0008ce0a... (37 %)
+Writing at 0x00094af6... (40 %)
+Writing at 0x0009b2cf... (43 %)
+Writing at 0x000a13f7... (45 %)
+Writing at 0x000a6e3c... (48 %)
+Writing at 0x000ac6f8... (51 %)
+Writing at 0x000b1eab... (54 %)
+Writing at 0x000b7ce8... (56 %)
+Writing at 0x000be737... (59 %)
+Writing at 0x000c4776... (62 %)
+Writing at 0x000ca6fa... (64 %)
+Writing at 0x000d084c... (67 %)
+Writing at 0x000d642d... (70 %)
+Writing at 0x000dc813... (72 %)
+Writing at 0x000e2927... (75 %)
+Writing at 0x000e89fd... (78 %)
+Writing at 0x000ee4af... (81 %)
+Writing at 0x000f3c5c... (83 %)
+Writing at 0x000fb4b8... (86 %)
+Writing at 0x00102f1b... (89 %)
+Writing at 0x0010aba6... (91 %)
+Writing at 0x00110990... (94 %)
+Writing at 0x0011635a... (97 %)
+Writing at 0x0011bec5... (100 %)
+Wrote 1046816 bytes (599460 compressed) at 0x00020000 in 13.7 seconds (effective 610.8 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.0 seconds (effective 639.2 kbit/s)...
+Hash of data verified.
+Compressed 8192 bytes to 31...
+Writing at 0x0000f000... (100 %)
+Wrote 8192 bytes (31 compressed) at 0x0000f000 in 0.1 seconds (effective 1300.1 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

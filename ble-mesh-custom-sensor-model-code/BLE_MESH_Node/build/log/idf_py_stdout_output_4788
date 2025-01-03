@@ -1,0 +1,330 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jul  4 2024 09:25:44[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 otadata          OTA data         01 00 0000f000 00002000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00020000 00220000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) boot: Defaulting to factory image[0m
+[0;32mI (101) esp_image: segment 0: paddr=00020020 vaddr=3f400020 size=33ee4h (212708) map[0m
+[0;32mI (186) esp_image: segment 1: paddr=00053f0c vaddr=3ffbdb60 size=0536ch ( 21356) load[0m
+[0;32mI (195) esp_image: segment 2: paddr=00059280 vaddr=40080000 size=06d98h ( 28056) load[0m
+[0;32mI (207) esp_image: segment 3: paddr=00060020 vaddr=400d0020 size=acdd0h (708048) map[0m
+[0;32mI (463) esp_image: segment 4: paddr=0010cdf8 vaddr=40086d98 size=12fa4h ( 77732) load[0m
+[0;32mI (508) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (509) boot: Disabling RNG early entropy source...[0m
+[0;32mI (520) cpu_start: Multicore app[0m
+[0;32mI (520) cpu_start: Pro cpu up.[0m
+[0;32mI (521) cpu_start: Starting app cpu, entry point is 0x4008149c[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (540) cpu_start: Pro cpu start user code[0m
+[0;32mI (541) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (541) cpu_start: Application information:[0m
+[0;32mI (545) cpu_start: Project name:     BLE_MESH_Node[0m
+[0;32mI (551) cpu_start: App version:      aa62094-dirty[0m
+[0;32mI (556) cpu_start: Compile time:     Jul  4 2024 09:25:30[0m
+[0;32mI (562) cpu_start: ELF file SHA256:  3b1c3aa6001f2bb5...[0m
+[0;32mI (568) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (574) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (578) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (583) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (588) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (595) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (601) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (607) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (613) heap_init: At 3FFCA708 len 000158F8 (86 KiB): DRAM[0m
+[0;32mI (620) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (626) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (632) heap_init: At 40099D3C len 000062C4 (24 KiB): IRAM[0m
+[0;32mI (640) spi_flash: detected chip: generic[0m
+[0;32mI (643) spi_flash: flash io: dio[0m
+[0;33mW (648) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (656) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (661) app_start: Starting scheduler on CPU0[0m
+[0;32m[0;32mI (666) app_start: Starting scheduler on CPU1[0m
+I (666) main_task: Started on CPU0[0m
+[0;32mI (676) main_task: Calling app_main()[0m
+[0;32mI (676) MESH-SERVER-MAIN: Initializing...[0m
+use esp timer !!!
+[0;31mE (676) esp_timer: Task is already initialized[0m
+[0;32mI (686) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (1736) MESH-SERVER-MAIN: Install OK.........[0m
+[0;32mI (1736) MESH-SERVER-MAIN: INIT OK.........[0m
+ESP_ERROR_CHECK failed: esp_err_t 0xffffffff (ESP_FAIL) at 0x400d8965
+file: "./main/bh1750.c" line 87
+func: BH1750_write8
+expression: i2c_master_write_to_device(BH1750->i2c_port, BH1750->addr, buffer, 1, portMAX_DELAY)
+
+abort() was called at PC 0x400927df on core 0
+
+
+Backtrace: 0x40081b46:0x3ffbbaa0 0x400927e9:0x3ffbbac0 0x40097fca:0x3ffbbae0 0x400927df:0x3ffbbb50 0x400d8965:0x3ffbbb80 0x400d8979:0x3ffbbbb0 0x400d861c:0x3ffbbbd0 0x400d86a9:0x3ffbbc20 0x4017aca3:0x3ffbbc50 0x40094f29:0x3ffbbc80
+
+
+
+
+ELF file SHA256: 3b1c3aa6001f2bb5
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jul  4 2024 09:25:44[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 otadata          OTA data         01 00 0000f000 00002000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00020000 00220000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) boot: Defaulting to factory image[0m
+[0;32mI (101) esp_image: segment 0: paddr=00020020 vaddr=3f400020 size=33ee4h (212708) map[0m
+[0;32mI (186) esp_image: segment 1: paddr=00053f0c vaddr=3ffbdb60 size=0536ch ( 21356) load[0m
+[0;32mI (195) esp_image: segment 2: paddr=00059280 vaddr=40080000 size=06d98h ( 28056) load[0m
+[0;32mI (207) esp_image: segment 3: paddr=00060020 vaddr=400d0020 size=acdd0h (708048) map[0m
+[0;32mI (463) esp_image: segment 4: paddr=0010cdf8 vaddr=40086d98 size=12fa4h ( 77732) load[0m
+[0;32mI (508) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (508) boot: Disabling RNG early entropy source...[0m
+[0;32mI (520) cpu_start: Multicore app[0m
+[0;32mI (520) cpu_start: Pro cpu up.[0m
+[0;32mI (520) cpu_start: Starting app cpu, entry point is 0x4008149c[0m
+[0;32mI (510) cpu_start: App cpu up.[0m
+[0;32mI (541) cpu_start: Pro cpu start user code[0m
+[0;32mI (541) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (541) cpu_start: Application information:[0m
+[0;32mI (545) cpu_start: Project name:     BLE_MESH_Node[0m
+[0;32mI (551) cpu_start: App version:      aa62094-dirty[0m
+[0;32mI (556) cpu_start: Compile time:     Jul  4 2024 09:25:30[0m
+[0;32mI (562) cpu_start: ELF file SHA256:  3b1c3aa6001f2bb5...[0m
+[0;32mI (568) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (574) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (578) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (583) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (588) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (595) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (601) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (607) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (614) heap_init: At 3FFCA708 len 000158F8 (86 KiB): DRAM[0m
+[0;32mI (620) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (626) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (633) heap_init: At 40099D3C len 000062C4 (24 KiB): IRAM[0m
+[0;32mI (640) spi_flash: detected chip: generic[0m
+[0;32mI (643) spi_flash: flash io: dio[0m
+[0;33mW (648) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (656) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (662) app_start: Starting scheduler on CPU0[0m
+[0;32m[0;32mI (666) app_start: Starting scheduler on CPU1[0m
+I (666) main_task: Started on CPU0[0m
+[0;32mI (676) main_task: Calling app_main()[0m
+[0;32mI (676) MESH-SERVER-MAIN: Initializing...[0m
+use esp timer !!!
+[0;31mE (676) esp_timer: Task is already initialized[0m
+[0;32mI (686) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (1736) MESH-SERVER-MAIN: Install OK.........[0m
+[0;32mI (1736) MESH-SERVER-MAIN: INIT OK.........[0m
+ESP_ERROR_CHECK failed: esp_err_t 0xffffffff (ESP_FAIL) at 0x400d8965
+file: "./main/bh1750.c" line 87
+func: BH1750_write8
+expression: i2c_master_write_to_device(BH1750->i2c_port, BH1750->addr, buffer, 1, portMAX_DELAY)
+
+abort() was called at PC 0x400927df on core 0
+
+
+Backtrace: 0x40081b46:0x3ffbbaa0 0x400927e9:0x3ffbbac0 0x40097fca:0x3ffbbae0 0x400927df:0x3ffbbb50 0x400d8965:0x3ffbbb80 0x400d8979:0x3ffbbbb0 0x400d861c:0x3ffbbbd0 0x400d86a9:0x3ffbbc20 0x4017aca3:0x3ffbbc50 0x40094f29:0x3ffbbc80
+
+
+
+
+ELF file SHA256: 3b1c3aa6001f2bb5
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jul  4 2024 09:25:44[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 otadata          OTA data         01 00 0000f000 00002000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00020000 00220000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) boot: Defaulting to factory image[0m
+[0;32mI (101) esp_image: segment 0: paddr=00020020 vaddr=3f400020 size=33ee4h (212708) map[0m
+[0;32mI (186) esp_image: segment 1: paddr=00053f0c vaddr=3ffbdb60 size=0536ch ( 21356) load[0m
+[0;32mI (195) esp_image: segment 2: paddr=00059280 vaddr=40080000 size=06d98h ( 28056) load[0m
+[0;32mI (207) esp_image: segment 3: paddr=00060020 vaddr=400d0020 size=acdd0h (708048) map[0m
+[0;32mI (463) esp_image: segment 4: paddr=0010cdf8 vaddr=40086d98 size=12fa4h ( 77732) load[0m
+[0;32mI (508) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (508) boot: Disabling RNG early entropy source...[0m
+[0;32mI (520) cpu_start: Multicore app[0m
+[0;32mI (520) cpu_start: Pro cpu up.[0m
+[0;32mI (520) cpu_start: Starting app cpu, entry point is 0x4008149c[0m
+[0;32mI (510) cpu_start: App cpu up.[0m
+[0;32mI (541) cpu_start: Pro cpu start user code[0m
+[0;32mI (541) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (541) cpu_start: Application information:[0m
+[0;32mI (545) cpu_start: Project name:     BLE_MESH_Node[0m
+[0;32mI (551) cpu_start: App version:      aa62094-dirty[0m
+[0;32mI (556) cpu_start: Compile time:     Jul  4 2024 09:25:30[0m
+[0;32mI (562) cpu_start: ELF file SHA256:  3b1c3aa6001f2bb5...[0m
+[0;32mI (568) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (574) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (578) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (583) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (588) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (595) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (601) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (607) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (614) heap_init: At 3FFCA708 len 000158F8 (86 KiB): DRAM[0m
+[0;32mI (620) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (626) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (633) heap_init: At 40099D3C len 000062C4 (24 KiB): IRAM[0m
+[0;32mI (640) spi_flash: detected chip: generic[0m
+[0;32mI (643) spi_flash: flash io: dio[0m
+[0;33mW (648) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (656) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (662) app_start: Starting scheduler on CPU0[0m
+[0;32m[0;32mI (666) app_start: Starting scheduler on CPU1[0m
+I (666) main_task: Started on CPU0[0m
+[0;32mI (676) main_task: Calling app_main()[0m
+[0;32mI (676) MESH-SERVER-MAIN: Initializing...[0m
+use esp timer !!!
+[0;31mE (676) esp_timer: Task is already initialized[0m
+[0;32mI (686) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (1736) MESH-SERVER-MAIN: Install OK.........[0m
+[0;32mI (1736) MESH-SERVER-MAIN: INIT OK.........[0m
+ESP_ERROR_CHECK failed: esp_err_t 0xffffffff (ESP_FAIL) at 0x400d8965
+file: "./main/bh1750.c" line 87
+func: BH1750_write8
+expression: i2c_master_write_to_device(BH1750->i2c_port, BH1750->addr, buffer, 1, portMAX_DELAY)
+
+abort() was called at PC 0x400927df on core 0
+
+
+Backtrace: 0x40081b46:0x3ffbbaa0 0x400927e9:0x3ffbbac0 0x40097fca:0x3ffbbae0 0x400927df:0x3ffbbb50 0x400d8965:0x3ffbbb80 0x400d8979:0x3ffbbbb0 0x400d861c:0x3ffbbbd0 0x400d86a9:0x3ffbbc20 0x4017aca3:0x3ffbbc50 0x40094f29:0x3ffbbc80
+
+
+
+
+ELF file SHA256: 3b1c3aa6001f2bb5
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jul  4 2024 09:25:44[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 otadata          OTA data         01 00 0000f000 00002000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00020000 00220000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) boot: Defaulting to factory image[0m
+[0;32mI (101) esp_image: segment 0: paddr=00020020 vaddr=3f400020 size=33ee4h (212708) map[0m
+[0;32mI (186) esp_image: segment 1: paddr=00053f0c vaddr=3ffbdb60 size=0536ch ( 21356) load[0m
+[0;32mI (195) esp_image: segment 2: paddr=00059280 vaddr=40080000 size=06d98h ( 28056) load[0m
+[0;32mI (207) esp_image: segment 3: paddr=00060020 vaddr=400d0020 size=acdd0h (708048) map[0m
+[0;32mI (463) esp_image: segment 4: paddr=0010cdf8 vaddr=40086d98 size=12fa4h ( 77732) load[0m
+[0;32mI (508) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (508) boot: Disabling RNG early entropy source...[0m
+[0;32mI (520) cpu_start: Multicore app[0m
+[0;32mI (520) cpu_start: Pro cpu up.[0m
+[0;32mI (520) cpu_start: Starting app cpu, entry point is 0x4008149c[0m
+[0;32mI (510) cpu_start: App cpu up.[0m
+[0;32mI (541) cpu_start: Pro cpu start user code[0m
+[0;32mI (541) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (541) cpu_start: Application information:[0m
+[0;32mI (545) cpu_start: Project name:     BLE_MESH_Node[0m
+[0;32mI (551) cpu_start: App version:      aa62094-dirty[0m
+[0;32mI (556) cpu_start: Compile time:     Jul  4 2024 09:25:30[0m
+[0;32mI (562) cpu_start: ELF file SHA256:  3b1c3aa6001f2bb5...[0m
+[0;32mI (568) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (574) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (578) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (583) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (588) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (595) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (601) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (607) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (614) heap_init: At 3FFCA708 len 000158F8 (86 KiB): DRAM[0m
+[0;32mI (620) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (626) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (633) heap_init: At 40099D3C len 000062C4 (24 KiB): IRAM[0m
+[0;32mI (640) spi_flash: detected chip: generic[0m
+[0;32mI (643) spi_flash: flash io: dio[0m
+[0;33mW (648) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (656) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (662) app_start: Starting scheduler on CPU0[0m
+[0;32m[0;32mI (666) app_start: Starting scheduler on CPU1[0m
+I (666) main_task: Started on CPU0[0m
+[0;32mI (676) main_task: Calling app_main()[0m
+[0;32mI (676) MESH-SERVER-MAIN: Initializing...[0m
+use esp timer !!!
+[0;31mE (676) esp_timer: Task is already initialized[0m
+[0;32mI (686) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m

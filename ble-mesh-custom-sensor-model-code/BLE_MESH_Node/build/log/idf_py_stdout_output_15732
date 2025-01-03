@@ -1,0 +1,85 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D "D:\ESP_IDF\Ble mesh\esp32_btmesh\ble-mesh-custom-sensor-model-code\BLE_MESH_Node\build\bootloader\esp-idf\esptool_py" && D:\ESP_IDF\Espressif\python_env\idf5.1_py3.11_env\Scripts\python.exe D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 "D:/ESP_IDF/Ble mesh/esp32_btmesh/ble-mesh-custom-sensor-model-code/BLE_MESH_Node/build/bootloader/bootloader.bin""
+Bootloader binary size 0x6810 bytes. 0x7f0 bytes (7%) free.
+[2/8] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+[3/8] Linking C static library esp-idf\main\libmain.a
+[4/8] Generating ld/sections.ld
+[5/8] Linking CXX executable BLE_MESH_Node.elf
+[6/8] Generating binary image from built executable
+esptool.py v4.7.dev3
+Creating esp32 image...
+Merged 27 ELF sections
+Successfully created esp32 image.
+Generated D:/ESP_IDF/Ble mesh/esp32_btmesh/ble-mesh-custom-sensor-model-code/BLE_MESH_Node/build/BLE_MESH_Node.bin
+[7/8] cmd.exe /C "cd /D "D:\ESP_IDF\Ble mesh\esp32_btmesh\ble-mesh-custom-sensor-model-code\BLE_MESH_Node\build\esp-idf\esptool_py" && D:\ESP_IDF\Espressif\python_env\idf5.1_py3.11_env\Scripts\python.exe D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/partition_table/check_sizes.py --offset 0x8000 partition --type app "D:/ESP_IDF/Ble mesh/esp32_btmesh/ble-mesh-custom-sensor-model-code/BLE_MESH_Node/build/partition_table/partition-table.bin" "D:/ESP_IDF/Ble mesh/esp32_btmesh/ble-mesh-custom-sensor-model-code/BLE_MESH_Node/build/BLE_MESH_Node.bin""
+BLE_MESH_Node.bin binary size 0xf68b0 bytes. Smallest app partition is 0x100000 bytes. 0x9750 bytes (4%) free.
+Warning: The smallest app partition is nearly full (4% free space left)!
+[7/8] cmd.exe /C "cd /D D:\ESP_IDF\Espressif\frameworks\esp-idf-v5.1.2\components\esptool_py && D:\ESP_IDF\Espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2 -D SERIAL_TOOL=D:/ESP_IDF/Espressif/python_env/idf5.1_py3.11_env/Scripts/python.exe;;D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D "WORKING_DIRECTORY=D:/ESP_IDF/Ble mesh/esp32_btmesh/ble-mesh-custom-sensor-model-code/BLE_MESH_Node/build" -P D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/esptool_py/run_serial_tool.cmake"
+esptool.py --chip esp32 -p COM4 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 4MB 0x1000 bootloader/bootloader.bin 0x10000 BLE_MESH_Node.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.dev3
+Serial port COM4
+Connecting.......
+Chip is ESP32-D0WDQ6 (revision v1.0)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: c8:f0:9e:9a:37:08
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x00106fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 26640 bytes to 16691...
+Writing at 0x00001000... (50 %)
+Writing at 0x0000768a... (100 %)
+Wrote 26640 bytes (16691 compressed) at 0x00001000 in 0.9 seconds (effective 241.1 kbit/s)...
+Hash of data verified.
+Compressed 1009840 bytes to 580705...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001d3d5... (5 %)
+Writing at 0x0002e30d... (8 %)
+Writing at 0x0003b678... (11 %)
+Writing at 0x000444fc... (13 %)
+Writing at 0x00049df6... (16 %)
+Writing at 0x0004f610... (19 %)
+Writing at 0x00054c69... (22 %)
+Writing at 0x0005aec1... (25 %)
+Writing at 0x000613d0... (27 %)
+Writing at 0x00066f25... (30 %)
+Writing at 0x0006d601... (33 %)
+Writing at 0x000750cf... (36 %)
+Writing at 0x0007b532... (38 %)
+Writing at 0x00081553... (41 %)
+Writing at 0x00087018... (44 %)
+Writing at 0x0008c909... (47 %)
+Writing at 0x00092229... (50 %)
+Writing at 0x00097e10... (52 %)
+Writing at 0x0009e8b2... (55 %)
+Writing at 0x000a49e3... (58 %)
+Writing at 0x000aa989... (61 %)
+Writing at 0x000b0951... (63 %)
+Writing at 0x000b6574... (66 %)
+Writing at 0x000bc8aa... (69 %)
+Writing at 0x000c2c45... (72 %)
+Writing at 0x000c868e... (75 %)
+Writing at 0x000ce13f... (77 %)
+Writing at 0x000d39e5... (80 %)
+Writing at 0x000dc910... (83 %)
+Writing at 0x000e4836... (86 %)
+Writing at 0x000eca99... (88 %)
+Writing at 0x000f2c67... (91 %)
+Writing at 0x000f83c8... (94 %)
+Writing at 0x000fe0ad... (97 %)
+Writing at 0x00103e49... (100 %)
+Wrote 1009840 bytes (580705 compressed) at 0x00010000 in 13.8 seconds (effective 583.6 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 312.5 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

@@ -1,0 +1,439 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jul  8 2024 23:33:30[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v1.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 otadata          OTA data         01 00 0000f000 00002000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00020000 00220000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) boot: Defaulting to factory image[0m
+[0;32mI (100) esp_image: segment 0: paddr=00020020 vaddr=3f400020 size=2eb64h (191332) map[0m
+[0;32mI (178) esp_image: segment 1: paddr=0004eb8c vaddr=3ffbdb60 size=0148ch (  5260) load[0m
+[0;32mI (180) esp_image: segment 2: paddr=00050020 vaddr=400d0020 size=aab80h (699264) map[0m
+[0;32mI (436) esp_image: segment 3: paddr=000faba8 vaddr=3ffbefec size=03ea0h ( 16032) load[0m
+[0;32mI (443) esp_image: segment 4: paddr=000fea50 vaddr=40080000 size=189c8h (100808) load[0m
+[0;32mI (498) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (498) boot: Disabling RNG early entropy source...[0m
+[0;32mI (509) cpu_start: Multicore app[0m
+[0;32mI (510) cpu_start: Pro cpu up.[0m
+[0;32mI (510) cpu_start: Starting app cpu, entry point is 0x40081394[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (527) cpu_start: Pro cpu start user code[0m
+[0;32mI (527) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (528) cpu_start: Application information:[0m
+[0;32mI (532) cpu_start: Project name:     BLE_MESH_Node[0m
+[0;32mI (538) cpu_start: App version:      aa62094-dirty[0m
+[0;32mI (543) cpu_start: Compile time:     Jul  8 2024 23:33:06[0m
+[0;32mI (549) cpu_start: ELF file SHA256:  3288a9b09dd2807b...[0m
+[0;32mI (555) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (561) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (565) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (570) cpu_start: Chip rev:         v1.1[0m
+[0;32mI (575) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (582) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (588) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (594) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (600) heap_init: At 3FFCA698 len 00015968 (86 KiB): DRAM[0m
+[0;32mI (607) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (613) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (619) heap_init: At 400989C8 len 00007638 (29 KiB): IRAM[0m
+[0;32mI (627) spi_flash: detected chip: generic[0m
+[0;32mI (630) spi_flash: flash io: dio[0m
+[0;33mW (634) spi_flash: Detected size(8192k) larger than the size in the binary image header(4096k). Using the size in the binary image header.[0m
+[0;33mW (648) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (656) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (661) app_start: Starting scheduler on CPU0[0m
+[0;32m[0;32mI (666) app_start: Starting scheduler on CPU1[0m
+I (666) main_task: Started on CPU0[0m
+[0;32mI (676) main_task: Calling app_main()[0m
+[0;32mI (676) MESH-SERVER-MAIN: Initializing...[0m
+use esp timer !!!
+[0;31mE (676) esp_timer: Task is already initialized[0m
+[0;32mI (686) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (726) BTDM_INIT: BT controller compile version [ec4ac65][0m
+[0;32mI (726) BTDM_INIT: Bluetooth MAC: 08:d1:f9:07:24:62[0m
+[0;32mI (736) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+[0;33mW (1226) BLE_MESH: bt_mesh_proxy_server_prov_disable, Already[0m
+[0;32mI (1256) MESH_SERVER: ESP_BLE_MESH_NODE_PROV_COMPLETE_EVT[0m
+[0;32mI (1256) MESH_SERVER: net_idx: 0x0000, addr: 0x0032[0m
+[0;32mI (1266) MESH_SERVER: Device provisioned[0m
+[0;32mI (1266) MESH_SERVER: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;32mI (1276) MESH_SERVER: ESP_BLE_MESH_NODE_SET_UNPROV_DEV_NAME_COMP_EVT, Name: BLE Mesh, err_code 0[0m
+[0;33mW (1286) BLE_MESH: bt_mesh_prov_enable, Already[0m
+[0;32mI (1286) MESH_SERVER: ESP_BLE_MESH_NODE_PROV_ENABLE_COMP_EVT, err_code -120[0m
+[0;32mI (1296) MESH_SERVER: BLE Mesh Node initialized![0m
+[0;32mI (1306) main_task: Returned from app_main()[0m
+[0;32mI (3606) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (3606) PARSED_DATA: ttl recv = 1[0m
+[0;33mW (3606) PARSED_DATA: Device Name = dht11[0m
+[0;33mW (3616) PARSED_DATA: Temperature = 29.000000[0m
+[0;33mW (3616) PARSED_DATA: Smoke = 3.000000[0m
+[0;33mW (3626) PARSED_DATA: Humidity    = 90.000000[0m
+[0;33mW (3626) PARSED_DATA: Light = 3[0m
+[0;33mW (3626) PARSED_DATA: temp_ADC        = 3.000000[0m
+[0;33mW (4376) BLE_MESH: Replay: src 0x0033 dst 0xffff seq 0x003210[0m
+[0;32mI (5746) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (5746) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (5746) PARSED_DATA: Device Name = MQ2[0m
+[0;33mW (5756) PARSED_DATA: Temperature = 4.000000[0m
+[0;33mW (5756) PARSED_DATA: Smoke = 2447.000000[0m
+[0;33mW (5766) PARSED_DATA: Humidity    = 4.000000[0m
+[0;33mW (5766) PARSED_DATA: Light = 4[0m
+[0;33mW (5766) PARSED_DATA: temp_ADC        = 4.000000[0m
+[0;32mI (8596) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (8596) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (8596) PARSED_DATA: Device Name = BH1750[0m
+[0;33mW (8606) PARSED_DATA: Temperature = 1.000000[0m
+[0;33mW (8606) PARSED_DATA: Smoke = 1.000000[0m
+[0;33mW (8616) PARSED_DATA: Humidity    = 1.000000[0m
+[0;33mW (8616) PARSED_DATA: Light = 155[0m
+[0;33mW (8616) PARSED_DATA: temp_ADC        = 1.000000[0m
+[0;31mE (11356) MESH-SERVER-MAIN: 25.443800[0m
+[0;32mI (11416) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (11416) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (11416) PARSED_DATA: Device Name = LM35[0m
+[0;33mW (11416) PARSED_DATA: Temperature = 2.000000[0m
+[0;33mW (11426) PARSED_DATA: Smoke = 2.000000[0m
+[0;33mW (11426) PARSED_DATA: Humidity    = 2.000000[0m
+[0;33mW (11436) PARSED_DATA: Light = 2[0m
+[0;33mW (11436) PARSED_DATA: temp_ADC        = 25.443800[0m
+[0;32mI (11436) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;32mI (13766) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (13766) PARSED_DATA: ttl recv = 2[0m
+[0;33mW (13766) PARSED_DATA: Device Name = dht11[0m
+[0;33mW (13776) PARSED_DATA: Temperature = 29.000000[0m
+[0;33mW (13776) PARSED_DATA: Smoke = 3.000000[0m
+[0;33mW (13786) PARSED_DATA: Humidity    = 90.000000[0m
+[0;33mW (13786) PARSED_DATA: Light = 3[0m
+[0;33mW (13796) PARSED_DATA: temp_ADC        = 3.000000[0m
+[0;33mW (14126) BLE_MESH: Replay: src 0x0033 dst 0xffff seq 0x00321f[0m
+[0;32mI (15966) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (15976) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (15976) PARSED_DATA: Device Name = MQ2[0m
+[0;33mW (15976) PARSED_DATA: Temperature = 4.000000[0m
+[0;33mW (15986) PARSED_DATA: Smoke = 2466.000000[0m
+[0;33mW (15986) PARSED_DATA: Humidity    = 4.000000[0m
+[0;33mW (15996) PARSED_DATA: Light = 4[0m
+[0;33mW (15996) PARSED_DATA: temp_ADC        = 4.000000[0m
+[0;32mI (19326) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (19326) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (19326) PARSED_DATA: Device Name = BH1750[0m
+[0;33mW (19336) PARSED_DATA: Temperature = 1.000000[0m
+[0;33mW (19336) PARSED_DATA: Smoke = 1.000000[0m
+[0;33mW (19346) PARSED_DATA: Humidity    = 1.000000[0m
+[0;33mW (19346) PARSED_DATA: Light = 158[0m
+[0;33mW (19346) PARSED_DATA: temp_ADC        = 1.000000[0m
+[0;31mE (21416) MESH-SERVER-MAIN: 25.443800[0m
+[0;32mI (21466) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (21466) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (21466) PARSED_DATA: Device Name = LM35[0m
+[0;33mW (21466) PARSED_DATA: Temperature = 2.000000[0m
+[0;33mW (21476) PARSED_DATA: Smoke = 2.000000[0m
+[0;33mW (21476) PARSED_DATA: Humidity    = 2.000000[0m
+[0;33mW (21486) PARSED_DATA: Light = 2[0m
+[0;33mW (21486) PARSED_DATA: temp_ADC        = 25.443800[0m
+[0;32mI (21496) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;32mI (23836) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (23836) PARSED_DATA: ttl recv = 2[0m
+[0;33mW (23836) PARSED_DATA: Device Name = dht11[0m
+[0;33mW (23836) PARSED_DATA: Temperature = 30.000000[0m
+[0;33mW (23846) PARSED_DATA: Smoke = 3.000000[0m
+[0;33mW (23846) PARSED_DATA: Humidity    = 89.000000[0m
+[0;33mW (23856) PARSED_DATA: Light = 3[0m
+[0;33mW (23856) PARSED_DATA: temp_ADC        = 3.000000[0m
+[0;32mI (25816) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (25816) PARSED_DATA: ttl recv = 2[0m
+[0;33mW (25816) PARSED_DATA: Device Name = MQ2[0m
+[0;33mW (25826) PARSED_DATA: Temperature = 4.000000[0m
+[0;33mW (25826) PARSED_DATA: Smoke = 2460.000000[0m
+[0;33mW (25836) PARSED_DATA: Humidity    = 4.000000[0m
+[0;33mW (25836) PARSED_DATA: Light = 4[0m
+[0;33mW (25846) PARSED_DATA: temp_ADC        = 4.000000[0m
+[0;33mW (26086) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x003b2b[0m
+[0;32mI (29956) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (29956) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (29956) PARSED_DATA: Device Name = BH1750[0m
+[0;33mW (29966) PARSED_DATA: Temperature = 1.000000[0m
+[0;33mW (29966) PARSED_DATA: Smoke = 1.000000[0m
+[0;33mW (29976) PARSED_DATA: Humidity    = 1.000000[0m
+[0;33mW (29976) PARSED_DATA: Light = 158[0m
+[0;33mW (29986) PARSED_DATA: temp_ADC        = 1.000000[0m
+[0;31mE (31476) MESH-SERVER-MAIN: 25.524401[0m
+[0;32mI (31596) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (31596) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (31596) PARSED_DATA: Device Name = LM35[0m
+[0;33mW (31606) PARSED_DATA: Temperature = 2.000000[0m
+[0;33mW (31606) PARSED_DATA: Smoke = 2.000000[0m
+[0;33mW (31616) PARSED_DATA: Humidity    = 2.000000[0m
+[0;33mW (31616) PARSED_DATA: Light = 2[0m
+[0;33mW (31626) PARSED_DATA: temp_ADC        = 25.524401[0m
+[0;32mI (31626) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;32mI (33686) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (33686) PARSED_DATA: ttl recv = 2[0m
+[0;33mW (33686) PARSED_DATA: Device Name = dht11[0m
+[0;33mW (33686) PARSED_DATA: Temperature = 30.000000[0m
+[0;33mW (33696) PARSED_DATA: Smoke = 3.000000[0m
+[0;33mW (33696) PARSED_DATA: Humidity    = 88.000000[0m
+[0;33mW (33706) PARSED_DATA: Light = 3[0m
+[0;33mW (33706) PARSED_DATA: temp_ADC        = 3.000000[0m
+[0;32mI (35796) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (35796) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (35796) PARSED_DATA: Device Name = MQ2[0m
+[0;33mW (35806) PARSED_DATA: Temperature = 4.000000[0m
+[0;33mW (35816) PARSED_DATA: Smoke = 2453.000000[0m
+[0;33mW (35816) PARSED_DATA: Humidity    = 4.000000[0m
+[0;33mW (35816) PARSED_DATA: Light = 4[0m
+[0;33mW (35826) PARSED_DATA: temp_ADC        = 4.000000[0m
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jul  8 2024 23:33:30[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v1.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 otadata          OTA data         01 00 0000f000 00002000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00020000 00220000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) boot: Defaulting to factory image[0m
+[0;32mI (100) esp_image: segment 0: paddr=00020020 vaddr=3f400020 size=2eb64h (191332) map[0m
+[0;32mI (178) esp_image: segment 1: paddr=0004eb8c vaddr=3ffbdb60 size=0148ch (  5260) load[0m
+[0;32mI (180) esp_image: segment 2: paddr=00050020 vaddr=400d0020 size=aab80h (699264) map[0m
+[0;32mI (436) esp_image: segment 3: paddr=000faba8 vaddr=3ffbefec size=03ea0h ( 16032) load[0m
+[0;32mI (443) esp_image: segment 4: paddr=000fea50 vaddr=40080000 size=189c8h (100808) load[0m
+[0;32mI (498) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (498) boot: Disabling RNG early entropy source...[0m
+[0;32mI (509) cpu_start: Multicore app[0m
+[0;32mI (510) cpu_start: Pro cpu up.[0m
+[0;32mI (510) cpu_start: Starting app cpu, entry point is 0x40081394[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (527) cpu_start: Pro cpu start user code[0m
+[0;32mI (528) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (528) cpu_start: Application information:[0m
+[0;32mI (532) cpu_start: Project name:     BLE_MESH_Node[0m
+[0;32mI (538) cpu_start: App version:      aa62094-dirty[0m
+[0;32mI (543) cpu_start: Compile time:     Jul  8 2024 23:33:06[0m
+[0;32mI (549) cpu_start: ELF file SHA256:  3288a9b09dd2807b...[0m
+[0;32mI (555) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (561) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (565) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (570) cpu_start: Chip rev:         v1.1[0m
+[0;32mI (575) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (582) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (588) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (594) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (600) heap_init: At 3FFCA698 len 00015968 (86 KiB): DRAM[0m
+[0;32mI (607) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (613) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (619) heap_init: At 400989C8 len 00007638 (29 KiB): IRAM[0m
+[0;32mI (627) spi_flash: detected chip: generic[0m
+[0;32mI (630) spi_flash: flash io: dio[0m
+[0;33mW (634) spi_flash: Detected size(8192k) larger than the size in the binary image header(4096k). Using the size in the binary image header.[0m
+[0;33mW (648) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (656) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (662) app_start: Starting scheduler on CPU0[0m
+[0;32m[0;32mI (666) app_start: Starting scheduler on CPU1[0m
+I (666) main_task: Started on CPU0[0m
+[0;32mI (676) main_task: Calling app_main()[0m
+[0;32mI (676) MESH-SERVER-MAIN: Initializing...[0m
+use esp timer !!!
+[0;31mE (676) esp_timer: Task is already initialized[0m
+[0;32mI (686) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (726) BTDM_INIT: BT controller compile version [ec4ac65][0m
+[0;32mI (726) BTDM_INIT: Bluetooth MAC: 08:d1:f9:07:24:62[0m
+[0;32mI (736) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+[0;33mW (1236) BLE_MESH: bt_mesh_proxy_server_prov_disable, Already[0m
+[0;32mI (1256) MESH_SERVER: ESP_BLE_MESH_NODE_PROV_COMPLETE_EVT[0m
+[0;32mI (1266) MESH_SERVER: net_idx: 0x0000, addr: 0x0032[0m
+[0;32mI (1266) MESH_SERVER: Device provisioned[0m
+[0;32mI (1266) MESH_SERVER: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;32mI (1276) MESH_SERVER: ESP_BLE_MESH_NODE_SET_UNPROV_DEV_NAME_COMP_EVT, Name: BLE Mesh, err_code 0[0m
+[0;33mW (1286) BLE_MESH: bt_mesh_prov_enable, Already[0m
+[0;32mI (1286) MESH_SERVER: ESP_BLE_MESH_NODE_PROV_ENABLE_COMP_EVT, err_code -120[0m
+[0;32mI (1296) MESH_SERVER: BLE Mesh Node initialized![0m
+[0;32mI (1306) main_task: Returned from app_main()[0m
+[0;33mW (4626) BLE_MESH: Received already received fragment[0m
+[0;33mW (4706) BLE_MESH: Received already received fragment[0m
+[0;33mW (4836) BLE_MESH: Received already received fragment[0m
+[0;32mI (4926) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (4926) PARSED_DATA: ttl recv = 2[0m
+[0;33mW (4926) PARSED_DATA: Device Name = dht11[0m
+[0;33mW (4936) PARSED_DATA: Temperature = 30.000000[0m
+[0;33mW (4936) PARSED_DATA: Smoke = 3.000000[0m
+[0;33mW (4946) PARSED_DATA: Humidity    = 88.000000[0m
+[0;33mW (4946) PARSED_DATA: Light = 3[0m
+[0;33mW (4956) PARSED_DATA: temp_ADC        = 3.000000[0m
+[0;32mI (5746) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (5746) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (5746) PARSED_DATA: Device Name = BH1750[0m
+[0;33mW (5756) PARSED_DATA: Temperature = 1.000000[0m
+[0;33mW (5756) PARSED_DATA: Smoke = 1.000000[0m
+[0;33mW (5766) PARSED_DATA: Humidity    = 1.000000[0m
+[0;33mW (5776) PARSED_DATA: Light = 157[0m
+[0;33mW (5776) PARSED_DATA: temp_ADC        = 1.000000[0m
+[0;32mI (5896) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (5896) PARSED_DATA: ttl recv = 2[0m
+[0;33mW (5896) PARSED_DATA: Device Name = dht11[0m
+[0;33mW (5906) PARSED_DATA: Temperature = 30.000000[0m
+[0;33mW (5906) PARSED_DATA: Smoke = 3.000000[0m
+[0;33mW (5916) PARSED_DATA: Humidity    = 88.000000[0m
+[0;33mW (5916) PARSED_DATA: Light = 3[0m
+[0;33mW (5916) PARSED_DATA: temp_ADC        = 3.000000[0m
+[0;33mW (6116) BLE_MESH: Replay: src 0x0033 dst 0xffff seq 0x0032d9[0m
+[0;33mW (6216) BLE_MESH: Replay: src 0x0033 dst 0xffff seq 0x0032da[0m
+[0;33mW (7126) BLE_MESH: Replay: src 0x0033 dst 0xffff seq 0x0032e0[0m
+[0;32mI (7336) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (7336) PARSED_DATA: ttl recv = 2[0m
+[0;33mW (7336) PARSED_DATA: Device Name = MQ2[0m
+[0;33mW (7336) PARSED_DATA: Temperature = 4.000000[0m
+[0;33mW (7346) PARSED_DATA: Smoke = 2481.000000[0m
+[0;33mW (7346) PARSED_DATA: Humidity    = 4.000000[0m
+[0;33mW (7356) PARSED_DATA: Light = 4[0m
+[0;33mW (7356) PARSED_DATA: temp_ADC        = 4.000000[0m
+[0;33mW (7636) BLE_MESH: Replay: src 0x0031 dst 0xffff seq 0x0073e0[0m
+[0;32mI (7686) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (7686) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (7686) PARSED_DATA: Device Name = BH1750[0m
+[0;33mW (7696) PARSED_DATA: Temperature = 1.000000[0m
+[0;33mW (7696) PARSED_DATA: Smoke = 1.000000[0m
+[0;33mW (7706) PARSED_DATA: Humidity    = 1.000000[0m
+[0;33mW (7706) PARSED_DATA: Light = 157[0m
+[0;33mW (7706) PARSED_DATA: temp_ADC        = 1.000000[0m
+[0;33mW (7776) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x003bc8[0m
+[0;33mW (7776) BLE_MESH: Replay: src 0x0031 dst 0xffff seq 0x0073e1[0m
+[0;33mW (7856) BLE_MESH: Replay: src 0x0033 dst 0xffff seq 0x0032e1[0m
+[0;33mW (7896) BLE_MESH: Replay: src 0x0031 dst 0xffff seq 0x0073e3[0m
+[0;33mW (7946) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x003bc9[0m
+[0;33mW (8016) BLE_MESH: Replay: src 0x0031 dst 0xffff seq 0x0073e4[0m
+[0;33mW (8036) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x003bca[0m
+[0;33mW (8076) BLE_MESH: Replay: src 0x0031 dst 0xffff seq 0x0073e5[0m
+[0;33mW (8136) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x003bcb[0m
+[0;33mW (8186) BLE_MESH: Replay: src 0x0031 dst 0xffff seq 0x0073e6[0m
+[0;33mW (8216) BLE_MESH: Received already received fragment[0m
+[0;33mW (8256) BLE_MESH: Replay: src 0x0031 dst 0xffff seq 0x0073e7[0m
+[0;32mI (8446) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (8446) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (8446) PARSED_DATA: Device Name = MQ2[0m
+[0;33mW (8456) PARSED_DATA: Temperature = 4.000000[0m
+[0;33mW (8456) PARSED_DATA: Smoke = 2481.000000[0m
+[0;33mW (8466) PARSED_DATA: Humidity    = 4.000000[0m
+[0;33mW (8466) PARSED_DATA: Light = 4[0m
+[0;33mW (8476) PARSED_DATA: temp_ADC        = 4.000000[0m
+[0;33mW (8706) BLE_MESH: Replay: src 0x0031 dst 0xffff seq 0x0073e8[0m
+[0;31mE (11356) MESH-SERVER-MAIN: 25.202000[0m
+[0;32mI (11406) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (11406) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (11406) PARSED_DATA: Device Name = LM35[0m
+[0;33mW (11406) PARSED_DATA: Temperature = 2.000000[0m
+[0;33mW (11416) PARSED_DATA: Smoke = 2.000000[0m
+[0;33mW (11416) PARSED_DATA: Humidity    = 2.000000[0m
+[0;33mW (11426) PARSED_DATA: Light = 2[0m
+[0;33mW (11426) PARSED_DATA: temp_ADC        = 25.202000[0m
+[0;32mI (11436) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;32mI (14556) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (14556) PARSED_DATA: ttl recv = 2[0m
+[0;33mW (14556) PARSED_DATA: Device Name = dht11[0m
+[0;33mW (14556) PARSED_DATA: Temperature = 31.000000[0m
+[0;33mW (14566) PARSED_DATA: Smoke = 3.000000[0m
+[0;33mW (14566) PARSED_DATA: Humidity    = 88.000000[0m
+[0;33mW (14576) PARSED_DATA: Light = 3[0m
+[0;33mW (14576) PARSED_DATA: temp_ADC        = 3.000000[0m
+[0;32mI (16356) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (16356) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (16356) PARSED_DATA: Device Name = BH1750[0m
+[0;33mW (16366) PARSED_DATA: Temperature = 1.000000[0m
+[0;33mW (16366) PARSED_DATA: Smoke = 1.000000[0m
+[0;33mW (16376) PARSED_DATA: Humidity    = 1.000000[0m
+[0;33mW (16376) PARSED_DATA: Light = 156[0m
+[0;33mW (16386) PARSED_DATA: temp_ADC        = 1.000000[0m
+[0;32mI (16496) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (16496) PARSED_DATA: ttl recv = 2[0m
+[0;33mW (16496) PARSED_DATA: Device Name = dht11[0m
+[0;33mW (16506) PARSED_DATA: Temperature = 31.000000[0m
+[0;33mW (16506) PARSED_DATA: Smoke = 3.000000[0m
+[0;33mW (16516) PARSED_DATA: Humidity    = 88.000000[0m
+[0;33mW (16526) PARSED_DATA: Light = 3[0m
+[0;33mW (16526) PARSED_DATA: temp_ADC        = 3.000000[0m
+[0;32mI (16716) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (16716) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (16716) PARSED_DATA: Device Name = BH1750[0m
+[0;33mW (16726) PARSED_DATA: Temperature = 1.000000[0m
+[0;33mW (16726) PARSED_DATA: Smoke = 1.000000[0m
+[0;33mW (16736) PARSED_DATA: Humidity    = 1.000000[0m
+[0;33mW (16736) PARSED_DATA: Light = 156[0m
+[0;33mW (16746) PARSED_DATA: temp_ADC        = 1.000000[0m
+[0;33mW (16796) BLE_MESH: Replay: src 0x0033 dst 0xffff seq 0x0032f4[0m
+[0;32mI (16796) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (16806) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (16806) PARSED_DATA: Device Name = MQ2[0m
+[0;33mW (16806) PARSED_DATA: Temperature = 4.000000[0m
+[0;33mW (16816) PARSED_DATA: Smoke = 2479.000000[0m
+[0;33mW (16816) PARSED_DATA: Humidity    = 4.000000[0m
+[0;33mW (16826) PARSED_DATA: Light = 4[0m
+[0;33mW (16826) PARSED_DATA: temp_ADC        = 4.000000[0m
+[0;33mW (16866) BLE_MESH: Replay: src 0x0031 dst 0xffff seq 0x0073ef[0m
+[0;33mW (16936) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x003bda[0m
+[0;33mW (17316) BLE_MESH: Replay: src 0x0031 dst 0xffff seq 0x0073f0[0m
+[0;33mW (17696) BLE_MESH: Replay: src 0x0031 dst 0xffff seq 0x0073f3[0m
+[0;33mW (17756) BLE_MESH: Replay: src 0x0031 dst 0xffff seq 0x0073f4[0m
+[0;33mW (17786) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x003bdf[0m
+[0;33mW (17906) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x003be0[0m
+[0;33mW (17986) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x003be1[0m
+[0;33mW (18266) BLE_MESH: Replay: src 0x0031 dst 0xffff seq 0x0073f5[0m
+[0;33mW (18366) BLE_MESH: Replay: src 0x0031 dst 0xffff seq 0x0073f6[0m
+[0;33mW (18386) BLE_MESH: Replay: src 0x0031 dst 0xffff seq 0x0073f7[0m
+[0;33mW (18426) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x003be2[0m
+[0;33mW (18496) BLE_MESH: Replay: src 0x0031 dst 0xffff seq 0x0073f8[0m
+[0;33mW (19116) BLE_MESH: Replay: src 0x0031 dst 0xffff seq 0x0073fb[0m
+[0;33mW (19166) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x003be3[0m
+[0;31mE (21416) MESH-SERVER-MAIN: 25.202000[0m
+[0;32mI (21466) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (21466) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (21466) PARSED_DATA: Device Name = LM35[0m
+[0;33mW (21466) PARSED_DATA: Temperature = 2.000000[0m
+[0;33mW (21476) PARSED_DATA: Smoke = 2.000000[0m
+[0;33mW (21476) PARSED_DATA: Humidity    = 2.000000[0m
+[0;33mW (21486) PARSED_DATA: Light = 2[0m
+[0;33mW (21486) PARSED_DATA: temp_ADC        = 25.202000[0m
+[0;32mI (21496) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;32mI (24566) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (24566) PARSED_DATA: ttl recv = 2[0m
+[0;33mW (24566) PARSED_DATA: Device Name = dht11[0m
+[0;33mW (24576) PARSED_DATA: Temperature = 31.000000[0m
+[0;33mW (24576) PARSED_DATA: Smoke = 3.000000[0m
+[0;33mW (24576) PARSED_DATA: Humidity    = 88.000000[0m
+[0;33mW (24586) PARSED_DATA: Light = 3[0m
+[0;33mW (24586) PARSED_DATA: temp_ADC        = 3.000000[0m

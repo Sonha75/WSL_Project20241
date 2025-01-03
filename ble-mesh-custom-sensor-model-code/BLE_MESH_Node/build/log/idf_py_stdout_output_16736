@@ -1,0 +1,12 @@
+[0/1] cmd.exe /C "cd /D "D:\ESP_IDF\Ble mesh\esp32_btmesh\ble-mesh-custom-sensor-model-code\BLE_MESH_Node\build" && D:\ESP_IDF\Espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_SIZE_TOOL=D:/ESP_IDF/Espressif/python_env/idf5.1_py3.11_env/Scripts/python.exe;-m;esp_idf_size -D "MAP_FILE=D:/ESP_IDF/Ble mesh/esp32_btmesh/ble-mesh-custom-sensor-model-code/BLE_MESH_Node/build/BLE_MESH_Node.map" -D OUTPUT_JSON= -P D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/tools/cmake/run_size_tool.cmake"
+Total sizes:
+Used static DRAM:   52140 bytes (  72440 remain, 41.9% used)
+      .data size:   21356 bytes
+      .bss  size:   30784 bytes
+Used static IRAM:  105786 bytes (  25286 remain, 80.7% used)
+      .text size:  104759 bytes
+   .vectors size:    1027 bytes
+Used Flash size :  915895 bytes
+           .text:  703003 bytes
+         .rodata:  212636 bytes
+Total image size: 1043037 bytes (.bin may be padded larger)

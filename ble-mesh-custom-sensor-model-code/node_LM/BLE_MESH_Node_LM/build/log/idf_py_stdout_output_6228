@@ -1,0 +1,96 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D "D:\ESP_IDF\Ble mesh\esp32_btmesh\ble-mesh-custom-sensor-model-code\node_LM\BLE_MESH_Node_LM\build\bootloader\esp-idf\esptool_py" && D:\ESP_IDF\Espressif\python_env\idf5.1_py3.11_env\Scripts\python.exe D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 "D:/ESP_IDF/Ble mesh/esp32_btmesh/ble-mesh-custom-sensor-model-code/node_LM/BLE_MESH_Node_LM/build/bootloader/bootloader.bin""
+Bootloader binary size 0x6810 bytes. 0x7f0 bytes (7%) free.
+[2/8] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+In file included from D:/ESP_IDF/Ble mesh/esp32_btmesh/ble-mesh-custom-sensor-model-code/node_LM/BLE_MESH_Node_LM/main/main.c:17:
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/driver/deprecated/driver/adc.h:19:2: warning: #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively" [-Wcpp]
+   19 | #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively"
+      |  ^~~~~~~
+D:/ESP_IDF/Ble mesh/esp32_btmesh/ble-mesh-custom-sensor-model-code/node_LM/BLE_MESH_Node_LM/main/main.c:28:16: warning: 'ticks' defined but not used [-Wunused-variable]
+   28 | static uint8_t ticks = 0;
+      |                ^~~~~
+[3/8] Linking C static library esp-idf\main\libmain.a
+[4/8] Generating ld/sections.ld
+[5/8] Linking CXX executable BLE_MESH_Node.elf
+[6/8] Generating binary image from built executable
+esptool.py v4.7.dev3
+Creating esp32 image...
+Merged 27 ELF sections
+Successfully created esp32 image.
+Generated D:/ESP_IDF/Ble mesh/esp32_btmesh/ble-mesh-custom-sensor-model-code/node_LM/BLE_MESH_Node_LM/build/BLE_MESH_Node.bin
+[7/8] cmd.exe /C "cd /D "D:\ESP_IDF\Ble mesh\esp32_btmesh\ble-mesh-custom-sensor-model-code\node_LM\BLE_MESH_Node_LM\build\esp-idf\esptool_py" && D:\ESP_IDF\Espressif\python_env\idf5.1_py3.11_env\Scripts\python.exe D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/partition_table/check_sizes.py --offset 0x8000 partition --type app "D:/ESP_IDF/Ble mesh/esp32_btmesh/ble-mesh-custom-sensor-model-code/node_LM/BLE_MESH_Node_LM/build/partition_table/partition-table.bin" "D:/ESP_IDF/Ble mesh/esp32_btmesh/ble-mesh-custom-sensor-model-code/node_LM/BLE_MESH_Node_LM/build/BLE_MESH_Node.bin""
+BLE_MESH_Node.bin binary size 0xf7440 bytes. Smallest app partition is 0x220000 bytes. 0x128bc0 bytes (55%) free.
+[7/8] cmd.exe /C "cd /D D:\ESP_IDF\Espressif\frameworks\esp-idf-v5.1.2\components\esptool_py && D:\ESP_IDF\Espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2 -D SERIAL_TOOL=D:/ESP_IDF/Espressif/python_env/idf5.1_py3.11_env/Scripts/python.exe;;D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D "WORKING_DIRECTORY=D:/ESP_IDF/Ble mesh/esp32_btmesh/ble-mesh-custom-sensor-model-code/node_LM/BLE_MESH_Node_LM/build" -P D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/esptool_py/run_serial_tool.cmake"
+esptool.py --chip esp32 -p COM14 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 4MB 0x1000 bootloader/bootloader.bin 0x20000 BLE_MESH_Node.bin 0x8000 partition_table/partition-table.bin 0xf000 ota_data_initial.bin
+esptool.py v4.7.dev3
+Serial port COM14
+Connecting...
+Chip is ESP32-D0WDQ6 (revision v1.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: 08:d1:f9:07:24:60
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00020000 to 0x00117fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Flash will be erased from 0x0000f000 to 0x00010fff...
+Compressed 26640 bytes to 16689...
+Writing at 0x00001000... (50 %)
+Writing at 0x0000768e... (100 %)
+Wrote 26640 bytes (16689 compressed) at 0x00001000 in 0.7 seconds (effective 285.0 kbit/s)...
+Hash of data verified.
+Compressed 1012800 bytes to 582142...
+Writing at 0x00020000... (2 %)
+Writing at 0x0002d3b4... (5 %)
+Writing at 0x0003e2e0... (8 %)
+Writing at 0x0004b849... (11 %)
+Writing at 0x0005439a... (13 %)
+Writing at 0x00059c67... (16 %)
+Writing at 0x0005f49d... (19 %)
+Writing at 0x00064adc... (22 %)
+Writing at 0x0006ad35... (25 %)
+Writing at 0x000711f9... (27 %)
+Writing at 0x00076d60... (30 %)
+Writing at 0x0007d43b... (33 %)
+Writing at 0x00084f27... (36 %)
+Writing at 0x0008b3ab... (38 %)
+Writing at 0x000913ee... (41 %)
+Writing at 0x00096e9d... (44 %)
+Writing at 0x0009c787... (47 %)
+Writing at 0x000a209b... (50 %)
+Writing at 0x000a7c87... (52 %)
+Writing at 0x000ae7e1... (55 %)
+Writing at 0x000b484d... (58 %)
+Writing at 0x000ba7eb... (61 %)
+Writing at 0x000c07b2... (63 %)
+Writing at 0x000c63c9... (66 %)
+Writing at 0x000cc710... (69 %)
+Writing at 0x000d2ac6... (72 %)
+Writing at 0x000d8693... (75 %)
+Writing at 0x000de196... (77 %)
+Writing at 0x000e394a... (80 %)
+Writing at 0x000ec9e7... (83 %)
+Writing at 0x000f360a... (86 %)
+Writing at 0x000fb15c... (88 %)
+Writing at 0x0010306f... (91 %)
+Writing at 0x001085bd... (94 %)
+Writing at 0x0010e52d... (97 %)
+Writing at 0x0011402b... (100 %)
+Wrote 1012800 bytes (582142 compressed) at 0x00020000 in 13.6 seconds (effective 594.2 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 355.7 kbit/s)...
+Hash of data verified.
+Compressed 8192 bytes to 31...
+Writing at 0x0000f000... (100 %)
+Wrote 8192 bytes (31 compressed) at 0x0000f000 in 0.1 seconds (effective 571.3 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
