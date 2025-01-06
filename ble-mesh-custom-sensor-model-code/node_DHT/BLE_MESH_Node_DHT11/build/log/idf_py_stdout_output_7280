@@ -1,0 +1,223 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.3-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jan  4 2025 02:18:25[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 otadata          OTA data         01 00 0000f000 00002000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00020000 00220000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) boot: Defaulting to factory image[0m
+[0;32mI (101) esp_image: segment 0: paddr=00020020 vaddr=3f400020 size=39078h (233592) map[0m
+[0;32mI (189) esp_image: segment 1: paddr=000590a0 vaddr=3ffbdb60 size=05528h ( 21800) load[0m
+[0;32mI (198) esp_image: segment 2: paddr=0005e5d0 vaddr=40080000 size=01a48h (  6728) load[0m
+[0;32mI (201) esp_image: segment 3: paddr=00060020 vaddr=400d0020 size=b8d94h (757140) map[0m
+[0;32mI (463) esp_image: segment 4: paddr=00118dbc vaddr=40081a48 size=15354h ( 86868) load[0m
+[0;32mI (509) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (509) boot: Disabling RNG early entropy source...[0m
+[0;32mI (521) cpu_start: Multicore app[0m
+[0;32mI (530) cpu_start: Pro cpu start user code[0m
+[0;32mI (530) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (530) cpu_start: Application information:[0m
+[0;32mI (533) cpu_start: Project name:     BLE_MESH_Node[0m
+[0;32mI (539) cpu_start: App version:      2841ab0-dirty[0m
+[0;32mI (544) cpu_start: Compile time:     Jan  4 2025 02:47:44[0m
+[0;32mI (550) cpu_start: ELF file SHA256:  36fd95f7b90c2f5d...[0m
+[0;32mI (556) cpu_start: ESP-IDF:          v5.2.3-dirty[0m
+[0;32mI (562) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (566) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (571) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (576) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (583) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (589) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (595) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (601) heap_init: At 3FFCAF08 len 000150F8 (84 KiB): DRAM[0m
+[0;32mI (607) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (614) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (620) heap_init: At 40096D9C len 00009264 (36 KiB): IRAM[0m
+[0;32mI (628) spi_flash: detected chip: generic[0m
+[0;32mI (631) spi_flash: flash io: dio[0m
+[0;32mI (636) coexist: coex firmware version: 27d8387[0m
+[0;32mI (641) main_task: Started on CPU0[0m
+[0;32mI (651) main_task: Calling app_main()[0m
+[0;32mI (651) MESH-SERVER-MAIN: Initializing...[0m
+use esp timer !!!
+[0;31mE (651) esp_timer: Task is already initialized[0m
+[0;32mI (651) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (1701) BTDM_INIT: BT controller compile version [b022216][0m
+[0;32mI (1701) BTDM_INIT: Bluetooth MAC: a0:b7:65:20:e1:ce[0m
+[0;32mI (1701) phy_init: phy_version 4840,a40f0ac,Aug 16 2024,16:48:06[0m
+[0;33mW (1791) phy_init: saving new calibration data because of checksum failure, mode(0)[0m
+Bluetooth Mesh v1.1 commit: [10f7fdc1a9]
+[0;32mI (2181) BLE_MESH: Friend not supported[0m
+[0;32mI (2261) BLE_MESH: Restored mesh device role: Node[0m
+[0;32mI (2261) BLE_MESH: Primary address 0x0002, element count 1[0m
+[0;32mI (2271) BLE_MESH: Restored Primary Address 0x0002[0m
+[0;32mI (2271) BLE_MESH: Restored DevKey 5e92ab3cc6d3db454538ee50ddae142a[0m
+[0;32mI (2281) BLE_MESH: Restored IV Index 0x00000000 (IV Update Flag 0) duration 96 hours[0m
+[0;32mI (2291) BLE_MESH: Restored Sequence Number 0x000005[0m
+[0;32mI (2291) BLE_MESH: Restored RPL entry 0x0001: seq 0x000005, old_iv 0[0m
+[0;32mI (2301) BLE_MESH: Restored NetKeyIndex 0x000[0m
+[0;32mI (2301) BLE_MESH: Restored NetKey beac33761a64a3622eead412d91e1deb[0m
+[0;32mI (2311) BLE_MESH: Restored Configuration, ttl 7, transmit 0x0a, retransmit 0x0a[0m
+[0;32mI (2321) BLE_MESH: Settings commit, sub[0].net_idx 0x000[0m
+[0;33mW (2321) BLE_MESH: bt_mesh_proxy_server_prov_disable, Already[0m
+[0;32mI (2361) MESH_SERVER: ESP_BLE_MESH_NODE_PROV_COMPLETE_EVT[0m
+[0;32mI (2361) MESH_SERVER: net_idx: 0x0000, addr: 0x0002[0m
+[0;32mI (2361) MESH_SERVER: Device provisioned[0m
+[0;32mI (2371) MESH_SERVER: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;32mI (2371) MESH_SERVER: ESP_BLE_MESH_NODE_SET_UNPROV_DEV_NAME_COMP_EVT, Name: BLE Mesh, err_code 0[0m
+[0;33mW (2381) BLE_MESH: bt_mesh_prov_enable, Already[0m
+[0;32mI (2391) MESH_SERVER: ESP_BLE_MESH_NODE_PROV_ENABLE_COMP_EVT, err_code -120[0m
+[0;32mI (2401) MESH_SERVER: BLE Mesh Node initialized![0m
+[0;32mI (2401) main_task: Returned from app_main()[0m
+[0;32mI (2431) BLE_MESH: send, app_idx 0x0000 src 0x0002 dst 0xffff[0m
+[0;32mI (2431) BLE_MESH: send, len 29: c2e5020100000064687431000000c0410000684201000000011f030000[0m
+[0;31mE (2431) BLE_MESH: Model not bound to AppKey 0x0000[0m
+[0;31mE (2441) MESH_SERVER: Failed to send message 0xc202e5[0m
+[0;32mI (12471) BLE_MESH: send, app_idx 0x0000 src 0x0002 dst 0xffff[0m
+[0;32mI (12471) BLE_MESH: send, len 29: c2e5020200000064687431000000c04100004c42010000000104030000[0m
+[0;31mE (12471) BLE_MESH: Model not bound to AppKey 0x0000[0m
+[0;31mE (12481) MESH_SERVER: Failed to send message 0xc202e5[0m
+[0;32mI (22511) BLE_MESH: send, app_idx 0x0000 src 0x0002 dst 0xffff[0m
+[0;32mI (22511) BLE_MESH: send, len 29: c2e5020300000064687431000000c04100003c420100000001f5020000[0m
+[0;31mE (22511) BLE_MESH: Model not bound to AppKey 0x0000[0m
+[0;31mE (22521) MESH_SERVER: Failed to send message 0xc202e5[0m
+[0;32mI (32551) BLE_MESH: send, app_idx 0x0000 src 0x0002 dst 0xffff[0m
+[0;32mI (32551) BLE_MESH: send, len 29: c2e5020400000064687431000000c041000038420100000001f2020000[0m
+[0;31mE (32551) BLE_MESH: Model not bound to AppKey 0x0000[0m
+[0;31mE (32561) MESH_SERVER: Failed to send message 0xc202e5[0m
+[0;32mI (42591) BLE_MESH: send, app_idx 0x0000 src 0x0002 dst 0xffff[0m
+[0;32mI (42591) BLE_MESH: send, len 29: c2e5020500000064687431000000c041000034420100000001ef020000[0m
+[0;31mE (42591) BLE_MESH: Model not bound to AppKey 0x0000[0m
+[0;31mE (42601) MESH_SERVER: Failed to send message 0xc202e5[0m
+[0;32mI (52631) BLE_MESH: send, app_idx 0x0000 src 0x0002 dst 0xffff[0m
+[0;32mI (52631) BLE_MESH: send, len 29: c2e5020600000064687431000000c041000034420100000001f0020000[0m
+[0;31mE (52631) BLE_MESH: Model not bound to AppKey 0x0000[0m
+[0;31mE (52641) MESH_SERVER: Failed to send message 0xc202e5[0m
+[0;32mI (62671) BLE_MESH: send, app_idx 0x0000 src 0x0002 dst 0xffff[0m
+[0;32mI (62671) BLE_MESH: send, len 29: c2e5020700000064687431000000c041000034420100000001f1020000[0m
+[0;31mE (62671) BLE_MESH: Model not bound to AppKey 0x0000[0m
+[0;31mE (62681) MESH_SERVER: Failed to send message 0xc202e5[0m
+[0;32mI (72711) BLE_MESH: send, app_idx 0x0000 src 0x0002 dst 0xffff[0m
+[0;32mI (72711) BLE_MESH: send, len 29: c2e5020800000064687431000000c041000030420100000001ee020000[0m
+[0;31mE (72711) BLE_MESH: Model not bound to AppKey 0x0000[0m
+[0;31mE (72721) MESH_SERVER: Failed to send message 0xc202e5[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.3-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jan  4 2025 02:18:25[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 otadata          OTA data         01 00 0000f000 00002000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00020000 00220000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) boot: Defaulting to factory image[0m
+[0;32mI (101) esp_image: segment 0: paddr=00020020 vaddr=3f400020 size=39078h (233592) map[0m
+[0;32mI (189) esp_image: segment 1: paddr=000590a0 vaddr=3ffbdb60 size=05528h ( 21800) load[0m
+[0;32mI (198) esp_image: segment 2: paddr=0005e5d0 vaddr=40080000 size=01a48h (  6728) load[0m
+[0;32mI (201) esp_image: segment 3: paddr=00060020 vaddr=400d0020 size=b8d94h (757140) map[0m
+[0;32mI (463) esp_image: segment 4: paddr=00118dbc vaddr=40081a48 size=15354h ( 86868) load[0m
+[0;32mI (509) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (509) boot: Disabling RNG early entropy source...[0m
+[0;32mI (521) cpu_start: Multicore app[0m
+[0;32mI (530) cpu_start: Pro cpu start user code[0m
+[0;32mI (530) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (530) cpu_start: Application information:[0m
+[0;32mI (533) cpu_start: Project name:     BLE_MESH_Node[0m
+[0;32mI (539) cpu_start: App version:      2841ab0-dirty[0m
+[0;32mI (544) cpu_start: Compile time:     Jan  4 2025 02:47:44[0m
+[0;32mI (550) cpu_start: ELF file SHA256:  36fd95f7b90c2f5d...[0m
+[0;32mI (556) cpu_start: ESP-IDF:          v5.2.3-dirty[0m
+[0;32mI (562) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (566) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (571) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (576) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (583) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (589) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (595) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (601) heap_init: At 3FFCAF08 len 000150F8 (84 KiB): DRAM[0m
+[0;32mI (607) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (614) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (620) heap_init: At 40096D9C len 00009264 (36 KiB): IRAM[0m
+[0;32mI (628) spi_flash: detected chip: generic[0m
+[0;32mI (631) spi_flash: flash io: dio[0m
+[0;32mI (636) coexist: coex firmware version: 27d8387[0m
+[0;32mI (641) main_task: Started on CPU0[0m
+[0;32mI (651) main_task: Calling app_main()[0m
+[0;32mI (651) MESH-SERVER-MAIN: Initializing...[0m
+use esp timer !!!
+[0;31mE (651) esp_timer: Task is already initialized[0m
+[0;32mI (651) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (1701) BTDM_INIT: BT controller compile version [b022216][0m
+[0;32mI (1701) BTDM_INIT: Bluetooth MAC: a0:b7:65:20:e1:ce[0m
+[0;32mI (1701) phy_init: phy_version 4840,a40f0ac,Aug 16 2024,16:48:06[0m
+Bluetooth Mesh v1.1 commit: [10f7fdc1a9]
+[0;32mI (2101) BLE_MESH: Friend not supported[0m
+[0;32mI (2181) BLE_MESH: Restored mesh device role: Node[0m
+[0;32mI (2181) BLE_MESH: Primary address 0x0002, element count 1[0m
+[0;32mI (2181) BLE_MESH: Restored Primary Address 0x0002[0m
+[0;32mI (2191) BLE_MESH: Restored DevKey 5e92ab3cc6d3db454538ee50ddae142a[0m
+[0;32mI (2201) BLE_MESH: Restored IV Index 0x00000000 (IV Update Flag 0) duration 96 hours[0m
+[0;32mI (2201) BLE_MESH: Restored Sequence Number 0x000005[0m
+[0;32mI (2211) BLE_MESH: Restored RPL entry 0x0001: seq 0x000005, old_iv 0[0m
+[0;32mI (2221) BLE_MESH: Restored NetKeyIndex 0x000[0m
+[0;32mI (2221) BLE_MESH: Restored NetKey beac33761a64a3622eead412d91e1deb[0m
+[0;32mI (2231) BLE_MESH: Restored Configuration, ttl 7, transmit 0x0a, retransmit 0x0a[0m
+[0;32mI (2241) BLE_MESH: Settings commit, sub[0].net_idx 0x000[0m
+[0;33mW (2241) BLE_MESH: bt_mesh_proxy_server_prov_disable, Already[0m
+[0;32mI (2281) MESH_SERVER: ESP_BLE_MESH_NODE_PROV_COMPLETE_EVT[0m
+[0;32mI (2281) MESH_SERVER: net_idx: 0x0000, addr: 0x0002[0m
+[0;32mI (2281) MESH_SERVER: Device provisioned[0m
+[0;32mI (2281) MESH_SERVER: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;32mI (2291) MESH_SERVER: ESP_BLE_MESH_NODE_SET_UNPROV_DEV_NAME_COMP_EVT, Name: BLE Mesh, err_code 0[0m
+[0;33mW (2301) BLE_MESH: bt_mesh_prov_enable, Already[0m
+[0;32mI (2311) MESH_SERVER: ESP_BLE_MESH_NODE_PROV_ENABLE_COMP_EVT, err_code -120[0m
+[0;32mI (2311) MESH_SERVER: BLE Mesh Node initialized![0m
+[0;32mI (2331) main_task: Returned from app_main()[0m
+[0;32mI (2341) BLE_MESH: send, app_idx 0x0000 src 0x0002 dst 0xffff[0m
+[0;32mI (2341) BLE_MESH: send, len 29: c2e5020100000064687431000000c041000030420100000001e7020000[0m
+[0;31mE (2351) BLE_MESH: Model not bound to AppKey 0x0000[0m
+[0;31mE (2351) MESH_SERVER: Failed to send message 0xc202e5[0m
+[0;32mI (12381) BLE_MESH: send, app_idx 0x0000 src 0x0002 dst 0xffff[0m
+[0;32mI (12381) BLE_MESH: send, len 29: c2e5020200000064687431000000c041000038420100000001f0020000[0m
+[0;31mE (12381) BLE_MESH: Model not bound to AppKey 0x0000[0m
+[0;31mE (12391) MESH_SERVER: Failed to send message 0xc202e5[0m
+[0;32mI (22421) BLE_MESH: send, app_idx 0x0000 src 0x0002 dst 0xffff[0m
+[0;32mI (22421) BLE_MESH: send, len 29: c2e5020300000064687431000000c041000030420100000001e9020000[0m
+[0;31mE (22421) BLE_MESH: Model not bound to AppKey 0x0000[0m
+[0;31mE (22431) MESH_SERVER: Failed to send message 0xc202e5[0m

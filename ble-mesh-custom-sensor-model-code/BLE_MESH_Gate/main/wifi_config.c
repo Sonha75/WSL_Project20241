@@ -19,8 +19,8 @@ const char *TAG = "wifi station";
 #define WIFI_CONNECTED_BIT BIT0
 #define WIFI_FAIL_BIT      BIT1
 
-#define EXAMPLE_ESP_WIFI_SSID      "Hust_C7"
-#define EXAMPLE_ESP_WIFI_PASS      ""
+#define EXAMPLE_ESP_WIFI_SSID      "VIETTEL_2.4G_UC4H7U"
+#define EXAMPLE_ESP_WIFI_PASS      "QcAMEKbf"
 
 
 

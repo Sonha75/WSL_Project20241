@@ -1,0 +1,94 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM10 instead...[0m
+[0;33m--- esp-idf-monitor 1.5.0 on \\.\COM10 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400857c6: esp_crosscore_isr at D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/crosscore_int.c:103
+0x40083a89: _xt_lowint1 at D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/xtensa/xtensa_vectors.S:1240
+0x40082f11: esp_timer_impl_get_counter_reg at D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_timer/src/esp_timer_impl_lac.c:118
+0x40082f37: esp_timer_impl_get_time at D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_timer/src/esp_timer_impl_lac.c:141
+0x400d8073: DHT11_read at D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/node_DHT/BLE_MESH_Node_DHT11/main/dht11.c:93
+0x400d7dfc: environment_sensor at D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/node_DHT/BLE_MESH_Node_DHT11/main/main.c:47
+0x4008ffc5: vPortTaskWrapper at D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x400857c6: esp_crosscore_isr at D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/crosscore_int.c:103
+0x40083a89: _xt_lowint1 at D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/xtensa/xtensa_vectors.S:1240
+0x40082f31: esp_timer_impl_get_counter_reg at D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_timer/src/esp_timer_impl_lac.c:137
+0x400d7dfc: environment_sensor at D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/node_DHT/BLE_MESH_Node_DHT11/main/main.c:47
+0x4008ffc5: vPortTaskWrapper at D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x400857c6: esp_crosscore_isr at D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/crosscore_int.c:103
+0x40083a89: _xt_lowint1 at D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/xtensa/xtensa_vectors.S:1240
+0x400d7df9: environment_sensor at D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/node_DHT/BLE_MESH_Node_DHT11/main/main.c:45
+0x4008ffc5: vPortTaskWrapper at D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x400857c6: esp_crosscore_isr at D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/crosscore_int.c:103
+0x40083a89: _xt_lowint1 at D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/xtensa/xtensa_vectors.S:1240
+0x40082f29: esp_timer_impl_get_counter_reg at D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_timer/src/esp_timer_impl_lac.c:129
+0x40082f37: esp_timer_impl_get_time at D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_timer/src/esp_timer_impl_lac.c:141
+0x400d8073: DHT11_read at D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/node_DHT/BLE_MESH_Node_DHT11/main/dht11.c:93
+0x400d7dfc: environment_sensor at D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/node_DHT/BLE_MESH_Node_DHT11/main/main.c:47
+0x4008ffc5: vPortTaskWrapper at D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x400857c6: esp_crosscore_isr at D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/crosscore_int.c:103
+0x40083a89: _xt_lowint1 at D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/xtensa/xtensa_vectors.S:1240
+0x400d80a5: DHT11_read at D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/node_DHT/BLE_MESH_Node_DHT11/main/dht11.c:94
+0x400d7dfc: environment_sensor at D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/node_DHT/BLE_MESH_Node_DHT11/main/main.c:47
+0x4008ffc5: vPortTaskWrapper at D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x400857c6: esp_crosscore_isr at D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/crosscore_int.c:103
+0x40083a89: _xt_lowint1 at D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/xtensa/xtensa_vectors.S:1240
+0x40082f09: esp_timer_impl_get_counter_reg at D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_timer/src/esp_timer_impl_lac.c:116
+0x40082f37: esp_timer_impl_get_time at D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_timer/src/esp_timer_impl_lac.c:141
+0x400d8073: DHT11_read at D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/node_DHT/BLE_MESH_Node_DHT11/main/dht11.c:93
+0x400d7dfc: environment_sensor at D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/node_DHT/BLE_MESH_Node_DHT11/main/main.c:47
+0x4008ffc5: vPortTaskWrapper at D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x400857c6: esp_crosscore_isr at D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/crosscore_int.c:103
+0x40083a89: _xt_lowint1 at D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/xtensa/xtensa_vectors.S:1240
+0x40082f29: esp_timer_impl_get_counter_reg at D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_timer/src/esp_timer_impl_lac.c:129
+0x40082f37: esp_timer_impl_get_time at D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_timer/src/esp_timer_impl_lac.c:141
+0x400d8073: DHT11_read at D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/node_DHT/BLE_MESH_Node_DHT11/main/dht11.c:93
+0x400d7dfc: environment_sensor at D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/node_DHT/BLE_MESH_Node_DHT11/main/main.c:47
+0x4008ffc5: vPortTaskWrapper at D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x400857c6: esp_crosscore_isr at D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/crosscore_int.c:103
+0x40083a89: _xt_lowint1 at D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/xtensa/xtensa_vectors.S:1240
+0x40082f23: esp_timer_impl_get_counter_reg at D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_timer/src/esp_timer_impl_lac.c:128
+0x40082f37: esp_timer_impl_get_time at D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_timer/src/esp_timer_impl_lac.c:141
+0x400d8073: DHT11_read at D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/node_DHT/BLE_MESH_Node_DHT11/main/dht11.c:93
+0x400d7dfc: environment_sensor at D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/node_DHT/BLE_MESH_Node_DHT11/main/main.c:47
+0x4008ffc5: vPortTaskWrapper at D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x400857c6: esp_crosscore_isr at D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/crosscore_int.c:103
+0x40083a89: _xt_lowint1 at D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/xtensa/xtensa_vectors.S:1240
+0x400d7e04: environment_sensor at D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/node_DHT/BLE_MESH_Node_DHT11/main/main.c:47
+0x4008ffc5: vPortTaskWrapper at D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x400857c6: esp_crosscore_isr at D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/crosscore_int.c:103
+0x40083a89: _xt_lowint1 at D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/xtensa/xtensa_vectors.S:1240
+0x4008e337: xt_utils_wait_for_intr at D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/xtensa/include/xt_utils.h:81
+ (inlined by) esp_cpu_wait_for_intr at D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_hw_support/cpu.c:132
+0x400d43e7: esp_vApplicationIdleHook at D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/freertos_hooks.c:59
+0x40090dcd: prvIdleTask at D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/freertos/FreeRTOS-Kernel/tasks.c:4307 (discriminator 1)
+0x4008ffc5: vPortTaskWrapper at D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400857c6: esp_crosscore_isr at D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/crosscore_int.c:103
+0x40083a89: _xt_lowint1 at D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/xtensa/xtensa_vectors.S:1240
+0x400d7dff: environment_sensor at D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/node_DHT/BLE_MESH_Node_DHT11/main/main.c:47
+0x4008ffc5: vPortTaskWrapper at D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0m

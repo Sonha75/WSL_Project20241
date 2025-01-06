@@ -1,0 +1,7 @@
+CMake Error at D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/tools/cmake/component.cmake:314 (message):
+  Include directory 'D:/IDF/git/WSL_Project20241/include' is not a directory.
+Call Stack (most recent call first):
+  D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/tools/cmake/component.cmake:482 (__component_add_include_dirs)
+  main/CMakeLists.txt:7 (idf_component_register)
+
+

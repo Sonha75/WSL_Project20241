@@ -23,6 +23,6 @@ esp_err_t ble_mesh_custom_sensor_client_model_message_set(model_sensor_data_t se
 esp_err_t ble_mesh_custom_sensor_client_model_message_get(void);
 
 bool is_client_provisioned(void);
-
+bool is_duplicate_message(uint16_t src_addr, uint32_t seq_num);
 #endif  
 

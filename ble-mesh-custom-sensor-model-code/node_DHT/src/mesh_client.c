@@ -23,8 +23,9 @@ static bool is_provisioning = false; /**<Provision flags> */
 
 // Configuration Server Model
 static esp_ble_mesh_cfg_srv_t config_server = {
-    .relay = ESP_BLE_MESH_RELAY_DISABLED,
+    .relay = ESP_BLE_MESH_RELAY_ENABLED,
     .beacon = ESP_BLE_MESH_BEACON_ENABLED,
+    .gatt_proxy = ESP_BLE_MESH_GATT_PROXY_ENABLED,
 #if defined(CONFIG_BLE_MESH_FRIEND)
     .friend_state = ESP_BLE_MESH_FRIEND_ENABLED,
 #else
@@ -90,6 +91,8 @@ static esp_ble_mesh_prov_t provision = {
     .uuid = dev_uuid,
     .output_size = 0,
     .output_actions = 0,
+    .prov_enable = true,
+    .bearer = (ESP_BLE_MESH_PROV_ADV | ESP_BLE_MESH_PROV_GATT)
 };
 
 
@@ -220,7 +223,7 @@ static void ble_mesh_custom_sensor_client_model_cb(esp_ble_mesh_model_cb_event_t
 
         break;
 
-        case ESP_BLE_MESH_CLIENT_MODEL_RECV_PUBLISH_MSG_EVT:
+        case ESP_BLE_MESH_CLIENT_MODEL_RECV_PUBLISH_MSG_EVT: //here is received
             switch (param->client_recv_publish_msg.opcode) {
                 case ESP_BLE_MESH_CUSTOM_SENSOR_MODEL_OP_STATUS:
                     ESP_LOGI(TAG, "OPCODE_STATUS received: 0x%06x", param->client_recv_publish_msg.opcode);

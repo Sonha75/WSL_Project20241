@@ -1,0 +1,6 @@
+source "D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/bootloader/Kconfig.projbuild"
+source "D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_app_format/Kconfig.projbuild"
+source "D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_rom/Kconfig.projbuild"
+source "D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esptool_py/Kconfig.projbuild"
+source "D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/partition_table/Kconfig.projbuild"
+source "D:/IDF/git/WSL_Project20241/BLE_MESH_Gate/main/Kconfig.projbuild"

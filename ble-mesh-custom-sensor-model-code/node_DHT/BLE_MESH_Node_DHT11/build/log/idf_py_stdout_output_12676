@@ -1,0 +1,886 @@
+&�+
+B��J���� chip revisio�ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (30) boot: ESP-IDF v5.2.3-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jan  4 2025 02:18:25[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v1.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 otadata          OTA data         01 00 0000f000 00002000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00020000 00220000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) boot: Defaulting to factory image[0m
+[0;32mI (100) esp_image: segment 0: paddr=00020020 vaddr=3f400020 size=34c88h (216200) map[0m
+[0;32mI (183) esp_image: segment 1: paddr=00054cb0 vaddr=3ffbdb60 size=05518h ( 21784) load[0m
+[0;32mI (191) esp_image: segment 2: paddr=0005a1d0 vaddr=40080000 size=05e48h ( 24136) load[0m
+[0;32mI (201) esp_image: segment 3: paddr=00060020 vaddr=400d0020 size=b4600h (738816) map[0m
+[0;32mI (454) esp_image: segment 4: paddr=00114628 vaddr=40085e48 size=10f54h ( 69460) load[0m
+[0;32mI (494) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (494) boot: Disabling RNG early entropy source...[0m
+[0;32mI (505) cpu_start: Multicore app[0m
+[0;32mI (514) cpu_start: Pro cpu start user code[0m
+[0;32mI (514) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (515) cpu_start: Application information:[0m
+[0;32mI (517) cpu_start: Project name:     BLE_MESH_Node[0m
+[0;32mI (523) cpu_start: App version:      2841ab0-dirty[0m
+[0;32mI (528) cpu_start: Compile time:     Jan  4 2025 02:18:08[0m
+[0;32mI (535) cpu_start: ELF file SHA256:  a1e4510aba39f718...[0m
+[0;32mI (540) cpu_start: ESP-IDF:          v5.2.3-dirty[0m
+[0;32mI (546) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (551) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (555) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (560) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (568) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (573) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (579) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (586) heap_init: At 3FFCAEC8 len 00015138 (84 KiB): DRAM[0m
+[0;32mI (592) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (598) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (605) heap_init: At 40096D9C len 00009264 (36 KiB): IRAM[0m
+[0;32mI (612) spi_flash: detected chip: generic[0m
+[0;32mI (615) spi_flash: flash io: dio[0m
+[0;32mI (620) coexist: coex firmware version: 27d8387[0m
+[0;32mI (625) main_task: Started on CPU0[0m
+[0;32mI (635) main_task: Calling app_main()[0m
+[0;32mI (635) MESH-SERVER-MAIN: Initializing...[0m
+use esp timer !!!
+[0;31mE (635) esp_timer: Task is already initialized[0m
+[0;32mI (635) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (1655) BTDM_INIT: BT controller compile version [b022216][0m
+[0;32mI (1655) BTDM_INIT: Bluetooth MAC: c8:f0:9e:9a:37:0a[0m
+[0;32mI (1655) phy_init: phy_version 4840,a40f0ac,Aug 16 2024,16:48:06[0m
+[0;33mW (1655) phy_init: failed to load RF calibration data (0x1102), falling back to full calibration[0m
+[0;33mW (1735) phy_init: saving new calibration data because of checksum failure, mode(2)[0m
+Bluetooth Mesh v1.1 commit: [10f7fdc1a9]
+[0;32mI (2165) MESH_SERVER: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;32mI (2165) MESH_SERVER: ESP_BLE_MESH_NODE_SET_UNPROV_DEV_NAME_COMP_EVT, Name: BLE Mesh, err_code 0[0m
+[0;32mI (2175) MESH_SERVER: BLE Mesh Node initialized![0m
+[0;32mI (2175) main_task: Returned from app_main()[0m
+[0;32mI (2195) MESH_SERVER: ESP_BLE_MESH_NODE_PROV_ENABLE_COMP_EVT, err_code 0[0m
+[0;31mE (4205) MESH-SERVER-MAIN: 22.000000[0m
+[0;31mE (4205) MESH-SERVER-MAIN: 60.000000[0m
+[0;31mE (4205) BLE_MESH: Send, NetKey 0x0000 not found[0m
+[0;31mE (4205) MESH_SERVER: Failed to send message 0xc202e5[0m
+[0;32mI (13385) MESH_SERVER: ESP_BLE_MESH_NODE_PROV_LINK_OPEN_EVT, bearer PB-GATT[0m
+[0;31mE (14225) MESH-SERVER-MAIN: 22.000000[0m
+[0;31mE (14225) MESH-SERVER-MAIN: 59.000000[0m
+[0;31mE (14225) BLE_MESH: Send, NetKey 0x0000 not found[0m
+[0;31mE (14225) MESH_SERVER: Failed to send message 0xc202e5[0m
+[0;33mW (17915) BLE_MESH: No Health Server context provided[0m
+[0;33mW (21435) BLE_MESH: No Health Server context provided[0m
+[0;32mI (21465) MESH_SERVER: ESP_BLE_MESH_NODE_PROV_LINK_CLOSE_EVT, bearer PB-GATT[0m
+[0;32mI (21465) MESH_SERVER: ESP_BLE_MESH_NODE_PROV_COMPLETE_EVT[0m
+[0;32mI (21465) MESH_SERVER: net_idx: 0x0000, addr: 0x0004[0m
+[0;32mI (21475) MESH_SERVER: Device provisioned[0m
+[0;33mW (22545) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;31mE (24245) MESH-SERVER-MAIN: 22.000000[0m
+[0;31mE (24245) MESH-SERVER-MAIN: 59.000000[0m
+[0;31mE (24245) BLE_MESH: Model not bound to AppKey 0x0000[0m
+[0;31mE (24245) MESH_SERVER: Failed to send message 0xc202e5[0m
+[0;32mI (31645) MESH_SERVER: ESP_BLE_MESH_MODEL_OP_APP_KEY_ADD[0m
+[0;32mI (31645) MESH_SERVER: net_idx 0x0000, app_idx 0x0000[0m
+[0;32mI (31645) AppKey: d5 7c f4 34 18 aa 29 e8 e7 d2 de c3 6d 75 43 cf [0m
+[0;31mE (34265) MESH-SERVER-MAIN: 22.000000[0m
+[0;31mE (34265) MESH-SERVER-MAIN: 59.000000[0m
+[0;31mE (34265) BLE_MESH: Model not bound to AppKey 0x0000[0m
+[0;31mE (34265) MESH_SERVER: Failed to send message 0xc202e5[0m
+[0;32mI (40865) MESH_SERVER: ESP_BLE_MESH_MODEL_OP_MODEL_APP_BIND[0m
+[0;32mI (40865) MESH_SERVER: elem_addr 0x0004, app_idx 0x0000, cid 0x02e5, mod_id 0x001414[0m
+[0;32mI (40865) MESH_SERVER: Application key bound to model 0x001414[0m
+[0;31mE (44285) MESH-SERVER-MAIN: 22.000000[0m
+[0;31mE (44285) MESH-SERVER-MAIN: 59.000000[0m
+[0;33mW (44305) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (44335) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (44345) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (44365) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (44365) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (44365) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (44365) PARSED_DATA: Device Name = dht11[0m
+[0;33mW (44375) PARSED_DATA: Temperature = 22.000000[0m
+[0;33mW (44375) PARSED_DATA: Humidity    = 59.000000[0m
+[0;33mW (44385) PARSED_DATA: temp_ADC        = 3.000000[0m
+[0;32mI (44385) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (54305) MESH-SERVER-MAIN: 22.000000[0m
+[0;31mE (54305) MESH-SERVER-MAIN: 59.000000[0m
+[0;33mW (54325) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (54355) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (54365) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (54385) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (54385) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (54385) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (54385) PARSED_DATA: Device Name = dht11[0m
+[0;33mW (54395) PARSED_DATA: Temperature = 22.000000[0m
+[0;33mW (54395) PARSED_DATA: Humidity    = 59.000000[0m
+[0;33mW (54405) PARSED_DATA: temp_ADC        = 3.000000[0m
+[0;32mI (54405) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (64325) MESH-SERVER-MAIN: 22.000000[0m
+[0;31mE (64325) MESH-SERVER-MAIN: 59.000000[0m
+[0;33mW (64335) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (64375) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (64385) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (64405) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (64405) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (64405) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (64405) PARSED_DATA: Device Name = dht11[0m
+[0;33mW (64415) PARSED_DATA: Temperature = 22.000000[0m
+[0;33mW (64415) PARSED_DATA: Humidity    = 59.000000[0m
+[0;33mW (64425) PARSED_DATA: temp_ADC        = 3.000000[0m
+[0;32mI (64435) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (74345) MESH-SERVER-MAIN: 22.000000[0m
+[0;31mE (74345) MESH-SERVER-MAIN: 59.000000[0m
+[0;33mW (74355) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (74395) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (74405) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (74425) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (74425) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (74425) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (74425) PARSED_DATA: Device Name = dht11[0m
+[0;33mW (74435) PARSED_DATA: Temperature = 22.000000[0m
+[0;33mW (74435) PARSED_DATA: Humidity    = 59.000000[0m
+[0;33mW (74445) PARSED_DATA: temp_ADC        = 3.000000[0m
+[0;32mI (74445) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (84365) MESH-SERVER-MAIN: 22.000000[0m
+[0;31mE (84365) MESH-SERVER-MAIN: 59.000000[0m
+[0;33mW (84385) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (84415) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (84425) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (84445) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (84445) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (84445) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (84445) PARSED_DATA: Device Name = dht11[0m
+[0;33mW (84455) PARSED_DATA: Temperature = 22.000000[0m
+[0;33mW (84455) PARSED_DATA: Humidity    = 59.000000[0m
+[0;33mW (84465) PARSED_DATA: temp_ADC        = 3.000000[0m
+[0;32mI (84465) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (94385) MESH-SERVER-MAIN: 22.000000[0m
+[0;31mE (94385) MESH-SERVER-MAIN: 59.000000[0m
+[0;33mW (94395) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (94435) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (94445) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (94465) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (94465) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (94465) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (94465) PARSED_DATA: Device Name = dht11[0m
+[0;33mW (94475) PARSED_DATA: Temperature = 22.000000[0m
+[0;33mW (94475) PARSED_DATA: Humidity    = 59.000000[0m
+[0;33mW (94485) PARSED_DATA: temp_ADC        = 3.000000[0m
+[0;32mI (94495) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (104405) MESH-SERVER-MAIN: 23.000000[0m
+[0;31mE (104405) MESH-SERVER-MAIN: 59.000000[0m
+[0;33mW (104415) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (104455) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (104465) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (104485) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (104485) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (104485) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (104485) PARSED_DATA: Device Name = dht11[0m
+[0;33mW (104495) PARSED_DATA: Temperature = 23.000000[0m
+[0;33mW (104495) PARSED_DATA: Humidity    = 59.000000[0m
+[0;33mW (104505) PARSED_DATA: temp_ADC        = 3.000000[0m
+[0;32mI (104505) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (114425) MESH-SERVER-MAIN: 23.000000[0m
+[0;31mE (114425) MESH-SERVER-MAIN: 59.000000[0m
+[0;33mW (114445) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (114475) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (114485) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (114505) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (114505) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (114505) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (114505) PARSED_DATA: Device Name = dht11[0m
+[0;33mW (114515) PARSED_DATA: Temperature = 23.000000[0m
+[0;33mW (114515) PARSED_DATA: Humidity    = 59.000000[0m
+[0;33mW (114525) PARSED_DATA: temp_ADC        = 3.000000[0m
+[0;32mI (114525) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (124445) MESH-SERVER-MAIN: 23.000000[0m
+[0;31mE (124445) MESH-SERVER-MAIN: 59.000000[0m
+[0;33mW (124455) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (124495) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (124505) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (124525) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (124525) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (124525) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (124535) PARSED_DATA: Device Name = dht11[0m
+[0;33mW (124535) PARSED_DATA: Temperature = 23.000000[0m
+[0;33mW (124545) PARSED_DATA: Humidity    = 59.000000[0m
+[0;33mW (124545) PARSED_DATA: temp_ADC        = 3.000000[0m
+[0;32mI (124555) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (134465) MESH-SERVER-MAIN: 23.000000[0m
+[0;31mE (134465) MESH-SERVER-MAIN: 59.000000[0m
+[0;33mW (134475) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (134515) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (134525) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (134545) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (134545) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (134545) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (134545) PARSED_DATA: Device Name = dht11[0m
+[0;33mW (134555) PARSED_DATA: Temperature = 23.000000[0m
+[0;33mW (134555) PARSED_DATA: Humidity    = 59.000000[0m
+[0;33mW (134565) PARSED_DATA: temp_ADC        = 3.000000[0m
+[0;32mI (134565) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (144485) MESH-SERVER-MAIN: 23.000000[0m
+[0;31mE (144485) MESH-SERVER-MAIN: 59.000000[0m
+[0;33mW (144505) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (144535) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (144545) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (144565) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (144565) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (144565) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (144565) PARSED_DATA: Device Name = dht11[0m
+[0;33mW (144575) PARSED_DATA: Temperature = 23.000000[0m
+[0;33mW (144575) PARSED_DATA: Humidity    = 59.000000[0m
+[0;33mW (144585) PARSED_DATA: temp_ADC        = 3.000000[0m
+[0;32mI (144585) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (154505) MESH-SERVER-MAIN: 23.000000[0m
+[0;31mE (154505) MESH-SERVER-MAIN: 59.000000[0m
+[0;33mW (154515) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (154555) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (154565) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (154585) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (154585) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (154585) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (154595) PARSED_DATA: Device Name = dht11[0m
+[0;33mW (154595) PARSED_DATA: Temperature = 23.000000[0m
+[0;33mW (154605) PARSED_DATA: Humidity    = 59.000000[0m
+[0;33mW (154605) PARSED_DATA: temp_ADC        = 3.000000[0m
+[0;32mI (154615) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (164525) MESH-SERVER-MAIN: 23.000000[0m
+[0;31mE (164525) MESH-SERVER-MAIN: 59.000000[0m
+[0;33mW (164535) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (164575) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (164585) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (164605) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (164605) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (164605) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (164605) PARSED_DATA: Device Name = dht11[0m
+[0;33mW (164615) PARSED_DATA: Temperature = 23.000000[0m
+[0;33mW (164615) PARSED_DATA: Humidity    = 59.000000[0m
+[0;33mW (164625) PARSED_DATA: temp_ADC        = 3.000000[0m
+[0;32mI (164625) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (174545) MESH-SERVER-MAIN: 23.000000[0m
+[0;31mE (174545) MESH-SERVER-MAIN: 59.000000[0m
+[0;33mW (174565) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (174595) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (174605) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (174625) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (174625) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (174625) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (174625) PARSED_DATA: Device Name = dht11[0m
+[0;33mW (174635) PARSED_DATA: Temperature = 23.000000[0m
+[0;33mW (174635) PARSED_DATA: Humidity    = 59.000000[0m
+[0;33mW (174645) PARSED_DATA: temp_ADC        = 3.000000[0m
+[0;32mI (174645) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (184565) MESH-SERVER-MAIN: 23.000000[0m
+[0;31mE (184565) MESH-SERVER-MAIN: 59.000000[0m
+[0;33mW (184575) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (184615) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (184625) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (184645) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (184645) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (184645) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (184645) PARSED_DATA: Device Name = dht11[0m
+[0;33mW (184655) PARSED_DATA: Temperature = 23.000000[0m
+[0;33mW (184655) PARSED_DATA: Humidity    = 59.000000[0m
+[0;33mW (184665) PARSED_DATA: temp_ADC        = 3.000000[0m
+[0;32mI (184665) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (194585) MESH-SERVER-MAIN: 23.000000[0m
+[0;31mE (194585) MESH-SERVER-MAIN: 59.000000[0m
+[0;33mW (194595) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (194635) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (194645) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (194665) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (194665) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (194665) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (194665) PARSED_DATA: Device Name = dht11[0m
+[0;33mW (194675) PARSED_DATA: Temperature = 23.000000[0m
+[0;33mW (194675) PARSED_DATA: Humidity    = 59.000000[0m
+[0;33mW (194685) PARSED_DATA: temp_ADC        = 3.000000[0m
+[0;32mI (194685) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (204605) MESH-SERVER-MAIN: 23.000000[0m
+[0;31mE (204605) MESH-SERVER-MAIN: 59.000000[0m
+[0;33mW (204625) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (204655) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (204665) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (204685) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (204685) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (204685) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (204685) PARSED_DATA: Device Name = dht11[0m
+[0;33mW (204695) PARSED_DATA: Temperature = 23.000000[0m
+[0;33mW (204695) PARSED_DATA: Humidity    = 59.000000[0m
+[0;33mW (204705) PARSED_DATA: temp_ADC        = 3.000000[0m
+[0;32mI (204715) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (214625) MESH-SERVER-MAIN: 23.000000[0m
+[0;31mE (214625) MESH-SERVER-MAIN: 59.000000[0m
+[0;33mW (214635) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (214675) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (214685) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (214705) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (214705) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (214705) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (214715) PARSED_DATA: Device Name = dht11[0m
+[0;33mW (214715) PARSED_DATA: Temperature = 23.000000[0m
+[0;33mW (214725) PARSED_DATA: Humidity    = 59.000000[0m
+[0;33mW (214725) PARSED_DATA: temp_ADC        = 3.000000[0m
+[0;32mI (214735) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;33mW (218935) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;31mE (224645) MESH-SERVER-MAIN: 23.000000[0m
+[0;31mE (224645) MESH-SERVER-MAIN: 59.000000[0m
+[0;33mW (224655) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (224685) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (224695) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (224715) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (224715) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (224715) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (224715) PARSED_DATA: Device Name = dht11[0m
+[0;33mW (224725) PARSED_DATA: Temperature = 23.000000[0m
+[0;33mW (224725) PARSED_DATA: Humidity    = 59.000000[0m
+[0;33mW (224735) PARSED_DATA: temp_ADC        = 3.000000[0m
+[0;32mI (224745) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (234665) MESH-SERVER-MAIN: 23.000000[0m
+[0;31mE (234665) MESH-SERVER-MAIN: 59.000000[0m
+[0;33mW (234675) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (234705) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (234715) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (234725) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (234725) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (234725) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (234725) PARSED_DATA: Device Name = dht11[0m
+[0;33mW (234735) PARSED_DATA: Temperature = 23.000000[0m
+[0;33mW (234735) PARSED_DATA: Humidity    = 59.000000[0m
+[0;33mW (234745) PARSED_DATA: temp_ADC        = 3.000000[0m
+[0;32mI (234755) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (244685) MESH-SERVER-MAIN: 23.000000[0m
+[0;31mE (244685) MESH-SERVER-MAIN: 59.000000[0m
+[0;33mW (244695) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (244785) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (244815) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (244825) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (244825) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (244825) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (244825) PARSED_DATA: Device Name = dht11[0m
+[0;33mW (244835) PARSED_DATA: Temperature = 23.000000[0m
+[0;33mW (244835) PARSED_DATA: Humidity    = 59.000000[0m
+[0;33mW (244845) PARSED_DATA: temp_ADC        = 3.000000[0m
+[0;32mI (244855) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (254705) MESH-SERVER-MAIN: 23.000000[0m
+[0;31mE (254705) MESH-SERVER-MAIN: 59.000000[0m
+[0;33mW (254715) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (254745) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (254755) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (254775) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (254775) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (254775) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (254775) PARSED_DATA: Device Name = dht11[0m
+[0;33mW (254785) PARSED_DATA: Temperature = 23.000000[0m
+[0;33mW (254785) PARSED_DATA: Humidity    = 59.000000[0m
+[0;33mW (254795) PARSED_DATA: temp_ADC        = 3.000000[0m
+[0;32mI (254805) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (264725) MESH-SERVER-MAIN: 23.000000[0m
+[0;31mE (264725) MESH-SERVER-MAIN: 59.000000[0m
+[0;33mW (264735) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (264765) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (264775) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (264845) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (264845) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (264855) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (264855) PARSED_DATA: Device Name = dht11[0m
+[0;33mW (264855) PARSED_DATA: Temperature = 23.000000[0m
+[0;33mW (264865) PARSED_DATA: Humidity    = 59.000000[0m
+[0;33mW (264875) PARSED_DATA: temp_ADC        = 3.000000[0m
+[0;32mI (264875) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (274745) MESH-SERVER-MAIN: 23.000000[0m
+[0;31mE (274745) MESH-SERVER-MAIN: 59.000000[0m
+[0;33mW (274755) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (274785) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (274795) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (274805) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (274805) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (274805) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (274805) PARSED_DATA: Device Name = dht11[0m
+[0;33mW (274815) PARSED_DATA: Temperature = 23.000000[0m
+[0;33mW (274815) PARSED_DATA: Humidity    = 59.000000[0m
+[0;33mW (274825) PARSED_DATA: temp_ADC        = 3.000000[0m
+[0;32mI (274825) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (284765) MESH-SERVER-MAIN: 23.000000[0m
+[0;31mE (284765) MESH-SERVER-MAIN: 59.000000[0m
+[0;33mW (284775) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (284805) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (284815) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (284825) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (284825) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (284825) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (284825) PARSED_DATA: Device Name = dht11[0m
+[0;33mW (284835) PARSED_DATA: Temperature = 23.000000[0m
+[0;33mW (284835) PARSED_DATA: Humidity    = 59.000000[0m
+[0;33mW (284845) PARSED_DATA: temp_ADC        = 3.000000[0m
+[0;32mI (284845) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (294785) MESH-SERVER-MAIN: 23.000000[0m
+[0;31mE (294785) MESH-SERVER-MAIN: 59.000000[0m
+[0;33mW (294795) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (294825) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (294835) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (294845) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (294845) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (294845) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (294845) PARSED_DATA: Device Name = dht11[0m
+[0;33mW (294855) PARSED_DATA: Temperature = 23.000000[0m
+[0;33mW (294855) PARSED_DATA: Humidity    = 59.000000[0m
+[0;33mW (294865) PARSED_DATA: temp_ADC        = 3.000000[0m
+[0;32mI (294865) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (304805) MESH-SERVER-MAIN: 23.000000[0m
+[0;31mE (304805) MESH-SERVER-MAIN: 59.000000[0m
+[0;33mW (304815) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (304845) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (304855) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (304865) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (304865) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (304865) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (304865) PARSED_DATA: Device Name = dht11[0m
+[0;33mW (304875) PARSED_DATA: Temperature = 23.000000[0m
+[0;33mW (304875) PARSED_DATA: Humidity    = 59.000000[0m
+[0;33mW (304885) PARSED_DATA: temp_ADC        = 3.000000[0m
+[0;32mI (304885) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (314825) MESH-SERVER-MAIN: 23.000000[0m
+[0;31mE (314825) MESH-SERVER-MAIN: 59.000000[0m
+[0;33mW (314835) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (314865) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (314875) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (314885) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (314885) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (314885) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (314885) PARSED_DATA: Device Name = dht11[0m
+[0;33mW (314895) PARSED_DATA: Temperature = 23.000000[0m
+[0;33mW (314895) PARSED_DATA: Humidity    = 59.000000[0m
+[0;33mW (314905) PARSED_DATA: temp_ADC        = 3.000000[0m
+[0;32mI (314905) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (324845) MESH-SERVER-MAIN: 23.000000[0m
+[0;31mE (324845) MESH-SERVER-MAIN: 59.000000[0m
+[0;33mW (324855) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (324885) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (324895) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (324905) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (324905) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (324905) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (324905) PARSED_DATA: Device Name = dht11[0m
+[0;33mW (324915) PARSED_DATA: Temperature = 23.000000[0m
+[0;33mW (324915) PARSED_DATA: Humidity    = 59.000000[0m
+[0;33mW (324925) PARSED_DATA: temp_ADC        = 3.000000[0m
+[0;32mI (324925) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (334865) MESH-SERVER-MAIN: 23.000000[0m
+[0;31mE (334865) MESH-SERVER-MAIN: 59.000000[0m
+[0;33mW (334875) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (334905) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (334915) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (334925) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (334925) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (334925) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (334925) PARSED_DATA: Device Name = dht11[0m
+[0;33mW (334935) PARSED_DATA: Temperature = 23.000000[0m
+[0;33mW (334935) PARSED_DATA: Humidity    = 59.000000[0m
+[0;33mW (334945) PARSED_DATA: temp_ADC        = 3.000000[0m
+[0;32mI (334945) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (344885) MESH-SERVER-MAIN: 23.000000[0m
+[0;31mE (344885) MESH-SERVER-MAIN: 59.000000[0m
+[0;33mW (344895) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (344925) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (344935) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (344945) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (344945) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (344945) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (344945) PARSED_DATA: Device Name = dht11[0m
+[0;33mW (344955) PARSED_DATA: Temperature = 23.000000[0m
+[0;33mW (344955) PARSED_DATA: Humidity    = 59.000000[0m
+[0;33mW (344965) PARSED_DATA: temp_ADC        = 3.000000[0m
+[0;32mI (344965) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (354905) MESH-SERVER-MAIN: 23.000000[0m
+[0;31mE (354905) MESH-SERVER-MAIN: 59.000000[0m
+[0;33mW (354915) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (354945) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (354955) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (354965) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (354965) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (354965) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (354965) PARSED_DATA: Device Name = dht11[0m
+[0;33mW (354975) PARSED_DATA: Temperature = 23.000000[0m
+[0;33mW (354975) PARSED_DATA: Humidity    = 59.000000[0m
+[0;33mW (354985) PARSED_DATA: temp_ADC        = 3.000000[0m
+[0;32mI (354985) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (364925) MESH-SERVER-MAIN: 23.000000[0m
+[0;31mE (364925) MESH-SERVER-MAIN: 59.000000[0m
+[0;33mW (364935) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (364965) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (364975) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (364985) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (364985) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (364985) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (364985) PARSED_DATA: Device Name = dht11[0m
+[0;33mW (364995) PARSED_DATA: Temperature = 23.000000[0m
+[0;33mW (364995) PARSED_DATA: Humidity    = 59.000000[0m
+[0;33mW (365005) PARSED_DATA: temp_ADC        = 3.000000[0m
+[0;32mI (365005) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (374945) MESH-SERVER-MAIN: 23.000000[0m
+[0;31mE (374945) MESH-SERVER-MAIN: 59.000000[0m
+[0;33mW (374955) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (374985) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (374995) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (375005) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (375005) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (375005) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (375005) PARSED_DATA: Device Name = dht11[0m
+[0;33mW (375015) PARSED_DATA: Temperature = 23.000000[0m
+[0;33mW (375015) PARSED_DATA: Humidity    = 59.000000[0m
+[0;33mW (375025) PARSED_DATA: temp_ADC        = 3.000000[0m
+[0;32mI (375025) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (384965) MESH-SERVER-MAIN: 23.000000[0m
+[0;31mE (384965) MESH-SERVER-MAIN: 59.000000[0m
+[0;33mW (384975) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (385005) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (385015) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (385025) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (385025) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (385025) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (385025) PARSED_DATA: Device Name = dht11[0m
+[0;33mW (385035) PARSED_DATA: Temperature = 23.000000[0m
+[0;33mW (385035) PARSED_DATA: Humidity    = 59.000000[0m
+[0;33mW (385045) PARSED_DATA: temp_ADC        = 3.000000[0m
+[0;32mI (385045) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (394985) MESH-SERVER-MAIN: 23.000000[0m
+[0;31mE (394985) MESH-SERVER-MAIN: 59.000000[0m
+[0;33mW (394995) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (395025) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (395035) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (395045) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (395045) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (395045) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (395045) PARSED_DATA: Device Name = dht11[0m
+[0;33mW (395055) PARSED_DATA: Temperature = 23.000000[0m
+[0;33mW (395055) PARSED_DATA: Humidity    = 59.000000[0m
+[0;33mW (395065) PARSED_DATA: temp_ADC        = 3.000000[0m
+[0;32mI (395065) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (405005) MESH-SERVER-MAIN: 23.000000[0m
+[0;31mE (405005) MESH-SERVER-MAIN: 59.000000[0m
+[0;33mW (405015) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (405045) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (405055) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (405065) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (405065) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (405065) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (405065) PARSED_DATA: Device Name = dht11[0m
+[0;33mW (405075) PARSED_DATA: Temperature = 23.000000[0m
+[0;33mW (405075) PARSED_DATA: Humidity    = 59.000000[0m
+[0;33mW (405085) PARSED_DATA: temp_ADC        = 3.000000[0m
+[0;32mI (405085) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (415025) MESH-SERVER-MAIN: 23.000000[0m
+[0;31mE (415025) MESH-SERVER-MAIN: 59.000000[0m
+[0;33mW (415035) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (415065) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (415075) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (415085) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (415085) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (415085) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (415085) PARSED_DATA: Device Name = dht11[0m
+[0;33mW (415095) PARSED_DATA: Temperature = 23.000000[0m
+[0;33mW (415095) PARSED_DATA: Humidity    = 59.000000[0m
+[0;33mW (415105) PARSED_DATA: temp_ADC        = 3.000000[0m
+[0;32mI (415105) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (425045) MESH-SERVER-MAIN: 23.000000[0m
+[0;31mE (425045) MESH-SERVER-MAIN: 59.000000[0m
+[0;33mW (425055) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (425085) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (425095) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (425105) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (425105) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (425105) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (425105) PARSED_DATA: Device Name = dht11[0m
+[0;33mW (425115) PARSED_DATA: Temperature = 23.000000[0m
+[0;33mW (425115) PARSED_DATA: Humidity    = 59.000000[0m
+[0;33mW (425125) PARSED_DATA: temp_ADC        = 3.000000[0m
+[0;32mI (425125) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (435065) MESH-SERVER-MAIN: 23.000000[0m
+[0;31mE (435065) MESH-SERVER-MAIN: 59.000000[0m
+[0;33mW (435075) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (435105) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (435115) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (435125) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (435125) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (435125) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (435125) PARSED_DATA: Device Name = dht11[0m
+[0;33mW (435135) PARSED_DATA: Temperature = 23.000000[0m
+[0;33mW (435135) PARSED_DATA: Humidity    = 59.000000[0m
+[0;33mW (435145) PARSED_DATA: temp_ADC        = 3.000000[0m
+[0;32mI (435145) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (445085) MESH-SERVER-MAIN: 23.000000[0m
+[0;31mE (445085) MESH-SERVER-MAIN: 59.000000[0m
+[0;33mW (445095) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (445125) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (445135) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (445145) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (445145) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (445145) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (445145) PARSED_DATA: Device Name = dht11[0m
+[0;33mW (445155) PARSED_DATA: Temperature = 23.000000[0m
+[0;33mW (445155) PARSED_DATA: Humidity    = 59.000000[0m
+[0;33mW (445165) PARSED_DATA: temp_ADC        = 3.000000[0m
+[0;32mI (445165) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (455105) MESH-SERVER-MAIN: 23.000000[0m
+[0;31mE (455105) MESH-SERVER-MAIN: 59.000000[0m
+[0;33mW (455115) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (455195) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (455205) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (455235) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (455235) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (455235) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (455245) PARSED_DATA: Device Name = dht11[0m
+[0;33mW (455245) PARSED_DATA: Temperature = 23.000000[0m
+[0;33mW (455245) PARSED_DATA: Humidity    = 59.000000[0m
+[0;33mW (455255) PARSED_DATA: temp_ADC        = 3.000000[0m
+[0;32mI (455265) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (465125) MESH-SERVER-MAIN: 23.000000[0m
+[0;31mE (465125) MESH-SERVER-MAIN: 59.000000[0m
+[0;33mW (465135) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (465165) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (465175) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (465185) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (465185) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (465185) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (465185) PARSED_DATA: Device Name = dht11[0m
+[0;33mW (465195) PARSED_DATA: Temperature = 23.000000[0m
+[0;33mW (465195) PARSED_DATA: Humidity    = 59.000000[0m
+[0;33mW (465205) PARSED_DATA: temp_ADC        = 3.000000[0m
+[0;32mI (465205) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (475145) MESH-SERVER-MAIN: 23.000000[0m
+[0;31mE (475145) MESH-SERVER-MAIN: 59.000000[0m
+[0;33mW (475155) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (475185) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (475195) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (475265) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (475265) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (475275) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (475275) PARSED_DATA: Device Name = dht11[0m
+[0;33mW (475275) PARSED_DATA: Temperature = 23.000000[0m
+[0;33mW (475285) PARSED_DATA: Humidity    = 59.000000[0m
+[0;33mW (475295) PARSED_DATA: temp_ADC        = 3.000000[0m
+[0;32mI (475295) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (485165) MESH-SERVER-MAIN: 23.000000[0m
+[0;31mE (485165) MESH-SERVER-MAIN: 59.000000[0m
+[0;33mW (485175) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (485205) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (485215) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (485225) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (485225) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (485225) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (485225) PARSED_DATA: Device Name = dht11[0m
+[0;33mW (485235) PARSED_DATA: Temperature = 23.000000[0m
+[0;33mW (485235) PARSED_DATA: Humidity    = 59.000000[0m
+[0;33mW (485245) PARSED_DATA: temp_ADC        = 3.000000[0m
+[0;32mI (485245) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (495185) MESH-SERVER-MAIN: 23.000000[0m
+[0;31mE (495185) MESH-SERVER-MAIN: 59.000000[0m
+[0;33mW (495195) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (495225) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (495235) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (495245) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (495245) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (495245) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (495245) PARSED_DATA: Device Name = dht11[0m
+[0;33mW (495255) PARSED_DATA: Temperature = 23.000000[0m
+[0;33mW (495255) PARSED_DATA: Humidity    = 59.000000[0m
+[0;33mW (495265) PARSED_DATA: temp_ADC        = 3.000000[0m
+[0;32mI (495265) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (505205) MESH-SERVER-MAIN: 23.000000[0m
+[0;31mE (505205) MESH-SERVER-MAIN: 59.000000[0m
+[0;33mW (505215) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (505245) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (505255) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (505265) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (505265) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (505265) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (505265) PARSED_DATA: Device Name = dht11[0m
+[0;33mW (505275) PARSED_DATA: Temperature = 23.000000[0m
+[0;33mW (505275) PARSED_DATA: Humidity    = 59.000000[0m
+[0;33mW (505285) PARSED_DATA: temp_ADC        = 3.000000[0m
+[0;32mI (505285) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (515225) MESH-SERVER-MAIN: 23.000000[0m
+[0;31mE (515225) MESH-SERVER-MAIN: 59.000000[0m
+[0;33mW (515235) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (515265) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (515275) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (515285) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (515285) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (515285) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (515285) PARSED_DATA: Device Name = dht11[0m
+[0;33mW (515295) PARSED_DATA: Temperature = 23.000000[0m
+[0;33mW (515295) PARSED_DATA: Humidity    = 59.000000[0m
+[0;33mW (515305) PARSED_DATA: temp_ADC        = 3.000000[0m
+[0;32mI (515305) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (525245) MESH-SERVER-MAIN: 23.000000[0m
+[0;31mE (525245) MESH-SERVER-MAIN: 59.000000[0m
+[0;33mW (525255) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (525285) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (525295) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (525305) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (525305) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (525305) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (525305) PARSED_DATA: Device Name = dht11[0m
+[0;33mW (525315) PARSED_DATA: Temperature = 23.000000[0m
+[0;33mW (525315) PARSED_DATA: Humidity    = 59.000000[0m
+[0;33mW (525325) PARSED_DATA: temp_ADC        = 3.000000[0m
+[0;32mI (525325) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (535265) MESH-SERVER-MAIN: 23.000000[0m
+[0;31mE (535265) MESH-SERVER-MAIN: 59.000000[0m
+[0;33mW (535275) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (535305) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (535315) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (535325) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (535325) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (535325) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (535325) PARSED_DATA: Device Name = dht11[0m
+[0;33mW (535335) PARSED_DATA: Temperature = 23.000000[0m
+[0;33mW (535335) PARSED_DATA: Humidity    = 59.000000[0m
+[0;33mW (535345) PARSED_DATA: temp_ADC        = 3.000000[0m
+[0;32mI (535345) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (545285) MESH-SERVER-MAIN: 23.000000[0m
+[0;31mE (545285) MESH-SERVER-MAIN: 59.000000[0m
+[0;33mW (545295) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (545325) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (545335) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (545345) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (545345) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (545345) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (545345) PARSED_DATA: Device Name = dht11[0m
+[0;33mW (545355) PARSED_DATA: Temperature = 23.000000[0m
+[0;33mW (545355) PARSED_DATA: Humidity    = 59.000000[0m
+[0;33mW (545365) PARSED_DATA: temp_ADC        = 3.000000[0m
+[0;32mI (545365) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (555305) MESH-SERVER-MAIN: 23.000000[0m
+[0;31mE (555305) MESH-SERVER-MAIN: 59.000000[0m
+[0;33mW (555315) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (555345) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (555355) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (555365) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (555365) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (555365) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (555365) PARSED_DATA: Device Name = dht11[0m
+[0;33mW (555375) PARSED_DATA: Temperature = 23.000000[0m
+[0;33mW (555375) PARSED_DATA: Humidity    = 59.000000[0m
+[0;33mW (555385) PARSED_DATA: temp_ADC        = 3.000000[0m
+[0;32mI (555385) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (565325) MESH-SERVER-MAIN: 23.000000[0m
+[0;31mE (565325) MESH-SERVER-MAIN: 59.000000[0m
+[0;33mW (565335) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (565365) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (565375) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (565385) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (565385) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (565385) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (565385) PARSED_DATA: Device Name = dht11[0m
+[0;33mW (565395) PARSED_DATA: Temperature = 23.000000[0m
+[0;33mW (565395) PARSED_DATA: Humidity    = 59.000000[0m
+[0;33mW (565405) PARSED_DATA: temp_ADC        = 3.000000[0m
+[0;32mI (565405) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (575345) MESH-SERVER-MAIN: 23.000000[0m
+[0;31mE (575345) MESH-SERVER-MAIN: 59.000000[0m
+[0;33mW (575355) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (575385) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (575395) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (575405) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (575405) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (575405) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (575405) PARSED_DATA: Device Name = dht11[0m
+[0;33mW (575415) PARSED_DATA: Temperature = 23.000000[0m
+[0;33mW (575415) PARSED_DATA: Humidity    = 59.000000[0m
+[0;33mW (575425) PARSED_DATA: temp_ADC        = 3.000000[0m
+[0;32mI (575425) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (585365) MESH-SERVER-MAIN: 23.000000[0m
+[0;31mE (585365) MESH-SERVER-MAIN: 59.000000[0m
+[0;33mW (585375) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (585405) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (585415) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (585425) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (585425) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (585425) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (585425) PARSED_DATA: Device Name = dht11[0m
+[0;33mW (585435) PARSED_DATA: Temperature = 23.000000[0m
+[0;33mW (585435) PARSED_DATA: Humidity    = 59.000000[0m
+[0;33mW (585445) PARSED_DATA: temp_ADC        = 3.000000[0m
+[0;32mI (585445) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (595385) MESH-SERVER-MAIN: 23.000000[0m
+[0;31mE (595385) MESH-SERVER-MAIN: 59.000000[0m
+[0;33mW (595395) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (595425) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (595435) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (595445) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (595445) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (595445) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (595445) PARSED_DATA: Device Name = dht11[0m
+[0;33mW (595455) PARSED_DATA: Temperature = 23.000000[0m
+[0;33mW (595455) PARSED_DATA: Humidity    = 59.000000[0m
+[0;33mW (595465) PARSED_DATA: temp_ADC        = 3.000000[0m
+[0;32mI (595465) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (605405) MESH-SERVER-MAIN: 23.000000[0m
+[0;31mE (605405) MESH-SERVER-MAIN: 59.000000[0m
+[0;33mW (605415) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (605445) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (605455) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (605465) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (605465) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (605465) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (605465) PARSED_DATA: Device Name = dht11[0m
+[0;33mW (605475) PARSED_DATA: Temperature = 23.000000[0m
+[0;33mW (605475) PARSED_DATA: Humidity    = 59.000000[0m
+[0;33mW (605485) PARSED_DATA: temp_ADC        = 3.000000[0m
+[0;32mI (605485) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (615425) MESH-SERVER-MAIN: 23.000000[0m
+[0;31mE (615425) MESH-SERVER-MAIN: 59.000000[0m
+[0;33mW (615435) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (615465) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (615475) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (615485) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (615485) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (615485) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (615485) PARSED_DATA: Device Name = dht11[0m
+[0;33mW (615495) PARSED_DATA: Temperature = 23.000000[0m
+[0;33mW (615495) PARSED_DATA: Humidity    = 59.000000[0m
+[0;33mW (615505) PARSED_DATA: temp_ADC        = 3.000000[0m
+[0;32mI (615505) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (625445) MESH-SERVER-MAIN: 23.000000[0m
+[0;31mE (625445) MESH-SERVER-MAIN: 59.000000[0m
+[0;33mW (625455) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (625485) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (625495) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (625505) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (625505) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (625505) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (625505) PARSED_DATA: Device Name = dht11[0m
+[0;33mW (625515) PARSED_DATA: Temperature = 23.000000[0m
+[0;33mW (625515) PARSED_DATA: Humidity    = 59.000000[0m
+[0;33mW (625525) PARSED_DATA: temp_ADC        = 3.000000[0m
+[0;32mI (625525) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;31mE (635465) MESH-SERVER-MAIN: 23.000000[0m
+[0;31mE (635465) MESH-SERVER-MAIN: 59.000000[0m
+[0;33mW (635475) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (635505) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (635515) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;33mW (635535) BLE_MESH: No outbound bearer found, inbound bearer 1[0m
+[0;32mI (635535) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;33mW (635535) PARSED_DATA: ttl recv = 3[0m
+[0;33mW (635535) PARSED_DATA: Device Name = dht11[0m
+[0;33mW (635545) PARSED_DATA: Temperature = 23.000000[0m
+[0;33mW (635545) PARSED_DATA: Humidity    = 59.000000[0m
+[0;33mW (635555) PARSED_DATA: temp_ADC        = 3.000000[0m
+[0;32mI (635565) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m

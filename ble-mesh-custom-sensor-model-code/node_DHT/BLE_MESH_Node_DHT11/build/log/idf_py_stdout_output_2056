@@ -1,0 +1,80 @@
+[1/5] cmd.exe /C "cd /D D:\IDF\git\WSL_Project20241\ble-mesh-custom-sensor-model-code\node_DHT\BLE_MESH_Node_DHT11\build\esp-idf\esptool_py && D:\IDF\install\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/node_DHT/BLE_MESH_Node_DHT11/build/partition_table/partition-table.bin D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/node_DHT/BLE_MESH_Node_DHT11/build/BLE_MESH_Node.bin"
+BLE_MESH_Node.bin binary size 0x10e1e0 bytes. Smallest app partition is 0x220000 bytes. 0x111e20 bytes (50%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D D:\IDF\git\WSL_Project20241\ble-mesh-custom-sensor-model-code\node_DHT\BLE_MESH_Node_DHT11\build\bootloader\esp-idf\esptool_py && D:\IDF\install\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/node_DHT/BLE_MESH_Node_DHT11/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6860 bytes. 0x7a0 bytes (7%) free.
+[2/3] cmd.exe /C "cd /D D:\IDF\install\Espressif\frameworks\esp-idf-v5.2.3\components\esptool_py && D:\IDF\install\Espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3 -D SERIAL_TOOL=D:/Iesptool.py --chip esp32 -p COM4 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 4MB 0x1000 bootloader/bootloader.bin 0x20000 BLE_MESH_Node.bin 0x8000 partition_table/partition-table.bin 0xf000 ota_data_initial.bin
+esptool.py v4.7.0
+Serial port COM4
+Connecting....
+Chip is ESP32-D0WDQ6 (revision v1.0)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: c8:f0:9e:9a:37:08
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00020000 to 0x0012efff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Flash will be erased from 0x0000f000 to 0x00010fff...
+Compressed 26720 bytes to 16349...
+Writing at 0x00001000... (100 %)
+Wrote 26720 bytes (16349 compressed) at 0x00001000 in 0.9 seconds (effective 242.0 kbit/s)...
+Hash of data verified.
+Compressed 1106400 bytes to 607602...
+Writing at 0x00020000... (2 %)
+Writing at 0x0002efd3... (5 %)
+Writing at 0x00042e57... (7 %)
+Writing at 0x0004fe56... (10 %)
+Writing at 0x0005d443... (13 %)
+Writing at 0x00063ec4... (15 %)
+Writing at 0x00069894... (18 %)
+Writing at 0x0006f5da... (21 %)
+Writing at 0x00075129... (23 %)
+Writing at 0x0007abaa... (26 %)
+Writing at 0x000804e7... (28 %)
+Writing at 0x00086f20... (31 %)
+Writing at 0x0008d52c... (34 %)
+Writing at 0x00093f87... (36 %)
+Writing at 0x0009a4ef... (39 %)
+Writing at 0x000a0788... (42 %)
+Writing at 0x000a77b0... (44 %)
+Writing at 0x000aeec0... (47 %)
+Writing at 0x000b52d1... (50 %)
+Writing at 0x000bb5b8... (52 %)
+Writing at 0x000c15ae... (55 %)
+Writing at 0x000c76dc... (57 %)
+Writing at 0x000cd868... (60 %)
+Writing at 0x000d3a57... (63 %)
+Writing at 0x000d9c1d... (65 %)
+Writing at 0x000e015a... (68 %)
+Writing at 0x000e6357... (71 %)
+Writing at 0x000ebf90... (73 %)
+Writing at 0x000f1929... (76 %)
+Writing at 0x000f7a60... (78 %)
+Writing at 0x000fdd94... (81 %)
+Writing at 0x0010415c... (84 %)
+Writing at 0x0010e8d0... (86 %)
+Writing at 0x00116019... (89 %)
+Writing at 0x0011becd... (92 %)
+Writing at 0x0012178d... (94 %)
+Writing at 0x001272ce... (97 %)
+Writing at 0x0012d8a7... (100 %)
+Wrote 1106400 bytes (607602 compressed) at 0x00020000 in 14.6 seconds (effective 605.4 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 318.1 kbit/s)...
+Hash of data verified.
+Compressed 8192 bytes to 31...
+Writing at 0x0000f000... (100 %)
+Wrote 8192 bytes (31 compressed) at 0x0000f000 in 0.1 seconds (effective 573.4 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+DF/install/Espressif/python_env/idf5.2_py3.11_env/Scripts/python.exe;;D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/node_DHT/BLE_MESH_Node_DHT11/build -P D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esptool_py/run_serial_tool.cmake"

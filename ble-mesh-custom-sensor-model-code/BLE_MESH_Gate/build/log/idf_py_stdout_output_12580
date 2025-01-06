@@ -1,0 +1,1116 @@
+-- ccache will be used for faster recompilation
+-- Building ESP-IDF components for target esp32
+-- Project sdkconfig file D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/BLE_MESH_Gate/sdkconfig
+Loading defaults file D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/BLE_MESH_Gate/sdkconfig.defaults...
+-- Compiler supported targets: xtensa-esp-elf
+-- App "BLE_MESH_Gate" version: 2841ab0-dirty
+-- Adding linker script D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/BLE_MESH_Gate/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/BLE_MESH_Gate/build/esp-idf/esp_system/ld/sections.ld.in
+-- Adding linker script D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_rom/esp32/ld/esp32.rom.newlib-data.ld
+-- Adding linker script D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_rom/esp32/ld/esp32.rom.syscalls.ld
+-- Adding linker script D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_rom/esp32/ld/esp32.rom.newlib-funcs.ld
+-- Adding linker script D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/soc/esp32/ld/esp32.peripherals.ld
+-- Components: app_trace app_update bootloader bootloader_support bt button cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_bootloader_format esp_coex esp_common esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_system esp_timer esp_wifi espcoredump esptool_py example_init example_nvs fatfs freertos hal heap http_parser idf_test ieee802154 json log lwip main mbedtls mqtt newlib nvs_flash nvs_sec_provider openthread partition_table perfmon protobuf-c protocomm pthread sdmmc soc spi_flash spiffs tcp_transport ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant xtensa
+-- Component paths: D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/app_trace D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/app_update D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/bootloader D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/bootloader_support D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/bt D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/examples/bluetooth/esp_ble_mesh/common_components/button D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/cmock D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/console D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/cxx D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/driver D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/efuse D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp-tls D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_adc D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_app_format D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_bootloader_format D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_coex D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_common D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_eth D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_event D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_gdbstub D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_hid D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_http_client D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_http_server D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_https_ota D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_https_server D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_hw_support D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_lcd D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_local_ctrl D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_mm D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_netif D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_netif_stack D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_partition D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_phy D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_pm D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_psram D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_ringbuf D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_rom D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_timer D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_wifi D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/espcoredump D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esptool_py D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/examples/bluetooth/esp_ble_mesh/common_components/example_init D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/examples/bluetooth/esp_ble_mesh/common_components/example_nvs D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/fatfs D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/freertos D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/hal D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/heap D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/http_parser D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/idf_test D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/ieee802154 D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/json D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/lwip D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/BLE_MESH_Gate/main D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/mbedtls D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/mqtt D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/newlib D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/nvs_flash D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/nvs_sec_provider D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/openthread D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/partition_table D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/perfmon D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/protobuf-c D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/protocomm D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/pthread D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/sdmmc D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/soc D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/spi_flash D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/spiffs D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/tcp_transport D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/ulp D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/unity D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/usb D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/vfs D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/wear_levelling D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/wifi_provisioning D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/wpa_supplicant D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/BLE_MESH_Gate/build
+[0/1] Re-running CMake...
+[1/12] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/D_/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_device_app.c.obj
+[2/12] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/board.c.obj
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/BLE_MESH_Gate/main/board.c:25:5: warning: braces around scalar initializer
+   25 |     { LED_OFF, LED_OFF, LED_G, "green" }
+      |     ^
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/BLE_MESH_Gate/main/board.c:25:5: note: (near initialization for 'led_state.current')
+In file included from D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/BLE_MESH_Gate/main/board.c:14:
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/BLE_MESH_Gate/main/board.h:25:17: warning: excess elements in scalar initializer
+   25 | #define LED_OFF 0
+      |                 ^
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/BLE_MESH_Gate/main/board.c:25:16: note: in expansion of macro 'LED_OFF'
+   25 |     { LED_OFF, LED_OFF, LED_G, "green" }
+      |                ^~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/BLE_MESH_Gate/main/board.h:25:17: note: (near initialization for 'led_state.current')
+   25 | #define LED_OFF 0
+      |                 ^
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/BLE_MESH_Gate/main/board.c:25:16: note: in expansion of macro 'LED_OFF'
+   25 |     { LED_OFF, LED_OFF, LED_G, "green" }
+      |                ^~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/BLE_MESH_Gate/main/board.h:16:15: warning: excess elements in scalar initializer
+   16 | #define LED_G GPIO_NUM_2
+      |               ^~~~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/BLE_MESH_Gate/main/board.c:25:25: note: in expansion of macro 'LED_G'
+   25 |     { LED_OFF, LED_OFF, LED_G, "green" }
+      |                         ^~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/BLE_MESH_Gate/main/board.h:16:15: note: (near initialization for 'led_state.current')
+   16 | #define LED_G GPIO_NUM_2
+      |               ^~~~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/BLE_MESH_Gate/main/board.c:25:25: note: in expansion of macro 'LED_G'
+   25 |     { LED_OFF, LED_OFF, LED_G, "green" }
+      |                         ^~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/BLE_MESH_Gate/main/board.c:25:32: warning: excess elements in scalar initializer
+   25 |     { LED_OFF, LED_OFF, LED_G, "green" }
+      |                                ^~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/BLE_MESH_Gate/main/board.c:25:32: note: (near initialization for 'led_state.current')
+[3/12] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/BLE_MESH_Gate/main/main.c:15:16: warning: 'ticks' defined but not used [-Wunused-variable]
+   15 | static uint8_t ticks = 0;
+      |                ^~~~~
+[4/12] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/D_/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/D_/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c.obj 
+ccache D:\IDF\install\Espressif\tools\xtensa-esp-elf\esp-13.2.0_20230928\xtensa-esp-elf\bin\xtensa-esp32-elf-gcc.exe -DESP_PLATFORM -DIDF_VER=\"v5.2.3-dirty\" -DMBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -DUNITY_INCLUDE_CONFIG_H -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -ID:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/BLE_MESH_Gate/build/config -ID:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/BLE_MESH_Gate/main -ID:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/include -ID:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/BLE_MESH_Node/main -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/newlib/platform_include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/freertos/config/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/freertos/config/include/freertos -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/freertos/config/xtensa/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/freertos/FreeRTOS-Kernel/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/freertos/esp_additions/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_hw_support/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_hw_support/include/soc -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_hw_support/include/soc/esp32 -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_hw_support/port/esp32/. -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/heap/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/soc/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/soc/esp32 -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/soc/esp32/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/hal/platform_port/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/hal/esp32/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/hal/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_rom/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_rom/include/esp32 -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_rom/esp32 -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_common/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/port/soc -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system/port/include/private -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/xtensa/esp32/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/xtensa/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/xtensa/deprecated_include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/lwip/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/lwip/include/apps -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/lwip/include/apps/sntp -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/lwip/lwip/src/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/lwip/port/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/lwip/port/freertos/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/lwip/port/esp32xx/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/lwip/port/esp32xx/include/arch -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/lwip/port/esp32xx/include/sys -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_ringbuf/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/efuse/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/efuse/esp32/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_mm/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/driver/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/driver/deprecated -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/driver/analog_comparator/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/driver/dac/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/driver/gpio/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/driver/gptimer/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/driver/i2c/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/driver/i2s/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/driver/ledc/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/driver/mcpwm/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/driver/parlio/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/driver/pcnt/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/driver/rmt/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/driver/sdio_slave/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/driver/sdmmc/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/driver/sigma_delta/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/driver/spi/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/driver/temperature_sensor/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/driver/touch_sensor/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/driver/twai/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/driver/uart/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/driver/usb_serial_jtag/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/driver/touch_sensor/esp32/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_pm/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/mbedtls/port/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/mbedtls/mbedtls/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/mbedtls/mbedtls/library -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/mbedtls/esp_crt_bundle/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/mbedtls/mbedtls/3rdparty/everest/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/mbedtls/mbedtls/3rdparty/p256-m -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/mbedtls/mbedtls/3rdparty/p256-m/p256-m -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_bootloader_format/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_app_format/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/bootloader_support/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/bootloader_support/bootloader_flash/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_partition/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/app_update/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/spi_flash/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/pthread/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_timer/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/app_trace/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_event/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/nvs_flash/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_phy/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_phy/esp32/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/vfs/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_netif/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/wpa_supplicant/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/wpa_supplicant/port/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/wpa_supplicant/esp_supplicant/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_coex/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_wifi/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_wifi/wifi_apps/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/bt/include/esp32/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/bt/common/osi/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/bt/common/api/include/api -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/bt/common/btc/profile/esp/blufi/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/bt/common/btc/profile/esp/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/bt/common/hci_log/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/bt/host/bluedroid/api/include/api -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/bt/esp_ble_mesh/common/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/bt/esp_ble_mesh/common/tinycrypt/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/bt/esp_ble_mesh/core -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/bt/esp_ble_mesh/core/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/bt/esp_ble_mesh/core/storage -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/bt/esp_ble_mesh/btc/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/bt/esp_ble_mesh/models/common/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/bt/esp_ble_mesh/models/client/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/bt/esp_ble_mesh/models/server/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/bt/esp_ble_mesh/api/core/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/bt/esp_ble_mesh/api/models/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/bt/esp_ble_mesh/api -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/bt/esp_ble_mesh/lib/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/bt/esp_ble_mesh/v1.1/api/core/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/bt/esp_ble_mesh/v1.1/api/models/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/bt/esp_ble_mesh/v1.1/btc/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/bt/porting/ext/tinycrypt/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/unity/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/unity/unity/src -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/cmock/CMock/src -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/console -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/http_parser -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp-tls -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp-tls/esp-tls-crypto -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_adc/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_adc/interface -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_adc/esp32/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_adc/deprecated/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_eth/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_gdbstub/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_hid/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/tcp_transport/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_http_client/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_http_server/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_https_ota/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_psram/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_lcd/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_lcd/interface -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/protobuf-c/protobuf-c -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/protocomm/include/common -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/protocomm/include/security -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/protocomm/include/transports -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/protocomm/include/crypto/srp6a -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/protocomm/proto-c -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_local_ctrl/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/espcoredump/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/espcoredump/include/port/xtensa -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/wear_levelling/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/sdmmc/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/fatfs/diskio -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/fatfs/src -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/fatfs/vfs -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/idf_test/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/idf_test/include/esp32 -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/ieee802154/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/json/cJSON -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/mqtt/esp-mqtt/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/nvs_sec_provider/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/perfmon/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/spiffs/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/wifi_provisioning/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/examples/bluetooth/esp_ble_mesh/common_components/button -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/examples/bluetooth/esp_ble_mesh/common_components/button/include -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/examples/bluetooth/esp_ble_mesh/common_components/example_init -ID:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/examples/bluetooth/esp_ble_mesh/common_components/example_nvs -mlongcalls -Wno-frame-address  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fno-shrink-wrap -fmacro-prefix-map=D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/BLE_MESH_Gate=. -fmacro-prefix-map=D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -Wno-error=format -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/D_/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c.obj -MF esp-idf\main\CMakeFiles\__idf_main.dir\D_\IDF\git\WSL_Project20241\ble-mesh-custom-sensor-model-code\src\mesh_client.c.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/D_/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c.obj -c D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c
+In file included from D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/bt/esp_ble_mesh/common/include/mesh/trace.h:13,
+                 from D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/bt/esp_ble_mesh/common/include/mesh/byteorder.h:11,
+                 from D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/bt/esp_ble_mesh/common/include/mesh/common.h:20,
+                 from D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/bt/esp_ble_mesh/api/esp_ble_mesh_defs.h:13,
+                 from D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/bt/esp_ble_mesh/api/core/include/esp_ble_mesh_common_api.h:10,
+                 from D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/include/mesh_client.h:9,
+                 from D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:2:
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c: In function 'prov_complete':
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:291:27: warning: format '%x' expects argument of type 'unsigned int', but argument 7 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  291 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:294:27: note: in expansion of macro 'LOG_COLOR'
+  294 | #define LOG_COLOR_E       LOG_COLOR(LOG_COLOR_RED)
+      |                           ^~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:308:37: note: in expansion of macro 'LOG_COLOR_E'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:436:86: note: in expansion of macro 'LOG_FORMAT'
+  436 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:121:5: note: in expansion of macro 'ESP_LOGI'
+  121 |     ESP_LOGI(TAG, "flags: 0x%02x, iv_index: 0x%08x", flags, iv_index);
+      |     ^~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:291:27: warning: format '%x' expects argument of type 'unsigned int', but argument 7 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  291 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:295:27: note: in expansion of macro 'LOG_COLOR'
+  295 | #define LOG_COLOR_W       LOG_COLOR(LOG_COLOR_BROWN)
+      |                           ^~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:308:37: note: in expansion of macro 'LOG_COLOR_W'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:437:86: note: in expansion of macro 'LOG_FORMAT'
+  437 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:121:5: note: in expansion of macro 'ESP_LOGI'
+  121 |     ESP_LOGI(TAG, "flags: 0x%02x, iv_index: 0x%08x", flags, iv_index);
+      |     ^~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:121:1: warning: format '%x' expects argument of type 'unsigned int', but argument 7 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  121 |     ESP_LOGI(TAG, "flags: 0x%02x, iv_index: 0x%08x", flags, iv_index);
+      | ^   ~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:308:59: note: in definition of macro 'LOG_FORMAT'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                           ^~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:121:5: note: in expansion of macro 'ESP_LOGI'
+  121 |     ESP_LOGI(TAG, "flags: 0x%02x, iv_index: 0x%08x", flags, iv_index);
+      |     ^~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:121:1: warning: format '%x' expects argument of type 'unsigned int', but argument 7 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  121 |     ESP_LOGI(TAG, "flags: 0x%02x, iv_index: 0x%08x", flags, iv_index);
+      | ^   ~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:308:59: note: in definition of macro 'LOG_FORMAT'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                           ^~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:121:5: note: in expansion of macro 'ESP_LOGI'
+  121 |     ESP_LOGI(TAG, "flags: 0x%02x, iv_index: 0x%08x", flags, iv_index);
+      |     ^~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:291:27: warning: format '%x' expects argument of type 'unsigned int', but argument 7 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  291 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:296:27: note: in expansion of macro 'LOG_COLOR'
+  296 | #define LOG_COLOR_I       LOG_COLOR(LOG_COLOR_GREEN)
+      |                           ^~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:308:37: note: in expansion of macro 'LOG_COLOR_I'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:440:86: note: in expansion of macro 'LOG_FORMAT'
+  440 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:121:5: note: in expansion of macro 'ESP_LOGI'
+  121 |     ESP_LOGI(TAG, "flags: 0x%02x, iv_index: 0x%08x", flags, iv_index);
+      |     ^~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c: In function 'ble_mesh_custom_sensor_client_model_cb':
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:291:27: warning: format '%x' expects argument of type 'unsigned int', but argument 6 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  291 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:294:27: note: in expansion of macro 'LOG_COLOR'
+  294 | #define LOG_COLOR_E       LOG_COLOR(LOG_COLOR_RED)
+      |                           ^~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:308:37: note: in expansion of macro 'LOG_COLOR_E'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:436:86: note: in expansion of macro 'LOG_FORMAT'
+  436 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:206:13: note: in expansion of macro 'ESP_LOGI'
+  206 |             ESP_LOGI(TAG, "OPCODE_STATUS received: 0x%06x", param->model_operation.opcode);
+      |             ^~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:291:27: warning: format '%x' expects argument of type 'unsigned int', but argument 6 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  291 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:295:27: note: in expansion of macro 'LOG_COLOR'
+  295 | #define LOG_COLOR_W       LOG_COLOR(LOG_COLOR_BROWN)
+      |                           ^~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:308:37: note: in expansion of macro 'LOG_COLOR_W'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:437:86: note: in expansion of macro 'LOG_FORMAT'
+  437 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:206:13: note: in expansion of macro 'ESP_LOGI'
+  206 |             ESP_LOGI(TAG, "OPCODE_STATUS received: 0x%06x", param->model_operation.opcode);
+      |             ^~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:206:1: warning: format '%x' expects argument of type 'unsigned int', but argument 6 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  206 |             ESP_LOGI(TAG, "OPCODE_STATUS received: 0x%06x", param->model_operation.opcode);
+      | ^          
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:308:59: note: in definition of macro 'LOG_FORMAT'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                           ^~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:206:13: note: in expansion of macro 'ESP_LOGI'
+  206 |             ESP_LOGI(TAG, "OPCODE_STATUS received: 0x%06x", param->model_operation.opcode);
+      |             ^~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:206:1: warning: format '%x' expects argument of type 'unsigned int', but argument 6 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  206 |             ESP_LOGI(TAG, "OPCODE_STATUS received: 0x%06x", param->model_operation.opcode);
+      | ^          
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:308:59: note: in definition of macro 'LOG_FORMAT'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                           ^~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:206:13: note: in expansion of macro 'ESP_LOGI'
+  206 |             ESP_LOGI(TAG, "OPCODE_STATUS received: 0x%06x", param->model_operation.opcode);
+      |             ^~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:291:27: warning: format '%x' expects argument of type 'unsigned int', but argument 6 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  291 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:296:27: note: in expansion of macro 'LOG_COLOR'
+  296 | #define LOG_COLOR_I       LOG_COLOR(LOG_COLOR_GREEN)
+      |                           ^~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:308:37: note: in expansion of macro 'LOG_COLOR_I'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:440:86: note: in expansion of macro 'LOG_FORMAT'
+  440 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:206:13: note: in expansion of macro 'ESP_LOGI'
+  206 |             ESP_LOGI(TAG, "OPCODE_STATUS received: 0x%06x", param->model_operation.opcode);
+      |             ^~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:291:27: warning: format '%x' expects argument of type 'unsigned int', but argument 6 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  291 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:294:27: note: in expansion of macro 'LOG_COLOR'
+  294 | #define LOG_COLOR_E       LOG_COLOR(LOG_COLOR_RED)
+      |                           ^~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:308:37: note: in expansion of macro 'LOG_COLOR_E'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:436:86: note: in expansion of macro 'LOG_FORMAT'
+  436 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:366:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  366 | #define ESP_LOGE( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_ERROR,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:220:13: note: in expansion of macro 'ESP_LOGE'
+  220 |             ESP_LOGE(TAG, "Failed to send message 0x%06x", param->model_send_comp.opcode);
+      |             ^~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:291:27: warning: format '%x' expects argument of type 'unsigned int', but argument 6 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  291 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:295:27: note: in expansion of macro 'LOG_COLOR'
+  295 | #define LOG_COLOR_W       LOG_COLOR(LOG_COLOR_BROWN)
+      |                           ^~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:308:37: note: in expansion of macro 'LOG_COLOR_W'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:437:86: note: in expansion of macro 'LOG_FORMAT'
+  437 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:366:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  366 | #define ESP_LOGE( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_ERROR,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:220:13: note: in expansion of macro 'ESP_LOGE'
+  220 |             ESP_LOGE(TAG, "Failed to send message 0x%06x", param->model_send_comp.opcode);
+      |             ^~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:220:1: warning: format '%x' expects argument of type 'unsigned int', but argument 6 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  220 |             ESP_LOGE(TAG, "Failed to send message 0x%06x", param->model_send_comp.opcode);
+      | ^          
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:308:59: note: in definition of macro 'LOG_FORMAT'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                           ^~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:366:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  366 | #define ESP_LOGE( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_ERROR,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:220:13: note: in expansion of macro 'ESP_LOGE'
+  220 |             ESP_LOGE(TAG, "Failed to send message 0x%06x", param->model_send_comp.opcode);
+      |             ^~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:220:1: warning: format '%x' expects argument of type 'unsigned int', but argument 6 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  220 |             ESP_LOGE(TAG, "Failed to send message 0x%06x", param->model_send_comp.opcode);
+      | ^          
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:308:59: note: in definition of macro 'LOG_FORMAT'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                           ^~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:366:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  366 | #define ESP_LOGE( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_ERROR,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:220:13: note: in expansion of macro 'ESP_LOGE'
+  220 |             ESP_LOGE(TAG, "Failed to send message 0x%06x", param->model_send_comp.opcode);
+      |             ^~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:291:27: warning: format '%x' expects argument of type 'unsigned int', but argument 6 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  291 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:296:27: note: in expansion of macro 'LOG_COLOR'
+  296 | #define LOG_COLOR_I       LOG_COLOR(LOG_COLOR_GREEN)
+      |                           ^~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:308:37: note: in expansion of macro 'LOG_COLOR_I'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:440:86: note: in expansion of macro 'LOG_FORMAT'
+  440 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:366:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  366 | #define ESP_LOGE( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_ERROR,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:220:13: note: in expansion of macro 'ESP_LOGE'
+  220 |             ESP_LOGE(TAG, "Failed to send message 0x%06x", param->model_send_comp.opcode);
+      |             ^~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:291:27: warning: format '%x' expects argument of type 'unsigned int', but argument 6 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  291 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:294:27: note: in expansion of macro 'LOG_COLOR'
+  294 | #define LOG_COLOR_E       LOG_COLOR(LOG_COLOR_RED)
+      |                           ^~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:308:37: note: in expansion of macro 'LOG_COLOR_E'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:436:86: note: in expansion of macro 'LOG_FORMAT'
+  436 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:223:9: note: in expansion of macro 'ESP_LOGI'
+  223 |         ESP_LOGI(TAG, "Send message opcode 0x%06x successfully, ttl send:  %d  !", param->model_send_comp.opcode, param->model_send_comp.ctx->send_ttl);
+      |         ^~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:291:27: warning: format '%x' expects argument of type 'unsigned int', but argument 6 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  291 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:295:27: note: in expansion of macro 'LOG_COLOR'
+  295 | #define LOG_COLOR_W       LOG_COLOR(LOG_COLOR_BROWN)
+      |                           ^~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:308:37: note: in expansion of macro 'LOG_COLOR_W'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:437:86: note: in expansion of macro 'LOG_FORMAT'
+  437 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:223:9: note: in expansion of macro 'ESP_LOGI'
+  223 |         ESP_LOGI(TAG, "Send message opcode 0x%06x successfully, ttl send:  %d  !", param->model_send_comp.opcode, param->model_send_comp.ctx->send_ttl);
+      |         ^~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:223:1: warning: format '%x' expects argument of type 'unsigned int', but argument 6 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  223 |         ESP_LOGI(TAG, "Send message opcode 0x%06x successfully, ttl send:  %d  !", param->model_send_comp.opcode, param->model_send_comp.ctx->send_ttl);
+      | ^       ~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:308:59: note: in definition of macro 'LOG_FORMAT'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                           ^~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:223:9: note: in expansion of macro 'ESP_LOGI'
+  223 |         ESP_LOGI(TAG, "Send message opcode 0x%06x successfully, ttl send:  %d  !", param->model_send_comp.opcode, param->model_send_comp.ctx->send_ttl);
+      |         ^~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:223:1: warning: format '%x' expects argument of type 'unsigned int', but argument 6 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  223 |         ESP_LOGI(TAG, "Send message opcode 0x%06x successfully, ttl send:  %d  !", param->model_send_comp.opcode, param->model_send_comp.ctx->send_ttl);
+      | ^       ~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:308:59: note: in definition of macro 'LOG_FORMAT'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                           ^~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:223:9: note: in expansion of macro 'ESP_LOGI'
+  223 |         ESP_LOGI(TAG, "Send message opcode 0x%06x successfully, ttl send:  %d  !", param->model_send_comp.opcode, param->model_send_comp.ctx->send_ttl);
+      |         ^~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:291:27: warning: format '%x' expects argument of type 'unsigned int', but argument 6 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  291 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:296:27: note: in expansion of macro 'LOG_COLOR'
+  296 | #define LOG_COLOR_I       LOG_COLOR(LOG_COLOR_GREEN)
+      |                           ^~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:308:37: note: in expansion of macro 'LOG_COLOR_I'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:440:86: note: in expansion of macro 'LOG_FORMAT'
+  440 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:223:9: note: in expansion of macro 'ESP_LOGI'
+  223 |         ESP_LOGI(TAG, "Send message opcode 0x%06x successfully, ttl send:  %d  !", param->model_send_comp.opcode, param->model_send_comp.ctx->send_ttl);
+      |         ^~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:231:17: error: implicit declaration of function 'is_duplicate_message' [-Werror=implicit-function-declaration]
+  231 |             if (is_duplicate_message(param->model_operation.ctx->addr,
+      |                 ^~~~~~~~~~~~~~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:232:64: error: 'esp_ble_mesh_msg_ctx_t' has no member named 'seq'
+  232 |                                      param->model_operation.ctx->seq))
+      |                                                                ^~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:291:27: warning: format '%x' expects argument of type 'unsigned int', but argument 6 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  291 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:294:27: note: in expansion of macro 'LOG_COLOR'
+  294 | #define LOG_COLOR_E       LOG_COLOR(LOG_COLOR_RED)
+      |                           ^~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:308:37: note: in expansion of macro 'LOG_COLOR_E'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:436:86: note: in expansion of macro 'LOG_FORMAT'
+  436 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:236:13: note: in expansion of macro 'ESP_LOGI'
+  236 |             ESP_LOGI(TAG, "OPCODE_STATUS received: 0x%06x", param->client_recv_publish_msg.opcode);
+      |             ^~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:291:27: warning: format '%x' expects argument of type 'unsigned int', but argument 6 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  291 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:295:27: note: in expansion of macro 'LOG_COLOR'
+  295 | #define LOG_COLOR_W       LOG_COLOR(LOG_COLOR_BROWN)
+      |                           ^~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:308:37: note: in expansion of macro 'LOG_COLOR_W'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:437:86: note: in expansion of macro 'LOG_FORMAT'
+  437 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:236:13: note: in expansion of macro 'ESP_LOGI'
+  236 |             ESP_LOGI(TAG, "OPCODE_STATUS received: 0x%06x", param->client_recv_publish_msg.opcode);
+      |             ^~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:236:1: warning: format '%x' expects argument of type 'unsigned int', but argument 6 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  236 |             ESP_LOGI(TAG, "OPCODE_STATUS received: 0x%06x", param->client_recv_publish_msg.opcode);
+      | ^          
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:308:59: note: in definition of macro 'LOG_FORMAT'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                           ^~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:236:13: note: in expansion of macro 'ESP_LOGI'
+  236 |             ESP_LOGI(TAG, "OPCODE_STATUS received: 0x%06x", param->client_recv_publish_msg.opcode);
+      |             ^~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:236:1: warning: format '%x' expects argument of type 'unsigned int', but argument 6 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  236 |             ESP_LOGI(TAG, "OPCODE_STATUS received: 0x%06x", param->client_recv_publish_msg.opcode);
+      | ^          
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:308:59: note: in definition of macro 'LOG_FORMAT'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                           ^~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:236:13: note: in expansion of macro 'ESP_LOGI'
+  236 |             ESP_LOGI(TAG, "OPCODE_STATUS received: 0x%06x", param->client_recv_publish_msg.opcode);
+      |             ^~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:291:27: warning: format '%x' expects argument of type 'unsigned int', but argument 6 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  291 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:296:27: note: in expansion of macro 'LOG_COLOR'
+  296 | #define LOG_COLOR_I       LOG_COLOR(LOG_COLOR_GREEN)
+      |                           ^~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:308:37: note: in expansion of macro 'LOG_COLOR_I'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:440:86: note: in expansion of macro 'LOG_FORMAT'
+  440 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:236:13: note: in expansion of macro 'ESP_LOGI'
+  236 |             ESP_LOGI(TAG, "OPCODE_STATUS received: 0x%06x", param->client_recv_publish_msg.opcode);
+      |             ^~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:291:27: warning: format '%x' expects argument of type 'unsigned int', but argument 6 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  291 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:294:27: note: in expansion of macro 'LOG_COLOR'
+  294 | #define LOG_COLOR_E       LOG_COLOR(LOG_COLOR_RED)
+      |                           ^~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:308:37: note: in expansion of macro 'LOG_COLOR_E'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:436:86: note: in expansion of macro 'LOG_FORMAT'
+  436 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGW( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_WARN,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:246:13: note: in expansion of macro 'ESP_LOGW'
+  246 |             ESP_LOGW(TAG, "Received unrecognized OPCODE message: 0x%04x", param->client_recv_publish_msg.opcode);
+      |             ^~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:291:27: warning: format '%x' expects argument of type 'unsigned int', but argument 6 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  291 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:295:27: note: in expansion of macro 'LOG_COLOR'
+  295 | #define LOG_COLOR_W       LOG_COLOR(LOG_COLOR_BROWN)
+      |                           ^~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:308:37: note: in expansion of macro 'LOG_COLOR_W'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:437:86: note: in expansion of macro 'LOG_FORMAT'
+  437 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGW( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_WARN,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:246:13: note: in expansion of macro 'ESP_LOGW'
+  246 |             ESP_LOGW(TAG, "Received unrecognized OPCODE message: 0x%04x", param->client_recv_publish_msg.opcode);
+      |             ^~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:246:1: warning: format '%x' expects argument of type 'unsigned int', but argument 6 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  246 |             ESP_LOGW(TAG, "Received unrecognized OPCODE message: 0x%04x", param->client_recv_publish_msg.opcode);
+      | ^          
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:308:59: note: in definition of macro 'LOG_FORMAT'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                           ^~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGW( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_WARN,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:246:13: note: in expansion of macro 'ESP_LOGW'
+  246 |             ESP_LOGW(TAG, "Received unrecognized OPCODE message: 0x%04x", param->client_recv_publish_msg.opcode);
+      |             ^~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:246:1: warning: format '%x' expects argument of type 'unsigned int', but argument 6 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  246 |             ESP_LOGW(TAG, "Received unrecognized OPCODE message: 0x%04x", param->client_recv_publish_msg.opcode);
+      | ^          
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:308:59: note: in definition of macro 'LOG_FORMAT'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                           ^~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGW( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_WARN,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:246:13: note: in expansion of macro 'ESP_LOGW'
+  246 |             ESP_LOGW(TAG, "Received unrecognized OPCODE message: 0x%04x", param->client_recv_publish_msg.opcode);
+      |             ^~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:291:27: warning: format '%x' expects argument of type 'unsigned int', but argument 6 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  291 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:296:27: note: in expansion of macro 'LOG_COLOR'
+  296 | #define LOG_COLOR_I       LOG_COLOR(LOG_COLOR_GREEN)
+      |                           ^~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:308:37: note: in expansion of macro 'LOG_COLOR_I'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:440:86: note: in expansion of macro 'LOG_FORMAT'
+  440 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGW( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_WARN,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:246:13: note: in expansion of macro 'ESP_LOGW'
+  246 |             ESP_LOGW(TAG, "Received unrecognized OPCODE message: 0x%04x", param->client_recv_publish_msg.opcode);
+      |             ^~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:291:27: warning: format '%x' expects argument of type 'unsigned int', but argument 6 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  291 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:294:27: note: in expansion of macro 'LOG_COLOR'
+  294 | #define LOG_COLOR_E       LOG_COLOR(LOG_COLOR_RED)
+      |                           ^~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:308:37: note: in expansion of macro 'LOG_COLOR_E'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:436:86: note: in expansion of macro 'LOG_FORMAT'
+  436 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGW( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_WARN,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:253:9: note: in expansion of macro 'ESP_LOGW'
+  253 |         ESP_LOGW(TAG, "Message opcode 0x%06x timeout", param->client_send_timeout.opcode);
+      |         ^~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:291:27: warning: format '%x' expects argument of type 'unsigned int', but argument 6 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  291 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:295:27: note: in expansion of macro 'LOG_COLOR'
+  295 | #define LOG_COLOR_W       LOG_COLOR(LOG_COLOR_BROWN)
+      |                           ^~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:308:37: note: in expansion of macro 'LOG_COLOR_W'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:437:86: note: in expansion of macro 'LOG_FORMAT'
+  437 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGW( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_WARN,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:253:9: note: in expansion of macro 'ESP_LOGW'
+  253 |         ESP_LOGW(TAG, "Message opcode 0x%06x timeout", param->client_send_timeout.opcode);
+      |         ^~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:253:1: warning: format '%x' expects argument of type 'unsigned int', but argument 6 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  253 |         ESP_LOGW(TAG, "Message opcode 0x%06x timeout", param->client_send_timeout.opcode);
+      | ^       ~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:308:59: note: in definition of macro 'LOG_FORMAT'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                           ^~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGW( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_WARN,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:253:9: note: in expansion of macro 'ESP_LOGW'
+  253 |         ESP_LOGW(TAG, "Message opcode 0x%06x timeout", param->client_send_timeout.opcode);
+      |         ^~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:253:1: warning: format '%x' expects argument of type 'unsigned int', but argument 6 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  253 |         ESP_LOGW(TAG, "Message opcode 0x%06x timeout", param->client_send_timeout.opcode);
+      | ^       ~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:308:59: note: in definition of macro 'LOG_FORMAT'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                           ^~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGW( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_WARN,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:253:9: note: in expansion of macro 'ESP_LOGW'
+  253 |         ESP_LOGW(TAG, "Message opcode 0x%06x timeout", param->client_send_timeout.opcode);
+      |         ^~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:291:27: warning: format '%x' expects argument of type 'unsigned int', but argument 6 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  291 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:296:27: note: in expansion of macro 'LOG_COLOR'
+  296 | #define LOG_COLOR_I       LOG_COLOR(LOG_COLOR_GREEN)
+      |                           ^~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:308:37: note: in expansion of macro 'LOG_COLOR_I'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:440:86: note: in expansion of macro 'LOG_FORMAT'
+  440 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGW( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_WARN,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:253:9: note: in expansion of macro 'ESP_LOGW'
+  253 |         ESP_LOGW(TAG, "Message opcode 0x%06x timeout", param->client_send_timeout.opcode);
+      |         ^~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c: In function 'parse_received_data':
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:272:46: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  272 |     ESP_LOGW("PARSED_DATA", "ttl recv = %d", (model_sensor_data_t *)recv_param->client_recv_publish_msg.ctx->recv_ttl);
+      |                                              ^
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:436:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  436 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGW( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_WARN,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:272:5: note: in expansion of macro 'ESP_LOGW'
+  272 |     ESP_LOGW("PARSED_DATA", "ttl recv = %d", (model_sensor_data_t *)recv_param->client_recv_publish_msg.ctx->recv_ttl);
+      |     ^~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:291:27: warning: format '%d' expects argument of type 'int', but argument 6 has type 'model_sensor_data_t *' [-Wformat=]
+  291 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:294:27: note: in expansion of macro 'LOG_COLOR'
+  294 | #define LOG_COLOR_E       LOG_COLOR(LOG_COLOR_RED)
+      |                           ^~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:308:37: note: in expansion of macro 'LOG_COLOR_E'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:436:86: note: in expansion of macro 'LOG_FORMAT'
+  436 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGW( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_WARN,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:272:5: note: in expansion of macro 'ESP_LOGW'
+  272 |     ESP_LOGW("PARSED_DATA", "ttl recv = %d", (model_sensor_data_t *)recv_param->client_recv_publish_msg.ctx->recv_ttl);
+      |     ^~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:272:46: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  272 |     ESP_LOGW("PARSED_DATA", "ttl recv = %d", (model_sensor_data_t *)recv_param->client_recv_publish_msg.ctx->recv_ttl);
+      |                                              ^
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:437:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  437 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGW( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_WARN,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:272:5: note: in expansion of macro 'ESP_LOGW'
+  272 |     ESP_LOGW("PARSED_DATA", "ttl recv = %d", (model_sensor_data_t *)recv_param->client_recv_publish_msg.ctx->recv_ttl);
+      |     ^~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:291:27: warning: format '%d' expects argument of type 'int', but argument 6 has type 'model_sensor_data_t *' [-Wformat=]
+  291 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:295:27: note: in expansion of macro 'LOG_COLOR'
+  295 | #define LOG_COLOR_W       LOG_COLOR(LOG_COLOR_BROWN)
+      |                           ^~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:308:37: note: in expansion of macro 'LOG_COLOR_W'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:437:86: note: in expansion of macro 'LOG_FORMAT'
+  437 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGW( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_WARN,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:272:5: note: in expansion of macro 'ESP_LOGW'
+  272 |     ESP_LOGW("PARSED_DATA", "ttl recv = %d", (model_sensor_data_t *)recv_param->client_recv_publish_msg.ctx->recv_ttl);
+      |     ^~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:272:46: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  272 |     ESP_LOGW("PARSED_DATA", "ttl recv = %d", (model_sensor_data_t *)recv_param->client_recv_publish_msg.ctx->recv_ttl);
+      |                                              ^
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:438:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  438 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGW( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_WARN,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:272:5: note: in expansion of macro 'ESP_LOGW'
+  272 |     ESP_LOGW("PARSED_DATA", "ttl recv = %d", (model_sensor_data_t *)recv_param->client_recv_publish_msg.ctx->recv_ttl);
+      |     ^~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:272:1: warning: format '%d' expects argument of type 'int', but argument 6 has type 'model_sensor_data_t *' [-Wformat=]
+  272 |     ESP_LOGW("PARSED_DATA", "ttl recv = %d", (model_sensor_data_t *)recv_param->client_recv_publish_msg.ctx->recv_ttl);
+      | ^   ~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:308:59: note: in definition of macro 'LOG_FORMAT'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                           ^~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGW( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_WARN,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:272:5: note: in expansion of macro 'ESP_LOGW'
+  272 |     ESP_LOGW("PARSED_DATA", "ttl recv = %d", (model_sensor_data_t *)recv_param->client_recv_publish_msg.ctx->recv_ttl);
+      |     ^~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:272:46: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  272 |     ESP_LOGW("PARSED_DATA", "ttl recv = %d", (model_sensor_data_t *)recv_param->client_recv_publish_msg.ctx->recv_ttl);
+      |                                              ^
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:439:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  439 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGW( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_WARN,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:272:5: note: in expansion of macro 'ESP_LOGW'
+  272 |     ESP_LOGW("PARSED_DATA", "ttl recv = %d", (model_sensor_data_t *)recv_param->client_recv_publish_msg.ctx->recv_ttl);
+      |     ^~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:272:1: warning: format '%d' expects argument of type 'int', but argument 6 has type 'model_sensor_data_t *' [-Wformat=]
+  272 |     ESP_LOGW("PARSED_DATA", "ttl recv = %d", (model_sensor_data_t *)recv_param->client_recv_publish_msg.ctx->recv_ttl);
+      | ^   ~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:308:59: note: in definition of macro 'LOG_FORMAT'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                           ^~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGW( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_WARN,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:272:5: note: in expansion of macro 'ESP_LOGW'
+  272 |     ESP_LOGW("PARSED_DATA", "ttl recv = %d", (model_sensor_data_t *)recv_param->client_recv_publish_msg.ctx->recv_ttl);
+      |     ^~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:272:46: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  272 |     ESP_LOGW("PARSED_DATA", "ttl recv = %d", (model_sensor_data_t *)recv_param->client_recv_publish_msg.ctx->recv_ttl);
+      |                                              ^
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:440:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  440 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGW( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_WARN,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:272:5: note: in expansion of macro 'ESP_LOGW'
+  272 |     ESP_LOGW("PARSED_DATA", "ttl recv = %d", (model_sensor_data_t *)recv_param->client_recv_publish_msg.ctx->recv_ttl);
+      |     ^~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:291:27: warning: format '%d' expects argument of type 'int', but argument 6 has type 'model_sensor_data_t *' [-Wformat=]
+  291 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:296:27: note: in expansion of macro 'LOG_COLOR'
+  296 | #define LOG_COLOR_I       LOG_COLOR(LOG_COLOR_GREEN)
+      |                           ^~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:308:37: note: in expansion of macro 'LOG_COLOR_I'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:440:86: note: in expansion of macro 'LOG_FORMAT'
+  440 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGW( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_WARN,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:272:5: note: in expansion of macro 'ESP_LOGW'
+  272 |     ESP_LOGW("PARSED_DATA", "ttl recv = %d", (model_sensor_data_t *)recv_param->client_recv_publish_msg.ctx->recv_ttl);
+      |     ^~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c: At top level:
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:299:6: error: conflicting types for 'is_duplicate_message'; have '_Bool(uint16_t,  uint32_t)' {aka '_Bool(short unsigned int,  long unsigned int)'}
+  299 | bool is_duplicate_message(uint16_t src_addr, uint32_t seq_num)
+      |      ^~~~~~~~~~~~~~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:231:17: note: previous implicit declaration of 'is_duplicate_message' with type 'int()'
+  231 |             if (is_duplicate_message(param->model_operation.ctx->addr,
+      |                 ^~~~~~~~~~~~~~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c: In function 'is_duplicate_message':
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:301:28: error: implicit declaration of function 'esp_timer_get_time' [-Werror=implicit-function-declaration]
+  301 |     int64_t current_time = esp_timer_get_time();
+      |                            ^~~~~~~~~~~~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c: In function 'ble_mesh_custom_sensor_client_model_message_set':
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:431:5: warning: 'send_rel' is deprecated [-Wdeprecated-declarations]
+  431 |     ctx.send_rel = false;
+      |     ^~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/bt/esp_ble_mesh/api/esp_ble_mesh_defs.h:625:14: note: declared here
+  625 |     uint8_t  send_rel:1 __attribute__((deprecated));
+      |              ^~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:291:27: warning: format '%x' expects argument of type 'unsigned int', but argument 6 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  291 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:294:27: note: in expansion of macro 'LOG_COLOR'
+  294 | #define LOG_COLOR_E       LOG_COLOR(LOG_COLOR_RED)
+      |                           ^~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:308:37: note: in expansion of macro 'LOG_COLOR_E'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:436:86: note: in expansion of macro 'LOG_FORMAT'
+  436 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:366:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  366 | #define ESP_LOGE( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_ERROR,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:438:9: note: in expansion of macro 'ESP_LOGE'
+  438 |         ESP_LOGE(TAG, "Failed to send the custom msg 0x%06x, err = 0x%06x", opcode, err);
+      |         ^~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:291:27: warning: format '%x' expects argument of type 'unsigned int', but argument 6 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  291 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:295:27: note: in expansion of macro 'LOG_COLOR'
+  295 | #define LOG_COLOR_W       LOG_COLOR(LOG_COLOR_BROWN)
+      |                           ^~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:308:37: note: in expansion of macro 'LOG_COLOR_W'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:437:86: note: in expansion of macro 'LOG_FORMAT'
+  437 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:366:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  366 | #define ESP_LOGE( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_ERROR,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:438:9: note: in expansion of macro 'ESP_LOGE'
+  438 |         ESP_LOGE(TAG, "Failed to send the custom msg 0x%06x, err = 0x%06x", opcode, err);
+      |         ^~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:438:1: warning: format '%x' expects argument of type 'unsigned int', but argument 6 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  438 |         ESP_LOGE(TAG, "Failed to send the custom msg 0x%06x, err = 0x%06x", opcode, err);
+      | ^       ~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:308:59: note: in definition of macro 'LOG_FORMAT'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                           ^~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:366:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  366 | #define ESP_LOGE( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_ERROR,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:438:9: note: in expansion of macro 'ESP_LOGE'
+  438 |         ESP_LOGE(TAG, "Failed to send the custom msg 0x%06x, err = 0x%06x", opcode, err);
+      |         ^~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:438:1: warning: format '%x' expects argument of type 'unsigned int', but argument 6 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  438 |         ESP_LOGE(TAG, "Failed to send the custom msg 0x%06x, err = 0x%06x", opcode, err);
+      | ^       ~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:308:59: note: in definition of macro 'LOG_FORMAT'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                           ^~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:366:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  366 | #define ESP_LOGE( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_ERROR,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:438:9: note: in expansion of macro 'ESP_LOGE'
+  438 |         ESP_LOGE(TAG, "Failed to send the custom msg 0x%06x, err = 0x%06x", opcode, err);
+      |         ^~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:291:27: warning: format '%x' expects argument of type 'unsigned int', but argument 6 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  291 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:296:27: note: in expansion of macro 'LOG_COLOR'
+  296 | #define LOG_COLOR_I       LOG_COLOR(LOG_COLOR_GREEN)
+      |                           ^~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:308:37: note: in expansion of macro 'LOG_COLOR_I'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:440:86: note: in expansion of macro 'LOG_FORMAT'
+  440 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:366:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  366 | #define ESP_LOGE( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_ERROR,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:438:9: note: in expansion of macro 'ESP_LOGE'
+  438 |         ESP_LOGE(TAG, "Failed to send the custom msg 0x%06x, err = 0x%06x", opcode, err);
+      |         ^~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c: In function 'ble_mesh_custom_sensor_client_model_message_get':
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:457:5: warning: 'send_rel' is deprecated [-Wdeprecated-declarations]
+  457 |     ctx.send_rel = false;
+      |     ^~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/bt/esp_ble_mesh/api/esp_ble_mesh_defs.h:625:14: note: declared here
+  625 |     uint8_t  send_rel:1 __attribute__((deprecated));
+      |              ^~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:291:27: warning: format '%x' expects argument of type 'unsigned int', but argument 6 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  291 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:294:27: note: in expansion of macro 'LOG_COLOR'
+  294 | #define LOG_COLOR_E       LOG_COLOR(LOG_COLOR_RED)
+      |                           ^~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:308:37: note: in expansion of macro 'LOG_COLOR_E'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:436:86: note: in expansion of macro 'LOG_FORMAT'
+  436 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:366:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  366 | #define ESP_LOGE( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_ERROR,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:466:9: note: in expansion of macro 'ESP_LOGE'
+  466 |         ESP_LOGE(TAG, "Failed to send the custom msg 0x%06x, err = 0x%06x", opcode, err);
+      |         ^~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:291:27: warning: format '%x' expects argument of type 'unsigned int', but argument 6 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  291 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:295:27: note: in expansion of macro 'LOG_COLOR'
+  295 | #define LOG_COLOR_W       LOG_COLOR(LOG_COLOR_BROWN)
+      |                           ^~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:308:37: note: in expansion of macro 'LOG_COLOR_W'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:437:86: note: in expansion of macro 'LOG_FORMAT'
+  437 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:366:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  366 | #define ESP_LOGE( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_ERROR,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:466:9: note: in expansion of macro 'ESP_LOGE'
+  466 |         ESP_LOGE(TAG, "Failed to send the custom msg 0x%06x, err = 0x%06x", opcode, err);
+      |         ^~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:466:1: warning: format '%x' expects argument of type 'unsigned int', but argument 6 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  466 |         ESP_LOGE(TAG, "Failed to send the custom msg 0x%06x, err = 0x%06x", opcode, err);
+      | ^       ~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:308:59: note: in definition of macro 'LOG_FORMAT'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                           ^~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:366:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  366 | #define ESP_LOGE( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_ERROR,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:466:9: note: in expansion of macro 'ESP_LOGE'
+  466 |         ESP_LOGE(TAG, "Failed to send the custom msg 0x%06x, err = 0x%06x", opcode, err);
+      |         ^~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:466:1: warning: format '%x' expects argument of type 'unsigned int', but argument 6 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  466 |         ESP_LOGE(TAG, "Failed to send the custom msg 0x%06x, err = 0x%06x", opcode, err);
+      | ^       ~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:308:59: note: in definition of macro 'LOG_FORMAT'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                           ^~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:366:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  366 | #define ESP_LOGE( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_ERROR,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:466:9: note: in expansion of macro 'ESP_LOGE'
+  466 |         ESP_LOGE(TAG, "Failed to send the custom msg 0x%06x, err = 0x%06x", opcode, err);
+      |         ^~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:291:27: warning: format '%x' expects argument of type 'unsigned int', but argument 6 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  291 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:296:27: note: in expansion of macro 'LOG_COLOR'
+  296 | #define LOG_COLOR_I       LOG_COLOR(LOG_COLOR_GREEN)
+      |                           ^~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:308:37: note: in expansion of macro 'LOG_COLOR_I'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:440:86: note: in expansion of macro 'LOG_FORMAT'
+  440 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:366:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  366 | #define ESP_LOGE( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_ERROR,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/src/mesh_client.c:466:9: note: in expansion of macro 'ESP_LOGE'
+  466 |         ESP_LOGE(TAG, "Failed to send the custom msg 0x%06x, err = 0x%06x", opcode, err);
+      |         ^~~~~~~~
+cc1.exe: some warnings being treated as errors
+[5/12] Performing build step for 'bootloader'
+-- Building ESP-IDF components for target esp32
+-- Project sdkconfig file D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/BLE_MESH_Gate/sdkconfig
+-- Compiler supported targets: xtensa-esp-elf
+-- Adding linker script D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/soc/esp32/ld/esp32.peripherals.ld
+-- Bootloader project name: "bootloader" version: 1
+-- Adding linker script D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_rom/esp32/ld/esp32.rom.newlib-funcs.ld
+-- Adding linker script D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/bootloader/subproject/main/ld/esp32/bootloader.ld
+-- Adding linker script D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/bootloader/subproject/main/ld/esp32/bootloader.rom.ld
+-- Components: bootloader bootloader_support efuse esp_app_format esp_bootloader_format esp_common esp_hw_support esp_rom esp_system esptool_py freertos hal log main micro-ecc newlib partition_table soc spi_flash xtensa
+-- Component paths: D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/bootloader D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/bootloader_support D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/efuse D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_app_format D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_bootloader_format D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_common D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_hw_support D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_rom D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esp_system D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esptool_py D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/freertos D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/hal D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/bootloader/subproject/main D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/bootloader/subproject/components/micro-ecc D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/newlib D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/partition_table D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/soc D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/spi_flash D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/BLE_MESH_Gate/build/bootloader
+[0/1] Re-running CMake...
+[1/1] cmd.exe /C "cd /D D:\IDF\git\WSL_Project20241\ble-mesh-custom-sensor-model-code\BLE_MESH_Gate\build\bootloader\esp-idf\esptool_py && D:\IDF\install\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/BLE_MESH_Gate/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6860 bytes. 0x7a0 bytes (7%) free.
+ninja: build stopped: subcommand failed.

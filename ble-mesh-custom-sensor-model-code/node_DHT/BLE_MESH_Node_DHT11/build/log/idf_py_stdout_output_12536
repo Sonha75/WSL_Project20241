@@ -1,0 +1,18 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D D:\IDF\git\WSL_Project20241\ble-mesh-custom-sensor-model-code\node_DHT\BLE_MESH_Node_DHT11\build\bootloader\esp-idf\esptool_py && D:\IDF\install\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/node_DHT/BLE_MESH_Node_DHT11/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6860 bytes. 0x7a0 bytes (7%) free.
+[2/7] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/node_DHT/BLE_MESH_Node_DHT11/main/main.c:20:16: warning: 'ticks' defined but not used [-Wunused-variable]
+   20 | static uint8_t ticks = 0;
+      |                ^~~~~
+[3/7] Linking C static library esp-idf\main\libmain.a
+[4/7] Generating ld/sections.ld
+[5/7] Linking CXX executable BLE_MESH_Node.elf
+[6/7] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/node_DHT/BLE_MESH_Node_DHT11/build/BLE_MESH_Node.bin
+[7/7] cmd.exe /C "cd /D D:\IDF\git\WSL_Project20241\ble-mesh-custom-sensor-model-code\node_DHT\BLE_MESH_Node_DHT11\build\esp-idf\esptool_py && D:\IDF\install\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/node_DHT/BLE_MESH_Node_DHT11/build/partition_table/partition-table.bin D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/node_DHT/BLE_MESH_Node_DHT11/build/BLE_MESH_Node.bin"
+BLE_MESH_Node.bin binary size 0x10dff0 bytes. Smallest app partition is 0x220000 bytes. 0x112010 bytes (50%) free.

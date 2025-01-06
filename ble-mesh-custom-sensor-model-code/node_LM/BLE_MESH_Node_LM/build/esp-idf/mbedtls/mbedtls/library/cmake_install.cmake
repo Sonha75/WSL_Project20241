@@ -1,4 +1,4 @@
-# Install script for directory: D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/mbedtls/mbedtls/library
+# Install script for directory: D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/mbedtls/mbedtls/library
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,18 +34,18 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "D:/ESP_IDF/Espressif/tools/xtensa-esp32-elf/esp-12.2.0_20230208/xtensa-esp32-elf/bin/xtensa-esp32-elf-objdump.exe")
+  set(CMAKE_OBJDUMP "D:/IDF/install/Espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp32-elf-objdump.exe")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "D:/ESP_IDF/Ble mesh/esp32_btmesh/ble-mesh-custom-sensor-model-code/node_LM/BLE_MESH_Node_LM/build/esp-idf/mbedtls/mbedtls/library/libmbedcrypto.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/node_LM/BLE_MESH_Node_LM/build/esp-idf/mbedtls/mbedtls/library/libmbedcrypto.a")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "D:/ESP_IDF/Ble mesh/esp32_btmesh/ble-mesh-custom-sensor-model-code/node_LM/BLE_MESH_Node_LM/build/esp-idf/mbedtls/mbedtls/library/libmbedx509.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/node_LM/BLE_MESH_Node_LM/build/esp-idf/mbedtls/mbedtls/library/libmbedx509.a")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "D:/ESP_IDF/Ble mesh/esp32_btmesh/ble-mesh-custom-sensor-model-code/node_LM/BLE_MESH_Node_LM/build/esp-idf/mbedtls/mbedtls/library/libmbedtls.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/node_LM/BLE_MESH_Node_LM/build/esp-idf/mbedtls/mbedtls/library/libmbedtls.a")
 endif()
 

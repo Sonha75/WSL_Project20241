@@ -4,19 +4,19 @@
 cmake_minimum_required(VERSION 3.5)
 
 file(MAKE_DIRECTORY
-  "D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/bootloader/subproject"
-  "D:/ESP_IDF/Ble mesh/esp32_btmesh/ble-mesh-custom-sensor-model-code/node_LM/BLE_MESH_Node_LM/build/bootloader"
-  "D:/ESP_IDF/Ble mesh/esp32_btmesh/ble-mesh-custom-sensor-model-code/node_LM/BLE_MESH_Node_LM/build/bootloader-prefix"
-  "D:/ESP_IDF/Ble mesh/esp32_btmesh/ble-mesh-custom-sensor-model-code/node_LM/BLE_MESH_Node_LM/build/bootloader-prefix/tmp"
-  "D:/ESP_IDF/Ble mesh/esp32_btmesh/ble-mesh-custom-sensor-model-code/node_LM/BLE_MESH_Node_LM/build/bootloader-prefix/src/bootloader-stamp"
-  "D:/ESP_IDF/Ble mesh/esp32_btmesh/ble-mesh-custom-sensor-model-code/node_LM/BLE_MESH_Node_LM/build/bootloader-prefix/src"
-  "D:/ESP_IDF/Ble mesh/esp32_btmesh/ble-mesh-custom-sensor-model-code/node_LM/BLE_MESH_Node_LM/build/bootloader-prefix/src/bootloader-stamp"
+  "D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/bootloader/subproject"
+  "D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/node_LM/BLE_MESH_Node_LM/build/bootloader"
+  "D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/node_LM/BLE_MESH_Node_LM/build/bootloader-prefix"
+  "D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/node_LM/BLE_MESH_Node_LM/build/bootloader-prefix/tmp"
+  "D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/node_LM/BLE_MESH_Node_LM/build/bootloader-prefix/src/bootloader-stamp"
+  "D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/node_LM/BLE_MESH_Node_LM/build/bootloader-prefix/src"
+  "D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/node_LM/BLE_MESH_Node_LM/build/bootloader-prefix/src/bootloader-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "D:/ESP_IDF/Ble mesh/esp32_btmesh/ble-mesh-custom-sensor-model-code/node_LM/BLE_MESH_Node_LM/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
+    file(MAKE_DIRECTORY "D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/node_LM/BLE_MESH_Node_LM/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "D:/ESP_IDF/Ble mesh/esp32_btmesh/ble-mesh-custom-sensor-model-code/node_LM/BLE_MESH_Node_LM/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/node_LM/BLE_MESH_Node_LM/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
 endif()

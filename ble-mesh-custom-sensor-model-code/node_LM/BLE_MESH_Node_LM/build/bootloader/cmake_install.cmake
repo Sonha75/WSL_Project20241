@@ -1,4 +1,4 @@
-# Install script for directory: D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/bootloader/subproject
+# Install script for directory: D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/bootloader/subproject
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,12 +34,12 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "D:/ESP_IDF/Espressif/tools/xtensa-esp32-elf/esp-12.2.0_20230208/xtensa-esp32-elf/bin/xtensa-esp32-elf-objdump.exe")
+  set(CMAKE_OBJDUMP "D:/IDF/install/Espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp32-elf-objdump.exe")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/ESP_IDF/Ble mesh/esp32_btmesh/ble-mesh-custom-sensor-model-code/node_LM/BLE_MESH_Node_LM/build/bootloader/esp-idf/cmake_install.cmake")
+  include("D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/node_LM/BLE_MESH_Node_LM/build/bootloader/esp-idf/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/ESP_IDF/Ble mesh/esp32_btmesh/ble-mesh-custom-sensor-model-code/node_LM/BLE_MESH_Node_LM/build/bootloader/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/node_LM/BLE_MESH_Node_LM/build/bootloader/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -1,0 +1,151 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.3-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jan  4 2025 02:34:17[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 otadata          OTA data         01 00 0000f000 00002000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00020000 00220000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) boot: Defaulting to factory image[0m
+[0;32mI (101) esp_image: segment 0: paddr=00020020 vaddr=3f400020 size=4e0ech (319724) map[0m
+[0;32mI (219) esp_image: segment 1: paddr=0006e114 vaddr=3ffbdb60 size=01f04h (  7940) load[0m
+[0;32mI (222) esp_image: segment 2: paddr=00070020 vaddr=400d0020 size=128bc0h (1215424) map[0m
+[0;32mI (641) esp_image: segment 3: paddr=00198be8 vaddr=3ffbfa64 size=0440ch ( 17420) load[0m
+[0;32mI (648) esp_image: segment 4: paddr=0019cffc vaddr=40080000 size=1df94h (122772) load[0m
+[0;32mI (712) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (712) boot: Disabling RNG early entropy source...[0m
+[0;32mI (723) cpu_start: Multicore app[0m
+[0;32mI (732) cpu_start: Pro cpu start user code[0m
+[0;32mI (732) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (733) cpu_start: Application information:[0m
+[0;32mI (736) cpu_start: Project name:     BLE_MESH_Gate[0m
+[0;32mI (741) cpu_start: App version:      2841ab0-dirty[0m
+[0;32mI (746) cpu_start: Compile time:     Jan  4 2025 02:34:03[0m
+[0;32mI (753) cpu_start: ELF file SHA256:  124fa8c52ed31bba...[0m
+[0;32mI (759) cpu_start: ESP-IDF:          v5.2.3-dirty[0m
+[0;32mI (764) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (769) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (773) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (778) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (786) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (791) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (798) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (804) heap_init: At 3FFCF788 len 00010878 (66 KiB): DRAM[0m
+[0;32mI (810) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (816) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (823) heap_init: At 4009DF94 len 0000206C (8 KiB): IRAM[0m
+[0;32mI (830) spi_flash: detected chip: generic[0m
+[0;32mI (833) spi_flash: flash io: dio[0m
+[0;32mI (838) coexist: coex firmware version: 27d8387[0m
+[0;32mI (843) main_task: Started on CPU0[0m
+[0;32mI (853) main_task: Calling app_main()[0m
+[0;32mI (853) MAIN: Initializing...[0m
+[0;32mI (853) gpio: GPIO[0]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+use esp timer !!!
+[0;31mE (863) esp_timer: Task is already initialized[0m
+[0;32mI (863) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (903) BTDM_INIT: BT controller compile version [b022216][0m
+[0;32mI (903) BTDM_INIT: Bluetooth MAC: b0:a7:32:28:23:8e[0m
+[0;32mI (903) phy_init: phy_version 4840,a40f0ac,Aug 16 2024,16:48:06[0m
+Bluetooth Mesh v1.1 commit: [10f7fdc1a9]
+[0;33mW (1403) BLE_MESH: bt_mesh_proxy_server_prov_disable, Already[0m
+[0;32mI (1433) MESH_CLIENT: ESP_BLE_MESH_NODE_PROV_COMPLETE_EVT[0m
+[0;32mI (1433) MESH_CLIENT: net_idx: 0x0000, addr: 0x0006[0m
+[0;32mI (1433) MESH_CLIENT: flags: 0x00, iv_index: 0x00000000[0m
+[0;32mI (1443) MESH_CLIENT: Device provisioned[0m
+[0;32mI (1443) MESH_CLIENT: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;32mI (1453) MESH_CLIENT: ESP_BLE_MESH_NODE_SET_UNPROV_DEV_NAME_COMP_EVT, Name: BLE Mesh, err_code 0[0m
+[0;33mW (1463) BLE_MESH: bt_mesh_prov_enable, Already[0m
+[0;32mI (1473) MESH_CLIENT: ESP_BLE_MESH_NODE_PROV_ENABLE_COMP_EVT, err_code -120[0m
+[0;32mI (1473) MESH_CLIENT: BLE Mesh Node initialized[0m
+[0;32mI (1493) wifi:wifi driver task: 3ffdcfcc, prio:23, stack:6656, core=0[0m
+[0;32mI (1493) wifi:wifi firmware version: 82f54d2[0m
+[0;32mI (1493) wifi:wifi certification version: v7.0[0m
+[0;32mI (1493) wifi:config NVS flash: enabled[0m
+[0;32mI (1503) wifi:config nano formating: disabled[0m
+[0;32mI (1503) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1513) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1513) wifi:Init management short buffer num: 32[0m
+[0;32mI (1513) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1523) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1523) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1533) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1533) wifi_init: rx ba win: 6[0m
+[0;32mI (1533) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1543) wifi_init: udp mbox: 6[0m
+[0;32mI (1543) wifi_init: tcp mbox: 6[0m
+[0;32mI (1553) wifi_init: tcp tx win: 5744[0m
+[0;32mI (1553) wifi_init: tcp rx win: 5744[0m
+[0;32mI (1553) wifi_init: tcp mss: 1440[0m
+[0;32mI (1563) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1563) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (1573) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (1613) wifi:mode : sta (b0:a7:32:28:23:8c)[0m
+[0;32mI (1613) wifi:enable tsf[0m
+[0;32mI (1613) wifi station: wifi_init_sta finished.[0m
+[0;32mI (6443) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (6443) wifi station: retry to connect to the AP[0m
+[0;32mI (11293) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (11293) wifi station: retry to connect to the AP[0m
+[0;32mI (16113) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (16123) wifi station: retry to connect to the AP[0m
+[0;32mI (20943) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (20953) wifi station: retry to connect to the AP[0m
+[0;32mI (25773) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (25783) wifi station: retry to connect to the AP[0m
+[0;32mI (30603) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (30603) wifi station: retry to connect to the AP[0m
+[0;32mI (35433) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (35433) wifi station: retry to connect to the AP[0m
+[0;32mI (40263) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (40263) wifi station: retry to connect to the AP[0m
+[0;32mI (45083) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (45093) wifi station: retry to connect to the AP[0m
+[0;32mI (49913) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (49923) wifi station: retry to connect to the AP[0m
+[0;32mI (54743) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (54743) wifi station: retry to connect to the AP[0m
+[0;32mI (59573) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (59573) wifi station: retry to connect to the AP[0m
+[0;32mI (64403) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (64403) wifi station: retry to connect to the AP[0m
+[0;32mI (69223) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (69233) wifi station: retry to connect to the AP[0m
+[0;32mI (74053) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (74063) wifi station: retry to connect to the AP[0m
+[0;32mI (78883) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (78883) wifi station: retry to connect to the AP[0m

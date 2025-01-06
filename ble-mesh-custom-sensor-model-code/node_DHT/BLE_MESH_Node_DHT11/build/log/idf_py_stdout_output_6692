@@ -1,0 +1,464 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.3-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jan  4 2025 02:18:25[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 otadata          OTA data         01 00 0000f000 00002000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00020000 00220000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) boot: Defaulting to factory image[0m
+[0;32mI (101) esp_image: segment 0: paddr=00020020 vaddr=3f400020 size=39078h (233592) map[0m
+[0;32mI (189) esp_image: segment 1: paddr=000590a0 vaddr=3ffbdb60 size=05528h ( 21800) load[0m
+[0;32mI (198) esp_image: segment 2: paddr=0005e5d0 vaddr=40080000 size=01a48h (  6728) load[0m
+[0;32mI (201) esp_image: segment 3: paddr=00060020 vaddr=400d0020 size=b8d94h (757140) map[0m
+[0;32mI (463) esp_image: segment 4: paddr=00118dbc vaddr=40081a48 size=15354h ( 86868) load[0m
+[0;32mI (509) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (509) boot: Disabling RNG early entropy source...[0m
+[0;32mI (521) cpu_start: Multicore app[0m
+[0;32mI (530) cpu_start: Pro cpu start user code[0m
+[0;32mI (530) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (530) cpu_start: Application information:[0m
+[0;32mI (533) cpu_start: Project name:     BLE_MESH_Node[0m
+[0;32mI (539) cpu_start: App version:      2841ab0-dirty[0m
+[0;32mI (544) cpu_start: Compile time:     Jan  4 2025 02:47:44[0m
+[0;32mI (550) cpu_start: ELF file SHA256:  92fbc36141d09f9b...[0m
+[0;32mI (556) cpu_start: ESP-IDF:          v5.2.3-dirty[0m
+[0;32mI (562) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (566) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (571) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (576) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (583) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (589) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (595) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (601) heap_init: At 3FFCAF08 len 000150F8 (84 KiB): DRAM[0m
+[0;32mI (607) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (614) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (620) heap_init: At 40096D9C len 00009264 (36 KiB): IRAM[0m
+[0;32mI (628) spi_flash: detected chip: generic[0m
+[0;32mI (631) spi_flash: flash io: dio[0m
+[0;32mI (636) coexist: coex firmware version: 27d8387[0m
+[0;32mI (641) main_task: Started on CPU0[0m
+[0;32mI (651) main_task: Calling app_main()[0m
+[0;32mI (651) MESH-SERVER-MAIN: Initializing...[0m
+use esp timer !!!
+[0;31mE (651) esp_timer: Task is already initialized[0m
+[0;32mI (651) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (1681) BTDM_INIT: BT controller compile version [b022216][0m
+[0;32mI (1681) BTDM_INIT: Bluetooth MAC: 08:d1:f9:39:ea:f6[0m
+[0;32mI (1681) phy_init: phy_version 4840,a40f0ac,Aug 16 2024,16:48:06[0m
+[0;33mW (1681) phy_init: failed to load RF calibration data (0xffffffff), falling back to full calibration[0m
+[0;33mW (1771) phy_init: saving new calibration data because of checksum failure, mode(2)[0m
+Bluetooth Mesh v1.1 commit: [10f7fdc1a9]
+[0;32mI (2111) BLE_MESH: Friend not supported[0m
+[0;32mI (2191) BLE_MESH: Mesh device just starts up, no restore[0m
+[0;32mI (2191) MESH_SERVER: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;32mI (2201) MESH_SERVER: ESP_BLE_MESH_NODE_SET_UNPROV_DEV_NAME_COMP_EVT, Name: BLE Mesh, err_code 0[0m
+[0;32mI (2211) MESH_SERVER: BLE Mesh Node initialized![0m
+[0;32mI (2211) main_task: Returned from app_main()[0m
+[0;32mI (2231) MESH_SERVER: ESP_BLE_MESH_NODE_PROV_ENABLE_COMP_EVT, err_code 0[0m
+[0;31mE (2241) BLE_MESH: Send, NetKey 0x0000 not found[0m
+[0;31mE (2241) MESH_SERVER: Failed to send message 0xc202e5[0m
+[0;32mI (8831) MESH_SERVER: ESP_BLE_MESH_NODE_PROV_LINK_OPEN_EVT, bearer PB-GATT[0m
+[0;31mE (12261) BLE_MESH: Send, NetKey 0x0000 not found[0m
+[0;31mE (12261) MESH_SERVER: Failed to send message 0xc202e5[0m
+[0;33mW (15251) BLE_MESH: No Health Server context provided[0m
+[0;32mI (17231) BLE_MESH: Algorithm:   0x00[0m
+[0;32mI (17231) BLE_MESH: Public Key:  0x00[0m
+[0;32mI (17231) BLE_MESH: Auth Method: 0x00[0m
+[0;32mI (17231) BLE_MESH: Auth Action: 0x00[0m
+[0;32mI (17231) BLE_MESH: Auth Size:   0x00[0m
+[0;32mI (17591) BLE_MESH: Remote Random: c893ac38c1501f95b1f635b46b2734a5[0m
+[0;32mI (17681) BLE_MESH: Primary Element: 0x000a[0m
+[0;32mI (17681) BLE_MESH: net_idx 0x0000 flags 0x00 iv_index 0x0000[0m
+[0;32mI (17681) BLE_MESH: DevKey 38704601dd771d93d8dc3268f14a8444[0m
+[0;32mI (17691) BLE_MESH: NetKey f98a9de606900adc3d04a8ae6f664509[0m
+[0;33mW (17701) BLE_MESH: No Health Server context provided[0m
+[0;32mI (17711) BLE_MESH: Primary address 0x000a, element count 1[0m
+[0;32mI (17711) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (17721) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (17721) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (17731) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (17741) BLE_MESH: Scan is already started[0m
+[0;32mI (17751) MESH_SERVER: ESP_BLE_MESH_NODE_PROV_LINK_CLOSE_EVT, bearer PB-GATT[0m
+[0;32mI (17751) MESH_SERVER: ESP_BLE_MESH_NODE_PROV_COMPLETE_EVT[0m
+[0;32mI (17751) MESH_SERVER: net_idx: 0x0000, addr: 0x000a[0m
+[0;32mI (17761) MESH_SERVER: Device provisioned[0m
+[0;33mW (18851) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (19441) BLE_MESH: Seg 0/2 received[0m
+[0;32mI (19481) BLE_MESH: Seg 1/2 received[0m
+[0;32mI (19571) BLE_MESH: Seg 2/2 received[0m
+[0;32mI (19571) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (19571) BLE_MESH: Not sending ack for non-unicast address[0m
+[0;33mW (19571) BLE_MESH: No matching AppKey[0m
+[0;32mI (19751) BLE_MESH: Got segment for already complete SDU[0m
+[0;32mI (19751) BLE_MESH: Not sending ack for non-unicast address[0m
+[0;32mI (19751) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (19851) BLE_MESH: Got segment for already complete SDU[0m
+[0;32mI (19851) BLE_MESH: Not sending ack for non-unicast address[0m
+[0;32mI (19851) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (19911) BLE_MESH: Got segment for already complete SDU[0m
+[0;32mI (19911) BLE_MESH: Not sending ack for non-unicast address[0m
+[0;32mI (19911) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (20061) BLE_MESH: No matching TX context for Seg Ack[0m
+[0;32mI (20131) BLE_MESH: Got segment for already complete SDU[0m
+[0;32mI (20131) BLE_MESH: Not sending ack for non-unicast address[0m
+[0;32mI (20131) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (20201) BLE_MESH: Got segment for already complete SDU[0m
+[0;32mI (20201) BLE_MESH: Not sending ack for non-unicast address[0m
+[0;32mI (20201) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (20491) BLE_MESH: No matching TX context for Seg Ack[0m
+[0;32mI (20511) BLE_MESH: Got segment for already complete SDU[0m
+[0;32mI (20511) BLE_MESH: Not sending ack for non-unicast address[0m
+[0;32mI (20511) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;33mW (20541) BLE_MESH: Replay: src 0x0004 dst 0xffff seq 0x00a947[0m
+[0;32mI (20621) BLE_MESH: Got segment for already complete SDU[0m
+[0;32mI (20621) BLE_MESH: Not sending ack for non-unicast address[0m
+[0;32mI (20621) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (20711) BLE_MESH: Got segment for already complete SDU[0m
+[0;32mI (20711) BLE_MESH: Not sending ack for non-unicast address[0m
+[0;32mI (20711) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (20901) BLE_MESH: Got segment for already complete SDU[0m
+[0;32mI (20901) BLE_MESH: Not sending ack for non-unicast address[0m
+[0;32mI (20901) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (20991) BLE_MESH: No matching TX context for Seg Ack[0m
+[0;32mI (21101) BLE_MESH: Got segment for already complete SDU[0m
+[0;32mI (21101) BLE_MESH: Not sending ack for non-unicast address[0m
+[0;32mI (21101) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (21201) BLE_MESH: Got segment for already complete SDU[0m
+[0;32mI (21201) BLE_MESH: Not sending ack for non-unicast address[0m
+[0;32mI (21201) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (22281) BLE_MESH: send, app_idx 0x0000 src 0x000a dst 0x0006[0m
+[0;32mI (22281) BLE_MESH: send, len 29: c2e5020300000064687434000000c041000014420100000001d0020000[0m
+[0;31mE (22291) BLE_MESH: Model not bound to AppKey 0x0000[0m
+[0;31mE (22291) MESH_SERVER: Failed to send message 0xc202e5[0m
+[0;32mI (22481) BLE_MESH: No matching TX context for Seg Ack[0m
+[0;32mI (22691) BLE_MESH: No matching TX context for Seg Ack[0m
+[0;32mI (24481) BLE_MESH: Add client or filter addr 0x0001[0m
+[0;32mI (24481) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (24491) BLE_MESH: recv, app_idx 0xfffe src 0x0001 dst 0x000a[0m
+[0;32mI (24491) BLE_MESH: recv, len 3: 800800[0m
+[0;32mI (24491) BLE_MESH: send, app_idx 0xfffe src 0x000a dst 0x0001[0m
+[0;32mI (24501) BLE_MESH: send, len 22: 0200e502000000000a000300000001010000e5021414[0m
+[0;32mI (24501) BLE_MESH: Seg, send_tag 0x03, send_szmic 0, aszmic 0[0m
+[0;32mI (24511) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (24531) BLE_MESH: Use security credentials 0x00, proxy 0[0m
+[0;32mI (24531) BLE_MESH: Network PDU, count 2, interval 20[0m
+[0;32mI (24531) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (24541) BLE_MESH: Use security credentials 0x00, proxy 0[0m
+[0;32mI (24551) BLE_MESH: Network PDU, count 2, interval 20[0m
+[0;32mI (24551) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (24571) BLE_MESH: Use security credentials 0x00, proxy 0[0m
+[0;32mI (24571) BLE_MESH: Network PDU, count 2, interval 20[0m
+[0;32mI (24701) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (24711) BLE_MESH: Seg 0/2 acked[0m
+[0;32mI (24711) BLE_MESH: Seg 1/2 acked[0m
+[0;32mI (24711) BLE_MESH: Seg 2/2 acked[0m
+[0;32mI (24791) BLE_MESH: Attempts: 3[0m
+[0;32mI (25061) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (25071) BLE_MESH: No matching TX context for Seg Ack[0m
+[0;32mI (25241) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (25251) BLE_MESH: recv, app_idx 0xfffe src 0x0001 dst 0x000a[0m
+[0;32mI (25251) BLE_MESH: recv, len 2: 800c[0m
+[0;32mI (25251) BLE_MESH: send, app_idx 0xfffe src 0x000a dst 0x0001[0m
+[0;32mI (25261) BLE_MESH: send, len 3: 800e07[0m
+[0;32mI (25261) BLE_MESH: Unseg, send_tag 0x02, send_szmic 0, aszmic 0[0m
+[0;32mI (25271) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (25291) BLE_MESH: Use security credentials 0x00, proxy 0[0m
+[0;32mI (25291) BLE_MESH: Network PDU, count 2, interval 20[0m
+[0;32mI (26901) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (26921) BLE_MESH: recv, app_idx 0xfffe src 0x0001 dst 0x000a[0m
+[0;32mI (26921) BLE_MESH: recv, len 3: 80240a[0m
+[0;32mI (26921) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (26931) BLE_MESH: send, app_idx 0xfffe src 0x000a dst 0x0001[0m
+[0;32mI (26941) BLE_MESH: send, len 3: 80250a[0m
+[0;32mI (26941) BLE_MESH: Unseg, send_tag 0x02, send_szmic 0, aszmic 0[0m
+[0;32mI (26951) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (26961) BLE_MESH: Use security credentials 0x00, proxy 0[0m
+[0;32mI (26961) BLE_MESH: Network PDU, count 2, interval 20[0m
+[0;32mI (28571) BLE_MESH: Seg 0/1 received[0m
+[0;32mI (28661) BLE_MESH: Seg 1/1 received[0m
+[0;32mI (28661) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (28671) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (28681) BLE_MESH: Use security credentials 0x00, proxy 0[0m
+[0;32mI (28681) BLE_MESH: Network PDU, count 2, interval 20[0m
+[0;32mI (28681) BLE_MESH: recv, app_idx 0xfffe src 0x0001 dst 0x000a[0m
+[0;32mI (28691) BLE_MESH: recv, len 20: 00000000d57cf43418aa29e8e7d2dec36d7543cf[0m
+[0;32mI (28701) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (28711) BLE_MESH: send, app_idx 0xfffe src 0x000a dst 0x0001[0m
+[0;32mI (28711) BLE_MESH: send, len 6: 800300000000[0m
+[0;32mI (28711) BLE_MESH: Unseg, send_tag 0x02, send_szmic 0, aszmic 0[0m
+[0;32mI (28721) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (28741) BLE_MESH: Use security credentials 0x00, proxy 0[0m
+[0;32mI (28741) BLE_MESH: Network PDU, count 2, interval 20[0m
+[0;32mI (28751) MESH_SERVER: ESP_BLE_MESH_MODEL_OP_APP_KEY_ADD[0m
+[0;32mI (28751) MESH_SERVER: net_idx 0x0000, app_idx 0x0000[0m
+[0;32mI (28751) AppKey: d5 7c f4 34 18 aa 29 e8 e7 d2 de c3 6d 75 43 cf [0m
+[0;32mI (29381) BLE_MESH: Seg 0/2 received[0m
+[0;32mI (29511) BLE_MESH: Seg 1/2 received[0m
+[0;32mI (29541) BLE_MESH: Seg 2/2 received[0m
+[0;32mI (29541) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (29551) BLE_MESH: Not sending ack for non-unicast address[0m
+[0;32mI (29551) BLE_MESH: recv, app_idx 0x0000 src 0x0004 dst 0xffff[0m
+[0;32mI (29561) BLE_MESH: recv, len 29: c2e5022100000064687431000000c04100002c42010000000103030000[0m
+[0;32mI (29721) BLE_MESH: Got segment for already complete SDU[0m
+[0;32mI (29721) BLE_MESH: Not sending ack for non-unicast address[0m
+[0;32mI (29721) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (29981) BLE_MESH: Got segment for already complete SDU[0m
+[0;32mI (29981) BLE_MESH: Not sending ack for non-unicast address[0m
+[0;32mI (29981) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (30021) BLE_MESH: No matching TX context for Seg Ack[0m
+[0;33mW (30111) BLE_MESH: Replay: src 0x0004 dst 0xffff seq 0x00a957[0m
+[0;32mI (30181) BLE_MESH: No matching TX context for Seg Ack[0m
+[0;32mI (30231) BLE_MESH: Got segment for already complete SDU[0m
+[0;32mI (30231) BLE_MESH: Not sending ack for non-unicast address[0m
+[0;32mI (30231) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (30561) BLE_MESH: Got segment for already complete SDU[0m
+[0;32mI (30561) BLE_MESH: Not sending ack for non-unicast address[0m
+[0;32mI (30561) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (30591) BLE_MESH: Got segment for already complete SDU[0m
+[0;32mI (30591) BLE_MESH: Not sending ack for non-unicast address[0m
+[0;32mI (30591) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;33mW (30651) BLE_MESH: Replay: src 0x0004 dst 0xffff seq 0x00a95d[0m
+[0;32mI (30841) BLE_MESH: No matching TX context for Seg Ack[0m
+[0;32mI (30881) BLE_MESH: Got segment for already complete SDU[0m
+[0;32mI (30881) BLE_MESH: Not sending ack for non-unicast address[0m
+[0;32mI (30881) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (31121) BLE_MESH: Got segment for already complete SDU[0m
+[0;32mI (31121) BLE_MESH: Not sending ack for non-unicast address[0m
+[0;32mI (31121) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (31211) BLE_MESH: Got segment for already complete SDU[0m
+[0;32mI (31211) BLE_MESH: Not sending ack for non-unicast address[0m
+[0;32mI (31211) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (31301) BLE_MESH: Got segment for already complete SDU[0m
+[0;32mI (31301) BLE_MESH: Not sending ack for non-unicast address[0m
+[0;32mI (31301) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (32301) BLE_MESH: send, app_idx 0x0000 src 0x000a dst 0x0006[0m
+[0;32mI (32301) BLE_MESH: send, len 29: c2e5020400000064687434000000c041000014420100000001d1020000[0m
+[0;31mE (32311) BLE_MESH: Model not bound to AppKey 0x0000[0m
+[0;31mE (32311) MESH_SERVER: Failed to send message 0xc202e5[0m
+[0;32mI (32721) BLE_MESH: No matching TX context for Seg Ack[0m
+[0;32mI (35271) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (35291) BLE_MESH: recv, app_idx 0xfffe src 0x0001 dst 0x000a[0m
+[0;32mI (35291) BLE_MESH: recv, len 10: 803d0a000000e5021414[0m
+[0;32mI (35301) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (35301) BLE_MESH: bind app key 0 on mode 0x2e5[0m
+[0;32mI (35311) BLE_MESH: send, app_idx 0xfffe src 0x000a dst 0x0001[0m
+[0;32mI (35311) BLE_MESH: send, len 11: 803e000a000000e5021414[0m
+[0;32mI (35321) BLE_MESH: Unseg, send_tag 0x02, send_szmic 0, aszmic 0[0m
+[0;32mI (35331) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (35341) BLE_MESH: Use security credentials 0x00, proxy 0[0m
+[0;32mI (35341) BLE_MESH: Network PDU, count 2, interval 20[0m
+[0;32mI (35361) MESH_SERVER: ESP_BLE_MESH_MODEL_OP_MODEL_APP_BIND[0m
+[0;32mI (35361) MESH_SERVER: elem_addr 0x000a, app_idx 0x0000, cid 0x02e5, mod_id 0x001414[0m
+[0;32mI (35361) MESH_SERVER: Application key bound to model 0x001414[0m
+[0;32mI (39401) BLE_MESH: Seg 0/2 received[0m
+[0;32mI (39491) BLE_MESH: Seg 1/2 received[0m
+[0;32mI (39581) BLE_MESH: Seg 2/2 received[0m
+[0;32mI (39581) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (39591) BLE_MESH: Not sending ack for non-unicast address[0m
+[0;32mI (39591) BLE_MESH: recv, app_idx 0x0000 src 0x0004 dst 0xffff[0m
+[0;32mI (39601) BLE_MESH: recv, len 29: c2e5022200000064687431000000c04100002c42010000000104030000[0m
+[0;32mI (39621) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;32mI (39621) BLE_MESH: send, app_idx 0x0000 src 0x000a dst 0x0004[0m
+[0;32mI (39621) BLE_MESH: send, len 15: c3e5022200000000e4fc3fcc0d5302[0m
+[0;32mI (39631) BLE_MESH: Seg, send_tag 0x01, send_szmic 0, aszmic 0[0m
+[0;32mI (39631) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (39651) BLE_MESH: Use security credentials 0x00, proxy 0[0m
+[0;32mI (39651) BLE_MESH: Network PDU, count 2, interval 20[0m
+[0;32mI (39651) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (39681) BLE_MESH: Use security credentials 0x00, proxy 0[0m
+[0;32mI (39681) BLE_MESH: Network PDU, count 2, interval 20[0m
+[0;32mI (39681) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c302e5 success[0m
+[0;32mI (39771) BLE_MESH: Got segment for already complete SDU[0m
+[0;32mI (39771) BLE_MESH: Not sending ack for non-unicast address[0m
+[0;32mI (39771) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (39861) BLE_MESH: Got segment for already complete SDU[0m
+[0;32mI (39861) BLE_MESH: Not sending ack for non-unicast address[0m
+[0;32mI (39861) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (39951) BLE_MESH: Got segment for already complete SDU[0m
+[0;32mI (39951) BLE_MESH: Not sending ack for non-unicast address[0m
+[0;32mI (39951) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (40161) BLE_MESH: No matching TX context for Seg Ack[0m
+[0;32mI (40221) BLE_MESH: Got segment for already complete SDU[0m
+[0;32mI (40221) BLE_MESH: Not sending ack for non-unicast address[0m
+[0;32mI (40221) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (40311) BLE_MESH: Got segment for already complete SDU[0m
+[0;32mI (40311) BLE_MESH: Not sending ack for non-unicast address[0m
+[0;32mI (40311) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (40451) BLE_MESH: Attempts: 3[0m
+[0;32mI (40451) BLE_MESH: Resending 0/1, cred 0x00[0m
+[0;32mI (40451) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (40461) BLE_MESH: Resending 1/1, cred 0x00[0m
+[0;32mI (40461) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (40491) BLE_MESH: No matching TX context for Seg Ack[0m
+[0;33mW (40501) BLE_MESH: Replay: src 0x0004 dst 0x000a seq 0x00a96e[0m
+[0;32mI (40651) BLE_MESH: Got segment for already complete SDU[0m
+[0;32mI (40651) BLE_MESH: Not sending ack for non-unicast address[0m
+[0;32mI (40651) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (40711) BLE_MESH: Got segment for already complete SDU[0m
+[0;32mI (40711) BLE_MESH: Not sending ack for non-unicast address[0m
+[0;32mI (40711) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;33mW (40741) BLE_MESH: Replay: src 0x0004 dst 0xffff seq 0x00a972[0m
+[0;32mI (40781) BLE_MESH: Got segment for already complete SDU[0m
+[0;32mI (40781) BLE_MESH: Not sending ack for non-unicast address[0m
+[0;32mI (40781) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (41051) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (41061) BLE_MESH: Seg 0/1 acked[0m
+[0;32mI (41061) BLE_MESH: Seg 1/1 acked[0m
+[0;32mI (41101) BLE_MESH: Got segment for already complete SDU[0m
+[0;32mI (41101) BLE_MESH: Not sending ack for non-unicast address[0m
+[0;32mI (41101) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (41151) BLE_MESH: Got segment for already complete SDU[0m
+[0;32mI (41151) BLE_MESH: Not sending ack for non-unicast address[0m
+[0;32mI (41151) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (41241) BLE_MESH: Got segment for already complete SDU[0m
+[0;32mI (41241) BLE_MESH: Not sending ack for non-unicast address[0m
+[0;32mI (41241) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (41451) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (41461) BLE_MESH: No matching TX context for Seg Ack[0m
+[0;32mI (41971) BLE_MESH: No matching TX context for Seg Ack[0m
+[0;32mI (42321) BLE_MESH: send, app_idx 0x0000 src 0x000a dst 0x0006[0m
+[0;32mI (42321) BLE_MESH: send, len 29: c2e5020500000064687434000000c041000014420100000001d2020000[0m
+[0;32mI (42331) BLE_MESH: Seg, send_tag 0x01, send_szmic 0, aszmic 0[0m
+[0;32mI (42331) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (42351) BLE_MESH: Use security credentials 0x00, proxy 0[0m
+[0;32mI (42351) BLE_MESH: Network PDU, count 2, interval 20[0m
+[0;32mI (42351) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (42381) BLE_MESH: Use security credentials 0x00, proxy 0[0m
+[0;32mI (42381) BLE_MESH: Network PDU, count 2, interval 20[0m
+[0;32mI (42381) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (42421) BLE_MESH: Use security credentials 0x00, proxy 0[0m
+[0;32mI (42421) BLE_MESH: Network PDU, count 2, interval 20[0m
+[0;32mI (42421) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;32mI (42791) BLE_MESH: No matching TX context for Seg Ack[0m
+[0;32mI (42921) BLE_MESH: No matching TX context for Seg Ack[0m
+[0;32mI (42941) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (42951) BLE_MESH: Seg 0/2 acked[0m
+[0;32mI (42951) BLE_MESH: Seg 1/2 acked[0m
+[0;32mI (42951) BLE_MESH: Seg 2/2 acked[0m
+[0;32mI (43061) BLE_MESH: Seg 0/1 received[0m
+[0;32mI (43241) BLE_MESH: Seg 1/1 received[0m
+[0;32mI (43241) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (43251) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (43261) BLE_MESH: Use security credentials 0x00, proxy 0[0m
+[0;32mI (43261) BLE_MESH: Network PDU, count 2, interval 20[0m
+[0;32mI (43261) BLE_MESH: recv, app_idx 0x0000 src 0x0006 dst 0x000a[0m
+[0;32mI (43271) BLE_MESH: recv, len 15: c3e502050000000030307d6c938416[0m
+[0;31mE (43281) MESH_SERVER: Received ACK for unknown message: 5[0m
+[0;31mE (43291) MESH_SERVER: Message 5 acknowledged successfully[0m
+[0;32mI (49441) BLE_MESH: Seg 0/2 received[0m
+[0;32mI (49561) BLE_MESH: Seg 1/2 received[0m
+[0;32mI (49621) BLE_MESH: Seg 2/2 received[0m
+[0;32mI (49621) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (49631) BLE_MESH: Not sending ack for non-unicast address[0m
+[0;32mI (49641) BLE_MESH: recv, app_idx 0x0000 src 0x0004 dst 0xffff[0m
+[0;32mI (49641) BLE_MESH: recv, len 29: c2e5022300000064687431000000c04100002c42010000000105030000[0m
+[0;32mI (49651) MESH_SERVER: OPCODE_STATUS received in server: 0xc202e5[0m
+[0;32mI (49651) BLE_MESH: send, app_idx 0x0000 src 0x000a dst 0x0004[0m
+[0;32mI (49661) BLE_MESH: send, len 15: c3e5022300000000e4fc3fe426ec02[0m
+[0;32mI (49671) BLE_MESH: Seg, send_tag 0x01, send_szmic 0, aszmic 0[0m
+[0;32mI (49671) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (49691) BLE_MESH: Use security credentials 0x00, proxy 0[0m
+[0;32mI (49691) BLE_MESH: Network PDU, count 2, interval 20[0m
+[0;32mI (49691) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (49711) BLE_MESH: Use security credentials 0x00, proxy 0[0m
+[0;32mI (49711) BLE_MESH: Network PDU, count 2, interval 20[0m
+[0;32mI (49711) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c302e5 success[0m
+[0;32mI (49801) BLE_MESH: Got segment for already complete SDU[0m
+[0;32mI (49801) BLE_MESH: Not sending ack for non-unicast address[0m
+[0;32mI (49801) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (49901) BLE_MESH: Got segment for already complete SDU[0m
+[0;32mI (49901) BLE_MESH: Not sending ack for non-unicast address[0m
+[0;32mI (49901) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (49991) BLE_MESH: Got segment for already complete SDU[0m
+[0;32mI (49991) BLE_MESH: Not sending ack for non-unicast address[0m
+[0;32mI (49991) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (50081) BLE_MESH: No matching TX context for Seg Ack[0m
+[0;32mI (50281) BLE_MESH: No matching TX context for Seg Ack[0m
+[0;32mI (50431) BLE_MESH: Got segment for already complete SDU[0m
+[0;32mI (50431) BLE_MESH: Not sending ack for non-unicast address[0m
+[0;32mI (50431) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (50461) BLE_MESH: Got segment for already complete SDU[0m
+[0;32mI (50461) BLE_MESH: Not sending ack for non-unicast address[0m
+[0;32mI (50461) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (50501) BLE_MESH: Attempts: 3[0m
+[0;32mI (50501) BLE_MESH: Resending 0/1, cred 0x00[0m
+[0;32mI (50501) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (50531) BLE_MESH: Got segment for already complete SDU[0m
+[0;32mI (50531) BLE_MESH: Not sending ack for non-unicast address[0m
+[0;32mI (50531) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (50541) BLE_MESH: Resending 1/1, cred 0x00[0m
+[0;32mI (50541) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (50731) BLE_MESH: Got segment for already complete SDU[0m
+[0;32mI (50741) BLE_MESH: Not sending ack for non-unicast address[0m
+[0;32mI (50741) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;33mW (50811) BLE_MESH: Replay: src 0x0004 dst 0x000a seq 0x00a988[0m
+[0;32mI (50831) BLE_MESH: Got segment for already complete SDU[0m
+[0;32mI (50841) BLE_MESH: Not sending ack for non-unicast address[0m
+[0;32mI (50841) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (50901) BLE_MESH: Got segment for already complete SDU[0m
+[0;32mI (50901) BLE_MESH: Not sending ack for non-unicast address[0m
+[0;32mI (50901) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (51211) BLE_MESH: Got segment for already complete SDU[0m
+[0;32mI (51211) BLE_MESH: Not sending ack for non-unicast address[0m
+[0;32mI (51211) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (51301) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (51311) BLE_MESH: Seg 0/1 acked[0m
+[0;32mI (51311) BLE_MESH: Seg 1/1 acked[0m
+[0;33mW (51481) BLE_MESH: Replay: src 0x0004 dst 0xffff seq 0x00a990[0m
+[0;33mW (51601) BLE_MESH: Replay: src 0x0004 dst 0xffff seq 0x00a991[0m
+[0;32mI (52341) BLE_MESH: send, app_idx 0x0000 src 0x000a dst 0x0006[0m
+[0;32mI (52341) BLE_MESH: send, len 29: c2e5020600000064687434000000c041000014420100000001d3020000[0m
+[0;32mI (52351) BLE_MESH: Seg, send_tag 0x01, send_szmic 0, aszmic 0[0m
+[0;32mI (52351) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (52371) BLE_MESH: Use security credentials 0x00, proxy 0[0m
+[0;32mI (52371) BLE_MESH: Network PDU, count 2, interval 20[0m
+[0;32mI (52371) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (52411) BLE_MESH: Use security credentials 0x00, proxy 0[0m
+[0;32mI (52411) BLE_MESH: Network PDU, count 2, interval 20[0m
+[0;32mI (52411) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (52421) BLE_MESH: Use security credentials 0x00, proxy 0[0m
+[0;32mI (52421) BLE_MESH: Network PDU, count 2, interval 20[0m
+[0;32mI (52421) MESH_SERVER: ble_mesh_custom_sensor_server_model_cb -- SEND_COMPLETE -- Send message opcode 0x00c202e5 success[0m
+[0;32mI (52921) BLE_MESH: No matching TX context for Seg Ack[0m
+[0;32mI (53011) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (53021) BLE_MESH: Seg 0/2 acked[0m
+[0;32mI (53021) BLE_MESH: Seg 1/2 acked[0m
+[0;32mI (53021) BLE_MESH: Seg 2/2 acked[0m
+[0;32mI (53061) BLE_MESH: Seg 0/1 received[0m
+[0;32mI (53671) BLE_MESH: Received already received fragment[0m
+[0;32mI (53761) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (53771) BLE_MESH: Use security credentials 0x00, proxy 0[0m
+[0;32mI (53771) BLE_MESH: Network PDU, count 2, interval 20[0m
+[0;32mI (53831) BLE_MESH: Seg 1/1 received[0m
+[0;32mI (53831) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (53841) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (53851) BLE_MESH: Use security credentials 0x00, proxy 0[0m
+[0;32mI (53851) BLE_MESH: Network PDU, count 2, interval 20[0m
+[0;32mI (53861) BLE_MESH: recv, app_idx 0x0000 src 0x0006 dst 0x000a[0m
+[0;32mI (53861) BLE_MESH: recv, len 15: c3e502060000000030307da28e1c17[0m
+[0;31mE (53881) MESH_SERVER: Received ACK for unknown message: 6[0m
+[0;31mE (53881) MESH_SERVER: Message 6 acknowledged successfully[0m
+[0;32mI (54101) BLE_MESH: Got segment for already complete SDU[0m
+[0;32mI (54101) BLE_MESH: Settings store, waiting 0 seconds[0m
+[0;32mI (54111) BLE_MESH: Use security credentials 0x00, proxy 0[0m
+[0;32mI (54111) BLE_MESH: Network PDU, count 2, interval 20[0m
+[0;32mI (54111) BLE_MESH: Settings store, waiting 0 seconds[0m

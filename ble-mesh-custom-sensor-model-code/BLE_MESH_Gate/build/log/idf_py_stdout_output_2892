@@ -1,0 +1,289 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.3-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jan  4 2025 02:34:17[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 otadata          OTA data         01 00 0000f000 00002000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00020000 00220000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) boot: Defaulting to factory image[0m
+[0;32mI (101) esp_image: segment 0: paddr=00020020 vaddr=3f400020 size=4e15ch (319836) map[0m
+[0;32mI (219) esp_image: segment 1: paddr=0006e184 vaddr=3ffbdb60 size=01e94h (  7828) load[0m
+[0;32mI (222) esp_image: segment 2: paddr=00070020 vaddr=400d0020 size=128cf0h (1215728) map[0m
+[0;32mI (641) esp_image: segment 3: paddr=00198d18 vaddr=3ffbf9f4 size=0447ch ( 17532) load[0m
+[0;32mI (648) esp_image: segment 4: paddr=0019d19c vaddr=40080000 size=1df94h (122772) load[0m
+[0;32mI (712) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (712) boot: Disabling RNG early entropy source...[0m
+[0;32mI (723) cpu_start: Multicore app[0m
+[0;32mI (733) cpu_start: Pro cpu start user code[0m
+[0;32mI (733) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (733) cpu_start: Application information:[0m
+[0;32mI (736) cpu_start: Project name:     BLE_MESH_Gate[0m
+[0;32mI (741) cpu_start: App version:      2841ab0-dirty[0m
+[0;32mI (747) cpu_start: Compile time:     Jan  4 2025 02:34:03[0m
+[0;32mI (753) cpu_start: ELF file SHA256:  14218534a7e75a7d...[0m
+[0;32mI (759) cpu_start: ESP-IDF:          v5.2.3-dirty[0m
+[0;32mI (764) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (769) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (774) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (779) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (786) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (792) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (798) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (804) heap_init: At 3FFCF7A0 len 00010860 (66 KiB): DRAM[0m
+[0;32mI (810) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (816) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (823) heap_init: At 4009DF94 len 0000206C (8 KiB): IRAM[0m
+[0;32mI (831) spi_flash: detected chip: generic[0m
+[0;32mI (834) spi_flash: flash io: dio[0m
+[0;32mI (838) coexist: coex firmware version: 27d8387[0m
+[0;32mI (844) main_task: Started on CPU0[0m
+[0;32mI (854) main_task: Calling app_main()[0m
+[0;32mI (854) MAIN: Initializing...[0m
+[0;32mI (854) gpio: GPIO[0]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+use esp timer !!!
+[0;31mE (864) esp_timer: Task is already initialized[0m
+[0;32mI (864) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (914) BTDM_INIT: BT controller compile version [b022216][0m
+[0;32mI (914) BTDM_INIT: Bluetooth MAC: cc:db:a7:36:63:36[0m
+[0;32mI (914) phy_init: phy_version 4840,a40f0ac,Aug 16 2024,16:48:06[0m
+Bluetooth Mesh v1.1 commit: [10f7fdc1a9]
+[0;33mW (1424) BLE_MESH: bt_mesh_proxy_server_prov_disable, Already[0m
+[0;32mI (1454) MESH_CLIENT: ESP_BLE_MESH_NODE_PROV_COMPLETE_EVT[0m
+[0;32mI (1454) MESH_CLIENT: net_idx: 0x0000, addr: 0x0006[0m
+[0;32mI (1454) MESH_CLIENT: flags: 0x00, iv_index: 0x00000000[0m
+[0;32mI (1464) MESH_CLIENT: Device provisioned[0m
+[0;32mI (1464) MESH_CLIENT: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;32mI (1474) MESH_CLIENT: ESP_BLE_MESH_NODE_SET_UNPROV_DEV_NAME_COMP_EVT, Name: BLE Mesh, err_code 0[0m
+[0;33mW (1484) BLE_MESH: bt_mesh_prov_enable, Already[0m
+[0;32mI (1484) MESH_CLIENT: ESP_BLE_MESH_NODE_PROV_ENABLE_COMP_EVT, err_code -120[0m
+[0;32mI (1494) MESH_CLIENT: BLE Mesh Node initialized[0m
+[0;32mI (1514) wifi:wifi driver task: 3ffdd184, prio:23, stack:6656, core=0[0m
+[0;32mI (1524) wifi:wifi firmware version: 82f54d2[0m
+[0;32mI (1524) wifi:wifi certification version: v7.0[0m
+[0;32mI (1524) wifi:config NVS flash: enabled[0m
+[0;32mI (1524) wifi:config nano formating: disabled[0m
+[0;32mI (1524) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1534) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1534) wifi:Init management short buffer num: 32[0m
+[0;32mI (1544) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1544) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1554) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1554) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1564) wifi_init: rx ba win: 6[0m
+[0;32mI (1564) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1574) wifi_init: udp mbox: 6[0m
+[0;32mI (1574) wifi_init: tcp mbox: 6[0m
+[0;32mI (1574) wifi_init: tcp tx win: 5744[0m
+[0;32mI (1574) wifi_init: tcp rx win: 5744[0m
+[0;32mI (1584) wifi_init: tcp mss: 1440[0m
+[0;32mI (1584) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1594) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (1594) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (1614) wifi:mode : sta (cc:db:a7:36:63:34)[0m
+[0;32mI (1614) wifi:enable tsf[0m
+[0;32mI (1614) wifi station: wifi_init_sta finished.[0m
+[0;32mI (1624) wifi:new:<9,0>, old:<1,0>, ap:<255,255>, sta:<9,0>, prof:1[0m
+[0;32mI (1624) wifi:state: init -> auth (b0)[0m
+[0;32mI (1634) wifi:state: auth -> assoc (0)[0m
+[0;32mI (1644) wifi:state: assoc -> run (10)[0m
+[0;32mI (1754) wifi:connected with VIETTEL_2.4G_UC4H7U, aid = 2, channel 9, BW20, bssid = 44:13:d0:af:b0:7e[0m
+[0;32mI (1764) wifi:security: WPA2-PSK, phy: bgn, rssi: -56[0m
+[0;32mI (1764) wifi:pm start, type: 1[0m
+
+[0;32mI (1764) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1814) wifi:<ba-add>idx:0 (ifx:0, 44:13:d0:af:b0:7e), tid:0, ssn:0, winSize:64[0m
+[0;32mI (1894) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (3274) esp_netif_handlers: sta ip: 192.168.0.104, mask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;32mI (3274) wifi station: connected to ap SSID:VIETTEL_2.4G_UC4H7U password:QcAMEKbf[0m
+[0;32mI (3274) MQTT: MQTT init[0m
+[0;32mI (3284) MQTT: Other event id:7[0m
+[0;32mI (3284) main_task: Returned from app_main()[0m
+[0;32mI (3944) wifi:<ba-add>idx:1 (ifx:0, 44:13:d0:af:b0:7e), tid:1, ssn:0, winSize:64[0m
+[0;32mI (4254) MQTT: MQTT event connected[0m
+[0;33mW (9144) BLE_MESH: Duplicate SDU from src 0x000c[0m
+[0;32mI (10224) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (10224) MESH_CLIENT: src: 0x000c, dst: 0x0006,ttl recv: 3[0m
+[0;32mI (10224) MESH_CLIENT: 12 00 00 00 64 68 74 31 00 00 00 c8 41 00 00 48 [0m
+[0;32mI (10234) MESH_CLIENT: 42 01 00 00 00 01 18 03 00 00 [0m
+[0;31mE (10234) MESH_CLIENT: ERROR DATA RECEIVED OF MSG ID: 394787[0m
+[0;32mI (10274) MESH_CLIENT: Send message opcode 0xc302e5 successfully, ttl send:  3  ![0m
+[0;32mI (11764) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (11764) MESH_CLIENT: src: 0x000c, dst: 0x0006,ttl recv: 3[0m
+[0;32mI (11764) MESH_CLIENT: 12 00 00 00 64 68 74 31 00 00 00 c8 41 00 00 48 [0m
+[0;32mI (11774) MESH_CLIENT: 42 01 00 00 00 01 18 03 00 00 [0m
+[0;31mE (11774) MESH_CLIENT: ERROR DATA RECEIVED OF MSG ID: 394787[0m
+[0;32mI (11814) MESH_CLIENT: Send message opcode 0xc302e5 successfully, ttl send:  3  ![0m
+[0;33mW (12454) BLE_MESH: Ignoring old SeqAuth, src 0x000c, dst 0x0006[0m
+[0;32mI (12464) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (12464) MESH_CLIENT: src: 0x000c, dst: 0x0006,ttl recv: 3[0m
+[0;32mI (12464) MESH_CLIENT: 12 00 00 00 64 68 74 31 00 00 00 c8 41 00 00 48 [0m
+[0;32mI (12474) MESH_CLIENT: 42 01 00 00 00 01 18 03 00 00 [0m
+[0;31mE (12474) MESH_CLIENT: ERROR DATA RECEIVED OF MSG ID: 394787[0m
+[0;32mI (12524) MESH_CLIENT: Send message opcode 0xc302e5 successfully, ttl send:  3  ![0m
+[0;33mW (13144) BLE_MESH: Ignoring old SeqAuth, src 0x000c, dst 0x0006[0m
+[0;33mW (13754) BLE_MESH: Replay: src 0x000c dst 0x0006 seq 0x00044b[0m
+[0;32mI (14674) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (14674) MESH_CLIENT: src: 0x000c, dst: 0x0006,ttl recv: 3[0m
+[0;32mI (14674) MESH_CLIENT: 12 00 00 00 64 68 74 31 00 00 00 c8 41 00 00 48 [0m
+[0;32mI (14684) MESH_CLIENT: 42 01 00 00 00 01 18 03 00 00 [0m
+[0;31mE (14684) MESH_CLIENT: ERROR DATA RECEIVED OF MSG ID: 395299[0m
+[0;32mI (14724) MESH_CLIENT: Send message opcode 0xc302e5 successfully, ttl send:  3  ![0m
+[0;32mI (15264) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (15264) MESH_CLIENT: src: 0x000c, dst: 0x0006,ttl recv: 3[0m
+[0;32mI (15264) MESH_CLIENT: 12 00 00 00 64 68 74 31 00 00 00 c8 41 00 00 48 [0m
+[0;32mI (15274) MESH_CLIENT: 42 01 00 00 00 01 18 03 00 00 [0m
+[0;31mE (15274) MESH_CLIENT: ERROR DATA RECEIVED OF MSG ID: 395299[0m
+[0;32mI (15324) MESH_CLIENT: Send message opcode 0xc302e5 successfully, ttl send:  3  ![0m
+[0;33mW (15904) BLE_MESH: Ran out of retransmit attempts[0m
+[0;32mI (15984) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (15984) MESH_CLIENT: src: 0x000c, dst: 0x0006,ttl recv: 3[0m
+[0;32mI (15984) MESH_CLIENT: 12 00 00 00 64 68 74 31 00 00 00 c8 41 00 00 48 [0m
+[0;32mI (15994) MESH_CLIENT: 42 01 00 00 00 01 18 03 00 00 [0m
+[0;31mE (15994) MESH_CLIENT: ERROR DATA RECEIVED OF MSG ID: 394787[0m
+[0;32mI (16044) MESH_CLIENT: Send message opcode 0xc302e5 successfully, ttl send:  3  ![0m
+[0;32mI (16614) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (16614) MESH_CLIENT: src: 0x000c, dst: 0x0006,ttl recv: 3[0m
+[0;32mI (16614) MESH_CLIENT: 12 00 00 00 64 68 74 31 00 00 00 c8 41 00 00 48 [0m
+[0;32mI (16624) MESH_CLIENT: 42 01 00 00 00 01 18 03 00 00 [0m
+[0;31mE (16624) MESH_CLIENT: ERROR DATA RECEIVED OF MSG ID: 395299[0m
+[0;32mI (16674) MESH_CLIENT: Send message opcode 0xc302e5 successfully, ttl send:  3  ![0m
+[0;32mI (17294) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (17294) MESH_CLIENT: src: 0x000c, dst: 0x0006,ttl recv: 3[0m
+[0;32mI (17294) MESH_CLIENT: 12 00 00 00 64 68 74 31 00 00 00 c8 41 00 00 48 [0m
+[0;32mI (17304) MESH_CLIENT: 42 01 00 00 00 01 18 03 00 00 [0m
+[0;31mE (17304) MESH_CLIENT: ERROR DATA RECEIVED OF MSG ID: 394787[0m
+[0;32mI (17344) MESH_CLIENT: Send message opcode 0xc302e5 successfully, ttl send:  3  ![0m
+[0;32mI (17904) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (17904) MESH_CLIENT: src: 0x000c, dst: 0x0006,ttl recv: 3[0m
+[0;32mI (17904) MESH_CLIENT: 12 00 00 00 64 68 74 31 00 00 00 c8 41 00 00 48 [0m
+[0;32mI (17914) MESH_CLIENT: 42 01 00 00 00 01 18 03 00 00 [0m
+[0;31mE (17914) MESH_CLIENT: ERROR DATA RECEIVED OF MSG ID: 395299[0m
+[0;32mI (17954) MESH_CLIENT: Send message opcode 0xc302e5 successfully, ttl send:  3  ![0m
+[0;32mI (18514) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (18514) MESH_CLIENT: src: 0x000c, dst: 0x0006,ttl recv: 3[0m
+[0;32mI (18514) MESH_CLIENT: 12 00 00 00 64 68 74 31 00 00 00 c8 41 00 00 48 [0m
+[0;32mI (18524) MESH_CLIENT: 42 01 00 00 00 01 18 03 00 00 [0m
+[0;31mE (18524) MESH_CLIENT: ERROR DATA RECEIVED OF MSG ID: 395299[0m
+[0;32mI (18564) MESH_CLIENT: Send message opcode 0xc302e5 successfully, ttl send:  3  ![0m
+[0;32mI (19124) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (19124) MESH_CLIENT: src: 0x000c, dst: 0x0006,ttl recv: 3[0m
+[0;32mI (19124) MESH_CLIENT: 12 00 00 00 64 68 74 31 00 00 00 c8 41 00 00 48 [0m
+[0;32mI (19134) MESH_CLIENT: 42 01 00 00 00 01 18 03 00 00 [0m
+[0;31mE (19144) MESH_CLIENT: ERROR DATA RECEIVED OF MSG ID: 395299[0m
+[0;32mI (19194) MESH_CLIENT: Send message opcode 0xc302e5 successfully, ttl send:  3  ![0m
+[0;32mI (19394) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (19394) MESH_CLIENT: src: 0x000c, dst: 0x0006,ttl recv: 3[0m
+[0;32mI (19394) MESH_CLIENT: 13 00 00 00 64 68 74 31 00 00 00 c8 41 00 00 48 [0m
+[0;32mI (19414) MESH_CLIENT: 42 01 00 00 00 01 19 03 00 00 [0m
+[0;31mE (19414) MESH_CLIENT: ERROR DATA RECEIVED OF MSG ID: 395299[0m
+[0;32mI (19464) MESH_CLIENT: Send message opcode 0xc302e5 successfully, ttl send:  3  ![0m
+[0;32mI (19774) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (19774) MESH_CLIENT: src: 0x000c, dst: 0x0006,ttl recv: 3[0m
+[0;32mI (19774) MESH_CLIENT: 12 00 00 00 64 68 74 31 00 00 00 c8 41 00 00 48 [0m
+[0;32mI (19784) MESH_CLIENT: 42 01 00 00 00 01 18 03 00 00 [0m
+[0;31mE (19784) MESH_CLIENT: ERROR DATA RECEIVED OF MSG ID: 395299[0m
+[0;32mI (19834) MESH_CLIENT: Send message opcode 0xc302e5 successfully, ttl send:  3  ![0m
+[0;32mI (20144) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (20144) MESH_CLIENT: src: 0x000c, dst: 0x0006,ttl recv: 3[0m
+[0;32mI (20144) MESH_CLIENT: 13 00 00 00 64 68 74 31 00 00 00 c8 41 00 00 48 [0m
+[0;32mI (20154) MESH_CLIENT: 42 01 00 00 00 01 19 03 00 00 [0m
+[0;31mE (20154) MESH_CLIENT: ERROR DATA RECEIVED OF MSG ID: 395299[0m
+[0;32mI (20214) MESH_CLIENT: Send message opcode 0xc302e5 successfully, ttl send:  3  ![0m
+[0;32mI (20584) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (20584) MESH_CLIENT: src: 0x000c, dst: 0x0006,ttl recv: 3[0m
+[0;32mI (20584) MESH_CLIENT: 12 00 00 00 64 68 74 31 00 00 00 c8 41 00 00 48 [0m
+[0;32mI (20584) MESH_CLIENT: 42 01 00 00 00 01 18 03 00 00 [0m
+[0;31mE (20594) MESH_CLIENT: ERROR DATA RECEIVED OF MSG ID: 395299[0m
+[0;32mI (20654) MESH_CLIENT: Send message opcode 0xc302e5 successfully, ttl send:  3  ![0m
+[0;33mW (21094) BLE_MESH: Duplicate SDU from src 0x000c[0m
+[0;32mI (21324) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (21324) MESH_CLIENT: src: 0x000c, dst: 0x0006,ttl recv: 3[0m
+[0;32mI (21324) MESH_CLIENT: 12 00 00 00 64 68 74 31 00 00 00 c8 41 00 00 48 [0m
+[0;32mI (21334) MESH_CLIENT: 42 01 00 00 00 01 18 03 00 00 [0m
+[0;31mE (21334) MESH_CLIENT: ERROR DATA RECEIVED OF MSG ID: 394787[0m
+[0;32mI (21384) MESH_CLIENT: Send message opcode 0xc302e5 successfully, ttl send:  3  ![0m
+[0;33mW (21524) BLE_MESH: Ignoring old SeqAuth, src 0x000c, dst 0x0006[0m
+[0;33mW (21604) BLE_MESH: Ignoring old SeqAuth, src 0x000c, dst 0x0006[0m
+[0;33mW (21784) BLE_MESH: Ignoring old SeqAuth, src 0x000c, dst 0x0006[0m
+[0;32mI (22114) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (22114) MESH_CLIENT: src: 0x000c, dst: 0x0006,ttl recv: 3[0m
+[0;32mI (22114) MESH_CLIENT: 12 00 00 00 64 68 74 31 00 00 00 c8 41 00 00 48 [0m
+[0;32mI (22124) MESH_CLIENT: 42 01 00 00 00 01 18 03 00 00 [0m
+[0;31mE (22124) MESH_CLIENT: ERROR DATA RECEIVED OF MSG ID: 394787[0m
+[0;32mI (22174) MESH_CLIENT: Send message opcode 0xc302e5 successfully, ttl send:  3  ![0m
+[0;32mI (22674) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (22674) MESH_CLIENT: src: 0x000c, dst: 0x0006,ttl recv: 3[0m
+[0;32mI (22674) MESH_CLIENT: 12 00 00 00 64 68 74 31 00 00 00 c8 41 00 00 48 [0m
+[0;32mI (22684) MESH_CLIENT: 42 01 00 00 00 01 18 03 00 00 [0m
+[0;31mE (22684) MESH_CLIENT: ERROR DATA RECEIVED OF MSG ID: 394787[0m
+[0;32mI (22724) MESH_CLIENT: Send message opcode 0xc302e5 successfully, ttl send:  3  ![0m
+[0;33mW (22794) BLE_MESH: Ignoring old SeqAuth, src 0x000c, dst 0x0006[0m
+[0;33mW (22864) BLE_MESH: Ignoring old SeqAuth, src 0x000c, dst 0x0006[0m
+[0;33mW (22904) BLE_MESH: Ignoring old SeqAuth, src 0x000c, dst 0x0006[0m
+[0;32mI (23324) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (23324) MESH_CLIENT: src: 0x000c, dst: 0x0006,ttl recv: 3[0m
+[0;32mI (23324) MESH_CLIENT: 12 00 00 00 64 68 74 31 00 00 00 c8 41 00 00 48 [0m
+[0;32mI (23334) MESH_CLIENT: 42 01 00 00 00 01 18 03 00 00 [0m
+[0;31mE (23334) MESH_CLIENT: ERROR DATA RECEIVED OF MSG ID: 394787[0m
+[0;32mI (23374) MESH_CLIENT: Send message opcode 0xc302e5 successfully, ttl send:  3  ![0m
+[0;33mW (23664) BLE_MESH: Ignoring old SeqAuth, src 0x000c, dst 0x0006[0m
+[0;33mW (23764) BLE_MESH: Ignoring old SeqAuth, src 0x000c, dst 0x0006[0m
+[0;33mW (23844) BLE_MESH: Ignoring old SeqAuth, src 0x000c, dst 0x0006[0m
+[0;32mI (24204) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (24204) MESH_CLIENT: src: 0x000c, dst: 0x0006,ttl recv: 3[0m
+[0;32mI (24204) MESH_CLIENT: 12 00 00 00 64 68 74 31 00 00 00 c8 41 00 00 48 [0m
+[0;32mI (24214) MESH_CLIENT: 42 01 00 00 00 01 18 03 00 00 [0m
+[0;31mE (24214) MESH_CLIENT: ERROR DATA RECEIVED OF MSG ID: 394787[0m
+[0;32mI (24254) MESH_CLIENT: Send message opcode 0xc302e5 successfully, ttl send:  3  ![0m
+[0;32mI (24824) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;33mW (24824) BLE_MESH: Ignoring old SeqAuth, src 0x000c, dst 0x0006[0m
+[0;32mI (24824) MESH_CLIENT: src: 0x000c, dst: 0x0006,ttl recv: 3[0m
+[0;32mI (24834) MESH_CLIENT: 12 00 00 00 64 68 74 31 00 00 00 c8 41 00 00 48 [0m
+[0;32mI (24834) MESH_CLIENT: 42 01 00 00 00 01 18 03 00 00 [0m
+[0;31mE (24844) MESH_CLIENT: ERROR DATA RECEIVED OF MSG ID: 395299[0m
+[0;33mW (24934) BLE_MESH: Ignoring old SeqAuth, src 0x000c, dst 0x0006[0m
+[0;32mI (24964) MESH_CLIENT: Send message opcode 0xc302e5 successfully, ttl send:  3  ![0m
+[0;33mW (25024) BLE_MESH: Ignoring old SeqAuth, src 0x000c, dst 0x0006[0m
+[0;32mI (25444) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (25444) MESH_CLIENT: src: 0x000c, dst: 0x0006,ttl recv: 3[0m
+[0;32mI (25444) MESH_CLIENT: 12 00 00 00 64 68 74 31 00 00 00 c8 41 00 00 48 [0m
+[0;32mI (25454) MESH_CLIENT: 42 01 00 00 00 01 18 03 00 00 [0m
+[0;31mE (25454) MESH_CLIENT: ERROR DATA RECEIVED OF MSG ID: 395299[0m
+[0;32mI (25514) MESH_CLIENT: Send message opcode 0xc302e5 successfully, ttl send:  3  ![0m
+[0;32mI (26054) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (26054) MESH_CLIENT: src: 0x000c, dst: 0x0006,ttl recv: 3[0m
+[0;32mI (26054) MESH_CLIENT: 12 00 00 00 64 68 74 31 00 00 00 c8 41 00 00 48 [0m
+[0;32mI (26064) MESH_CLIENT: 42 01 00 00 00 01 18 03 00 00 [0m
+[0;31mE (26064) MESH_CLIENT: ERROR DATA RECEIVED OF MSG ID: 395299[0m
+[0;32mI (26104) MESH_CLIENT: Send message opcode 0xc302e5 successfully, ttl send:  3  ![0m
+[0;32mI (26664) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (26664) MESH_CLIENT: src: 0x000c, dst: 0x0006,ttl recv: 3[0m
+[0;32mI (26664) MESH_CLIENT: 12 00 00 00 64 68 74 31 00 00 00 c8 41 00 00 48 [0m
+[0;32mI (26674) MESH_CLIENT: 42 01 00 00 00 01 18 03 00 00 [0m
+[0;31mE (26674) MESH_CLIENT: ERROR DATA RECEIVED OF MSG ID: 395299[0m
+[0;32mI (26714) MESH_CLIENT: Send message opcode 0xc302e5 successfully, ttl send:  3  ![0m
+[0;32mI (27234) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (27234) MESH_CLIENT: src: 0x000c, dst: 0x0006,ttl recv: 3[0m
+[0;32mI (27234) MESH_CLIENT: 12 00 00 00 64 68 74 31 00 00 00 c8 41 00 00 48 [0m
+[0;32mI (27244) MESH_CLIENT: 42 01 00 00 00 01 18 03 00 00 [0m
+[0;31mE (27244) MESH_CLIENT: ERROR DATA RECEIVED OF MSG ID: 395299[0m
+[0;32mI (27284) MESH_CLIENT: Send message opcode 0xc302e5 successfully, ttl send:  3  ![0m

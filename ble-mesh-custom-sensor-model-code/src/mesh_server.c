@@ -303,11 +303,8 @@ static void parse_received_data(esp_ble_mesh_model_cb_param_t *recv_param, model
     parsed_data = (model_sensor_data_t *)recv_param->client_recv_publish_msg.msg;
     ESP_LOGW("PARSED_DATA", "ttl recv = %d",(model_sensor_data_t *)recv_param->client_recv_publish_msg.ctx->recv_ttl );
     ESP_LOGW("PARSED_DATA", "Device Name = %s", parsed_data->device_name);
-    ESP_LOGW("PARSED_DATA", "Temperature = %f", parsed_data->temperature);
-    
+    ESP_LOGW("PARSED_DATA", "Temperature = %f", parsed_data->temperature);   
     ESP_LOGW("PARSED_DATA", "Humidity    = %f", parsed_data->humidity);
- 
-    ESP_LOGW("PARSED_DATA", "temp_ADC        = %f", parsed_data->temp_ADC);
    
 
    // xQueueSendToBack(ble_mesh_received_data_queue, parsed_data, portMAX_DELAY);

@@ -1,0 +1,1450 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.3-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jan  4 2025 02:34:17[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 otadata          OTA data         01 00 0000f000 00002000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00020000 00220000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) boot: Defaulting to factory image[0m
+[0;32mI (101) esp_image: segment 0: paddr=00020020 vaddr=3f400020 size=4e2cch (320204) map[0m
+[0;32mI (219) esp_image: segment 1: paddr=0006e2f4 vaddr=3ffbdb60 size=01d24h (  7460) load[0m
+[0;32mI (222) esp_image: segment 2: paddr=00070020 vaddr=400d0020 size=128e4ch (1216076) map[0m
+[0;32mI (642) esp_image: segment 3: paddr=00198e74 vaddr=3ffbf884 size=045ech ( 17900) load[0m
+[0;32mI (649) esp_image: segment 4: paddr=0019d468 vaddr=40080000 size=1df94h (122772) load[0m
+[0;32mI (712) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (712) boot: Disabling RNG early entropy source...[0m
+[0;32mI (724) cpu_start: Multicore app[0m
+[0;32mI (733) cpu_start: Pro cpu start user code[0m
+[0;32mI (733) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (733) cpu_start: Application information:[0m
+[0;32mI (736) cpu_start: Project name:     BLE_MESH_Gate[0m
+[0;32mI (742) cpu_start: App version:      2841ab0-dirty[0m
+[0;32mI (747) cpu_start: Compile time:     Jan  4 2025 02:34:03[0m
+[0;32mI (753) cpu_start: ELF file SHA256:  bc07e27c6b98222b...[0m
+[0;32mI (759) cpu_start: ESP-IDF:          v5.2.3-dirty[0m
+[0;32mI (765) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (769) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (774) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (779) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (786) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (792) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (798) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (804) heap_init: At 3FFCF7A0 len 00010860 (66 KiB): DRAM[0m
+[0;32mI (810) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (817) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (823) heap_init: At 4009DF94 len 0000206C (8 KiB): IRAM[0m
+[0;32mI (831) spi_flash: detected chip: generic[0m
+[0;32mI (834) spi_flash: flash io: dio[0m
+[0;32mI (839) coexist: coex firmware version: 27d8387[0m
+[0;32mI (844) main_task: Started on CPU0[0m
+[0;32mI (854) main_task: Calling app_main()[0m
+[0;32mI (854) MAIN: Initializing...[0m
+[0;32mI (854) gpio: GPIO[0]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+use esp timer !!!
+[0;31mE (864) esp_timer: Task is already initialized[0m
+[0;32mI (864) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (914) BTDM_INIT: BT controller compile version [b022216][0m
+[0;32mI (914) BTDM_INIT: Bluetooth MAC: cc:db:a7:36:63:36[0m
+[0;32mI (914) phy_init: phy_version 4840,a40f0ac,Aug 16 2024,16:48:06[0m
+[0;33mW (1004) phy_init: saving new calibration data because of checksum failure, mode(0)[0m
+Bluetooth Mesh v1.1 commit: [10f7fdc1a9]
+[0;33mW (1494) BLE_MESH: bt_mesh_proxy_server_prov_disable, Already[0m
+[0;32mI (1524) MESH_CLIENT: ESP_BLE_MESH_NODE_PROV_COMPLETE_EVT[0m
+[0;32mI (1524) MESH_CLIENT: net_idx: 0x0000, addr: 0x0006[0m
+[0;32mI (1524) MESH_CLIENT: flags: 0x00, iv_index: 0x00000000[0m
+[0;32mI (1534) MESH_CLIENT: Device provisioned[0m
+[0;32mI (1534) MESH_CLIENT: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;32mI (1544) MESH_CLIENT: ESP_BLE_MESH_NODE_SET_UNPROV_DEV_NAME_COMP_EVT, Name: BLE Mesh, err_code 0[0m
+[0;33mW (1554) BLE_MESH: bt_mesh_prov_enable, Already[0m
+[0;32mI (1554) MESH_CLIENT: ESP_BLE_MESH_NODE_PROV_ENABLE_COMP_EVT, err_code -120[0m
+[0;32mI (1564) MESH_CLIENT: BLE Mesh Node initialized[0m
+[0;32mI (1584) wifi:wifi driver task: 3ffdd184, prio:23, stack:6656, core=0[0m
+[0;32mI (1594) wifi:wifi firmware version: 82f54d2[0m
+[0;32mI (1594) wifi:wifi certification version: v7.0[0m
+[0;32mI (1594) wifi:config NVS flash: enabled[0m
+[0;32mI (1594) wifi:config nano formating: disabled[0m
+[0;32mI (1594) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1604) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1604) wifi:Init management short buffer num: 32[0m
+[0;32mI (1614) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1614) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1624) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1624) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1634) wifi_init: rx ba win: 6[0m
+[0;32mI (1634) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1634) wifi_init: udp mbox: 6[0m
+[0;32mI (1644) wifi_init: tcp mbox: 6[0m
+[0;32mI (1644) wifi_init: tcp tx win: 5744[0m
+[0;32mI (1644) wifi_init: tcp rx win: 5744[0m
+[0;32mI (1654) wifi_init: tcp mss: 1440[0m
+[0;32mI (1654) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1664) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (1664) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (1684) wifi:mode : sta (cc:db:a7:36:63:34)[0m
+[0;32mI (1684) wifi:enable tsf[0m
+[0;32mI (1684) wifi station: wifi_init_sta finished.[0m
+[0;32mI (1694) wifi:new:<9,0>, old:<1,0>, ap:<255,255>, sta:<9,0>, prof:1[0m
+[0;32mI (1694) wifi:state: init -> auth (b0)[0m
+[0;32mI (1704) wifi:state: auth -> assoc (0)[0m
+[0;32mI (1714) wifi:state: assoc -> run (10)[0m
+[0;32mI (1834) wifi:connected with VIETTEL_2.4G_UC4H7U, aid = 2, channel 9, BW20, bssid = 44:13:d0:af:b0:7e[0m
+[0;32mI (1834) wifi:security: WPA2-PSK, phy: bgn, rssi: -52[0m
+[0;32mI (1834) wifi:pm start, type: 1[0m
+
+[0;32mI (1834) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1864) wifi:<ba-add>idx:0 (ifx:0, 44:13:d0:af:b0:7e), tid:0, ssn:0, winSize:64[0m
+[0;32mI (1934) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (3354) esp_netif_handlers: sta ip: 192.168.0.104, mask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;32mI (3354) wifi station: connected to ap SSID:VIETTEL_2.4G_UC4H7U password:QcAMEKbf[0m
+[0;32mI (3364) MQTT: MQTT init[0m
+[0;32mI (3364) MQTT: Other event id:7[0m
+[0;32mI (3374) main_task: Returned from app_main()[0m
+[0;32mI (3674) wifi:<ba-add>idx:1 (ifx:0, 44:13:d0:af:b0:7e), tid:1, ssn:1, winSize:64[0m
+[0;32mI (3984) MQTT: MQTT event connected[0m
+[0;32mI (339524) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (339524) MESH_CLIENT: src: 0x000c, dst: 0x0006,ttl recv: 3[0m
+[0;31mE (339524) MESH_CLIENT: data D4 [0m
+[0;31mE (339524) MESH_CLIENT: data B0 [0m
+[0;31mE (339534) MESH_CLIENT: data FB [0m
+[0;31mE (339534) MESH_CLIENT: data 3F [0m
+[0;31mE (339534) MESH_CLIENT: data 0C [0m
+[0;31mE (339544) MESH_CLIENT: data 00 [0m
+[0;31mE (339544) MESH_CLIENT: data 00 [0m
+[0;31mE (339554) MESH_CLIENT: data 00 [0m
+[0;31mE (339554) MESH_CLIENT: data 23 [0m
+[0;31mE (339554) MESH_CLIENT: data 06 [0m
+[0;31mE (339564) MESH_CLIENT: data 06 [0m
+[0;31mE (339564) MESH_CLIENT: data 00 [0m
+[0;31mE (339574) MESH_CLIENT: data BA [0m
+[0;31mE (339574) MESH_CLIENT: data 0F [0m
+[0;31mE (339574) MESH_CLIENT: data 09 [0m
+[0;31mE (339584) MESH_CLIENT: data 40 [0m
+[0;31mE (339584) MESH_CLIENT: data 00 [0m
+[0;31mE (339594) MESH_CLIENT: data 3F [0m
+[0;31mE (339594) MESH_CLIENT: data 40 [0m
+[0;31mE (339594) MESH_CLIENT: data 3F [0m
+[0;31mE (339604) MESH_CLIENT: data 44 [0m
+[0;31mE (339604) MESH_CLIENT: data 2E [0m
+[0;31mE (339614) MESH_CLIENT: ERROR DATA RECEIVED OF MSG ID: 1[0m
+[0;31mE (339624) PARSED_DATA: MSG ID    = 1[0m
+[0;31mE (339624) PARSED_DATA: ttl recv = 3[0m
+[0;31mE (339624) PARSED_DATA: Device Name = dht1[0m
+[0;31mE (339624) PARSED_DATA: Temperature = 25.000000[0m
+[0;31mE (339634) PARSED_DATA: Humidity    = 50.000000[0m
+[0;31mE (339634) PARSED_DATA: Index    = 1[0m
+[0;31mE (339644) PARSED_DATA: Status    = 1[0m
+[0;31mE (339644) PARSED_DATA: CSUM    = 775[0m
+[0;32mI (339704) MESH_CLIENT: Send message opcode 0xc302e5 successfully, ttl send:  3  ![0m
+[0;32mI (340204) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (340204) MESH_CLIENT: src: 0x000c, dst: 0x0006,ttl recv: 3[0m
+[0;31mE (340204) MESH_CLIENT: data BC [0m
+[0;31mE (340204) MESH_CLIENT: data B1 [0m
+[0;31mE (340214) MESH_CLIENT: data FB [0m
+[0;31mE (340214) MESH_CLIENT: data 3F [0m
+[0;31mE (340214) MESH_CLIENT: data 0C [0m
+[0;31mE (340224) MESH_CLIENT: data 00 [0m
+[0;31mE (340224) MESH_CLIENT: data 00 [0m
+[0;31mE (340234) MESH_CLIENT: data 00 [0m
+[0;31mE (340234) MESH_CLIENT: data 00 [0m
+[0;31mE (340234) MESH_CLIENT: data 00 [0m
+[0;31mE (340244) MESH_CLIENT: data 00 [0m
+[0;31mE (340244) MESH_CLIENT: data 00 [0m
+[0;31mE (340254) MESH_CLIENT: data 00 [0m
+[0;31mE (340254) MESH_CLIENT: data 00 [0m
+[0;31mE (340264) MESH_CLIENT: data 00 [0m
+[0;31mE (340264) MESH_CLIENT: data 00 [0m
+[0;31mE (340264) MESH_CLIENT: data 00 [0m
+[0;31mE (340274) MESH_CLIENT: data 3F [0m
+[0;31mE (340274) MESH_CLIENT: data 40 [0m
+[0;31mE (340274) MESH_CLIENT: data 3F [0m
+[0;31mE (340284) MESH_CLIENT: data EC [0m
+[0;31mE (340284) MESH_CLIENT: data 30 [0m
+[0;31mE (340294) MESH_CLIENT: ERROR DATA RECEIVED OF MSG ID: 1[0m
+[0;31mE (340304) PARSED_DATA: MSG ID    = 1[0m
+[0;31mE (340304) PARSED_DATA: ttl recv = 3[0m
+[0;31mE (340304) PARSED_DATA: Device Name = dht1[0m
+[0;31mE (340304) PARSED_DATA: Temperature = 25.000000[0m
+[0;31mE (340314) PARSED_DATA: Humidity    = 50.000000[0m
+[0;31mE (340314) PARSED_DATA: Index    = 1[0m
+[0;31mE (340324) PARSED_DATA: Status    = 1[0m
+[0;31mE (340324) PARSED_DATA: CSUM    = 775[0m
+[0;32mI (340384) MESH_CLIENT: Send message opcode 0xc302e5 successfully, ttl send:  3  ![0m
+[0;32mI (340884) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (340884) MESH_CLIENT: src: 0x000c, dst: 0x0006,ttl recv: 3[0m
+[0;31mE (340884) MESH_CLIENT: data 58 [0m
+[0;31mE (340894) MESH_CLIENT: data B2 [0m
+[0;31mE (340894) MESH_CLIENT: data FB [0m
+[0;31mE (340894) MESH_CLIENT: data 3F [0m
+[0;31mE (340904) MESH_CLIENT: data 0C [0m
+[0;31mE (340904) MESH_CLIENT: data 00 [0m
+[0;31mE (340914) MESH_CLIENT: data 00 [0m
+[0;31mE (340914) MESH_CLIENT: data 00 [0m
+[0;31mE (340914) MESH_CLIENT: data 23 [0m
+[0;31mE (340924) MESH_CLIENT: data 08 [0m
+[0;31mE (340924) MESH_CLIENT: data 06 [0m
+[0;31mE (340924) MESH_CLIENT: data 00 [0m
+[0;31mE (340934) MESH_CLIENT: data BA [0m
+[0;31mE (340934) MESH_CLIENT: data 0F [0m
+[0;31mE (340944) MESH_CLIENT: data 09 [0m
+[0;31mE (340944) MESH_CLIENT: data 40 [0m
+[0;31mE (340944) MESH_CLIENT: data 00 [0m
+[0;31mE (340954) MESH_CLIENT: data 3F [0m
+[0;31mE (340954) MESH_CLIENT: data 40 [0m
+[0;31mE (340964) MESH_CLIENT: data 3F [0m
+[0;31mE (340964) MESH_CLIENT: data 94 [0m
+[0;31mE (340964) MESH_CLIENT: data 33 [0m
+[0;31mE (340984) MESH_CLIENT: ERROR DATA RECEIVED OF MSG ID: 1[0m
+[0;31mE (340984) PARSED_DATA: MSG ID    = 1[0m
+[0;31mE (340984) PARSED_DATA: ttl recv = 3[0m
+[0;31mE (340984) PARSED_DATA: Device Name = dht1[0m
+[0;31mE (340994) PARSED_DATA: Temperature = 25.000000[0m
+[0;31mE (340994) PARSED_DATA: Humidity    = 50.000000[0m
+[0;31mE (341004) PARSED_DATA: Index    = 1[0m
+[0;31mE (341004) PARSED_DATA: Status    = 1[0m
+[0;31mE (341014) PARSED_DATA: CSUM    = 775[0m
+[0;32mI (341054) MESH_CLIENT: Send message opcode 0xc302e5 successfully, ttl send:  3  ![0m
+[0;32mI (341534) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (341534) MESH_CLIENT: src: 0x000c, dst: 0x0006,ttl recv: 3[0m
+[0;31mE (341534) MESH_CLIENT: data 58 [0m
+[0;31mE (341534) MESH_CLIENT: data B2 [0m
+[0;31mE (341544) MESH_CLIENT: data FB [0m
+[0;31mE (341544) MESH_CLIENT: data 3F [0m
+[0;31mE (341544) MESH_CLIENT: data 0C [0m
+[0;31mE (341554) MESH_CLIENT: data 00 [0m
+[0;31mE (341554) MESH_CLIENT: data 00 [0m
+[0;31mE (341554) MESH_CLIENT: data 00 [0m
+[0;31mE (341564) MESH_CLIENT: data 23 [0m
+[0;31mE (341564) MESH_CLIENT: data 08 [0m
+[0;31mE (341574) MESH_CLIENT: data 06 [0m
+[0;31mE (341574) MESH_CLIENT: data 00 [0m
+[0;31mE (341574) MESH_CLIENT: data BA [0m
+[0;31mE (341584) MESH_CLIENT: data 0F [0m
+[0;31mE (341584) MESH_CLIENT: data 09 [0m
+[0;31mE (341594) MESH_CLIENT: data 40 [0m
+[0;31mE (341594) MESH_CLIENT: data 00 [0m
+[0;31mE (341594) MESH_CLIENT: data 3F [0m
+[0;31mE (341604) MESH_CLIENT: data 40 [0m
+[0;31mE (341604) MESH_CLIENT: data 3F [0m
+[0;31mE (341614) MESH_CLIENT: data 1E [0m
+[0;31mE (341614) MESH_CLIENT: data 36 [0m
+[0;31mE (341614) MESH_CLIENT: ERROR DATA RECEIVED OF MSG ID: 1[0m
+[0;31mE (341624) PARSED_DATA: MSG ID    = 1[0m
+[0;31mE (341634) PARSED_DATA: ttl recv = 3[0m
+[0;31mE (341634) PARSED_DATA: Device Name = dht1[0m
+[0;31mE (341634) PARSED_DATA: Temperature = 25.000000[0m
+[0;31mE (341644) PARSED_DATA: Humidity    = 50.000000[0m
+[0;31mE (341644) PARSED_DATA: Index    = 1[0m
+[0;31mE (341654) PARSED_DATA: Status    = 1[0m
+[0;31mE (341654) PARSED_DATA: CSUM    = 775[0m
+[0;32mI (341714) MESH_CLIENT: Send message opcode 0xc302e5 successfully, ttl send:  3  ![0m
+[0;33mW (346234) BLE_MESH: Duplicate SDU from src 0x000c[0m
+[0;32mI (346484) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (346484) MESH_CLIENT: src: 0x000c, dst: 0x0006,ttl recv: 3[0m
+[0;31mE (346484) MESH_CLIENT: data C4 [0m
+[0;31mE (346484) MESH_CLIENT: data B1 [0m
+[0;31mE (346494) MESH_CLIENT: data FB [0m
+[0;31mE (346494) MESH_CLIENT: data 3F [0m
+[0;31mE (346494) MESH_CLIENT: data 0C [0m
+[0;31mE (346504) MESH_CLIENT: data 00 [0m
+[0;31mE (346504) MESH_CLIENT: data 00 [0m
+[0;31mE (346514) MESH_CLIENT: data 00 [0m
+[0;31mE (346514) MESH_CLIENT: data 23 [0m
+[0;31mE (346514) MESH_CLIENT: data 08 [0m
+[0;31mE (346524) MESH_CLIENT: data 06 [0m
+[0;31mE (346524) MESH_CLIENT: data 00 [0m
+[0;31mE (346534) MESH_CLIENT: data BA [0m
+[0;31mE (346534) MESH_CLIENT: data 0F [0m
+[0;31mE (346534) MESH_CLIENT: data 09 [0m
+[0;31mE (346544) MESH_CLIENT: data 40 [0m
+[0;31mE (346544) MESH_CLIENT: data 00 [0m
+[0;31mE (346554) MESH_CLIENT: data 3F [0m
+[0;31mE (346554) MESH_CLIENT: data 40 [0m
+[0;31mE (346554) MESH_CLIENT: data 3F [0m
+[0;31mE (346564) MESH_CLIENT: data 74 [0m
+[0;31mE (346564) MESH_CLIENT: data 49 [0m
+[0;31mE (346564) MESH_CLIENT: ERROR DATA RECEIVED OF MSG ID: 1[0m
+[0;31mE (346574) PARSED_DATA: MSG ID    = 1[0m
+[0;31mE (346584) PARSED_DATA: ttl recv = 3[0m
+[0;31mE (346584) PARSED_DATA: Device Name = dht1[0m
+[0;31mE (346584) PARSED_DATA: Temperature = 25.000000[0m
+[0;31mE (346594) PARSED_DATA: Humidity    = 50.000000[0m
+[0;31mE (346594) PARSED_DATA: Index    = 1[0m
+[0;31mE (346604) PARSED_DATA: Status    = 1[0m
+[0;31mE (346604) PARSED_DATA: CSUM    = 775[0m
+[0;32mI (346664) MESH_CLIENT: Send message opcode 0xc302e5 successfully, ttl send:  3  ![0m
+[0;32mI (347184) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (347184) MESH_CLIENT: src: 0x000c, dst: 0x0006,ttl recv: 3[0m
+[0;31mE (347184) MESH_CLIENT: data C4 [0m
+[0;31mE (347184) MESH_CLIENT: data B1 [0m
+[0;31mE (347194) MESH_CLIENT: data FB [0m
+[0;31mE (347194) MESH_CLIENT: data 3F [0m
+[0;31mE (347194) MESH_CLIENT: data 0C [0m
+[0;31mE (347204) MESH_CLIENT: data 00 [0m
+[0;31mE (347204) MESH_CLIENT: data 00 [0m
+[0;31mE (347214) MESH_CLIENT: data 00 [0m
+[0;31mE (347214) MESH_CLIENT: data 23 [0m
+[0;31mE (347214) MESH_CLIENT: data 08 [0m
+[0;31mE (347224) MESH_CLIENT: data 06 [0m
+[0;31mE (347224) MESH_CLIENT: data 00 [0m
+[0;31mE (347234) MESH_CLIENT: data BA [0m
+[0;31mE (347234) MESH_CLIENT: data 0F [0m
+[0;31mE (347234) MESH_CLIENT: data 09 [0m
+[0;31mE (347244) MESH_CLIENT: data 40 [0m
+[0;31mE (347244) MESH_CLIENT: data 00 [0m
+[0;31mE (347254) MESH_CLIENT: data 3F [0m
+[0;31mE (347254) MESH_CLIENT: data 40 [0m
+[0;31mE (347254) MESH_CLIENT: data 3F [0m
+[0;31mE (347264) MESH_CLIENT: data 30 [0m
+[0;31mE (347264) MESH_CLIENT: data 4C [0m
+[0;31mE (347264) MESH_CLIENT: ERROR DATA RECEIVED OF MSG ID: 1[0m
+[0;31mE (347274) PARSED_DATA: MSG ID    = 1[0m
+[0;31mE (347284) PARSED_DATA: ttl recv = 3[0m
+[0;31mE (347284) PARSED_DATA: Device Name = dht1[0m
+[0;31mE (347284) PARSED_DATA: Temperature = 25.000000[0m
+[0;31mE (347294) PARSED_DATA: Humidity    = 50.000000[0m
+[0;31mE (347294) PARSED_DATA: Index    = 1[0m
+[0;31mE (347304) PARSED_DATA: Status    = 1[0m
+[0;31mE (347304) PARSED_DATA: CSUM    = 775[0m
+[0;32mI (347364) MESH_CLIENT: Send message opcode 0xc302e5 successfully, ttl send:  3  ![0m
+[0;32mI (347824) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (347824) MESH_CLIENT: src: 0x000c, dst: 0x0006,ttl recv: 3[0m
+[0;31mE (347824) MESH_CLIENT: data 78 [0m
+[0;31mE (347824) MESH_CLIENT: data D0 [0m
+[0;31mE (347834) MESH_CLIENT: data FB [0m
+[0;31mE (347834) MESH_CLIENT: data 3F [0m
+[0;31mE (347834) MESH_CLIENT: data 0C [0m
+[0;31mE (347844) MESH_CLIENT: data 00 [0m
+[0;31mE (347844) MESH_CLIENT: data 00 [0m
+[0;31mE (347854) MESH_CLIENT: data 00 [0m
+[0;31mE (347854) MESH_CLIENT: data 23 [0m
+[0;31mE (347854) MESH_CLIENT: data 08 [0m
+[0;31mE (347864) MESH_CLIENT: data 06 [0m
+[0;31mE (347864) MESH_CLIENT: data 00 [0m
+[0;31mE (347874) MESH_CLIENT: data BA [0m
+[0;31mE (347874) MESH_CLIENT: data 0F [0m
+[0;31mE (347874) MESH_CLIENT: data 09 [0m
+[0;31mE (347884) MESH_CLIENT: data 40 [0m
+[0;31mE (347884) MESH_CLIENT: data 00 [0m
+[0;31mE (347894) MESH_CLIENT: data 3F [0m
+[0;31mE (347894) MESH_CLIENT: data 40 [0m
+[0;31mE (347894) MESH_CLIENT: data 3F [0m
+[0;31mE (347904) MESH_CLIENT: data B0 [0m
+[0;31mE (347904) MESH_CLIENT: data 4E [0m
+[0;31mE (347914) MESH_CLIENT: ERROR DATA RECEIVED OF MSG ID: 1[0m
+[0;31mE (347924) PARSED_DATA: MSG ID    = 1[0m
+[0;31mE (347924) PARSED_DATA: ttl recv = 3[0m
+[0;31mE (347924) PARSED_DATA: Device Name = dht1[0m
+[0;31mE (347924) PARSED_DATA: Temperature = 25.000000[0m
+[0;31mE (347934) PARSED_DATA: Humidity    = 50.000000[0m
+[0;31mE (347944) PARSED_DATA: Index    = 1[0m
+[0;31mE (347944) PARSED_DATA: Status    = 1[0m
+[0;31mE (347944) PARSED_DATA: CSUM    = 775[0m
+[0;32mI (348004) MESH_CLIENT: Send message opcode 0xc302e5 successfully, ttl send:  3  ![0m
+[0;32mI (348484) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (348484) MESH_CLIENT: src: 0x000c, dst: 0x0006,ttl recv: 3[0m
+[0;31mE (348484) MESH_CLIENT: data 78 [0m
+[0;31mE (348484) MESH_CLIENT: data D0 [0m
+[0;31mE (348494) MESH_CLIENT: data FB [0m
+[0;31mE (348494) MESH_CLIENT: data 3F [0m
+[0;31mE (348494) MESH_CLIENT: data 0C [0m
+[0;31mE (348504) MESH_CLIENT: data 00 [0m
+[0;31mE (348504) MESH_CLIENT: data 00 [0m
+[0;31mE (348514) MESH_CLIENT: data 00 [0m
+[0;31mE (348514) MESH_CLIENT: data 00 [0m
+[0;31mE (348514) MESH_CLIENT: data 00 [0m
+[0;31mE (348524) MESH_CLIENT: data 00 [0m
+[0;31mE (348524) MESH_CLIENT: data 00 [0m
+[0;31mE (348534) MESH_CLIENT: data 00 [0m
+[0;31mE (348534) MESH_CLIENT: data 00 [0m
+[0;31mE (348534) MESH_CLIENT: data 00 [0m
+[0;31mE (348544) MESH_CLIENT: data 00 [0m
+[0;31mE (348544) MESH_CLIENT: data 00 [0m
+[0;31mE (348554) MESH_CLIENT: data 3F [0m
+[0;31mE (348554) MESH_CLIENT: data 40 [0m
+[0;31mE (348554) MESH_CLIENT: data 3F [0m
+[0;31mE (348564) MESH_CLIENT: data 44 [0m
+[0;31mE (348564) MESH_CLIENT: data 51 [0m
+[0;31mE (348574) MESH_CLIENT: ERROR DATA RECEIVED OF MSG ID: 1[0m
+[0;31mE (348584) PARSED_DATA: MSG ID    = 1[0m
+[0;31mE (348584) PARSED_DATA: ttl recv = 3[0m
+[0;31mE (348584) PARSED_DATA: Device Name = dht1[0m
+[0;31mE (348584) PARSED_DATA: Temperature = 25.000000[0m
+[0;31mE (348594) PARSED_DATA: Humidity    = 50.000000[0m
+[0;31mE (348594) PARSED_DATA: Index    = 1[0m
+[0;31mE (348604) PARSED_DATA: Status    = 1[0m
+[0;31mE (348604) PARSED_DATA: CSUM    = 775[0m
+[0;32mI (348664) MESH_CLIENT: Send message opcode 0xc302e5 successfully, ttl send:  3  ![0m
+[0;32mI (349114) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (349114) MESH_CLIENT: src: 0x000c, dst: 0x0006,ttl recv: 3[0m
+[0;31mE (349114) MESH_CLIENT: data 78 [0m
+[0;31mE (349114) MESH_CLIENT: data D0 [0m
+[0;31mE (349124) MESH_CLIENT: data FB [0m
+[0;31mE (349124) MESH_CLIENT: data 3F [0m
+[0;31mE (349124) MESH_CLIENT: data 0C [0m
+[0;31mE (349134) MESH_CLIENT: data 00 [0m
+[0;31mE (349134) MESH_CLIENT: data 00 [0m
+[0;31mE (349144) MESH_CLIENT: data 00 [0m
+[0;31mE (349144) MESH_CLIENT: data 23 [0m
+[0;31mE (349144) MESH_CLIENT: data 08 [0m
+[0;31mE (349154) MESH_CLIENT: data 06 [0m
+[0;31mE (349154) MESH_CLIENT: data 00 [0m
+[0;31mE (349164) MESH_CLIENT: data BA [0m
+[0;31mE (349164) MESH_CLIENT: data 0F [0m
+[0;31mE (349164) MESH_CLIENT: data 09 [0m
+[0;31mE (349174) MESH_CLIENT: data 40 [0m
+[0;31mE (349174) MESH_CLIENT: data 00 [0m
+[0;31mE (349174) MESH_CLIENT: data 3F [0m
+[0;31mE (349184) MESH_CLIENT: data 40 [0m
+[0;31mE (349184) MESH_CLIENT: data 3F [0m
+[0;31mE (349194) MESH_CLIENT: data BA [0m
+[0;31mE (349194) MESH_CLIENT: data 53 [0m
+[0;31mE (349194) MESH_CLIENT: ERROR DATA RECEIVED OF MSG ID: 1[0m
+[0;31mE (349204) PARSED_DATA: MSG ID    = 1[0m
+[0;31mE (349214) PARSED_DATA: ttl recv = 3[0m
+[0;31mE (349214) PARSED_DATA: Device Name = dht1[0m
+[0;31mE (349214) PARSED_DATA: Temperature = 25.000000[0m
+[0;31mE (349224) PARSED_DATA: Humidity    = 50.000000[0m
+[0;31mE (349224) PARSED_DATA: Index    = 1[0m
+[0;31mE (349234) PARSED_DATA: Status    = 1[0m
+[0;31mE (349234) PARSED_DATA: CSUM    = 775[0m
+[0;32mI (349294) MESH_CLIENT: Send message opcode 0xc302e5 successfully, ttl send:  3  ![0m
+[0;32mI (349774) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (349774) MESH_CLIENT: src: 0x000c, dst: 0x0006,ttl recv: 3[0m
+[0;31mE (349774) MESH_CLIENT: data 78 [0m
+[0;31mE (349774) MESH_CLIENT: data D0 [0m
+[0;31mE (349784) MESH_CLIENT: data FB [0m
+[0;31mE (349784) MESH_CLIENT: data 3F [0m
+[0;31mE (349794) MESH_CLIENT: data 0C [0m
+[0;31mE (349794) MESH_CLIENT: data 00 [0m
+[0;31mE (349794) MESH_CLIENT: data 00 [0m
+[0;31mE (349804) MESH_CLIENT: data 00 [0m
+[0;31mE (349804) MESH_CLIENT: data 23 [0m
+[0;31mE (349804) MESH_CLIENT: data 08 [0m
+[0;31mE (349814) MESH_CLIENT: data 06 [0m
+[0;31mE (349814) MESH_CLIENT: data 00 [0m
+[0;31mE (349814) MESH_CLIENT: data BA [0m
+[0;31mE (349824) MESH_CLIENT: data 0F [0m
+[0;31mE (349824) MESH_CLIENT: data 09 [0m
+[0;31mE (349834) MESH_CLIENT: data 40 [0m
+[0;31mE (349834) MESH_CLIENT: data 00 [0m
+[0;31mE (349834) MESH_CLIENT: data 3F [0m
+[0;31mE (349844) MESH_CLIENT: data 40 [0m
+[0;31mE (349844) MESH_CLIENT: data 3F [0m
+[0;31mE (349854) MESH_CLIENT: data 4E [0m
+[0;31mE (349854) MESH_CLIENT: data 56 [0m
+[0;31mE (349854) MESH_CLIENT: ERROR DATA RECEIVED OF MSG ID: 1[0m
+[0;31mE (349864) PARSED_DATA: MSG ID    = 1[0m
+[0;31mE (349874) PARSED_DATA: ttl recv = 3[0m
+[0;31mE (349874) PARSED_DATA: Device Name = dht1[0m
+[0;31mE (349874) PARSED_DATA: Temperature = 25.000000[0m
+[0;31mE (349884) PARSED_DATA: Humidity    = 50.000000[0m
+[0;31mE (349884) PARSED_DATA: Index    = 1[0m
+[0;31mE (349894) PARSED_DATA: Status    = 1[0m
+[0;31mE (349894) PARSED_DATA: CSUM    = 775[0m
+[0;32mI (349954) MESH_CLIENT: Send message opcode 0xc302e5 successfully, ttl send:  3  ![0m
+[0;32mI (350464) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (350464) MESH_CLIENT: src: 0x000c, dst: 0x0006,ttl recv: 3[0m
+[0;31mE (350464) MESH_CLIENT: data 98 [0m
+[0;31mE (350464) MESH_CLIENT: data D0 [0m
+[0;31mE (350464) MESH_CLIENT: data FB [0m
+[0;31mE (350474) MESH_CLIENT: data 3F [0m
+[0;31mE (350474) MESH_CLIENT: data 0C [0m
+[0;31mE (350484) MESH_CLIENT: data 00 [0m
+[0;31mE (350484) MESH_CLIENT: data 00 [0m
+[0;31mE (350484) MESH_CLIENT: data 00 [0m
+[0;31mE (350494) MESH_CLIENT: data 23 [0m
+[0;31mE (350494) MESH_CLIENT: data 08 [0m
+[0;31mE (350504) MESH_CLIENT: data 06 [0m
+[0;31mE (350504) MESH_CLIENT: data 00 [0m
+[0;31mE (350504) MESH_CLIENT: data BA [0m
+[0;31mE (350514) MESH_CLIENT: data 0F [0m
+[0;31mE (350514) MESH_CLIENT: data 09 [0m
+[0;31mE (350524) MESH_CLIENT: data 40 [0m
+[0;31mE (350524) MESH_CLIENT: data 00 [0m
+[0;31mE (350524) MESH_CLIENT: data 3F [0m
+[0;31mE (350534) MESH_CLIENT: data 40 [0m
+[0;31mE (350534) MESH_CLIENT: data 3F [0m
+[0;31mE (350544) MESH_CLIENT: data 00 [0m
+[0;31mE (350544) MESH_CLIENT: data 59 [0m
+[0;31mE (350544) MESH_CLIENT: ERROR DATA RECEIVED OF MSG ID: 1[0m
+[0;31mE (350564) PARSED_DATA: MSG ID    = 1[0m
+[0;31mE (350564) PARSED_DATA: ttl recv = 3[0m
+[0;31mE (350564) PARSED_DATA: Device Name = dht1[0m
+[0;31mE (350564) PARSED_DATA: Temperature = 25.000000[0m
+[0;31mE (350574) PARSED_DATA: Humidity    = 50.000000[0m
+[0;31mE (350574) PARSED_DATA: Index    = 1[0m
+[0;31mE (350584) PARSED_DATA: Status    = 1[0m
+[0;31mE (350584) PARSED_DATA: CSUM    = 775[0m
+[0;32mI (350644) MESH_CLIENT: Send message opcode 0xc302e5 successfully, ttl send:  3  ![0m
+[0;32mI (351774) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (351774) MESH_CLIENT: src: 0x000c, dst: 0x0006,ttl recv: 3[0m
+[0;31mE (351774) MESH_CLIENT: data 48 [0m
+[0;31mE (351774) MESH_CLIENT: data B2 [0m
+[0;31mE (351784) MESH_CLIENT: data FB [0m
+[0;31mE (351784) MESH_CLIENT: data 3F [0m
+[0;31mE (351784) MESH_CLIENT: data 0C [0m
+[0;31mE (351794) MESH_CLIENT: data 00 [0m
+[0;31mE (351794) MESH_CLIENT: data 00 [0m
+[0;31mE (351804) MESH_CLIENT: data 00 [0m
+[0;31mE (351804) MESH_CLIENT: data 23 [0m
+[0;31mE (351804) MESH_CLIENT: data 06 [0m
+[0;31mE (351814) MESH_CLIENT: data 06 [0m
+[0;31mE (351814) MESH_CLIENT: data 00 [0m
+[0;31mE (351824) MESH_CLIENT: data BA [0m
+[0;31mE (351824) MESH_CLIENT: data 0F [0m
+[0;31mE (351824) MESH_CLIENT: data 09 [0m
+[0;31mE (351834) MESH_CLIENT: data 40 [0m
+[0;31mE (351834) MESH_CLIENT: data 00 [0m
+[0;31mE (351844) MESH_CLIENT: data 3F [0m
+[0;31mE (351844) MESH_CLIENT: data 40 [0m
+[0;31mE (351844) MESH_CLIENT: data 3F [0m
+[0;31mE (351874) MESH_CLIENT: data 1E [0m
+[0;31mE (351884) MESH_CLIENT: data 5E [0m
+[0;31mE (351884) MESH_CLIENT: ERROR DATA RECEIVED OF MSG ID: 1[0m
+[0;31mE (351884) PARSED_DATA: MSG ID    = 1[0m
+[0;31mE (351894) PARSED_DATA: ttl recv = 3[0m
+[0;31mE (351894) PARSED_DATA: Device Name = dht1[0m
+[0;31mE (351894) PARSED_DATA: Temperature = 25.000000[0m
+[0;31mE (351904) PARSED_DATA: Humidity    = 50.000000[0m
+[0;31mE (351904) PARSED_DATA: Index    = 1[0m
+[0;31mE (351914) PARSED_DATA: Status    = 1[0m
+[0;31mE (351914) PARSED_DATA: CSUM    = 775[0m
+[0;32mI (351974) MESH_CLIENT: Send message opcode 0xc302e5 successfully, ttl send:  3  ![0m
+[0;32mI (352594) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (352594) MESH_CLIENT: src: 0x000c, dst: 0x0006,ttl recv: 3[0m
+[0;31mE (352594) MESH_CLIENT: data 48 [0m
+[0;31mE (352594) MESH_CLIENT: data B2 [0m
+[0;31mE (352604) MESH_CLIENT: data FB [0m
+[0;31mE (352604) MESH_CLIENT: data 3F [0m
+[0;31mE (352604) MESH_CLIENT: data 0C [0m
+[0;31mE (352614) MESH_CLIENT: data 00 [0m
+[0;31mE (352614) MESH_CLIENT: data 00 [0m
+[0;31mE (352624) MESH_CLIENT: data 00 [0m
+[0;31mE (352624) MESH_CLIENT: data 23 [0m
+[0;31mE (352624) MESH_CLIENT: data 06 [0m
+[0;31mE (352634) MESH_CLIENT: data 06 [0m
+[0;31mE (352634) MESH_CLIENT: data 00 [0m
+[0;31mE (352644) MESH_CLIENT: data BA [0m
+[0;31mE (352644) MESH_CLIENT: data 0F [0m
+[0;31mE (352644) MESH_CLIENT: data 09 [0m
+[0;31mE (352654) MESH_CLIENT: data 40 [0m
+[0;31mE (352654) MESH_CLIENT: data 00 [0m
+[0;31mE (352654) MESH_CLIENT: data 3F [0m
+[0;31mE (352664) MESH_CLIENT: data 40 [0m
+[0;31mE (352664) MESH_CLIENT: data 3F [0m
+[0;31mE (352674) MESH_CLIENT: data 52 [0m
+[0;31mE (352674) MESH_CLIENT: data 61 [0m
+[0;31mE (352674) MESH_CLIENT: ERROR DATA RECEIVED OF MSG ID: 1[0m
+[0;31mE (352684) PARSED_DATA: MSG ID    = 1[0m
+[0;31mE (352694) PARSED_DATA: ttl recv = 3[0m
+[0;31mE (352694) PARSED_DATA: Device Name = dht1[0m
+[0;31mE (352694) PARSED_DATA: Temperature = 25.000000[0m
+[0;31mE (352704) PARSED_DATA: Humidity    = 50.000000[0m
+[0;31mE (352704) PARSED_DATA: Index    = 1[0m
+[0;31mE (352714) PARSED_DATA: Status    = 1[0m
+[0;31mE (352714) PARSED_DATA: CSUM    = 775[0m
+[0;32mI (352774) MESH_CLIENT: Send message opcode 0xc302e5 successfully, ttl send:  3  ![0m
+[0;32mI (353254) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (353254) MESH_CLIENT: src: 0x000c, dst: 0x0006,ttl recv: 3[0m
+[0;31mE (353254) MESH_CLIENT: data 48 [0m
+[0;31mE (353254) MESH_CLIENT: data B2 [0m
+[0;31mE (353264) MESH_CLIENT: data FB [0m
+[0;31mE (353264) MESH_CLIENT: data 3F [0m
+[0;31mE (353264) MESH_CLIENT: data 0C [0m
+[0;31mE (353274) MESH_CLIENT: data 00 [0m
+[0;31mE (353274) MESH_CLIENT: data 00 [0m
+[0;31mE (353284) MESH_CLIENT: data 00 [0m
+[0;31mE (353284) MESH_CLIENT: data 23 [0m
+[0;31mE (353284) MESH_CLIENT: data 08 [0m
+[0;31mE (353294) MESH_CLIENT: data 06 [0m
+[0;31mE (353294) MESH_CLIENT: data 00 [0m
+[0;31mE (353304) MESH_CLIENT: data BA [0m
+[0;31mE (353304) MESH_CLIENT: data 0F [0m
+[0;31mE (353304) MESH_CLIENT: data 09 [0m
+[0;31mE (353314) MESH_CLIENT: data 40 [0m
+[0;31mE (353314) MESH_CLIENT: data 00 [0m
+[0;31mE (353324) MESH_CLIENT: data 3F [0m
+[0;31mE (353324) MESH_CLIENT: data 40 [0m
+[0;31mE (353324) MESH_CLIENT: data 3F [0m
+[0;31mE (353334) MESH_CLIENT: data E6 [0m
+[0;31mE (353334) MESH_CLIENT: data 63 [0m
+[0;31mE (353334) MESH_CLIENT: ERROR DATA RECEIVED OF MSG ID: 1[0m
+[0;31mE (353344) PARSED_DATA: MSG ID    = 1[0m
+[0;31mE (353354) PARSED_DATA: ttl recv = 3[0m
+[0;31mE (353354) PARSED_DATA: Device Name = dht1[0m
+[0;31mE (353354) PARSED_DATA: Temperature = 25.000000[0m
+[0;31mE (353364) PARSED_DATA: Humidity    = 50.000000[0m
+[0;31mE (353364) PARSED_DATA: Index    = 1[0m
+[0;31mE (353374) PARSED_DATA: Status    = 1[0m
+[0;31mE (353374) PARSED_DATA: CSUM    = 775[0m
+[0;32mI (353434) MESH_CLIENT: Send message opcode 0xc302e5 successfully, ttl send:  3  ![0m
+[0;32mI (353884) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (353884) MESH_CLIENT: src: 0x000c, dst: 0x0006,ttl recv: 3[0m
+[0;31mE (353884) MESH_CLIENT: data 98 [0m
+[0;31mE (353884) MESH_CLIENT: data D0 [0m
+[0;31mE (353894) MESH_CLIENT: data FB [0m
+[0;31mE (353894) MESH_CLIENT: data 3F [0m
+[0;31mE (353904) MESH_CLIENT: data 0C [0m
+[0;31mE (353904) MESH_CLIENT: data 00 [0m
+[0;31mE (353904) MESH_CLIENT: data 00 [0m
+[0;31mE (353914) MESH_CLIENT: data 00 [0m
+[0;31mE (353914) MESH_CLIENT: data 00 [0m
+[0;31mE (353924) MESH_CLIENT: data 00 [0m
+[0;31mE (353924) MESH_CLIENT: data 00 [0m
+[0;31mE (353924) MESH_CLIENT: data 00 [0m
+[0;31mE (353934) MESH_CLIENT: data 00 [0m
+[0;31mE (353934) MESH_CLIENT: data 00 [0m
+[0;31mE (353944) MESH_CLIENT: data 00 [0m
+[0;31mE (353944) MESH_CLIENT: data 00 [0m
+[0;31mE (353944) MESH_CLIENT: data 00 [0m
+[0;31mE (353954) MESH_CLIENT: data 3F [0m
+[0;31mE (353954) MESH_CLIENT: data 40 [0m
+[0;31mE (353954) MESH_CLIENT: data 3F [0m
+[0;31mE (353964) MESH_CLIENT: data 5C [0m
+[0;31mE (353964) MESH_CLIENT: data 66 [0m
+[0;31mE (353974) MESH_CLIENT: ERROR DATA RECEIVED OF MSG ID: 1[0m
+[0;31mE (353984) PARSED_DATA: MSG ID    = 1[0m
+[0;31mE (353984) PARSED_DATA: ttl recv = 3[0m
+[0;31mE (353984) PARSED_DATA: Device Name = dht1[0m
+[0;31mE (353994) PARSED_DATA: Temperature = 25.000000[0m
+[0;31mE (353994) PARSED_DATA: Humidity    = 50.000000[0m
+[0;31mE (354004) PARSED_DATA: Index    = 1[0m
+[0;31mE (354004) PARSED_DATA: Status    = 1[0m
+[0;31mE (354004) PARSED_DATA: CSUM    = 775[0m
+[0;32mI (354064) MESH_CLIENT: Send message opcode 0xc302e5 successfully, ttl send:  3  ![0m
+[0;32mI (354504) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (354504) MESH_CLIENT: src: 0x000c, dst: 0x0006,ttl recv: 3[0m
+[0;31mE (354504) MESH_CLIENT: data 98 [0m
+[0;31mE (354514) MESH_CLIENT: data D0 [0m
+[0;31mE (354514) MESH_CLIENT: data FB [0m
+[0;31mE (354514) MESH_CLIENT: data 3F [0m
+[0;31mE (354524) MESH_CLIENT: data 0C [0m
+[0;31mE (354524) MESH_CLIENT: data 00 [0m
+[0;31mE (354534) MESH_CLIENT: data 00 [0m
+[0;31mE (354534) MESH_CLIENT: data 00 [0m
+[0;31mE (354534) MESH_CLIENT: data 00 [0m
+[0;31mE (354544) MESH_CLIENT: data 00 [0m
+[0;31mE (354544) MESH_CLIENT: data 00 [0m
+[0;31mE (354554) MESH_CLIENT: data 00 [0m
+[0;31mE (354554) MESH_CLIENT: data 00 [0m
+[0;31mE (354554) MESH_CLIENT: data 00 [0m
+[0;31mE (354564) MESH_CLIENT: data 00 [0m
+[0;31mE (354564) MESH_CLIENT: data 00 [0m
+[0;31mE (354564) MESH_CLIENT: data 00 [0m
+[0;31mE (354574) MESH_CLIENT: data 3F [0m
+[0;31mE (354574) MESH_CLIENT: data 40 [0m
+[0;31mE (354584) MESH_CLIENT: data 3F [0m
+[0;31mE (354584) MESH_CLIENT: data C8 [0m
+[0;31mE (354584) MESH_CLIENT: data 68 [0m
+[0;31mE (354604) MESH_CLIENT: ERROR DATA RECEIVED OF MSG ID: 1[0m
+[0;31mE (354604) PARSED_DATA: MSG ID    = 1[0m
+[0;31mE (354604) PARSED_DATA: ttl recv = 3[0m
+[0;31mE (354604) PARSED_DATA: Device Name = dht1[0m
+[0;31mE (354614) PARSED_DATA: Temperature = 25.000000[0m
+[0;31mE (354614) PARSED_DATA: Humidity    = 50.000000[0m
+[0;31mE (354624) PARSED_DATA: Index    = 1[0m
+[0;31mE (354624) PARSED_DATA: Status    = 1[0m
+[0;31mE (354634) PARSED_DATA: CSUM    = 775[0m
+[0;32mI (354684) MESH_CLIENT: Send message opcode 0xc302e5 successfully, ttl send:  3  ![0m
+[0;32mI (355134) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (355134) MESH_CLIENT: src: 0x000c, dst: 0x0006,ttl recv: 3[0m
+[0;31mE (355134) MESH_CLIENT: data 98 [0m
+[0;31mE (355134) MESH_CLIENT: data D0 [0m
+[0;31mE (355144) MESH_CLIENT: data FB [0m
+[0;31mE (355144) MESH_CLIENT: data 3F [0m
+[0;31mE (355144) MESH_CLIENT: data 0C [0m
+[0;31mE (355154) MESH_CLIENT: data 00 [0m
+[0;31mE (355154) MESH_CLIENT: data 00 [0m
+[0;31mE (355164) MESH_CLIENT: data 00 [0m
+[0;31mE (355164) MESH_CLIENT: data 23 [0m
+[0;31mE (355164) MESH_CLIENT: data 08 [0m
+[0;31mE (355174) MESH_CLIENT: data 06 [0m
+[0;31mE (355174) MESH_CLIENT: data 00 [0m
+[0;31mE (355184) MESH_CLIENT: data BA [0m
+[0;31mE (355184) MESH_CLIENT: data 0F [0m
+[0;31mE (355184) MESH_CLIENT: data 09 [0m
+[0;31mE (355194) MESH_CLIENT: data 40 [0m
+[0;31mE (355194) MESH_CLIENT: data 00 [0m
+[0;31mE (355194) MESH_CLIENT: data 3F [0m
+[0;31mE (355204) MESH_CLIENT: data 40 [0m
+[0;31mE (355204) MESH_CLIENT: data 3F [0m
+[0;31mE (355214) MESH_CLIENT: data 3E [0m
+[0;31mE (355214) MESH_CLIENT: data 6B [0m
+[0;31mE (355214) MESH_CLIENT: ERROR DATA RECEIVED OF MSG ID: 1[0m
+[0;31mE (355224) PARSED_DATA: MSG ID    = 1[0m
+[0;31mE (355224) PARSED_DATA: ttl recv = 3[0m
+[0;31mE (355234) PARSED_DATA: Device Name = dht1[0m
+[0;31mE (355234) PARSED_DATA: Temperature = 25.000000[0m
+[0;31mE (355244) PARSED_DATA: Humidity    = 50.000000[0m
+[0;31mE (355244) PARSED_DATA: Index    = 1[0m
+[0;31mE (355254) PARSED_DATA: Status    = 1[0m
+[0;31mE (355254) PARSED_DATA: CSUM    = 775[0m
+[0;32mI (355374) MESH_CLIENT: Send message opcode 0xc302e5 successfully, ttl send:  3  ![0m
+[0;32mI (355824) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (355824) MESH_CLIENT: src: 0x000c, dst: 0x0006,ttl recv: 3[0m
+[0;31mE (355824) MESH_CLIENT: data BC [0m
+[0;31mE (355824) MESH_CLIENT: data B0 [0m
+[0;31mE (355834) MESH_CLIENT: data FB [0m
+[0;31mE (355834) MESH_CLIENT: data 3F [0m
+[0;31mE (355834) MESH_CLIENT: data 00 [0m
+[0;31mE (355844) MESH_CLIENT: data 00 [0m
+[0;31mE (355844) MESH_CLIENT: data 00 [0m
+[0;31mE (355854) MESH_CLIENT: data 00 [0m
+[0;31mE (355854) MESH_CLIENT: data 00 [0m
+[0;31mE (355854) MESH_CLIENT: data 00 [0m
+[0;31mE (355864) MESH_CLIENT: data 00 [0m
+[0;31mE (355864) MESH_CLIENT: data 00 [0m
+[0;31mE (355874) MESH_CLIENT: data 00 [0m
+[0;31mE (355874) MESH_CLIENT: data 00 [0m
+[0;31mE (355874) MESH_CLIENT: data 00 [0m
+[0;31mE (355884) MESH_CLIENT: data 00 [0m
+[0;31mE (355884) MESH_CLIENT: data 00 [0m
+[0;31mE (355894) MESH_CLIENT: data 3F [0m
+[0;31mE (355894) MESH_CLIENT: data 40 [0m
+[0;31mE (355894) MESH_CLIENT: data 3F [0m
+[0;31mE (355904) MESH_CLIENT: data F0 [0m
+[0;31mE (355904) MESH_CLIENT: data 6D [0m
+[0;31mE (355904) MESH_CLIENT: ERROR DATA RECEIVED OF MSG ID: 1[0m
+[0;31mE (355914) PARSED_DATA: MSG ID    = 1[0m
+[0;31mE (355924) PARSED_DATA: ttl recv = 3[0m
+[0;31mE (355924) PARSED_DATA: Device Name = dht1[0m
+[0;31mE (355924) PARSED_DATA: Temperature = 25.000000[0m
+[0;31mE (355934) PARSED_DATA: Humidity    = 50.000000[0m
+[0;31mE (355934) PARSED_DATA: Index    = 1[0m
+[0;31mE (355944) PARSED_DATA: Status    = 1[0m
+[0;31mE (355944) PARSED_DATA: CSUM    = 775[0m
+[0;32mI (355994) MESH_CLIENT: Send message opcode 0xc302e5 successfully, ttl send:  3  ![0m
+[0;32mI (356494) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (356494) MESH_CLIENT: src: 0x000c, dst: 0x0006,ttl recv: 3[0m
+[0;31mE (356494) MESH_CLIENT: data BC [0m
+[0;31mE (356494) MESH_CLIENT: data B0 [0m
+[0;31mE (356504) MESH_CLIENT: data FB [0m
+[0;31mE (356504) MESH_CLIENT: data 3F [0m
+[0;31mE (356504) MESH_CLIENT: data 0C [0m
+[0;31mE (356514) MESH_CLIENT: data 00 [0m
+[0;31mE (356514) MESH_CLIENT: data 00 [0m
+[0;31mE (356524) MESH_CLIENT: data 00 [0m
+[0;31mE (356524) MESH_CLIENT: data 23 [0m
+[0;31mE (356524) MESH_CLIENT: data 08 [0m
+[0;31mE (356534) MESH_CLIENT: data 06 [0m
+[0;31mE (356534) MESH_CLIENT: data 00 [0m
+[0;31mE (356544) MESH_CLIENT: data BA [0m
+[0;31mE (356544) MESH_CLIENT: data 0F [0m
+[0;31mE (356544) MESH_CLIENT: data 09 [0m
+[0;31mE (356554) MESH_CLIENT: data 40 [0m
+[0;31mE (356554) MESH_CLIENT: data 00 [0m
+[0;31mE (356554) MESH_CLIENT: data 3F [0m
+[0;31mE (356564) MESH_CLIENT: data 40 [0m
+[0;31mE (356564) MESH_CLIENT: data 3F [0m
+[0;31mE (356574) MESH_CLIENT: data 8E [0m
+[0;31mE (356574) MESH_CLIENT: data 70 [0m
+[0;31mE (356574) MESH_CLIENT: ERROR DATA RECEIVED OF MSG ID: 1[0m
+[0;31mE (356584) PARSED_DATA: MSG ID    = 1[0m
+[0;31mE (356594) PARSED_DATA: ttl recv = 3[0m
+[0;31mE (356594) PARSED_DATA: Device Name = dht1[0m
+[0;31mE (356594) PARSED_DATA: Temperature = 25.000000[0m
+[0;31mE (356604) PARSED_DATA: Humidity    = 50.000000[0m
+[0;31mE (356604) PARSED_DATA: Index    = 1[0m
+[0;31mE (356614) PARSED_DATA: Status    = 1[0m
+[0;31mE (356614) PARSED_DATA: CSUM    = 775[0m
+[0;32mI (356664) MESH_CLIENT: Send message opcode 0xc302e5 successfully, ttl send:  3  ![0m
+[0;32mI (357224) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (357224) MESH_CLIENT: src: 0x000c, dst: 0x0006,ttl recv: 3[0m
+[0;31mE (357224) MESH_CLIENT: data 14 [0m
+[0;31mE (357224) MESH_CLIENT: data B0 [0m
+[0;31mE (357234) MESH_CLIENT: data FB [0m
+[0;31mE (357234) MESH_CLIENT: data 3F [0m
+[0;31mE (357234) MESH_CLIENT: data 0C [0m
+[0;31mE (357244) MESH_CLIENT: data 00 [0m
+[0;31mE (357244) MESH_CLIENT: data 00 [0m
+[0;31mE (357254) MESH_CLIENT: data 00 [0m
+[0;31mE (357254) MESH_CLIENT: data 23 [0m
+[0;31mE (357254) MESH_CLIENT: data 08 [0m
+[0;31mE (357264) MESH_CLIENT: data 06 [0m
+[0;31mE (357264) MESH_CLIENT: data 00 [0m
+[0;31mE (357274) MESH_CLIENT: data BA [0m
+[0;31mE (357274) MESH_CLIENT: data 0F [0m
+[0;31mE (357274) MESH_CLIENT: data 09 [0m
+[0;31mE (357284) MESH_CLIENT: data 40 [0m
+[0;31mE (357284) MESH_CLIENT: data 00 [0m
+[0;31mE (357294) MESH_CLIENT: data 3F [0m
+[0;31mE (357294) MESH_CLIENT: data 40 [0m
+[0;31mE (357294) MESH_CLIENT: data 3F [0m
+[0;31mE (357304) MESH_CLIENT: data 68 [0m
+[0;31mE (357304) MESH_CLIENT: data 73 [0m
+[0;31mE (357304) MESH_CLIENT: ERROR DATA RECEIVED OF MSG ID: 1[0m
+[0;31mE (357324) PARSED_DATA: MSG ID    = 1[0m
+[0;31mE (357324) PARSED_DATA: ttl recv = 3[0m
+[0;31mE (357324) PARSED_DATA: Device Name = dht1[0m
+[0;31mE (357324) PARSED_DATA: Temperature = 0.000000[0m
+[0;31mE (357334) PARSED_DATA: Humidity    = 0.000000[0m
+[0;31mE (357334) PARSED_DATA: Index    = 1[0m
+[0;31mE (357344) PARSED_DATA: Status    = 1[0m
+[0;31mE (357344) PARSED_DATA: CSUM    = 372[0m
+[0;32mI (357404) MESH_CLIENT: Send message opcode 0xc302e5 successfully, ttl send:  3  ![0m
+[0;32mI (357874) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (357874) MESH_CLIENT: src: 0x000c, dst: 0x0006,ttl recv: 3[0m
+[0;31mE (357874) MESH_CLIENT: data 14 [0m
+[0;31mE (357874) MESH_CLIENT: data B0 [0m
+[0;31mE (357884) MESH_CLIENT: data FB [0m
+[0;31mE (357884) MESH_CLIENT: data 3F [0m
+[0;31mE (357894) MESH_CLIENT: data 0C [0m
+[0;31mE (357894) MESH_CLIENT: data 00 [0m
+[0;31mE (357894) MESH_CLIENT: data 00 [0m
+[0;31mE (357904) MESH_CLIENT: data 00 [0m
+[0;31mE (357904) MESH_CLIENT: data 20 [0m
+[0;31mE (357904) MESH_CLIENT: data 60 [0m
+[0;31mE (357914) MESH_CLIENT: data FB [0m
+[0;31mE (357914) MESH_CLIENT: data 3F [0m
+[0;31mE (357924) MESH_CLIENT: data F1 [0m
+[0;31mE (357924) MESH_CLIENT: data 08 [0m
+[0;31mE (357924) MESH_CLIENT: data 09 [0m
+[0;31mE (357934) MESH_CLIENT: data 80 [0m
+[0;31mE (357934) MESH_CLIENT: data 00 [0m
+[0;31mE (357944) MESH_CLIENT: data 3F [0m
+[0;31mE (357944) MESH_CLIENT: data 40 [0m
+[0;31mE (357944) MESH_CLIENT: data 3F [0m
+[0;31mE (357954) MESH_CLIENT: data F2 [0m
+[0;31mE (357954) MESH_CLIENT: data 75 [0m
+[0;31mE (357964) MESH_CLIENT: ERROR DATA RECEIVED OF MSG ID: 1[0m
+[0;31mE (357974) PARSED_DATA: MSG ID    = 1[0m
+[0;31mE (357974) PARSED_DATA: ttl recv = 3[0m
+[0;31mE (357974) PARSED_DATA: Device Name = dht1[0m
+[0;31mE (357974) PARSED_DATA: Temperature = 0.000000[0m
+[0;31mE (357984) PARSED_DATA: Humidity    = 0.000000[0m
+[0;31mE (357994) PARSED_DATA: Index    = 1[0m
+[0;31mE (357994) PARSED_DATA: Status    = 1[0m
+[0;31mE (357994) PARSED_DATA: CSUM    = 372[0m
+[0;32mI (358044) MESH_CLIENT: Send message opcode 0xc302e5 successfully, ttl send:  3  ![0m
+[0;32mI (359404) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (359404) MESH_CLIENT: src: 0x000c, dst: 0x0006,ttl recv: 3[0m
+[0;31mE (359404) MESH_CLIENT: data AC [0m
+[0;31mE (359404) MESH_CLIENT: data B3 [0m
+[0;31mE (359414) MESH_CLIENT: data FB [0m
+[0;31mE (359414) MESH_CLIENT: data 3F [0m
+[0;31mE (359424) MESH_CLIENT: data 0C [0m
+[0;31mE (359424) MESH_CLIENT: data 00 [0m
+[0;31mE (359424) MESH_CLIENT: data 00 [0m
+[0;31mE (359434) MESH_CLIENT: data 00 [0m
+[0;31mE (359434) MESH_CLIENT: data 23 [0m
+[0;31mE (359444) MESH_CLIENT: data 08 [0m
+[0;31mE (359444) MESH_CLIENT: data 06 [0m
+[0;31mE (359444) MESH_CLIENT: data 00 [0m
+[0;31mE (359454) MESH_CLIENT: data BA [0m
+[0;31mE (359454) MESH_CLIENT: data 0F [0m
+[0;31mE (359464) MESH_CLIENT: data 09 [0m
+[0;31mE (359464) MESH_CLIENT: data 40 [0m
+[0;31mE (359464) MESH_CLIENT: data 00 [0m
+[0;31mE (359474) MESH_CLIENT: data 3F [0m
+[0;31mE (359474) MESH_CLIENT: data 40 [0m
+[0;31mE (359484) MESH_CLIENT: data 3F [0m
+[0;31mE (359484) MESH_CLIENT: data EC [0m
+[0;31mE (359484) MESH_CLIENT: data 7B [0m
+[0;31mE (359494) MESH_CLIENT: ERROR DATA RECEIVED OF MSG ID: 1[0m
+[0;31mE (359504) PARSED_DATA: MSG ID    = 1[0m
+[0;31mE (359504) PARSED_DATA: ttl recv = 3[0m
+[0;31mE (359504) PARSED_DATA: Device Name = dht1[0m
+[0;31mE (359514) PARSED_DATA: Temperature = 0.000000[0m
+[0;31mE (359514) PARSED_DATA: Humidity    = 0.000000[0m
+[0;31mE (359524) PARSED_DATA: Index    = 1[0m
+[0;31mE (359524) PARSED_DATA: Status    = 1[0m
+[0;31mE (359534) PARSED_DATA: CSUM    = 372[0m
+[0;32mI (359664) MESH_CLIENT: Send message opcode 0xc302e5 successfully, ttl send:  3  ![0m
+[0;33mW (359824) BLE_MESH: Ran out of retransmit attempts[0m
+[0;32mI (360084) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (360084) MESH_CLIENT: src: 0x000c, dst: 0x0006,ttl recv: 3[0m
+[0;31mE (360084) MESH_CLIENT: data 98 [0m
+[0;31mE (360084) MESH_CLIENT: data B0 [0m
+[0;31mE (360094) MESH_CLIENT: data FB [0m
+[0;31mE (360094) MESH_CLIENT: data 3F [0m
+[0;31mE (360094) MESH_CLIENT: data 0C [0m
+[0;31mE (360104) MESH_CLIENT: data 00 [0m
+[0;31mE (360104) MESH_CLIENT: data 00 [0m
+[0;31mE (360114) MESH_CLIENT: data 00 [0m
+[0;31mE (360114) MESH_CLIENT: data 23 [0m
+[0;31mE (360114) MESH_CLIENT: data 06 [0m
+[0;31mE (360124) MESH_CLIENT: data 06 [0m
+[0;31mE (360124) MESH_CLIENT: data 00 [0m
+[0;31mE (360134) MESH_CLIENT: data BA [0m
+[0;31mE (360134) MESH_CLIENT: data 0F [0m
+[0;31mE (360134) MESH_CLIENT: data 09 [0m
+[0;31mE (360144) MESH_CLIENT: data 40 [0m
+[0;31mE (360144) MESH_CLIENT: data 00 [0m
+[0;31mE (360144) MESH_CLIENT: data 3F [0m
+[0;31mE (360154) MESH_CLIENT: data 40 [0m
+[0;31mE (360154) MESH_CLIENT: data 3F [0m
+[0;31mE (360164) MESH_CLIENT: data 94 [0m
+[0;31mE (360164) MESH_CLIENT: data 7E [0m
+[0;31mE (360164) MESH_CLIENT: ERROR DATA RECEIVED OF MSG ID: 1[0m
+[0;31mE (360174) PARSED_DATA: MSG ID    = 1[0m
+[0;31mE (360184) PARSED_DATA: ttl recv = 3[0m
+[0;31mE (360184) PARSED_DATA: Device Name = dht1[0m
+[0;31mE (360184) PARSED_DATA: Temperature = 0.000000[0m
+[0;31mE (360194) PARSED_DATA: Humidity    = 0.000000[0m
+[0;31mE (360194) PARSED_DATA: Index    = 1[0m
+[0;31mE (360204) PARSED_DATA: Status    = 1[0m
+[0;31mE (360204) PARSED_DATA: CSUM    = 372[0m
+[0;32mI (360264) MESH_CLIENT: Send message opcode 0xc302e5 successfully, ttl send:  3  ![0m
+[0;32mI (360734) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (360734) MESH_CLIENT: src: 0x000c, dst: 0x0006,ttl recv: 3[0m
+[0;31mE (360734) MESH_CLIENT: data 40 [0m
+[0;31mE (360734) MESH_CLIENT: data B1 [0m
+[0;31mE (360744) MESH_CLIENT: data FB [0m
+[0;31mE (360744) MESH_CLIENT: data 3F [0m
+[0;31mE (360744) MESH_CLIENT: data 00 [0m
+[0;31mE (360754) MESH_CLIENT: data 00 [0m
+[0;31mE (360754) MESH_CLIENT: data 00 [0m
+[0;31mE (360764) MESH_CLIENT: data 00 [0m
+[0;31mE (360764) MESH_CLIENT: data 00 [0m
+[0;31mE (360764) MESH_CLIENT: data 00 [0m
+[0;31mE (360774) MESH_CLIENT: data 00 [0m
+[0;31mE (360774) MESH_CLIENT: data 00 [0m
+[0;31mE (360784) MESH_CLIENT: data 00 [0m
+[0;31mE (360784) MESH_CLIENT: data 00 [0m
+[0;31mE (360784) MESH_CLIENT: data 00 [0m
+[0;31mE (360794) MESH_CLIENT: data 00 [0m
+[0;31mE (360794) MESH_CLIENT: data 00 [0m
+[0;31mE (360794) MESH_CLIENT: data 3F [0m
+[0;31mE (360804) MESH_CLIENT: data 40 [0m
+[0;31mE (360804) MESH_CLIENT: data 3F [0m
+[0;31mE (360814) MESH_CLIENT: data 1E [0m
+[0;31mE (360814) MESH_CLIENT: data 81 [0m
+[0;31mE (360814) MESH_CLIENT: ERROR DATA RECEIVED OF MSG ID: 1[0m
+[0;31mE (360824) PARSED_DATA: MSG ID    = 1[0m
+[0;31mE (360824) PARSED_DATA: ttl recv = 3[0m
+[0;31mE (360834) PARSED_DATA: Device Name = dht1[0m
+[0;31mE (360834) PARSED_DATA: Temperature = 0.000000[0m
+[0;31mE (360844) PARSED_DATA: Humidity    = 0.000000[0m
+[0;31mE (360844) PARSED_DATA: Index    = 1[0m
+[0;31mE (360854) PARSED_DATA: Status    = 1[0m
+[0;31mE (360854) PARSED_DATA: CSUM    = 372[0m
+[0;32mI (360914) MESH_CLIENT: Send message opcode 0xc302e5 successfully, ttl send:  3  ![0m
+[0;32mI (361454) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (361454) MESH_CLIENT: src: 0x000c, dst: 0x0006,ttl recv: 3[0m
+[0;31mE (361454) MESH_CLIENT: data 40 [0m
+[0;31mE (361454) MESH_CLIENT: data B1 [0m
+[0;31mE (361464) MESH_CLIENT: data FB [0m
+[0;31mE (361464) MESH_CLIENT: data 3F [0m
+[0;31mE (361464) MESH_CLIENT: data 0C [0m
+[0;31mE (361474) MESH_CLIENT: data 00 [0m
+[0;31mE (361474) MESH_CLIENT: data 00 [0m
+[0;31mE (361474) MESH_CLIENT: data 00 [0m
+[0;31mE (361484) MESH_CLIENT: data 23 [0m
+[0;31mE (361484) MESH_CLIENT: data 08 [0m
+[0;31mE (361494) MESH_CLIENT: data 06 [0m
+[0;31mE (361494) MESH_CLIENT: data 00 [0m
+[0;31mE (361494) MESH_CLIENT: data BA [0m
+[0;31mE (361504) MESH_CLIENT: data 0F [0m
+[0;31mE (361504) MESH_CLIENT: data 09 [0m
+[0;31mE (361514) MESH_CLIENT: data 40 [0m
+[0;31mE (361514) MESH_CLIENT: data 00 [0m
+[0;31mE (361514) MESH_CLIENT: data 3F [0m
+[0;31mE (361524) MESH_CLIENT: data 40 [0m
+[0;31mE (361524) MESH_CLIENT: data 3F [0m
+[0;31mE (361534) MESH_CLIENT: data EE [0m
+[0;31mE (361534) MESH_CLIENT: data 83 [0m
+[0;31mE (361534) MESH_CLIENT: ERROR DATA RECEIVED OF MSG ID: 1[0m
+[0;31mE (361544) PARSED_DATA: MSG ID    = 1[0m
+[0;31mE (361544) PARSED_DATA: ttl recv = 3[0m
+[0;31mE (361554) PARSED_DATA: Device Name = dht1[0m
+[0;31mE (361554) PARSED_DATA: Temperature = 0.000000[0m
+[0;31mE (361564) PARSED_DATA: Humidity    = 0.000000[0m
+[0;31mE (361564) PARSED_DATA: Index    = 1[0m
+[0;31mE (361574) PARSED_DATA: Status    = 1[0m
+[0;31mE (361574) PARSED_DATA: CSUM    = 372[0m
+[0;32mI (361634) MESH_CLIENT: Send message opcode 0xc302e5 successfully, ttl send:  3  ![0m
+[0;32mI (362834) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (362834) MESH_CLIENT: src: 0x000c, dst: 0x0006,ttl recv: 3[0m
+[0;31mE (362834) MESH_CLIENT: data E0 [0m
+[0;31mE (362834) MESH_CLIENT: data D0 [0m
+[0;31mE (362844) MESH_CLIENT: data FB [0m
+[0;31mE (362844) MESH_CLIENT: data 3F [0m
+[0;31mE (362844) MESH_CLIENT: data 0C [0m
+[0;31mE (362854) MESH_CLIENT: data 00 [0m
+[0;31mE (362854) MESH_CLIENT: data 00 [0m
+[0;31mE (362864) MESH_CLIENT: data 00 [0m
+[0;31mE (362864) MESH_CLIENT: data 23 [0m
+[0;31mE (362864) MESH_CLIENT: data 06 [0m
+[0;31mE (362874) MESH_CLIENT: data 06 [0m
+[0;31mE (362874) MESH_CLIENT: data 00 [0m
+[0;31mE (362884) MESH_CLIENT: data BA [0m
+[0;31mE (362884) MESH_CLIENT: data 0F [0m
+[0;31mE (362884) MESH_CLIENT: data 09 [0m
+[0;31mE (362894) MESH_CLIENT: data 40 [0m
+[0;31mE (362894) MESH_CLIENT: data 00 [0m
+[0;31mE (362894) MESH_CLIENT: data 3F [0m
+[0;31mE (362904) MESH_CLIENT: data 40 [0m
+[0;31mE (362904) MESH_CLIENT: data 3F [0m
+[0;31mE (362914) MESH_CLIENT: data 52 [0m
+[0;31mE (362914) MESH_CLIENT: data 89 [0m
+[0;31mE (362914) MESH_CLIENT: ERROR DATA RECEIVED OF MSG ID: 1[0m
+[0;31mE (362924) PARSED_DATA: MSG ID    = 1[0m
+[0;31mE (362934) PARSED_DATA: ttl recv = 3[0m
+[0;31mE (362934) PARSED_DATA: Device Name = dht1[0m
+[0;31mE (362934) PARSED_DATA: Temperature = 0.000000[0m
+[0;31mE (362944) PARSED_DATA: Humidity    = 0.000000[0m
+[0;31mE (362944) PARSED_DATA: Index    = 1[0m
+[0;31mE (362954) PARSED_DATA: Status    = 1[0m
+[0;31mE (362954) PARSED_DATA: CSUM    = 372[0m
+[0;32mI (363014) MESH_CLIENT: Send message opcode 0xc302e5 successfully, ttl send:  3  ![0m
+[0;32mI (363474) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (363474) MESH_CLIENT: src: 0x000c, dst: 0x0006,ttl recv: 3[0m
+[0;31mE (363474) MESH_CLIENT: data 1C [0m
+[0;31mE (363474) MESH_CLIENT: data D1 [0m
+[0;31mE (363484) MESH_CLIENT: data FB [0m
+[0;31mE (363484) MESH_CLIENT: data 3F [0m
+[0;31mE (363484) MESH_CLIENT: data 0C [0m
+[0;31mE (363494) MESH_CLIENT: data 00 [0m
+[0;31mE (363494) MESH_CLIENT: data 00 [0m
+[0;31mE (363504) MESH_CLIENT: data 00 [0m
+[0;31mE (363504) MESH_CLIENT: data 23 [0m
+[0;31mE (363504) MESH_CLIENT: data 08 [0m
+[0;31mE (363514) MESH_CLIENT: data 06 [0m
+[0;31mE (363514) MESH_CLIENT: data 00 [0m
+[0;31mE (363524) MESH_CLIENT: data BA [0m
+[0;31mE (363524) MESH_CLIENT: data 0F [0m
+[0;31mE (363524) MESH_CLIENT: data 09 [0m
+[0;31mE (363534) MESH_CLIENT: data 40 [0m
+[0;31mE (363534) MESH_CLIENT: data 00 [0m
+[0;31mE (363534) MESH_CLIENT: data 3F [0m
+[0;31mE (363544) MESH_CLIENT: data 40 [0m
+[0;31mE (363544) MESH_CLIENT: data 3F [0m
+[0;31mE (363554) MESH_CLIENT: data D2 [0m
+[0;31mE (363554) MESH_CLIENT: data 8B [0m
+[0;31mE (363554) MESH_CLIENT: ERROR DATA RECEIVED OF MSG ID: 1[0m
+[0;31mE (363574) PARSED_DATA: MSG ID    = 1[0m
+[0;31mE (363574) PARSED_DATA: ttl recv = 3[0m
+[0;31mE (363574) PARSED_DATA: Device Name = dht1[0m
+[0;31mE (363574) PARSED_DATA: Temperature = 0.000000[0m
+[0;31mE (363584) PARSED_DATA: Humidity    = 0.000000[0m
+[0;31mE (363584) PARSED_DATA: Index    = 1[0m
+[0;31mE (363594) PARSED_DATA: Status    = 1[0m
+[0;31mE (363594) PARSED_DATA: CSUM    = 372[0m
+[0;32mI (363644) MESH_CLIENT: Send message opcode 0xc302e5 successfully, ttl send:  3  ![0m
+[0;32mI (364154) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (364154) MESH_CLIENT: src: 0x000c, dst: 0x0006,ttl recv: 3[0m
+[0;31mE (364154) MESH_CLIENT: data 1C [0m
+[0;31mE (364154) MESH_CLIENT: data D1 [0m
+[0;31mE (364164) MESH_CLIENT: data FB [0m
+[0;31mE (364164) MESH_CLIENT: data 3F [0m
+[0;31mE (364164) MESH_CLIENT: data 0C [0m
+[0;31mE (364174) MESH_CLIENT: data 00 [0m
+[0;31mE (364174) MESH_CLIENT: data 00 [0m
+[0;31mE (364184) MESH_CLIENT: data 00 [0m
+[0;31mE (364184) MESH_CLIENT: data 23 [0m
+[0;31mE (364184) MESH_CLIENT: data 08 [0m
+[0;31mE (364194) MESH_CLIENT: data 06 [0m
+[0;31mE (364194) MESH_CLIENT: data 00 [0m
+[0;31mE (364204) MESH_CLIENT: data BA [0m
+[0;31mE (364204) MESH_CLIENT: data 0F [0m
+[0;31mE (364204) MESH_CLIENT: data 09 [0m
+[0;31mE (364214) MESH_CLIENT: data 40 [0m
+[0;31mE (364214) MESH_CLIENT: data 00 [0m
+[0;31mE (364224) MESH_CLIENT: data 3F [0m
+[0;31mE (364224) MESH_CLIENT: data 40 [0m
+[0;31mE (364224) MESH_CLIENT: data 3F [0m
+[0;31mE (364234) MESH_CLIENT: data 7A [0m
+[0;31mE (364234) MESH_CLIENT: data 8E [0m
+[0;31mE (364234) MESH_CLIENT: ERROR DATA RECEIVED OF MSG ID: 1[0m
+[0;31mE (364244) PARSED_DATA: MSG ID    = 1[0m
+[0;31mE (364254) PARSED_DATA: ttl recv = 3[0m
+[0;31mE (364254) PARSED_DATA: Device Name = dht1[0m
+[0;31mE (364254) PARSED_DATA: Temperature = 0.000000[0m
+[0;31mE (364264) PARSED_DATA: Humidity    = 0.000000[0m
+[0;31mE (364264) PARSED_DATA: Index    = 1[0m
+[0;31mE (364274) PARSED_DATA: Status    = 1[0m
+[0;31mE (364274) PARSED_DATA: CSUM    = 372[0m
+[0;32mI (364334) MESH_CLIENT: Send message opcode 0xc302e5 successfully, ttl send:  3  ![0m
+[0;32mI (365504) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (365504) MESH_CLIENT: src: 0x000c, dst: 0x0006,ttl recv: 3[0m
+[0;31mE (365534) MESH_CLIENT: data 5C [0m
+[0;31mE (365534) MESH_CLIENT: data D0 [0m
+[0;31mE (365534) MESH_CLIENT: data FB [0m
+[0;31mE (365534) MESH_CLIENT: data 3F [0m
+[0;31mE (365534) MESH_CLIENT: data 0C [0m
+[0;31mE (365544) MESH_CLIENT: data 00 [0m
+[0;31mE (365544) MESH_CLIENT: data 00 [0m
+[0;31mE (365544) MESH_CLIENT: data 00 [0m
+[0;31mE (365554) MESH_CLIENT: data 00 [0m
+[0;31mE (365554) MESH_CLIENT: data 00 [0m
+[0;31mE (365564) MESH_CLIENT: data 00 [0m
+[0;31mE (365564) MESH_CLIENT: data 00 [0m
+[0;31mE (365564) MESH_CLIENT: data 00 [0m
+[0;31mE (365574) MESH_CLIENT: data 00 [0m
+[0;31mE (365574) MESH_CLIENT: data 00 [0m
+[0;31mE (365584) MESH_CLIENT: data 00 [0m
+[0;31mE (365584) MESH_CLIENT: data 00 [0m
+[0;31mE (365584) MESH_CLIENT: data 3F [0m
+[0;31mE (365624) MESH_CLIENT: data 40 [0m
+[0;31mE (365624) MESH_CLIENT: data 3F [0m
+[0;31mE (365624) MESH_CLIENT: data C0 [0m
+[0;31mE (365624) MESH_CLIENT: data 93 [0m
+[0;31mE (365634) MESH_CLIENT: ERROR DATA RECEIVED OF MSG ID: 1[0m
+[0;31mE (365634) PARSED_DATA: MSG ID    = 1[0m
+[0;31mE (365644) PARSED_DATA: ttl recv = 3[0m
+[0;31mE (365644) PARSED_DATA: Device Name = dht1[0m
+[0;31mE (365654) PARSED_DATA: Temperature = 0.000000[0m
+[0;31mE (365654) PARSED_DATA: Humidity    = 0.000000[0m
+[0;31mE (365664) PARSED_DATA: Index    = 1[0m
+[0;31mE (365664) PARSED_DATA: Status    = 1[0m
+[0;31mE (365664) PARSED_DATA: CSUM    = 372[0m
+[0;32mI (365704) MESH_CLIENT: Send message opcode 0xc302e5 successfully, ttl send:  3  ![0m
+[0;32mI (366404) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (366404) MESH_CLIENT: src: 0x000c, dst: 0x0006,ttl recv: 3[0m
+[0;31mE (366404) MESH_CLIENT: data 38 [0m
+[0;31mE (366404) MESH_CLIENT: data D0 [0m
+[0;31mE (366414) MESH_CLIENT: data FB [0m
+[0;31mE (366414) MESH_CLIENT: data 3F [0m
+[0;31mE (366414) MESH_CLIENT: data 0C [0m
+[0;31mE (366424) MESH_CLIENT: data 00 [0m
+[0;31mE (366424) MESH_CLIENT: data 00 [0m
+[0;31mE (366434) MESH_CLIENT: data 00 [0m
+[0;31mE (366434) MESH_CLIENT: data 23 [0m
+[0;31mE (366434) MESH_CLIENT: data 0C [0m
+[0;31mE (366444) MESH_CLIENT: data 06 [0m
+[0;31mE (366444) MESH_CLIENT: data 00 [0m
+[0;31mE (366454) MESH_CLIENT: data BA [0m
+[0;31mE (366454) MESH_CLIENT: data 0F [0m
+[0;31mE (366454) MESH_CLIENT: data 09 [0m
+[0;31mE (366464) MESH_CLIENT: data 40 [0m
+[0;31mE (366464) MESH_CLIENT: data 00 [0m
+[0;31mE (366474) MESH_CLIENT: data 3F [0m
+[0;31mE (366474) MESH_CLIENT: data 40 [0m
+[0;31mE (366474) MESH_CLIENT: data 3F [0m
+[0;31mE (366484) MESH_CLIENT: data 44 [0m
+[0;31mE (366484) MESH_CLIENT: data 97 [0m
+[0;31mE (366484) MESH_CLIENT: ERROR DATA RECEIVED OF MSG ID: 1[0m
+[0;31mE (366494) PARSED_DATA: MSG ID    = 1[0m
+[0;31mE (366504) PARSED_DATA: ttl recv = 3[0m
+[0;31mE (366504) PARSED_DATA: Device Name = dht1[0m
+[0;31mE (366504) PARSED_DATA: Temperature = 0.000000[0m
+[0;31mE (366514) PARSED_DATA: Humidity    = 0.000000[0m
+[0;31mE (366514) PARSED_DATA: Index    = 1[0m
+[0;31mE (366524) PARSED_DATA: Status    = 1[0m
+[0;31mE (366524) PARSED_DATA: CSUM    = 372[0m
+[0;32mI (366594) MESH_CLIENT: Send message opcode 0xc302e5 successfully, ttl send:  3  ![0m
+[0;32mI (366714) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (366714) MESH_CLIENT: src: 0x000c, dst: 0x0006,ttl recv: 3[0m
+[0;31mE (366714) MESH_CLIENT: data 88 [0m
+[0;31mE (366714) MESH_CLIENT: data B0 [0m
+[0;31mE (366724) MESH_CLIENT: data FB [0m
+[0;31mE (366724) MESH_CLIENT: data 3F [0m
+[0;31mE (366734) MESH_CLIENT: data 0C [0m
+[0;31mE (366734) MESH_CLIENT: data 00 [0m
+[0;31mE (366734) MESH_CLIENT: data 00 [0m
+[0;31mE (366744) MESH_CLIENT: data 00 [0m
+[0;31mE (366744) MESH_CLIENT: data 23 [0m
+[0;31mE (366744) MESH_CLIENT: data 0C [0m
+[0;31mE (366754) MESH_CLIENT: data 06 [0m
+[0;31mE (366754) MESH_CLIENT: data 00 [0m
+[0;31mE (366764) MESH_CLIENT: data BA [0m
+[0;31mE (366764) MESH_CLIENT: data 0F [0m
+[0;31mE (366764) MESH_CLIENT: data 09 [0m
+[0;31mE (366774) MESH_CLIENT: data 40 [0m
+[0;31mE (366774) MESH_CLIENT: data 00 [0m
+[0;31mE (366794) MESH_CLIENT: data 3F [0m
+[0;31mE (366794) MESH_CLIENT: data 40 [0m
+[0;31mE (366794) MESH_CLIENT: data 3F [0m
+[0;31mE (366794) MESH_CLIENT: data 7A [0m
+[0;31mE (366804) MESH_CLIENT: data 98 [0m
+[0;31mE (366804) MESH_CLIENT: ERROR DATA RECEIVED OF MSG ID: 2[0m
+[0;31mE (366814) PARSED_DATA: MSG ID    = 2[0m
+[0;31mE (366814) PARSED_DATA: ttl recv = 3[0m
+[0;31mE (366814) PARSED_DATA: Device Name = dht1[0m
+[0;31mE (366824) PARSED_DATA: Temperature = 25.000000[0m
+[0;31mE (366824) PARSED_DATA: Humidity    = 50.000000[0m
+[0;31mE (366834) PARSED_DATA: Index    = 1[0m
+[0;31mE (366834) PARSED_DATA: Status    = 1[0m
+[0;31mE (366844) PARSED_DATA: CSUM    = 776[0m
+[0;32mI (366914) MESH_CLIENT: Send message opcode 0xc302e5 successfully, ttl send:  3  ![0m
+[0;32mI (367134) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (367134) MESH_CLIENT: src: 0x000c, dst: 0x0006,ttl recv: 3[0m
+[0;31mE (367144) MESH_CLIENT: data 8C [0m
+[0;31mE (367144) MESH_CLIENT: data B3 [0m
+[0;31mE (367144) MESH_CLIENT: data FB [0m
+[0;31mE (367154) MESH_CLIENT: data 3F [0m
+[0;31mE (367154) MESH_CLIENT: data 0C [0m
+[0;31mE (367154) MESH_CLIENT: data 00 [0m
+[0;31mE (367164) MESH_CLIENT: data 00 [0m
+[0;31mE (367164) MESH_CLIENT: data 00 [0m
+[0;31mE (367174) MESH_CLIENT: data 23 [0m
+[0;31mE (367174) MESH_CLIENT: data 0C [0m
+[0;31mE (367174) MESH_CLIENT: data 06 [0m
+[0;31mE (367184) MESH_CLIENT: data 00 [0m
+[0;31mE (367184) MESH_CLIENT: data BA [0m
+[0;31mE (367194) MESH_CLIENT: data 0F [0m
+[0;31mE (367194) MESH_CLIENT: data 09 [0m
+[0;31mE (367194) MESH_CLIENT: data 40 [0m
+[0;31mE (367204) MESH_CLIENT: data 00 [0m
+[0;31mE (367214) MESH_CLIENT: data 3F [0m
+[0;31mE (367214) MESH_CLIENT: data 40 [0m
+[0;31mE (367214) MESH_CLIENT: data 3F [0m
+[0;31mE (367214) MESH_CLIENT: data 1E [0m
+[0;31mE (367244) MESH_CLIENT: data 9A [0m
+[0;31mE (367244) MESH_CLIENT: ERROR DATA RECEIVED OF MSG ID: 1[0m
+[0;31mE (367244) PARSED_DATA: MSG ID    = 1[0m
+[0;31mE (367244) PARSED_DATA: ttl recv = 3[0m
+[0;31mE (367254) PARSED_DATA: Device Name = dht1[0m
+[0;31mE (367254) PARSED_DATA: Temperature = 25.000000[0m
+[0;31mE (367264) PARSED_DATA: Humidity    = 50.000000[0m
+[0;31mE (367264) PARSED_DATA: Index    = 1[0m
+[0;31mE (367274) PARSED_DATA: Status    = 1[0m
+[0;31mE (367274) PARSED_DATA: CSUM    = 775[0m
+[0;32mI (367324) MESH_CLIENT: Send message opcode 0xc302e5 successfully, ttl send:  3  ![0m
+[0;32mI (367554) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (367554) MESH_CLIENT: src: 0x000c, dst: 0x0006,ttl recv: 3[0m
+[0;31mE (367554) MESH_CLIENT: data 8C [0m
+[0;31mE (367554) MESH_CLIENT: data B3 [0m
+[0;31mE (367564) MESH_CLIENT: data FB [0m
+[0;31mE (367564) MESH_CLIENT: data 3F [0m
+[0;31mE (367564) MESH_CLIENT: data 0C [0m
+[0;31mE (367574) MESH_CLIENT: data 00 [0m
+[0;31mE (367574) MESH_CLIENT: data 00 [0m
+[0;31mE (367584) MESH_CLIENT: data 00 [0m
+[0;31mE (367584) MESH_CLIENT: data 23 [0m
+[0;31mE (367584) MESH_CLIENT: data 0A [0m
+[0;31mE (367594) MESH_CLIENT: data 06 [0m
+[0;31mE (367594) MESH_CLIENT: data 00 [0m
+[0;31mE (367614) MESH_CLIENT: data BA [0m
+[0;31mE (367614) MESH_CLIENT: data 0F [0m
+[0;31mE (367614) MESH_CLIENT: data 09 [0m
+[0;31mE (367614) MESH_CLIENT: data 40 [0m
+[0;31mE (367624) MESH_CLIENT: data 00 [0m
+[0;31mE (367624) MESH_CLIENT: data 3F [0m
+[0;31mE (367634) MESH_CLIENT: data 40 [0m
+[0;31mE (367634) MESH_CLIENT: data 3F [0m
+[0;31mE (367634) MESH_CLIENT: data C2 [0m
+[0;31mE (367654) MESH_CLIENT: data 9B [0m
+[0;31mE (367654) MESH_CLIENT: ERROR DATA RECEIVED OF MSG ID: 2[0m
+[0;31mE (367654) PARSED_DATA: MSG ID    = 2[0m
+[0;31mE (367654) PARSED_DATA: ttl recv = 3[0m
+[0;31mE (367664) PARSED_DATA: Device Name = dht1[0m
+[0;31mE (367664) PARSED_DATA: Temperature = 25.000000[0m
+[0;31mE (367674) PARSED_DATA: Humidity    = 50.000000[0m
+[0;31mE (367674) PARSED_DATA: Index    = 1[0m
+[0;31mE (367684) PARSED_DATA: Status    = 1[0m
+[0;31mE (367684) PARSED_DATA: CSUM    = 776[0m
+[0;32mI (367744) MESH_CLIENT: Send message opcode 0xc302e5 successfully, ttl send:  3  ![0m
+[0;32mI (367904) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (367904) MESH_CLIENT: src: 0x000c, dst: 0x0006,ttl recv: 3[0m
+[0;31mE (367904) MESH_CLIENT: data CC [0m
+[0;31mE (367904) MESH_CLIENT: data B2 [0m
+[0;31mE (367924) MESH_CLIENT: data FB [0m
+[0;31mE (367924) MESH_CLIENT: data 3F [0m
+[0;31mE (367924) MESH_CLIENT: data 0C [0m
+[0;31mE (367924) MESH_CLIENT: data 00 [0m
+[0;31mE (367934) MESH_CLIENT: data 00 [0m
+[0;31mE (367934) MESH_CLIENT: data 00 [0m
+[0;31mE (367934) MESH_CLIENT: data 23 [0m
+[0;31mE (367944) MESH_CLIENT: data 0C [0m
+[0;31mE (367944) MESH_CLIENT: data 06 [0m
+[0;31mE (367944) MESH_CLIENT: data 00 [0m
+[0;31mE (367954) MESH_CLIENT: data BA [0m
+[0;31mE (367954) MESH_CLIENT: data 0F [0m
+[0;31mE (367964) MESH_CLIENT: data 09 [0m
+[0;31mE (367964) MESH_CLIENT: data 40 [0m
+[0;31mE (367964) MESH_CLIENT: data 00 [0m
+[0;31mE (367984) MESH_CLIENT: data 3F [0m
+[0;31mE (367984) MESH_CLIENT: data 40 [0m
+[0;31mE (367984) MESH_CLIENT: data 3F [0m
+[0;31mE (367984) MESH_CLIENT: data 20 [0m
+[0;31mE (367994) MESH_CLIENT: data 9D [0m
+[0;31mE (367994) MESH_CLIENT: ERROR DATA RECEIVED OF MSG ID: 1[0m
+[0;31mE (368004) PARSED_DATA: MSG ID    = 1[0m
+[0;31mE (368004) PARSED_DATA: ttl recv = 3[0m
+[0;31mE (368004) PARSED_DATA: Device Name = dht1[0m
+[0;31mE (368024) PARSED_DATA: Temperature = 25.000000[0m
+[0;31mE (368024) PARSED_DATA: Humidity    = 50.000000[0m
+[0;31mE (368024) PARSED_DATA: Index    = 1[0m
+[0;31mE (368034) PARSED_DATA: Status    = 1[0m
+[0;31mE (368034) PARSED_DATA: CSUM    = 775[0m
+[0;32mI (368144) MESH_CLIENT: Send message opcode 0xc302e5 successfully, ttl send:  3  ![0m
+[0;32mI (368294) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (368294) MESH_CLIENT: src: 0x000c, dst: 0x0006,ttl recv: 3[0m
+[0;31mE (368294) MESH_CLIENT: data 48 [0m
+[0;31mE (368294) MESH_CLIENT: data B2 [0m
+[0;31mE (368304) MESH_CLIENT: data FB [0m
+[0;31mE (368304) MESH_CLIENT: data 3F [0m
+[0;31mE (368314) MESH_CLIENT: data 0C [0m
+[0;31mE (368314) MESH_CLIENT: data 00 [0m
+[0;31mE (368314) MESH_CLIENT: data 00 [0m
+[0;31mE (368324) MESH_CLIENT: data 00 [0m
+[0;31mE (368324) MESH_CLIENT: data 00 [0m
+[0;31mE (368334) MESH_CLIENT: data 00 [0m
+[0;31mE (368334) MESH_CLIENT: data 00 [0m
+[0;31mE (368344) MESH_CLIENT: data 00 [0m
+[0;31mE (368344) MESH_CLIENT: data 00 [0m
+[0;31mE (368344) MESH_CLIENT: data 00 [0m
+[0;31mE (368364) MESH_CLIENT: data 00 [0m
+[0;31mE (368364) MESH_CLIENT: data 00 [0m
+[0;31mE (368364) MESH_CLIENT: data 00 [0m
+[0;31mE (368364) MESH_CLIENT: data 3F [0m
+[0;31mE (368364) MESH_CLIENT: data 40 [0m
+[0;31mE (368374) MESH_CLIENT: data 3F [0m
+[0;31mE (368374) MESH_CLIENT: data A6 [0m
+[0;31mE (368384) MESH_CLIENT: data 9E [0m
+[0;31mE (368394) MESH_CLIENT: ERROR DATA RECEIVED OF MSG ID: 2[0m
+[0;31mE (368394) PARSED_DATA: MSG ID    = 2[0m
+[0;31mE (368394) PARSED_DATA: ttl recv = 3[0m
+[0;31mE (368394) PARSED_DATA: Device Name = dht1[0m
+[0;31mE (368404) PARSED_DATA: Temperature = 25.000000[0m
+[0;31mE (368404) PARSED_DATA: Humidity    = 50.000000[0m
+[0;31mE (368414) PARSED_DATA: Index    = 1[0m
+[0;31mE (368414) PARSED_DATA: Status    = 1[0m
+[0;31mE (368424) PARSED_DATA: CSUM    = 776[0m
+[0;32mI (368484) MESH_CLIENT: Send message opcode 0xc302e5 successfully, ttl send:  3  ![0m
+[0;32mI (368694) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (368694) MESH_CLIENT: src: 0x000c, dst: 0x0006,ttl recv: 3[0m
+[0;31mE (368694) MESH_CLIENT: data 64 [0m
+[0;31mE (368694) MESH_CLIENT: data B0 [0m
+[0;31mE (368704) MESH_CLIENT: data FB [0m
+[0;31mE (368704) MESH_CLIENT: data 3F [0m
+[0;31mE (368704) MESH_CLIENT: data 0C [0m
+[0;31mE (368714) MESH_CLIENT: data 00 [0m
+[0;31mE (368714) MESH_CLIENT: data 00 [0m
+[0;31mE (368724) MESH_CLIENT: data 00 [0m
+[0;31mE (368724) MESH_CLIENT: data 23 [0m
+[0;31mE (368724) MESH_CLIENT: data 0C [0m
+[0;31mE (368734) MESH_CLIENT: data 06 [0m
+[0;31mE (368734) MESH_CLIENT: data 00 [0m
+[0;31mE (368744) MESH_CLIENT: data BA [0m
+[0;31mE (368744) MESH_CLIENT: data 0F [0m
+[0;31mE (368744) MESH_CLIENT: data 09 [0m
+[0;31mE (368754) MESH_CLIENT: data 40 [0m
+[0;31mE (368754) MESH_CLIENT: data 00 [0m
+[0;31mE (368764) MESH_CLIENT: data 3F [0m
+[0;31mE (368764) MESH_CLIENT: data 40 [0m
+[0;31mE (368764) MESH_CLIENT: data 3F [0m
+[0;31mE (368774) MESH_CLIENT: data 36 [0m
+[0;31mE (368774) MESH_CLIENT: data A0 [0m
+[0;31mE (368794) MESH_CLIENT: ERROR DATA RECEIVED OF MSG ID: 1[0m
+[0;31mE (368794) PARSED_DATA: MSG ID    = 1[0m
+[0;31mE (368794) PARSED_DATA: ttl recv = 3[0m
+[0;31mE (368794) PARSED_DATA: Device Name = dht1[0m
+[0;31mE (368794) PARSED_DATA: Temperature = 25.000000[0m
+[0;31mE (368804) PARSED_DATA: Humidity    = 50.000000[0m
+[0;31mE (368814) PARSED_DATA: Index    = 1[0m
+[0;31mE (368814) PARSED_DATA: Status    = 1[0m
+[0;31mE (368814) PARSED_DATA: CSUM    = 775[0m
+[0;32mI (368874) MESH_CLIENT: Send message opcode 0xc302e5 successfully, ttl send:  3  ![0m
+[0;32mI (369134) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (369134) MESH_CLIENT: src: 0x000c, dst: 0x0006,ttl recv: 3[0m
+[0;31mE (369134) MESH_CLIENT: data 1C [0m
+[0;31mE (369134) MESH_CLIENT: data D1 [0m
+[0;31mE (369144) MESH_CLIENT: data FB [0m
+[0;31mE (369144) MESH_CLIENT: data 3F [0m
+[0;31mE (369144) MESH_CLIENT: data 0C [0m
+[0;31mE (369154) MESH_CLIENT: data 00 [0m
+[0;31mE (369164) MESH_CLIENT: data 00 [0m
+[0;31mE (369164) MESH_CLIENT: data 00 [0m
+[0;31mE (369164) MESH_CLIENT: data 23 [0m
+[0;31mE (369164) MESH_CLIENT: data 0C [0m
+[0;31mE (369184) MESH_CLIENT: data 06 [0m
+[0;31mE (369184) MESH_CLIENT: data 00 [0m
+[0;31mE (369184) MESH_CLIENT: data BA [0m
+[0;31mE (369184) MESH_CLIENT: data 0F [0m
+[0;31mE (369184) MESH_CLIENT: data 09 [0m
+[0;31mE (369194) MESH_CLIENT: data 40 [0m
+[0;31mE (369194) MESH_CLIENT: data 00 [0m
+[0;31mE (369204) MESH_CLIENT: data 3F [0m
+[0;31mE (369204) MESH_CLIENT: data 40 [0m
+[0;31mE (369204) MESH_CLIENT: data 3F [0m
+[0;31mE (369214) MESH_CLIENT: data EE [0m
+[0;31mE (369214) MESH_CLIENT: data A1 [0m
+[0;31mE (369224) MESH_CLIENT: ERROR DATA RECEIVED OF MSG ID: 2[0m
+[0;31mE (369234) PARSED_DATA: MSG ID    = 2[0m
+[0;31mE (369234) PARSED_DATA: ttl recv = 3[0m
+[0;31mE (369234) PARSED_DATA: Device Name = dht1[0m
+[0;31mE (369244) PARSED_DATA: Temperature = 25.000000[0m
+[0;31mE (369244) PARSED_DATA: Humidity    = 50.000000[0m
+[0;31mE (369254) PARSED_DATA: Index    = 1[0m
+[0;31mE (369254) PARSED_DATA: Status    = 1[0m
+[0;31mE (369254) PARSED_DATA: CSUM    = 776[0m
+[0;32mI (369314) MESH_CLIENT: Send message opcode 0xc302e5 successfully, ttl send:  3  ![0m
+[0;32mI (369474) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (369474) MESH_CLIENT: src: 0x000c, dst: 0x0006,ttl recv: 3[0m
+[0;31mE (369474) MESH_CLIENT: data 5C [0m
+[0;31mE (369474) MESH_CLIENT: data B5 [0m
+[0;31mE (369484) MESH_CLIENT: data FB [0m
+[0;31mE (369484) MESH_CLIENT: data 3F [0m
+[0;31mE (369484) MESH_CLIENT: data 0C [0m
+[0;31mE (369494) MESH_CLIENT: data 00 [0m
+[0;31mE (369494) MESH_CLIENT: data 00 [0m
+[0;31mE (369504) MESH_CLIENT: data 00 [0m
+[0;31mE (369504) MESH_CLIENT: data 23 [0m
+[0;31mE (369504) MESH_CLIENT: data 0C [0m
+[0;31mE (369514) MESH_CLIENT: data 06 [0m
+[0;31mE (369514) MESH_CLIENT: data 00 [0m
+[0;31mE (369524) MESH_CLIENT: data BA [0m
+[0;31mE (369524) MESH_CLIENT: data 0F [0m
+[0;31mE (369524) MESH_CLIENT: data 09 [0m
+[0;31mE (369534) MESH_CLIENT: data 40 [0m
+[0;31mE (369534) MESH_CLIENT: data 00 [0m
+[0;31mE (369544) MESH_CLIENT: data 3F [0m
+[0;31mE (369544) MESH_CLIENT: data 40 [0m
+[0;31mE (369544) MESH_CLIENT: data 3F [0m
+[0;31mE (369574) MESH_CLIENT: data 42 [0m
+[0;31mE (369574) MESH_CLIENT: data A3 [0m
+[0;31mE (369574) MESH_CLIENT: ERROR DATA RECEIVED OF MSG ID: 1[0m
+[0;31mE (369584) PARSED_DATA: MSG ID    = 1[0m
+[0;31mE (369584) PARSED_DATA: ttl recv = 3[0m
+[0;31mE (369584) PARSED_DATA: Device Name = dht1[0m
+[0;31mE (369594) PARSED_DATA: Temperature = 25.000000[0m
+[0;31mE (369594) PARSED_DATA: Humidity    = 50.000000[0m
+[0;31mE (369604) PARSED_DATA: Index    = 1[0m
+[0;31mE (369604) PARSED_DATA: Status    = 1[0m
+[0;31mE (369614) PARSED_DATA: CSUM    = 775[0m
+[0;32mI (369684) MESH_CLIENT: Send message opcode 0xc302e5 successfully, ttl send:  3  ![0m
+[0;32mI (369894) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (369894) MESH_CLIENT: src: 0x000c, dst: 0x0006,ttl recv: 3[0m
+[0;31mE (369894) MESH_CLIENT: data B4 [0m
+[0;31mE (369894) MESH_CLIENT: data AF [0m
+[0;31mE (369904) MESH_CLIENT: data FB [0m
+[0;31mE (369904) MESH_CLIENT: data 3F [0m
+[0;31mE (369904) MESH_CLIENT: data 0C [0m
+[0;31mE (369914) MESH_CLIENT: data 00 [0m
+[0;31mE (369914) MESH_CLIENT: data 00 [0m
+[0;31mE (369924) MESH_CLIENT: data 00 [0m
+[0;31mE (369924) MESH_CLIENT: data 23 [0m
+[0;31mE (369924) MESH_CLIENT: data 0C [0m
+[0;31mE (369934) MESH_CLIENT: data 06 [0m
+[0;31mE (369934) MESH_CLIENT: data 00 [0m
+[0;31mE (369944) MESH_CLIENT: data BA [0m
+[0;31mE (369944) MESH_CLIENT: data 0F [0m
+[0;31mE (369944) MESH_CLIENT: data 09 [0m
+[0;31mE (369964) MESH_CLIENT: data 40 [0m
+[0;31mE (369964) MESH_CLIENT: data 00 [0m
+[0;31mE (369964) MESH_CLIENT: data 3F [0m
+[0;31mE (369964) MESH_CLIENT: data 40 [0m
+[0;31mE (369974) MESH_CLIENT: data 3F [0m
+[0;31mE (369974) MESH_CLIENT: data E6 [0m
+[0;31mE (369994) MESH_CLIENT: data A4 [0m
+[0;31mE (369994) MESH_CLIENT: ERROR DATA RECEIVED OF MSG ID: 2[0m
+[0;31mE (369994) PARSED_DATA: MSG ID    = 2[0m
+[0;31mE (369994) PARSED_DATA: ttl recv = 3[0m
+[0;31mE (369994) PARSED_DATA: Device Name = dht1[0m
+[0;31mE (370004) PARSED_DATA: Temperature = 25.000000[0m
+[0;31mE (370004) PARSED_DATA: Humidity    = 50.000000[0m
+[0;31mE (370014) PARSED_DATA: Index    = 1[0m
+[0;31mE (370014) PARSED_DATA: Status    = 1[0m
+[0;31mE (370024) PARSED_DATA: CSUM    = 776[0m
+[0;32mI (370084) MESH_CLIENT: Send message opcode 0xc302e5 successfully, ttl send:  3  ![0m

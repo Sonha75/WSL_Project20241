@@ -1,0 +1,189 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D D:\IDF\git\WSL_Project20241\ble-mesh-custom-sensor-model-code\node_DHT\BLE_MESH_Node_DHT11\build\bootloader\esp-idf\esptool_py && D:\IDF\install\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/node_DHT/BLE_MESH_Node_DHT11/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6860 bytes. 0x7a0 bytes (7%) free.
+[2/8] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+In file included from D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/node_DHT/BLE_MESH_Node_DHT11/main/main.c:4:
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/node_DHT/BLE_MESH_Node_DHT11/main/main.c: In function 'environment_sensor':
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:291:27: warning: format '%u' expects argument of type 'unsigned int', but argument 9 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  291 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:294:27: note: in expansion of macro 'LOG_COLOR'
+  294 | #define LOG_COLOR_E       LOG_COLOR(LOG_COLOR_RED)
+      |                           ^~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:308:37: note: in expansion of macro 'LOG_COLOR_E'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:436:86: note: in expansion of macro 'LOG_FORMAT'
+  436 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/node_DHT/BLE_MESH_Node_DHT11/main/main.c:61:9: note: in expansion of macro 'ESP_LOGI'
+   61 |         ESP_LOGI(TAG, "Sending message ID: %lu, Temp: %.1f, Humidity: %.1f, Checksum: %u",
+      |         ^~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:291:27: warning: format '%u' expects argument of type 'unsigned int', but argument 9 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  291 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:295:27: note: in expansion of macro 'LOG_COLOR'
+  295 | #define LOG_COLOR_W       LOG_COLOR(LOG_COLOR_BROWN)
+      |                           ^~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:308:37: note: in expansion of macro 'LOG_COLOR_W'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:437:86: note: in expansion of macro 'LOG_FORMAT'
+  437 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/node_DHT/BLE_MESH_Node_DHT11/main/main.c:61:9: note: in expansion of macro 'ESP_LOGI'
+   61 |         ESP_LOGI(TAG, "Sending message ID: %lu, Temp: %.1f, Humidity: %.1f, Checksum: %u",
+      |         ^~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/node_DHT/BLE_MESH_Node_DHT11/main/main.c:66:1: warning: format '%u' expects argument of type 'unsigned int', but argument 9 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   66 |                  );
+      | ^          
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:308:59: note: in definition of macro 'LOG_FORMAT'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                           ^~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/node_DHT/BLE_MESH_Node_DHT11/main/main.c:61:9: note: in expansion of macro 'ESP_LOGI'
+   61 |         ESP_LOGI(TAG, "Sending message ID: %lu, Temp: %.1f, Humidity: %.1f, Checksum: %u",
+      |         ^~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/node_DHT/BLE_MESH_Node_DHT11/main/main.c:66:1: warning: format '%u' expects argument of type 'unsigned int', but argument 9 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   66 |                  );
+      | ^          
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:308:59: note: in definition of macro 'LOG_FORMAT'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                           ^~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/node_DHT/BLE_MESH_Node_DHT11/main/main.c:61:9: note: in expansion of macro 'ESP_LOGI'
+   61 |         ESP_LOGI(TAG, "Sending message ID: %lu, Temp: %.1f, Humidity: %.1f, Checksum: %u",
+      |         ^~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:291:27: warning: format '%u' expects argument of type 'unsigned int', but argument 9 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  291 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:296:27: note: in expansion of macro 'LOG_COLOR'
+  296 | #define LOG_COLOR_I       LOG_COLOR(LOG_COLOR_GREEN)
+      |                           ^~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:308:37: note: in expansion of macro 'LOG_COLOR_I'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:440:86: note: in expansion of macro 'LOG_FORMAT'
+  440 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/node_DHT/BLE_MESH_Node_DHT11/main/main.c:61:9: note: in expansion of macro 'ESP_LOGI'
+   61 |         ESP_LOGI(TAG, "Sending message ID: %lu, Temp: %.1f, Humidity: %.1f, Checksum: %u",
+      |         ^~~~~~~~
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/node_DHT/BLE_MESH_Node_DHT11/main/main.c: At top level:
+D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/node_DHT/BLE_MESH_Node_DHT11/main/main.c:20:16: warning: 'ticks' defined but not used [-Wunused-variable]
+   20 | static uint8_t ticks = 0;
+      |                ^~~~~
+[3/8] Linking C static library esp-idf\main\libmain.a
+[4/8] Generating ld/sections.ld
+[5/8] Linking CXX executable BLE_MESH_Node.elf
+[6/8] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/node_DHT/BLE_MESH_Node_DHT11/build/BLE_MESH_Node.bin
+[7/8] cmd.exe /C "cd /D D:\IDF\git\WSL_Project20241\ble-mesh-custom-sensor-model-code\node_DHT\BLE_MESH_Node_DHT11\build\esp-idf\esptool_py && D:\IDF\install\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/node_DHT/BLE_MESH_Node_DHT11/build/partition_table/partition-table.bin D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/node_DHT/BLE_MESH_Node_DHT11/build/BLE_MESH_Node.bin"
+BLE_MESH_Node.bin binary size 0x10e390 bytes. Smallest app partition is 0x220000 bytes. 0x111c70 bytes (50%) free.
+[7/8] cmd.exe /C "cd /D D:\IDF\install\Espressif\frameworks\esp-idf-v5.2.3\components\esptool_py && D:\IDF\install\Espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3 -D SERIAL_TOOL=D:/IDF/install/Espressif/python_env/idf5.2_py3.11_env/Scripts/python.exe;;D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensesptool.py --chip esp32 -p COM4 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 4MB 0x1000 bootloader/bootloader.bin 0x20000 BLE_MESH_Node.bin 0x8000 partition_table/partition-table.bin 0xf000 ota_data_initial.bin
+esptool.py v4.7.0
+Serial port COM4
+Connecting....
+Chip is ESP32-D0WDQ6 (revision v1.0)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: c8:f0:9e:9a:37:08
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00020000 to 0x0012efff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Flash will be erased from 0x0000f000 to 0x00010fff...
+Compressed 26720 bytes to 16349...
+Writing at 0x00001000... (100 %)
+Wrote 26720 bytes (16349 compressed) at 0x00001000 in 0.9 seconds (effective 243.9 kbit/s)...
+Hash of data verified.
+Compressed 1106832 bytes to 607781...
+Writing at 0x00020000... (2 %)
+Writing at 0x0002ef3b... (5 %)
+Writing at 0x00042dd1... (7 %)
+Writing at 0x0004fdb2... (10 %)
+Writing at 0x0005d497... (13 %)
+Writing at 0x00063f33... (15 %)
+Writing at 0x0006991d... (18 %)
+Writing at 0x0006f673... (21 %)
+Writing at 0x000751e2... (23 %)
+Writing at 0x0007ac79... (26 %)
+Writing at 0x000805a3... (28 %)
+Writing at 0x00086fe0... (31 %)
+Writing at 0x0008d5c3... (34 %)
+Writing at 0x0009402b... (36 %)
+Writing at 0x0009a58f... (39 %)
+Writing at 0x000a0831... (42 %)
+Writing at 0x000a783c... (44 %)
+Writing at 0x000aef75... (47 %)
+Writing at 0x000b5374... (50 %)
+Writing at 0x000bb66a... (52 %)
+Writing at 0x000c1668... (55 %)
+Writing at 0x000c77a3... (57 %)
+Writing at 0x000cd928... (60 %)
+Writing at 0x000d3b1b... (63 %)
+Writing at 0x000d9ccd... (65 %)
+Writing at 0x000e0228... (68 %)
+Writing at 0x000e6433... (71 %)
+Writing at 0x000ec06b... (73 %)
+Writing at 0x000f1a08... (76 %)
+Writing at 0x000f7b3e... (78 %)
+Writing at 0x000fde72... (81 %)
+Writing at 0x00104241... (84 %)
+Writing at 0x0010e9aa... (86 %)
+Writing at 0x001160e8... (89 %)
+Writing at 0x0011bfa5... (92 %)
+Writing at 0x00121839... (94 %)
+Writing at 0x0012736a... (97 %)
+Writing at 0x0012d7ff... (100 %)
+Wrote 1106832 bytes (607781 compressed) at 0x00020000 in 14.7 seconds (effective 604.3 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 320.9 kbit/s)...
+Hash of data verified.
+Compressed 8192 bytes to 31...
+Writing at 0x0000f000... (100 %)
+Wrote 8192 bytes (31 compressed) at 0x0000f000 in 0.1 seconds (effective 583.1 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+or-model-code/node_DHT/BLE_MESH_Node_DHT11/build -P D:/IDF/install/Espressif/frameworks/esp-idf-v5.2.3/components/esptool_py/run_serial_tool.cmake"

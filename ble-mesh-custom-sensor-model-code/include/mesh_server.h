@@ -27,4 +27,5 @@ void server_send_to_unicast(model_sensor_data_t server_model_state);
 void server_send_to_multicast(model_sensor_data_t server_model_state);
 bool is_server_provisioned(void);
 void set_information();
+bool is_duplicate_message(uint16_t src_addr, uint32_t seq_num);
 #endif  

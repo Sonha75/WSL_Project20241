@@ -1,4 +1,4 @@
-/* * Data converted from D:/ESP_IDF/Ble mesh/esp32_btmesh/ble-mesh-custom-sensor-model-code/node_LM/BLE_MESH_Node_LM/build/esp-idf/mbedtls/x509_crt_bundle
+/* * Data converted from D:/IDF/git/WSL_Project20241/ble-mesh-custom-sensor-model-code/node_LM/BLE_MESH_Node_LM/build/esp-idf/mbedtls/x509_crt_bundle
  */
 .data
 .section .rodata.embedded
