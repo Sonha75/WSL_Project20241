@@ -19,9 +19,10 @@ const char *TAG = "wifi station";
 #define WIFI_CONNECTED_BIT BIT0
 #define WIFI_FAIL_BIT      BIT1
 
-#define EXAMPLE_ESP_WIFI_SSID      "VIETTEL_2.4G_UC4H7U"
-#define EXAMPLE_ESP_WIFI_PASS      "QcAMEKbf"
-
+// #define EXAMPLE_ESP_WIFI_SSID      "VIETTEL_2.4G_UC4H7U"
+// #define EXAMPLE_ESP_WIFI_PASS      "QcAMEKbf"
+#define EXAMPLE_ESP_WIFI_SSID      "EMB"
+#define EXAMPLE_ESP_WIFI_PASS      "123123123"
 
 
 static void event_handler(void* arg, esp_event_base_t event_base,
@@ -30,15 +31,15 @@ static void event_handler(void* arg, esp_event_base_t event_base,
     if (event_base == WIFI_EVENT && event_id == WIFI_EVENT_STA_START) {
         esp_wifi_connect();
     } else if (event_base == WIFI_EVENT && event_id == WIFI_EVENT_STA_DISCONNECTED) {
-       
+
             esp_wifi_connect();
-            
+
             ESP_LOGI(TAG, "retry to connect to the AP");
-        
-        
+
+
     } else if (event_base == IP_EVENT && event_id == IP_EVENT_STA_GOT_IP) {
         ip_event_got_ip_t* event = (ip_event_got_ip_t*) event_data;
-       
+
         xEventGroupSetBits(s_wifi_event_group, WIFI_CONNECTED_BIT);
     }
 }
@@ -71,7 +72,7 @@ void wifi_init_station(void)
         .sta = {
             .ssid = EXAMPLE_ESP_WIFI_SSID,
             .password = EXAMPLE_ESP_WIFI_PASS,
-           
+
                 },
     };
     ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_STA) );
