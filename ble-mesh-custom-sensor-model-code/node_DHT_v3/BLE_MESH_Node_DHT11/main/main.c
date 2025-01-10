@@ -59,6 +59,7 @@ static void environment_sensor(void *arg)
             led3_state = !led3_state;
             board_led_operation(LED_3, led3_state);
             ESP_LOGE(TAG, "DHT11 read error");
+            _server_model_state.status = 0;
          } else {
             dht11_lastdata = dht11_currentdata;
             msg_counter = msg_counter % MSG_ID_MAX;

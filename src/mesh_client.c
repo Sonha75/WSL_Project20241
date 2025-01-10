@@ -262,7 +262,7 @@ static void ble_mesh_custom_sensor_client_model_cb(esp_ble_mesh_model_cb_event_t
             ESP_LOGI(TAG, "OPCODE_STATUS received: 0x%06x", param->client_recv_publish_msg.opcode);
             ESP_LOGI(TAG, "src: 0x%04x, dst: 0x%04x,ttl recv: %d", param->client_recv_publish_msg.ctx->addr, param->client_recv_publish_msg.ctx->recv_dst, param->client_recv_publish_msg.ctx->recv_ttl);
             // ESP_LOG_BUFFER_HEX(TAG, param->client_recv_publish_msg.msg, param->client_recv_publish_msg.length);
-
+        
             model_sensor_data_t received_data;
             if (parse_received_data(param, &received_data) == 0)
             {
@@ -328,10 +328,6 @@ static bool parse_received_data(esp_ble_mesh_model_cb_param_t *recv_param, model
 
         ESP_LOGW("PARSED_DATA", "Humidity  %d  = %f", parsed_data->index, parsed_data->humidity);
         sprintf(data, "{\"Humidity %d\":%f}", parsed_data->index, parsed_data->humidity);
-        esp_mqtt_client_publish(client, TOPIC, data, 0, 1, 0);
-
-        ESP_LOGW("PARSED_DATA", "Status  %d  = %d", parsed_data->index, parsed_data->status);
-        sprintf(data, "{\"Status %d\":%d}", parsed_data->index, parsed_data->status);
         esp_mqtt_client_publish(client, TOPIC, data, 0, 1, 0);
     }
     else

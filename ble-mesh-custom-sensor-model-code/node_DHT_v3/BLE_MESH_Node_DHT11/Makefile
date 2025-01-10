@@ -3,7 +3,7 @@
 # project subdirectory.
 #
 
-PROJECT_NAME := custom_sensor_client
+PROJECT_NAME := custom_sensor_server
 
 EXTRA_COMPONENT_DIRS := $(IDF_PATH)/examples/bluetooth/esp_ble_mesh/common_components/button \
                         $(IDF_PATH)/examples/bluetooth/esp_ble_mesh/common_components/example_init \

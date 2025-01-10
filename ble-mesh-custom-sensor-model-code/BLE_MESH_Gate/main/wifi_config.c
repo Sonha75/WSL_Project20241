@@ -21,7 +21,7 @@ const char *TAG = "wifi station";
 
 // #define EXAMPLE_ESP_WIFI_SSID      "VIETTEL_2.4G_UC4H7U"
 // #define EXAMPLE_ESP_WIFI_PASS      "QcAMEKbf"
-#define EXAMPLE_ESP_WIFI_SSID      "EMB"
+#define EXAMPLE_ESP_WIFI_SSID      "Wsn"
 #define EXAMPLE_ESP_WIFI_PASS      "123123123"
 
 

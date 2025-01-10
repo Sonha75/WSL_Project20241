@@ -1,11 +1,3 @@
-/* board.h - Board-specific hooks */
-
-/*
- * Copyright (c) 2017 Intel Corporation
- * Additional Copyright (c) 2018 Espressif Systems (Shanghai) PTE LTD
- *
- * SPDX-License-Identifier: Apache-2.0
- */
 #ifndef _BOARD_H_
 #define _BOARD_H_
 
@@ -21,6 +13,11 @@
 #define LED_B GPIO_NUM_4
 #endif
 
+// New LED definitions
+#define LED_1 GPIO_NUM_5
+#define LED_2 GPIO_NUM_18
+#define LED_3 GPIO_NUM_19
+
 #define LED_ON  1
 #define LED_OFF 0
 
@@ -32,7 +29,7 @@ struct _led_state {
 };
 
 void board_led_operation(uint8_t pin, uint8_t onoff);
-
+void board_led_init(void); // Add this
 void board_init(void);
 
 #endif

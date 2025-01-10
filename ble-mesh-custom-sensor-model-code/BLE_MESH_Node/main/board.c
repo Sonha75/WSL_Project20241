@@ -20,15 +20,15 @@
 // thon tin node gui di
  extern model_sensor_data_t _server_model_state;
 // struct _led_state led_state= {
-    
+
 //     { LED_OFF, LED_OFF, LED_G, "green" }
-    
+
 // };
 
 void board_led_operation(uint8_t pin, uint8_t onoff)
 {
-    
-        
+
+
     //     if (onoff == led_state.previous) {
     //         ESP_LOGW(TAG, "led %s is already %s",
     //                  led_state.name, (onoff ? "on" : "off"));
@@ -37,7 +37,7 @@ void board_led_operation(uint8_t pin, uint8_t onoff)
     //     gpio_set_level(pin, onoff);
     //     led_state.previous = onoff;
     //     return;
-    
+
 
     // ESP_LOGE(TAG, "LED is not found!");
      gpio_set_level(pin, onoff);
@@ -49,12 +49,12 @@ void board_led_operation(uint8_t pin, uint8_t onoff)
 
 // static void board_led_init(void)
 // {
-    
+
 //         gpio_reset_pin(led_state.pin);
 //         gpio_set_direction(led_state.pin, GPIO_MODE_OUTPUT);
 //         gpio_set_level(led_state.pin, LED_OFF);
 //         led_state.previous = LED_OFF;
-    
+
 // }
 
 // extern void example_ble_mesh_send_status(void);

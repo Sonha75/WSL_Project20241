@@ -42,7 +42,7 @@ model_sensor_data_t _server_model_state = {
     .device_name = "dht3",
     .temperature = 0.0f,
     .humidity = 0.0f,
-    .index = 3,
+    .index = 3,uh
     .status = false,
     .csum = 0};
 
@@ -54,12 +54,31 @@ static void environment_sensor(void *arg)
         dht11_lastdata.temperature = 0;
         dht11_lastdata.humidity = 0;
         dht11_currentdata = DHT11_read();
-         if(dht11_currentdata.status != DHT11_OK) {
+        if (dht11_currentdata.status != DHT11_OK)
+        {
             // LED3 blink when no data receive from DHT11
-            led3_state = !led3_state;
+            led1_state = LED_OFF;
+            board_led_operation(LED_1, led1_state);
+
+            led2_state = LED_OFF;
+            board_led_operation(LED_2, led2_state);
+
+            led3_state = LED_ON;
             board_led_operation(LED_3, led3_state);
             ESP_LOGE(TAG, "DHT11 read error");
-         } else {
+            _server_model_state.status = false;
+            memcpy(&dht11_message.message, &_server_model_state, sizeof(model_sensor_data_t));
+            ESP_LOGI(TAG, "Sending message ID: %lu, Temp: %.1f, Humidity: %.1f, Checksum: %u, Status: %d",
+                     _server_model_state.msg_id,
+                     _server_model_state.temperature,
+                     _server_model_state.humidity,
+                     dht11_message.message.csum,
+                     _server_model_state.status);
+
+            server_send_to_unicast(dht11_message.message);
+        }
+        else
+        {
             dht11_lastdata = dht11_currentdata;
             msg_counter = msg_counter % MSG_ID_MAX;
             _server_model_state.msg_id = ++msg_counter;
@@ -69,39 +88,48 @@ static void environment_sensor(void *arg)
             memcpy(&dht11_message.message, &_server_model_state, sizeof(model_sensor_data_t));
 
             dht11_message.message.csum = calculate_checksum(&dht11_message);
-
+            // LED3
+            led3_state = LED_OFF;
             // LED1 Control (Temperature)
-            if(_server_model_state.temperature < TEMP_LOWER_BOUND) {
+            if (_server_model_state.temperature < TEMP_LOWER_BOUND)
+            {
                 led1_state = LED_ON; // ON if below lower bound
-            } else if(_server_model_state.temperature > TEMP_UPPER_BOUND) {
-                led1_state = LED_ON;  // ON if above upper bound
-            } else {
+            }
+            else if (_server_model_state.temperature > TEMP_UPPER_BOUND)
+            {
+                led1_state = LED_ON; // ON if above upper bound
+            }
+            else
+            {
                 led1_state = LED_OFF; // OFF if within the range
             }
             board_led_operation(LED_1, led1_state);
 
             // LED2 Control (Humidity)
-             if(_server_model_state.humidity < HUMIDITY_LOWER_BOUND) {
-               led2_state = LED_ON; // ON if below lower bound
-            } else if(_server_model_state.humidity > HUMIDITY_UPPER_BOUND) {
+            if (_server_model_state.humidity < HUMIDITY_LOWER_BOUND)
+            {
+                led2_state = LED_ON; // ON if below lower bound
+            }
+            else if (_server_model_state.humidity > HUMIDITY_UPPER_BOUND)
+            {
                 led2_state = LED_ON; // ON if above upper bound
-            } else {
-                 led2_state = LED_OFF; // OFF if within the range
+            }
+            else
+            {
+                led2_state = LED_OFF; // OFF if within the range
             }
             board_led_operation(LED_2, led2_state);
 
-
             ESP_LOGI(TAG, "Sending message ID: %lu, Temp: %.1f, Humidity: %.1f, Checksum: %u",
-                    _server_model_state.msg_id,
-                    _server_model_state.temperature,
-                    _server_model_state.humidity,
-                    dht11_message.message.csum
-                );
+                     _server_model_state.msg_id,
+                     _server_model_state.temperature,
+                     _server_model_state.humidity,
+                     dht11_message.message.csum);
 
             server_send_to_unicast(dht11_message.message);
-             // reset error LED
+            // reset error LED
             board_led_operation(LED_3, LED_OFF);
-         }
+        }
         vTaskDelay(10000 / portTICK_PERIOD_MS); // Blink LED and read DHT every 1 second
     }
 }
@@ -136,7 +164,7 @@ static uint32_t calculate_checksum(union_t *msg)
     for (int i = 0; i < sizeof(union_t) - 4; i++)
     {
         sum += msg->data[i];
-        //ESP_LOGE(TAG, "data %02X ",  msg->data[i]);
+        // ESP_LOGE(TAG, "data %02X ",  msg->data[i]);
     }
     return sum;
 }
